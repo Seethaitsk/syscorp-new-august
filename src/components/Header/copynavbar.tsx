@@ -5,6 +5,8 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Button from "@/components/ui/Button";
 
+
+//rfegd
 export default function Navbar() {
     const [open, setOpen] = useState(false);
     const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
