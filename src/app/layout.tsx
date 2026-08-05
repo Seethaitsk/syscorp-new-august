@@ -69,7 +69,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <head>
                 <meta name="theme-color" content="#02071f" />
                 <meta name="color-scheme" content="dark" />
@@ -80,7 +80,7 @@ export default function RootLayout({
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
             </head>
-            <body className={`${plusJakarta.variable} ${inter.variable} font-sans antialiased`}>
+            <body className={`${plusJakarta.variable} ${inter.variable} font-sans antialiased`} suppressHydrationWarning>
                 {/* Skip to main content — accessibility landmark for keyboard/screen-reader users */}
                 <a
                     href="#main-content"

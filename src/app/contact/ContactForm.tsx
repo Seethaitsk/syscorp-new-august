@@ -35,23 +35,52 @@ export default function ContactForm() {
         setStatus(null);
 
         try {
-            // Simulate API request delay
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            
-            console.log("Contact Form Submission (Simulated Local Success):", formData);
+            const payload = {
+                name: formData.fullName.trim(),
+                email: formData.email.trim(),
+                phone: formData.phoneNumber.trim(),
+                subject: formData.company.trim()
+                    ? `${formData.service} - ${formData.company.trim()}`
+                    : formData.service,
+                message: formData.message.trim(),
+            };
 
-            setStatus({ type: 'success', message: 'Thank you! Your message has been sent successfully.' });
-            setFormData({
-                fullName: "",
-                email: "",
-                company: "",
-                phoneNumber: "",
-                service: "Website Design",
-                message: ""
+            const response = await fetch("https://wadmin.syscorp.in/api/leads", {
+                method: "POST",
+                headers: {
+                    "accept": "*/*",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
             });
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+                setStatus({
+                    type: 'success',
+                    message: data.message || 'Thank you! Your message has been received.'
+                });
+                setFormData({
+                    fullName: "",
+                    email: "",
+                    company: "",
+                    phoneNumber: "",
+                    service: "Website Design",
+                    message: ""
+                });
+            } else {
+                setStatus({
+                    type: 'error',
+                    message: data.message || 'Failed to submit your message. Please try again.'
+                });
+            }
         } catch (error: any) {
             console.error("Submission error:", error);
-            setStatus({ type: 'error', message: "Something went wrong. Please try again later." });
+            setStatus({
+                type: 'error',
+                message: "Network error. Please try again later."
+            });
         } finally {
             setLoading(false);
         }
