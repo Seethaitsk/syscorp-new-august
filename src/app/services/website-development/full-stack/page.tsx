@@ -322,7 +322,7 @@ export default function FullStackDevelopmentPondicherryPage() {
             <HeaderBanner
                 title={
                     <>
-                        Best <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Full-Stack Development Company</span> in Pondicherry
+                     <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Full-Stack Development Service</span> in Pondicherry
                     </>
                 }
                 description="Complete Frontend & Backend Development Solutions for Modern Businesses"
@@ -389,16 +389,33 @@ export default function FullStackDevelopmentPondicherryPage() {
                 <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: `radial-gradient(#1A5CDD 2px, transparent 2px)`, backgroundSize: `32px 32px` }} />
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
 
-                        {/* Left Column: Text Content */}
-                        <div className="lg:col-span-5 space-y-7 relative z-20">
+                        {/* Left Column: Image Visual */}
+                        <div className="lg:col-span-5 relative flex flex-col">
+                            <div className="relative w-full h-full min-h-[440px] rounded-[28px] overflow-hidden bg-[#010925] shadow-xl border border-slate-200 group">
+                                <div className="absolute top-5 left-5 z-20 flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/10 px-3.5 py-1.5 rounded-full">
+                                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+                                    <span className="text-[11px] font-mono text-white font-bold tracking-wider uppercase">System Architecture</span>
+                                </div>
+                                <Image
+                                    src="/images/full_stack_architecture_dashboard.png"
+                                    alt="Full Stack Development Architecture Dashboard"
+                                    fill
+                                    className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#010925]/70 via-transparent to-transparent pointer-events-none" />
+                            </div>
+                        </div>
+
+                        {/* Right Column: Text Content & 3x3 Grid */}
+                        <div className="lg:col-span-7 space-y-7 relative z-20">
                             <div className="inline-flex items-center gap-2 bg-[#F0F6FF] text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-[#1A5CDD]/10">
                                 <Layers size={14} />
                                 Core Concept
                             </div>
 
-                            <h2 className="text-3xl md:text-5xl lg:text-[54px] font-extrabold text-[#011146] tracking-tight leading-[1.12]">
+                            <h2 className="text-3xl md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.12]">
                                 What is Full Stack Development?
                             </h2>
 
@@ -410,7 +427,7 @@ export default function FullStackDevelopmentPondicherryPage() {
                                 A professional Full Stack Development Company in Pondicherry handles every stage of application development, including:
                             </p>
 
-                            <div className="bg-[#F8FAFC] rounded-[24px] p-6 border border-slate-100 shadow-sm mt-8">
+                            <div className="bg-[#F8FAFC] rounded-[24px] p-6 border border-slate-100 shadow-sm">
                                 <div className="flex items-start gap-4">
                                     <div className="w-12 h-12 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center shrink-0 text-[#1A5CDD]">
                                         <Cpu size={22} />
@@ -423,29 +440,9 @@ export default function FullStackDevelopmentPondicherryPage() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        {/* Right Column: Image and 3x3 Grid */}
-                        <div className="lg:col-span-7 flex flex-col gap-4 relative z-10">
-
-                            {/* Top Large Architecture Image */}
-                            <div className="relative w-full aspect-[24/10] rounded-[24px] overflow-hidden bg-[#010925] shadow-lg">
-                                <div className="absolute top-5 left-5 z-20 flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/10 px-3 py-1.5 rounded-full">
-                                    <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                                    <span className="text-[10px] font-mono text-white font-bold tracking-wider uppercase">System Architecture</span>
-                                </div>
-                                <Image
-                                    src="/images/full_stack_architecture_dashboard.png"
-                                    alt="Full Stack Development Architecture Dashboard"
-                                    width={800}
-                                    height={400}
-                                    className="w-full h-full object-cover opacity-90"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#010925]/60 via-transparent to-transparent pointer-events-none" />
-                            </div>
 
                             {/* 9 Stages Grid */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5 mt-2">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5 pt-2">
                                 {[
                                     { text: "Requirement Analysis", icon: FileCode, num: "01" },
                                     { text: "UI/UX Design", icon: Layout, num: "02" },
@@ -459,7 +456,7 @@ export default function FullStackDevelopmentPondicherryPage() {
                                 ].map((stage, idx) => {
                                     const StageIcon = stage.icon;
                                     return (
-                                        <div key={idx} className="bg-white rounded-[20px] p-4 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(26,92,221,0.06)] transition-all duration-300 group/stage flex flex-col border border-transparent hover:border-[#1A5CDD]/10">
+                                        <div key={idx} className="bg-white rounded-[20px] p-4 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(26,92,221,0.06)] transition-all duration-300 group/stage flex flex-col border border-slate-200/80 hover:border-[#1A5CDD]/20">
                                             <div className="flex items-start justify-between mb-4">
                                                 <div className="w-9 h-9 rounded-[10px] bg-[#F0F6FF] text-[#1A5CDD] flex items-center justify-center group-hover/stage:bg-[#1A5CDD] group-hover/stage:text-white transition-colors duration-300">
                                                     <StageIcon size={16} strokeWidth={2.5} />
@@ -611,7 +608,7 @@ export default function FullStackDevelopmentPondicherryPage() {
                             What Our Full-Stack Development Services Cover
                         </h2>
                         <p className="text-slate-600 text-base md:text-[17px] leading-[1.8]">
-                            At SysCrop, we offer complete Full-Stack Development Services that cover every stage of web application development—from planning and UI design to deployment and long-term maintenance. As a trusted Full-Stack Development Company in Pondicherry and a reliable Software Company in Pondicherry, we build secure, scalable, and high-performance applications using modern technologies and industry best practices.
+                            We offer complete Full Stack Development Services covering planning, UI design, development, deployment, and ongoing support. As a trusted Full Stack Development Company in Pondicherry and Software Company in Pondicherry, we build secure, scalable, and high performance web applications using modern technologies and industry best practices.  
                         </p>
                     </div>
 

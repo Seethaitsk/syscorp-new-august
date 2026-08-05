@@ -485,7 +485,8 @@ export default function LocalSEOServicesPage() {
                             Why Choose SysCrop for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Local SEO</span>?
                         </h2>
                         <p className="text-slate-600 text-[16px] md:text-[17px] leading-relaxed max-w-3xl mx-auto">
-                            At SysCrop, we understand that local customers are the driving force behind business growth. Our Local SEO strategies are tailored to your industry, target audience, service areas, and business objectives, ensuring your business appears where your customers are actively searching. By combining technical expertise, local search optimization, reputation management, and data-driven strategies, we help businesses improve local visibility, generate qualified leads, and achieve sustainable long-term growth through ethical SEO practices.
+                            We help businesses improve their local search presence by creating SEO strategies based on their industry, audience, service areas, and goals. Our Local SEO approach focuses on improving rankings, increasing online visibility, managing reputation, and helping businesses connect with customers who are actively searching for their services.  
+
                         </p>
                     </div>
 

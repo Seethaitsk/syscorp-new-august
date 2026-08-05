@@ -445,7 +445,7 @@ export default function UIUXDesignPondicherryPage() {
             <HeaderBanner
                 title={
                     <>
-                        Top <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">UI/UX Design Services</span> in Pondicherry
+                        <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">UI/UX Design Solutions</span> in Pondicherry
                     </>
                 }
                 description="Transform Ideas into Engaging Digital Experiences with Intuitive, Responsive, and Visually Stunning Interfaces"
