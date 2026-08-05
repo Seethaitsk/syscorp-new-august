@@ -7,6 +7,7 @@ if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
     gsap.config({ nullTargetWarn: false });
 }
+// nn
 
 const roles = [
     "Software Developers",
