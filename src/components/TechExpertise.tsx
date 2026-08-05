@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
+    gsap.config({ nullTargetWarn: false });
 }
 
 const expertiseData = [

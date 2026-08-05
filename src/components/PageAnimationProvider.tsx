@@ -25,6 +25,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
+    gsap.config({ nullTargetWarn: false });
 }
 
 const ALLOWED_PATHS = ["/", "/about", "/career", "/blog", "/contact"];

@@ -7,37 +7,56 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
+  gsap.config({ nullTargetWarn: false });
 }
 
-const testimonials = [
+interface Testimonial {
+  id?: number;
+  name: string;
+  role: string;
+  quote: string;
+  avatar: string;
+  rating: number;
+}
+
+const initialTestimonials: Testimonial[] = [
   {
+    id: 1,
     name: "Purvi Chopra",
     role: "SaaS Founder & CEO",
     quote: "The team delivered exceptional software quality and maintained complete transparency throughout the project. The platform was launched on time, and the code quality and project management exceeded our expectations.",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=75&w=60&h=60",
+    rating: 5,
   },
   {
+    id: 2,
     name: "Amita Patel",
     role: "CTO, FinTech Startup",
     quote: "The team delivered exceptional software quality and maintained complete transparency throughout the project. The platform was launched on time, and the code quality and project management exceeded our expectations.",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=75&w=60&h=60",
+    rating: 5,
   },
   {
+    id: 3,
     name: "Rahul Mehta",
     role: "Product Director, Tech Enterprise",
     quote: "The team delivered exceptional software quality and maintained complete transparency throughout the project. The platform was launched on time, and the code quality and project management exceeded our expectations.",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=75&w=60&h=60",
+    rating: 5,
   },
   {
+    id: 4,
     name: "Sneha Reddy",
     role: "Engineering Manager",
     quote: "The team delivered exceptional software quality and maintained complete transparency throughout the project. The platform was launched on time, and the code quality and project management exceeded our expectations.",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=75&w=60&h=60",
+    rating: 5,
   },
 ];
 
 export default function TestimonialSection({ bgClass }: { bgClass?: string } = {}) {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [testimonialList, setTestimonialList] = useState<Testimonial[]>(initialTestimonials);
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
@@ -55,6 +74,62 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+
+  // Fetch Testimonials from API
+  useEffect(() => {
+    let isMounted = true;
+    const fetchTestimonials = async () => {
+      try {
+        const response = await fetch("https://wadmin.syscorp.in/api/testimonials", {
+          method: "GET",
+          headers: {
+            "accept": "*/*",
+          },
+        });
+        if (!response.ok) return;
+        const result = await response.json();
+        if (isMounted && result && result.success && Array.isArray(result.data) && result.data.length > 0) {
+          const activeItems = result.data
+            .filter((item: { is_active?: number }) => item.is_active === 1)
+            .slice(0, 6);
+          if (activeItems.length > 0) {
+            const mapped: Testimonial[] = activeItems.map((item: {
+              id?: number;
+              client_name?: string;
+              client_role?: string;
+              company?: string;
+              content?: string;
+              avatar_url?: string | null;
+              rating?: number;
+            }) => {
+              const name = item.client_name || "Client";
+              const roleParts = [];
+              if (item.client_role) roleParts.push(item.client_role);
+              if (item.company) roleParts.push(item.company);
+              const role = roleParts.join(" • ") || "Client";
+
+              return {
+                id: item.id,
+                name,
+                role,
+                quote: item.content || "",
+                avatar: item.avatar_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=1A5CDD&color=ffffff&bold=true`,
+                rating: typeof item.rating === "number" && item.rating > 0 ? item.rating : 5,
+              };
+            });
+            setTestimonialList(mapped);
+          }
+        }
+      } catch (err) {
+        console.error("Error fetching testimonials:", err);
+      }
+    };
+
+    fetchTestimonials();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -78,11 +153,12 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
 
   useEffect(() => {
     if (!emblaApi) return;
+    emblaApi.reInit();
     onSelect();
     setScrollSnaps(emblaApi.scrollSnapList());
     emblaApi.on("select", onSelect);
     emblaApi.on("reInit", onSelect);
-  }, [emblaApi, onSelect]);
+  }, [emblaApi, onSelect, testimonialList]);
 
   // GSAP Entrance ScrollTrigger + Hover 3D Tilt Animations
   useEffect(() => {
@@ -203,7 +279,7 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
         });
       }
     };
-  }, []);
+  }, [testimonialList]);
 
   return (
     <section
@@ -318,9 +394,32 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
           border-radius: 50%;
           object-fit: cover;
           border: 2px solid #F5F6F8;
+          flex-shrink: 0;
         }
         .dark .sky-testi-avatar {
           border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .sky-testi-name {
+          font-size: 16px;
+          font-weight: 700;
+          color: #011146;
+          margin: 0;
+          font-family: 'Plus Jakarta Sans', sans-serif;
+          transition: color 0.3s ease;
+        }
+        .dark .sky-testi-name {
+          color: #FFFFFF;
+        }
+
+        .sky-testi-role {
+          font-size: 13px;
+          color: #64748B;
+          margin: 2px 0 0 0;
+          transition: color 0.3s ease;
+        }
+        .dark .sky-testi-role {
+          color: #94A3B8;
         }
 
         .sky-testi-all-btn {
@@ -498,7 +597,36 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
           background: #3B82F6;
         }
 
-        /* Partner Logos styling */
+        /* Partner Logos styling & Infinite Auto-scroll Marquee */
+        @keyframes skyLogoMarquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .sky-logo-ticker-wrapper {
+          overflow: hidden;
+          width: 100%;
+          mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+          -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+          padding: 8px 0;
+        }
+
+        .sky-logo-ticker-track {
+          display: flex;
+          align-items: center;
+          width: max-content;
+          gap: 64px;
+          animation: skyLogoMarquee 28s linear infinite;
+        }
+
+        .sky-logo-ticker-track:hover {
+          animation-play-state: paused;
+        }
+
         .sky-partner-logo {
           display: flex;
           align-items: center;
@@ -506,6 +634,7 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
           color: #94A3B8;
           transition: color 0.3s ease, transform 0.3s ease;
           cursor: pointer;
+          flex-shrink: 0;
         }
         .dark .sky-partner-logo {
           color: #4B5563;
@@ -547,6 +676,9 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
             top: 24px;
             right: 24px;
             font-size: 48px;
+          }
+          .sky-logo-ticker-track {
+            gap: 40px;
           }
         }
       `}</style>
@@ -599,8 +731,8 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
         {/* ─── TESTIMONIAL CARDS SLIDER (EMBLA) ─── */}
         <div className="sky-embla-viewport" ref={emblaRef}>
           <div className="sky-embla-container">
-            {testimonials.map((t, idx) => (
-              <div key={idx} className="sky-embla-slide">
+            {testimonialList.map((t, idx) => (
+              <div key={t.id || idx} className="sky-embla-slide">
                 <div className="sky-testi-card-wrap">
                   {/* Quote marks icon */}
                   <div className="sky-testi-quote-icon">&ldquo;</div>
@@ -609,7 +741,7 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
                     {/* Stars rating */}
                     <div style={{ display: "flex", gap: "4px" }}>
                       {[...Array(5)].map((_, si) => (
-                        <svg key={si} style={{ width: "18px", height: "18px" }} viewBox="0 0 24 24" fill="#F59E0B">
+                        <svg key={si} style={{ width: "18px", height: "18px" }} viewBox="0 0 24 24" fill={si < (t.rating || 5) ? "#F59E0B" : "#CBD5E1"}>
                           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                         </svg>
                       ))}
@@ -628,6 +760,9 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
                       src={t.avatar}
                       alt={t.name}
                       className="sky-testi-avatar"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${encodeURIComponent(t.name)}&background=1A5CDD&color=ffffff&bold=true`;
+                      }}
                     />
                     <div>
                       <p className="sky-testi-name">{t.name}</p>
@@ -642,7 +777,7 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
 
         {/* ─── PROGRESS DOTS ─── */}
         <div className="sky-carousel-dots">
-          {scrollSnaps.map((_, index) => (
+          {scrollSnaps.slice(0, 6).map((_, index) => (
             <button
               key={index}
               onClick={() => scrollTo(index)}
@@ -663,64 +798,57 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
             <div className="sky-testi-divider-line" />
           </div>
 
-          {/* Logos Flex Row */}
-          <div style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: "32px",
-            padding: "0 10px"
-          }} className="justify-center md:justify-between">
-            {/* Logo 1 */}
-            <div className="sky-partner-logo">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="5" r="3.5" fill="currentColor" />
-                <circle cx="5" cy="12" r="3.5" fill="currentColor" />
-                <circle cx="19" cy="12" r="3.5" fill="currentColor" />
-                <circle cx="12" cy="19" r="3.5" fill="currentColor" />
-              </svg>
-              <span style={{ fontSize: "18px", fontWeight: 800, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Logoipsum</span>
-            </div>
-
-            {/* Logo 2 */}
-            <div className="sky-partner-logo">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" clipRule="evenodd" d="M12 2C7.5 7.5 5 11 5 14C5 17.866 8.134 21 12 21C15.866 21 19 17.866 19 14C19 11 16.5 7.5 12 2ZM12 16.5C13.3807 16.5 14.5 15.3807 14.5 14C14.5 12.6193 13.3807 11.5 12 11.5C10.6193 11.5 9.5 12.6193 9.5 14C9.5 15.3807 10.6193 16.5 12 16.5Z" fill="currentColor" />
-              </svg>
-              <span style={{ fontSize: "18px", fontWeight: 800, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Logoipsum</span>
-            </div>
-
-            {/* Logo 3 */}
-            <div className="sky-partner-logo">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="5" fill="currentColor" />
-                <line x1="12" y1="2" x2="12" y2="5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="12" y1="19" x2="12" y2="22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="2" y1="12" x2="5" y2="12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="19" y1="12" x2="22" y2="12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="5" y1="5" x2="7.1" y2="7.1" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="16.9" y1="16.9" x2="19" y2="19" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="5" y1="19" x2="7.1" y2="16.9" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                <line x1="16.9" y1="7.1" x2="19" y2="5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-              </svg>
-              <span style={{ fontSize: "18px", fontWeight: 800, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Logoipsum</span>
-            </div>
-
-            {/* Logo 4 */}
-            <div className="sky-partner-logo">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM4 12C4 11.45 4.45 11 5 11H19C19.55 11 20 11.45 20 12C20 12.55 19.55 13 19 13H5C4.45 13 4 12.55 4 12ZM5.64 7C5.3 7 5 7.3 5.09 7.63C5.78 10.14 8.09 12 10.85 12H13.15C15.91 12 18.22 10.14 18.91 7.63C19 7.3 18.7 7 18.36 7H5.64Z" fill="currentColor" />
-              </svg>
-              <span style={{ fontSize: "18px", fontWeight: 800, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Logoipsum</span>
-            </div>
-
-            {/* Logo 5 */}
-            <div className="sky-partner-logo">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L4 5V11C4 16.55 7.42 21.74 12 23C16.58 21.74 20 16.55 20 11V5L12 2ZM11 15H9L13 7V11H15L11 15Z" fill="currentColor" />
-              </svg>
-              <span style={{ fontSize: "18px", fontWeight: 800, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Logoipsum</span>
+          {/* Logos Auto-scroll Ticker Row */}
+          <div className="sky-logo-ticker-wrapper">
+            <div className="sky-logo-ticker-track">
+              {[...Array(4)].flatMap((_, arrayIdx) => [
+                /* Logo 1 */
+                <div key={`l1-${arrayIdx}`} className="sky-partner-logo flex-shrink-0">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="5" r="3.5" fill="currentColor" />
+                    <circle cx="5" cy="12" r="3.5" fill="currentColor" />
+                    <circle cx="19" cy="12" r="3.5" fill="currentColor" />
+                    <circle cx="12" cy="19" r="3.5" fill="currentColor" />
+                  </svg>
+                  <span style={{ fontSize: "18px", fontWeight: 800, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Logoipsum</span>
+                </div>,
+                /* Logo 2 */
+                <div key={`l2-${arrayIdx}`} className="sky-partner-logo flex-shrink-0">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M12 2C7.5 7.5 5 11 5 14C5 17.866 8.134 21 12 21C15.866 21 19 17.866 19 14C19 11 16.5 7.5 12 2ZM12 16.5C13.3807 16.5 14.5 15.3807 14.5 14C14.5 12.6193 13.3807 11.5 12 11.5C10.6193 11.5 9.5 12.6193 9.5 14C9.5 15.3807 10.6193 16.5 12 16.5Z" fill="currentColor" />
+                  </svg>
+                  <span style={{ fontSize: "18px", fontWeight: 800, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Logoipsum</span>
+                </div>,
+                /* Logo 3 */
+                <div key={`l3-${arrayIdx}`} className="sky-partner-logo flex-shrink-0">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5" fill="currentColor" />
+                    <line x1="12" y1="2" x2="12" y2="5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="12" y1="19" x2="12" y2="22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="2" y1="12" x2="5" y2="12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="19" y1="12" x2="22" y2="12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="5" y1="5" x2="7.1" y2="7.1" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="16.9" y1="16.9" x2="19" y2="19" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="5" y1="19" x2="7.1" y2="16.9" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="16.9" y1="7.1" x2="19" y2="5" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                  </svg>
+                  <span style={{ fontSize: "18px", fontWeight: 800, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Logoipsum</span>
+                </div>,
+                /* Logo 4 */
+                <div key={`l4-${arrayIdx}`} className="sky-partner-logo flex-shrink-0">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM4 12C4 11.45 4.45 11 5 11H19C19.55 11 20 11.45 20 12C20 12.55 19.55 13 19 13H5C4.45 13 4 12.55 4 12ZM5.64 7C5.3 7 5 7.3 5.09 7.63C5.78 10.14 8.09 12 10.85 12H13.15C15.91 12 18.22 10.14 18.91 7.63C19 7.3 18.7 7 18.36 7H5.64Z" fill="currentColor" />
+                  </svg>
+                  <span style={{ fontSize: "18px", fontWeight: 800, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Logoipsum</span>
+                </div>,
+                /* Logo 5 */
+                <div key={`l5-${arrayIdx}`} className="sky-partner-logo flex-shrink-0">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L4 5V11C4 16.55 7.42 21.74 12 23C16.58 21.74 20 16.55 20 11V5L12 2ZM11 15H9L13 7V11H15L11 15Z" fill="currentColor" />
+                  </svg>
+                  <span style={{ fontSize: "18px", fontWeight: 800, fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Logoipsum</span>
+                </div>
+              ])}
             </div>
           </div>
         </div>
@@ -729,3 +857,4 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
     </section>
   );
 }
+

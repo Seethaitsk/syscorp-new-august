@@ -1,8 +1,16 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const faqData = [
+interface FaqItem {
+  id?: number;
+  question: string;
+  answer: string;
+  bullets?: string[];
+  is_active?: boolean | number;
+}
+
+const defaultFaqData: FaqItem[] = [
   {
     question: "Are your development processes transparent?",
     answer: "Yes. We believe in full transparency — every project includes regular status updates, clear milestones, and open communication. You'll always know where your project stands and what comes next.",
@@ -46,7 +54,44 @@ const faqData = [
 ];
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(2); // Default open to 3rd item (index 2)
+  const [faqs, setFaqs] = useState<FaqItem[]>(defaultFaqData);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  useEffect(() => {
+    let isMounted = true;
+    const fetchFaqs = async () => {
+      try {
+        const response = await fetch("https://wadmin.syscorp.in/api/faqs", {
+          headers: {
+            "accept": "*/*",
+          },
+        });
+        if (!response.ok) return;
+        const result = await response.json();
+        if (isMounted && result && result.success && Array.isArray(result.data) && result.data.length > 0) {
+          const activeFaqs: FaqItem[] = result.data
+            .filter((item: { is_active?: boolean | number }) => item.is_active === true || item.is_active === 1)
+            .slice(0, 4)
+            .map((item: { id?: number; question?: string; answer?: string }) => ({
+              id: item.id,
+              question: item.question || "",
+              answer: item.answer || "",
+            }));
+
+          if (activeFaqs.length > 0) {
+            setFaqs(activeFaqs);
+          }
+        }
+      } catch (err) {
+        console.error("Failed to fetch FAQs:", err);
+      }
+    };
+
+    fetchFaqs();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   return (
     <section
@@ -126,11 +171,11 @@ export default function FAQSection() {
 
           {/* RIGHT COLUMN */}
           <div className="lg:col-span-7 flex flex-col gap-4">
-            {faqData.map((item, idx) => {
+            {faqs.map((item, idx) => {
               const isOpen = openIndex === idx;
               return (
                 <div
-                  key={idx}
+                  key={item.id || idx}
                   className={`group rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen
                       ? "bg-white dark:bg-[#111726] border-[#1A5CDD]/20 dark:border-[#3B82F6]/30 shadow-[0_16px_36px_rgba(26,92,221,0.05)] dark:shadow-[0_16px_36px_rgba(0,0,0,0.3)]"
                       : "bg-[#F8FAFC]/90 dark:bg-[#121824]/40 border-black/5 dark:border-white/5 hover:bg-white dark:hover:bg-[#121824]/80 hover:border-[#1A5CDD]/10 dark:hover:border-white/10 hover:shadow-[0_8px_20px_rgba(0,0,0,0.02)]"
@@ -171,7 +216,7 @@ export default function FAQSection() {
                   >
                     <div className="overflow-hidden">
                       <div className="px-6 pb-5 pt-1 border-t border-gray-100 dark:border-white/[0.04]">
-                        <p className="text-[14px] text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                        <p className="text-[14px] text-gray-600 dark:text-gray-300 leading-relaxed mb-4 whitespace-pre-line">
                           {item.answer}
                         </p>
                         {item.bullets && item.bullets.length > 0 && (
