@@ -343,7 +343,7 @@ export default function EmailMarketingPage() {
                             What Our Email Marketing Services Cover
                         </h2>
                         <p className="text-slate-300 text-[16px] leading-relaxed max-w-2xl mx-auto">
-                            At SysCrop, our Email Marketing Services in Pondicherry are designed to help businesses build stronger customer relationships, increase engagement, and achieve better marketing results through strategic email campaigns. From campaign planning and email design to automation, audience segmentation, and performance analysis, we manage every aspect of your email marketing strategy to ensure maximum effectiveness.
+                            Our Email Marketing Services in Pondicherry help businesses connect with customers through strategic campaigns. We provide complete solutions including email planning, design, automation, and performance tracking to drive better engagement and results.
                         </p>
                     </div>
 

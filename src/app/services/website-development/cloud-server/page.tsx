@@ -887,7 +887,7 @@ export default function CloudServerPage() {
                                 What is Cloud Computing?
                             </h2>
                             <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
-                                Cloud computing is the delivery of computing resources such as servers, storage, databases, networking, software, and security over the internet instead of relying on traditional on-premise infrastructure. It enables businesses to access scalable IT resources on demand, improve operational efficiency, reduce infrastructure costs, and securely manage applications and data from anywhere. As one of the trusted Cloud Service Companies in Pondicherry, Syscorp provides reliable Cloud Computing Service solutions that help businesses accelerate digital transformation with secure, scalable, and high-performance cloud infrastructure.
+                                Cloud computing delivers servers, storage, databases, networking, software, and security over the internet instead of traditional on-premise infrastructure. It helps businesses access scalable IT resources, reduce infrastructure costs, improve efficiency, and securely manage applications and data from anywhere. As one of the trusted Cloud Service Companies in Pondicherry, we provide reliable Cloud Computing Service solutions that support secure, scalable, and high-performance digital transformation.
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">

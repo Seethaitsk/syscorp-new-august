@@ -209,24 +209,14 @@ export default function MetaAdsPage() {
                         <div className="gsap-fade-up lg:col-span-5 relative w-full h-[450px] md:h-[550px] flex items-center justify-center mt-12 lg:mt-0">
 
                             {/* Primary Large Image */}
-                            <div className="relative w-[75%] h-[85%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.1)] z-10 group">
+                            <div className="relative w-[85%] sm:w-[80%] h-[90%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.12)] z-10 group">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop"
-                                    alt="Meta Ads Team"
+                                    src="/images/services_images/metaad-1.jpeg"
+                                    alt="Meta Ads Management"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
                                 <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500" />
-                            </div>
-
-                            {/* Secondary Overlapping Image (Bottom Right) */}
-                            <div className="absolute -bottom-4 right-0 lg:-right-4 w-[65%] h-[45%] rounded-[16px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.2)] border-[4px] border-white z-20 group">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
-                                    alt="Meta Ads Dashboard"
-                                    fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                />
                             </div>
 
                             {/* Floating Badge (Top Right) */}
@@ -497,8 +487,8 @@ export default function MetaAdsPage() {
                             What Our Meta Ads Management Services Cover
                         </h2>
                         <p className="text-slate-300 text-[16px] leading-relaxed max-w-2xl mx-auto">
-                            At SysCrop, we provide complete Meta Ads Services in Pondicherry to help businesses create, manage, and optimize successful advertising campaigns across Facebook and Instagram. From campaign planning and audience research to ad creation, optimization, and performance tracking, we handle every aspect of Meta advertising to help businesses reach their marketing goals effectively.
-                        </p>
+                           Our Meta Ads Management Services in Pondicherry help businesses create, manage, and optimize effective Facebook and Instagram advertising campaigns. We handle campaign planning, audience targeting, ad creation, optimization, and performance tracking to improve reach, engagement, and conversions.  
+                           </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">

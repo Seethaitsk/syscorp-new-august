@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Cpu, Network, Zap, Sparkles, MessageSquareQuote } from "lucide-react";
+import { Zap, Sparkles, MessageSquareQuote } from "lucide-react";
 
 if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
@@ -45,7 +45,7 @@ export default function CompanyOverview() {
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-blue-100/60 dark:bg-blue-600/20 blur-[120px] rounded-full ai-glow-pulse" />
                 <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-purple-100/50 dark:bg-purple-600/20 blur-[120px] rounded-full ai-glow-pulse" style={{ animationDelay: '1.2s' }} />
-                
+
                 {/* Abstract Grid Lines */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.03)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)]"></div>
             </div>
@@ -57,14 +57,14 @@ export default function CompanyOverview() {
                         <span className="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400 animate-pulse" />
                         <span>About Syscorp</span>
                     </div>
-                    
+
                     <h2 className="ai-reveal text-5xl md:text-6xl lg:text-[72px] font-extrabold text-slate-900 dark:text-white leading-[1.1] tracking-tight mb-8">
                         Building Intelligent <br className="hidden md:block" /> Software Solutions for a <br className="md:hidden" />
                         <span className="text-[#2563eb] dark:text-[#3b82f6]">
                             Digital Future
                         </span>
                     </h2>
-                    
+
                     <p className="ai-reveal text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-4xl">
                         At Syscorp, we believe technology should solve real business challenges, simplify operations, and create opportunities for sustainable growth. As a leading Software Company in Pondicherry, we help startups, SMEs, and enterprises transform their ideas into innovative digital solutions that deliver measurable results.
                     </p>
@@ -72,17 +72,13 @@ export default function CompanyOverview() {
 
                 {/* Unique AI Bento Grid Layout */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    
+
                     {/* Left Column: Data Processing (Info 1) */}
                     <div className="md:col-span-1 flex flex-col gap-6">
                         <div className="ai-reveal group relative h-full bg-white dark:bg-white/[0.02] border border-slate-100 dark:border-white/10 rounded-[2rem] p-8 overflow-hidden hover:bg-slate-50/50 dark:hover:bg-white/[0.04] transition-all duration-500 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_15px_35px_rgba(0,0,0,0.04)]">
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 dark:from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                            
-                            <div className="relative z-10 flex flex-col h-full">
-                                <div className="w-14 h-14 rounded-2xl bg-blue-50 dark:bg-blue-500/20 border border-blue-100 dark:border-blue-500/30 flex items-center justify-center text-blue-600 dark:text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-500">
-                                    <Network className="w-7 h-7" />
-                                </div>
-                                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">Ecosystem Transformation</h3>
+
+                            <div className="relative z-10 flex flex-col h-full justify-center">
                                 <p className="text-[15px] text-slate-600 dark:text-slate-400 leading-relaxed m-0">
                                     Our team combines technical expertise, creative thinking, and industry experience to build secure, scalable, and user-focused software applications. Whether you're launching a new product, modernizing an existing system, or automating business operations, we provide end-to-end software development services tailored to your business goals.
                                 </p>
@@ -99,7 +95,7 @@ export default function CompanyOverview() {
                             className="object-cover opacity-85 dark:opacity-70 group-hover:scale-[1.02] transition-all duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                        
+
                         {/* Scanning Laser Line */}
                         <div className="absolute left-0 right-0 h-[2px] bg-blue-500/80 shadow-[0_0_15px_rgba(59,130,246,0.8)] animate-[scan_4s_ease-in-out_infinite]" />
 
@@ -141,35 +137,28 @@ export default function CompanyOverview() {
                     </div>
 
                     {/* Bottom Left: Info 2 */}
-                    <div className="md:col-span-2 ai-reveal bg-white dark:bg-white/[0.02] border border-slate-100 dark:border-white/10 rounded-[2rem] p-8 md:p-10 hover:bg-slate-50/50 dark:hover:bg-white/[0.04] transition-all duration-500 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_15px_35px_rgba(0,0,0,0.04)]">
-                        <div className="flex flex-col md:flex-row gap-8 items-start">
-                            <div className="w-14 h-14 rounded-2xl bg-purple-50 dark:bg-purple-500/20 border border-purple-100 dark:border-purple-500/30 flex items-center justify-center text-purple-600 dark:text-purple-400 shrink-0">
-                                <Cpu className="w-7 h-7" />
-                            </div>
-                            <div className="space-y-4">
-                                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">End-to-End Solutions</h3>
-                                <p className="text-[15.5px] text-slate-600 dark:text-slate-400 leading-relaxed m-0">
-                                    From custom software and web development to mobile applications, cloud solutions, UI/UX design, and digital transformation consulting, Syscorp partners with businesses that want to innovate, grow, and stay ahead in today's competitive market.
-                                </p>
-                            </div>
-                        </div>
+                    <div className="md:col-span-2 ai-reveal bg-white dark:bg-white/[0.02] border border-slate-100 dark:border-white/10 rounded-[2rem] p-8 md:p-10 hover:bg-slate-50/50 dark:hover:bg-white/[0.04] transition-all duration-500 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_15px_35px_rgba(0,0,0,0.04)] flex flex-col justify-center">
+                        <p className="text-[15.5px] text-slate-600 dark:text-slate-400 leading-relaxed m-0">
+                            From custom software and web development to mobile applications, cloud solutions, UI/UX design, and digital transformation consulting, Syscorp partners with businesses that want to innovate, grow, and stay ahead in today's competitive market.
+                        </p>
                     </div>
 
                     {/* Bottom Right: Quote */}
                     <div className="md:col-span-1 ai-reveal relative bg-gradient-to-br from-blue-50/80 to-purple-50/70 dark:from-blue-900/40 dark:to-purple-900/40 border border-blue-100 dark:border-blue-500/30 rounded-[2rem] p-8 overflow-hidden group shadow-[0_8px_30px_rgb(0,0,0,0.02)]">
                         <MessageSquareQuote className="absolute -bottom-4 -right-4 w-32 h-32 text-blue-600/5 dark:text-blue-500/10 group-hover:scale-110 transition-transform duration-700" />
-                        
+
                         <div className="relative z-10 h-full flex flex-col justify-center">
                             <p className="text-xl font-semibold text-slate-800 dark:text-white leading-relaxed italic">
-                                "We don't just build software—we build long-term partnerships based on trust, transparency, quality, and continuous innovation."
+                                "We don't just build software; we build long-term partnerships based on trust, transparency, quality, and continuous innovation."
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             {/* Inline styles for custom animations */}
-            <style dangerouslySetInnerHTML={{__html: `
+            <style dangerouslySetInnerHTML={{
+                __html: `
                 @keyframes scan {
                     0% { top: 0%; opacity: 0; }
                     10% { opacity: 1; }
