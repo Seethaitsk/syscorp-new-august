@@ -640,7 +640,7 @@ export default function AchievementsSection() {
               </Link>
 
               <Link
-                href="/services/website-development"
+                href="/services/website-development/full-stack"
                 className="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/15 text-slate-900 dark:text-white font-extrabold text-sm px-6 py-4 rounded-full border border-slate-200 dark:border-white/15 transition-all duration-300"
               >
                 Explore Stack

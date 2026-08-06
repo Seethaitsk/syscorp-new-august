@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 const plans = [
   {
     name: "SEO & Growth Plan",
     price: "$149",
+    href: "/services/seo-services/seo",
     iconBg: "#10B981", // Emerald
     isPopular: false,
     desc: "Boost your online visibility, search rankings, and attract organic traffic with our growth services.",
@@ -24,6 +26,7 @@ const plans = [
   {
     name: "Website Development Plan",
     price: "$299",
+    href: "/services/website-development/web-development",
     iconBg: "#1A5CDD", // Brand Blue
     isPopular: true,
     desc: "Get a stunning, custom-built website optimized for performance, UX, and direct conversions.",
@@ -43,6 +46,7 @@ const plans = [
   {
     name: "Cloud & Hosting Plan",
     price: "$89",
+    href: "/services/website-development/cloud-server",
     iconBg: "#8B5CF6", // Purple
     isPopular: false,
     desc: "Secure, reliable, and high-performance server hosting designed for seamless scaling.",
@@ -288,9 +292,9 @@ export default function PricingSection() {
                   ))}
                 </ul>
 
-                <button className={`sky-pricing-cta ${p.isPopular ? "cta-popular" : "cta-standard"}`}>
+                <Link href={p.href} className={`sky-pricing-cta ${p.isPopular ? "cta-popular" : "cta-standard"}`}>
                   Get Started
-                </button>
+                </Link>
               </div>
 
             </div>

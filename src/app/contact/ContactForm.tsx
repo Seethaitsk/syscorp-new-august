@@ -26,6 +26,12 @@ export default function ContactForm() {
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
+        if (name === "fullName") {
+            // Only accept alphabets and spaces
+            const alphabetOnly = value.replace(/[^a-zA-Z\s]/g, "");
+            setFormData(prev => ({ ...prev, [name]: alphabetOnly }));
+            return;
+        }
         setFormData(prev => ({ ...prev, [name]: value }));
     };
 
@@ -117,6 +123,8 @@ export default function ContactForm() {
                             value={formData.fullName}
                             onChange={handleChange}
                             placeholder="Daniel Scoot"
+                            pattern="[a-zA-Z\s]+"
+                            title="Full name should contain only alphabets"
                             className="w-full px-5 py-4 rounded-xl border border-[#dbeafe] bg-[#F0F8FF]/60 text-slate-900 placeholder:text-slate-450 focus:bg-white focus:border-blue-600 outline-none transition-all duration-200 text-sm"
                             required
                         />
