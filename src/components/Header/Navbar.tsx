@@ -724,6 +724,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  prefetch={true}
                   className={`sky-nav-link${pathname === link.href ? " active" : ""}`}
                 >
                   {link.label}
@@ -734,12 +735,12 @@ export default function Navbar() {
 
           {/* CTA (Sign In) + Hamburger */}
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <a href="/contact" className="sky-cta-btn">
+            <Link href="/contact" prefetch={true} className="sky-cta-btn">
               Sign In
               <svg style={{ width: "14px", height: "14px" }} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
-            </a>
+            </Link>
             <button
               className={`sky-ham${mobileOpen ? " open" : ""}`}
               onClick={() => setMobileOpen((v) => !v)}

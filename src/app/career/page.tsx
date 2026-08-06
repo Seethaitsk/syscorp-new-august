@@ -100,8 +100,12 @@ export default function CareerPage() {
         const response = await fetch("https://wadmin.syscorp.in/api/jobs", {
           headers: { accept: "*/*" },
         });
+
+        
         if (!response.ok) throw new Error("Failed to fetch job listings.");
         const result = await response.json();
+
+        // console.log(result);
         if (isMounted) {
           const list = Array.isArray(result) ? result : result.data || [];
           setJobs(list);
@@ -137,6 +141,7 @@ export default function CareerPage() {
         const result = await response.json();
         if (isMounted && result && result.data) {
           setJobDetail(result.data);
+        //   console.log(result.data);
         }
       } catch (err) {
         console.error("Job detail error:", err);

@@ -1,9 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import Lenis from "lenis";
 
 export default function SmoothScrollProvider() {
+  const pathname = usePathname();
+  const lenisRef = useRef<Lenis | null>(null);
+
   useEffect(() => {
     // Only initialize on client side and if user prefers normal motion
     if (typeof window === "undefined") return;
@@ -23,6 +27,7 @@ export default function SmoothScrollProvider() {
       wheelMultiplier: 1.0,
       touchMultiplier: 1.5,
     });
+    lenisRef.current = lenis;
 
     // Integrate with requestAnimationFrame loop
     let rafId: number;
@@ -35,9 +40,20 @@ export default function SmoothScrollProvider() {
     // Clean up on component unmount
     return () => {
       lenis.destroy();
+      lenisRef.current = null;
       cancelAnimationFrame(rafId);
     };
   }, []);
+
+  // Scroll to top immediately on route change
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname]);
 
   return null;
 }

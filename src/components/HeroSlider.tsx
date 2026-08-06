@@ -27,8 +27,17 @@ const cards = [
 // Duplicate cards to enable infinite looping layout
 const extendedCards = [...cards, ...cards, ...cards];
 
-const words = ["Ai automation", "Business", "Websites", "Crm"];
-const colors = ["#a78bfa", "#60a5fa", "#34d399", "#22d3ee"];
+const words = [
+  "Software",
+  "Websites",
+  "Mobile Apps",
+  "CRM Systems",
+  "ERP Systems",
+  "Cloud Solutions",
+  "AI Applications",
+  "Web Portals"
+];
+const colors = ["#38bdf8", "#a855f7", "#34d399", "#f59e0b", "#ec4899", "#3b82f6", "#10b981", "#6366f1"];
 
 function TypewriterText() {
   const [typedText, setTypedText] = useState("");
@@ -101,7 +110,7 @@ export default function HeroSlider() {
       clearTimeout(timer);
       window.removeEventListener("resize", handleResize);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Auto-play timer for the slider
@@ -110,6 +119,62 @@ export default function HeroSlider() {
       setCurrentSlide((prev) => (prev + 1) % 4);
     }, 4000);
     return () => clearInterval(timer);
+  }, []);
+
+  // Card hover magnetic 3D tilt & cursor tracking glow
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    let cleanupListeners: (() => void) | undefined;
+
+    const timer = setTimeout(() => {
+      const cards = document.querySelectorAll(".sky-prev-card");
+      
+      const mouseMoveHandlers = new Map<Element, (e: MouseEvent) => void>();
+      const mouseLeaveHandlers = new Map<Element, () => void>();
+
+      cards.forEach((card) => {
+        const handleMouseMove = (e: MouseEvent) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          (card as HTMLElement).style.setProperty("--mouse-x", `${x}px`);
+          (card as HTMLElement).style.setProperty("--mouse-y", `${y}px`);
+
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = -((y - centerY) / centerY) * 10;
+          const rotateY = ((x - centerX) / centerX) * 10;
+
+          (card as HTMLElement).style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        };
+
+        const handleMouseLeave = () => {
+          (card as HTMLElement).style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+        };
+
+        card.addEventListener("mousemove", handleMouseMove as EventListener);
+        card.addEventListener("mouseleave", handleMouseLeave);
+
+        mouseMoveHandlers.set(card, handleMouseMove);
+        mouseLeaveHandlers.set(card, handleMouseLeave);
+      });
+
+      cleanupListeners = () => {
+        cards.forEach((card) => {
+          const move = mouseMoveHandlers.get(card);
+          const leave = mouseLeaveHandlers.get(card);
+          if (move) card.removeEventListener("mousemove", move as EventListener);
+          if (leave) card.removeEventListener("mouseleave", leave);
+        });
+      };
+    }, 500);
+
+    return () => {
+      clearTimeout(timer);
+      if (cleanupListeners) cleanupListeners();
+    };
   }, []);
 
   useEffect(() => {
@@ -124,13 +189,32 @@ export default function HeroSlider() {
         gsap.set(".sky-prev-cards-container", { opacity: 0, y: 80, pointerEvents: "none" });
 
         const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-        tl.from(".sky-banner-tag", { y: -30, opacity: 0, duration: 0.8 })
-          .from(".sky-banner-heading", { y: 40, opacity: 0, duration: 1.0 }, "-=0.6")
-          .from(".sky-banner-sub", { y: 25, opacity: 0, duration: 0.8 }, "-=0.6")
+        tl.from(".sky-banner-tag", { y: -30, opacity: 0, duration: 0.8 });
+        
+        gsap.set(".hero-word", { transformPerspective: 1000, transformStyle: "preserve-3d" });
+        tl.fromTo(".hero-word",
+          { yPercent: 100, rotateX: -60, filter: "blur(8px)", opacity: 0 },
+          { yPercent: 0, rotateX: 0, filter: "blur(0px)", opacity: 1, duration: 1.2, stagger: 0.08, ease: "power4.out" },
+          "-=0.6"
+        )
+          .from(".sky-banner-sub", { y: 25, opacity: 0, stagger: 0.15, duration: 0.8 }, "-=0.6")
           .from(".sky-banner-ctas",
             { y: 30, scale: 0.9, opacity: 0, duration: 0.8, ease: "power3.out" }, "-=0.5")
           .from(".sky-bullet-item", { x: -20, opacity: 0, stagger: 0.12, duration: 0.6 }, "-=0.4")
-          .from(".sky-orbit-icon-wrap", { scale: 0, opacity: 0, stagger: 0.08, duration: 0.9, ease: "back.out(1.5)" }, "-=0.8");
+          .from(".sky-orbit-icon-wrap", { scale: 0, opacity: 0, stagger: 0.08, duration: 0.9, ease: "back.out(1.5)" }, "-=0.8")
+          .add(() => {
+            document.querySelectorAll(".sky-orbit-icon-wrap").forEach((icon, i) => {
+              gsap.to(icon, {
+                x: "random(-12, 12)",
+                y: "random(-12, 12)",
+                duration: "random(4, 7)",
+                repeat: -1,
+                yoyo: true,
+                ease: "sine.inOut",
+                delay: i * 0.15
+              });
+            });
+          });
 
         const scrollTl = gsap.timeline({
           scrollTrigger: {
@@ -173,11 +257,16 @@ export default function HeroSlider() {
           duration: 0.5
         }, 0.1);
 
-        // 5. Slider slides up and fades in on scroll down
+        // 5. Slider slides up and fades in on scroll down with 3D cards perspective reveal
         scrollTl.fromTo(".sky-prev-cards-container",
-          { y: 80, opacity: 0, pointerEvents: "none" },
-          { y: 0, opacity: 1, pointerEvents: "auto", ease: "power2.out", duration: 0.5, immediateRender: false },
+          { y: 100, opacity: 0, pointerEvents: "none" },
+          { y: 0, opacity: 1, pointerEvents: "auto", ease: "power3.out", duration: 0.6, immediateRender: false },
           0.4
+        );
+        scrollTl.fromTo(".sky-prev-card",
+          { rotateY: 22, rotateX: 12, z: -80, opacity: 0, transformPerspective: 1000 },
+          { rotateY: 0, rotateX: 0, z: 0, opacity: 1, stagger: 0.12, ease: "power2.out", duration: 0.7, immediateRender: false },
+          0.48
         );
       });
 
@@ -187,13 +276,50 @@ export default function HeroSlider() {
         gsap.set(".sky-prev-cards-container", { opacity: 1, y: 0, pointerEvents: "auto" });
 
         const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-        tl.from(".sky-banner-tag", { y: -30, opacity: 0, duration: 0.6 })
-          .from(".sky-banner-heading", { y: 40, opacity: 0, duration: 0.8 }, "-=0.4")
-          .from(".sky-banner-sub", { y: 25, opacity: 0, duration: 0.6 }, "-=0.4")
+        tl.from(".sky-banner-tag", { y: -30, opacity: 0, duration: 0.6 });
+        
+        gsap.set(".hero-word", { transformPerspective: 1000, transformStyle: "preserve-3d" });
+        tl.fromTo(".hero-word",
+          { yPercent: 100, rotateX: -60, filter: "blur(8px)", opacity: 0 },
+          { yPercent: 0, rotateX: 0, filter: "blur(0px)", opacity: 1, duration: 1.0, stagger: 0.06, ease: "power4.out" },
+          "-=0.4"
+        )
+          .from(".sky-banner-sub", { y: 25, opacity: 0, stagger: 0.12, duration: 0.6 }, "-=0.4")
           .from(".sky-banner-ctas",
             { y: 30, scale: 0.9, opacity: 0, duration: 0.6, ease: "power3.out" }, "-=0.3")
           .from(".sky-bullet-item", { x: -20, opacity: 0, stagger: 0.08, duration: 0.5 }, "-=0.2")
-          .from(".sky-orbit-icon-wrap", { scale: 0, opacity: 0, stagger: 0.05, duration: 0.6, ease: "back.out(1.2)" }, "-=0.4");
+          .from(".sky-orbit-icon-wrap", { scale: 0, opacity: 0, stagger: 0.05, duration: 0.6, ease: "back.out(1.2)" }, "-=0.4")
+          .add(() => {
+            document.querySelectorAll(".sky-orbit-icon-wrap").forEach((icon, i) => {
+              gsap.to(icon, {
+                x: "random(-10, 10)",
+                y: "random(-10, 10)",
+                duration: "random(3.5, 6)",
+                repeat: -1,
+                yoyo: true,
+                ease: "sine.inOut",
+                delay: i * 0.12
+              });
+            });
+          });
+
+        // Staggered 3D reveal for cards on mobile
+        gsap.fromTo(".sky-prev-card",
+          { y: 50, rotateX: 15, opacity: 0, transformPerspective: 1000 },
+          {
+            y: 0,
+            rotateX: 0,
+            opacity: 1,
+            stagger: 0.1,
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".sky-prev-cards-container",
+              start: "top 85%",
+              toggleActions: "play none none none"
+            }
+          }
+        );
       });
 
     }, containerRef);
@@ -523,40 +649,37 @@ export default function HeroSlider() {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, background 0.4s ease;
           position: relative;
           overflow: hidden;
+          transform-style: preserve-3d;
         }
         /* Border glow on hover */
         .sky-prev-card:hover {
-          transform: translateY(-8px);
           box-shadow: 0 24px 50px var(--card-accent-hover-shadow, rgba(37, 99, 235, 0.4)), 
                       0 4px 16px rgba(0,0,0,0.6),
                       inset 0 0 20px rgba(255, 255, 255, 0.04);
           border-color: var(--card-accent, #2563EB);
-          background: radial-gradient(circle at 80% 20%, var(--card-accent-alpha, rgba(37, 99, 235, 0.4)) 0%, transparent 65%), 
-                      radial-gradient(circle at 20% 80%, var(--card-accent-alpha, rgba(37, 99, 235, 0.2)) 0%, transparent 65%), 
-                      rgba(6, 10, 26, 0.92);
+          background: rgba(6, 10, 26, 0.92);
         }
 
         /* Neon Glow spots */
         .sky-card-glow {
           position: absolute;
-          top: -60px;
-          right: -60px;
-          width: 220px;
-          height: 220px;
+          top: var(--mouse-y, -100px);
+          left: var(--mouse-x, -100px);
+          transform: translate(-50%, -50%);
+          width: 300px;
+          height: 300px;
           background: radial-gradient(circle, var(--card-accent) 0%, transparent 70%);
-          opacity: 0.35;
-          filter: blur(25px);
+          opacity: 0;
+          filter: blur(40px);
           pointer-events: none;
           z-index: 0;
-          transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-          animation: skyGlowBreathe 7s ease-in-out infinite alternate;
+          transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .sky-prev-card:hover .sky-card-glow {
-          transform: scale(1.25);
-          opacity: 0.55;
+          opacity: 0.65;
         }
         
         .sky-card-glow-2 {
@@ -813,7 +936,7 @@ export default function HeroSlider() {
                 loop
                 playsInline
                 aria-label="Hero background video"
-                style={{ zIndex: 1, opacity: 0.22 }}
+                style={{ zIndex: 1, opacity: 0.55 }}
                 className="absolute inset-0 w-full h-full object-cover"
                 onPlay={() => setVideoActive(true)}
                 onPlaying={() => setVideoActive(true)}
@@ -822,27 +945,37 @@ export default function HeroSlider() {
                 <track kind="captions" src="data:text/vtt,WEBVTT" default />
               </video>
             )}
-            {/* Dark overlay */}
-            <div className="absolute inset-0 hero-video-overlay" aria-hidden="true" style={{ background: "linear-gradient(to bottom, rgba(2,7,31,0.80) 0%, rgba(4,8,36,0.65) 50%, rgba(2,7,31,0.78) 100%)", zIndex: 2 }} />
+            {/* Dark overlay with radial vignette for video-text blending */}
+            <div className="absolute inset-0 hero-video-overlay" aria-hidden="true" style={{ background: "radial-gradient(circle at center, rgba(10, 15, 30, 0.4) 0%, rgba(2, 7, 31, 0.90) 80%)", zIndex: 2 }} />
             {/* Play-button kill layer */}
             <div className="hero-video-kill" aria-hidden="true" />
           </div>
 
           {/* Content — centered vertically, pushed slightly below midpoint */}
-          <div className="sky-hero-text-aligner" style={{ position: "relative", zIndex: 10, display: "flex", flexDirection: "column", alignItems: "center", padding: "0 24px", width: "100%", paddingTop: "10vh", paddingBottom: "4vh" }}>
+          <div className="sky-hero-text-aligner" style={{ position: "relative", zIndex: 10, display: "flex", flexDirection: "column", alignItems: "center", padding: "0 24px", width: "100%", paddingTop: "22vh", paddingBottom: "4vh" }}>
+            {/* Dynamic Ambient Glowing Orbs */}
+            <div className="absolute w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(56,189,248,0.14)_0%,transparent_70%)] blur-[80px] pointer-events-none z-[-1] animate-pulse" style={{ top: "35%", left: "50%", transform: "translate(-50%, -50%)" }} />
+            <div className="absolute w-[450px] h-[450px] rounded-full bg-[radial-gradient(circle,rgba(168,85,247,0.12)_0%,transparent_70%)] blur-[90px] pointer-events-none z-[-1]" style={{ top: "45%", left: "45%", transform: "translate(-50%, -50%)", animation: "pulse 12s ease-in-out infinite alternate" }} />
 
             {/* Heading and Tag Container */}
             <div className="flex flex-col items-center text-center">
               {/* Tag */}
               <span className="sky-banner-tag">
-                One Platform. Every Customer.
+                FUTURE-READY SOLUTIONS
               </span>
 
               {/* Heading */}
-              <h1 className="sky-banner-heading">
-                Seamless integrations
-                <br />
-                with your <TypewriterText />
+              <h1 className="sky-banner-heading flex flex-col items-center">
+                <span className="block overflow-hidden py-1 leading-none">
+                  <span className="inline-block hero-word">Software</span>{" "}
+                  <span className="inline-block hero-word">Company</span>{" "}
+                  <span className="inline-block hero-word">in</span>{" "}
+                  <span className="inline-block hero-word">Pondicherry</span>
+                </span>
+                <span className="block overflow-hidden py-1 leading-none">
+                
+                  <span className="inline-block hero-word"><TypewriterText /></span>
+                </span>
               </h1>
             </div>
 
@@ -851,13 +984,19 @@ export default function HeroSlider() {
             <div className="flex flex-col items-center text-center">
               {/* Subtext */}
               <p className="sky-banner-sub">
-                We specialize in delivering full-cycle software solutions and AI-driven marketing tools designed to accelerate digital transformation.
+              Build smarter with Syscorp. We create custom software, modern websites, intuitive UI/UX designs, mobile applications, and cloud-powered solutions that help businesses scale with confidence.
+
               </p>
+
+              {/* Description */}
+              {/* <p className="sky-banner-sub !mt-[-16px]">
+                Build smarter with Syscorp. We create custom software, modern websites, intuitive UI/UX designs, mobile applications, and cloud-powered solutions that help businesses scale with confidence.
+              </p> */}
 
               {/* Buttons */}
               <div className="sky-banner-ctas">
                 <a href="/contact" className="sky-banner-btn-primary sky-glow-hover">
-                  Ready to Try Free
+                  Get Free Consultation
                   <span className="sky-banner-arrow-circle" aria-hidden="true">
                     <svg width="12" height="12" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -865,7 +1004,7 @@ export default function HeroSlider() {
                   </span>
                 </a>
                 <a href="/services" className="sky-banner-btn-secondary">
-                  Book a Demo
+                 View Our Services
                   <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
@@ -875,13 +1014,13 @@ export default function HeroSlider() {
               {/* Bullet Points */}
               <div className="sky-banner-bullets" role="list">
                 <div className="sky-bullet-item" role="listitem">
-                  <span aria-hidden="true" style={{ color: "#60a5fa" }}>✓</span> No credit card required
+                  <span aria-hidden="true" style={{ color: "#60a5fa" }}>✓</span> Experienced Development Team
                 </div>
                 <div className="sky-bullet-item" role="listitem">
-                  <span aria-hidden="true" style={{ color: "#60a5fa" }}>✓</span> Cancel anytime &amp; no hidden charges
+                  <span aria-hidden="true" style={{ color: "#60a5fa" }}>✓</span> End-to-End Project Support
                 </div>
                 <div className="sky-bullet-item" role="listitem">
-                  <span aria-hidden="true" style={{ color: "#60a5fa" }}>✓</span> Money back guarantee
+                  <span aria-hidden="true" style={{ color: "#60a5fa" }}>✓</span> Scalable &amp; Secure Solutions
                 </div>
               </div>
             </div>
