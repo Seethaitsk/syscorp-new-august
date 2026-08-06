@@ -208,16 +208,33 @@ export default function MetaAdsPage() {
                         {/* Image Right Side (Redesigned with Overlapping Layout) */}
                         <div className="gsap-fade-up lg:col-span-5 relative w-full h-[450px] md:h-[550px] flex items-center justify-center mt-12 lg:mt-0">
 
-                            <div className="relative w-full h-[500px] rounded-[24px] ">
-  <Image
-    src="/images/seoeeee.png"
-    alt="SEO Services"
-    fill
-    className="object-cover"
-    sizes="100vw"
-    priority
-  />
-</div>
+                            {/* Primary Large Image */}
+                            <div className="relative w-[85%] sm:w-[80%] h-[90%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.12)] z-10 group">
+                                <Image
+                                    src="/images/services_images/metaad-1.jpeg"
+                                    alt="Meta Ads Management"
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500" />
+                            </div>
+
+                            {/* Floating Badge (Top Right) */}
+                            <div className="absolute top-16 -right-6 lg:-right-8 bg-white px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2.5 border border-slate-100 z-30 animate-bounce-slow">
+                                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
+                                <p className="text-[#011146] font-bold text-[13px]">Active Clients 200+</p>
+                            </div>
+
+                            {/* Floating Badge (Bottom Left) */}
+                            <div className="absolute bottom-24 -left-6 lg:-left-8 bg-white px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-100 z-30 animate-bounce-slow" style={{ animationDelay: "1s" }}>
+                                <div className="w-10 h-10 bg-[#F0F8FF] text-[#1A5CDD] rounded-full flex items-center justify-center font-bold text-lg shadow-sm border border-[#1A5CDD]/10">
+                                    <TrendingUp size={18} strokeWidth={2.5} />
+                                </div>
+                                <div>
+                                    <p className="text-[#011146] font-extrabold text-[14px]">99.8% Success</p>
+                                    <p className="text-slate-500 text-[11px] font-medium mt-0.5">Project Delivery Rate</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -470,8 +487,8 @@ export default function MetaAdsPage() {
                             What Our Meta Ads Management Services Cover
                         </h2>
                         <p className="text-slate-300 text-[16px] leading-relaxed max-w-2xl mx-auto">
-                            At SysCrop, we provide complete Meta Ads Services in Pondicherry to help businesses create, manage, and optimize successful advertising campaigns across Facebook and Instagram. From campaign planning and audience research to ad creation, optimization, and performance tracking, we handle every aspect of Meta advertising to help businesses reach their marketing goals effectively.
-                        </p>
+                           Our Meta Ads Management Services in Pondicherry help businesses create, manage, and optimize effective Facebook and Instagram advertising campaigns. We handle campaign planning, audience targeting, ad creation, optimization, and performance tracking to improve reach, engagement, and conversions.  
+                           </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">

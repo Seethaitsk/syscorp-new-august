@@ -15,11 +15,11 @@ import CompanyOverview from "@/components/CompanyOverview";
 import CompanyStory from "@/components/CompanyStory";
 import MissionVisionSection from "@/components/MissionVisionSection";
 import CoreValues from "@/components/CoreValues";
-import TeamSection from "@/components/TeamSection";
 import ProcessSection from "@/components/ProcessSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TechExpertise from "@/components/TechExpertise";
 import IndustriesSection from "@/components/IndustriesSection";
+import OurTeam from "@/components/OurTeam";
 
 
 if (typeof window !== "undefined") {
@@ -77,10 +77,10 @@ const Aboutus = () => {
             <HeaderBanner
                 title={
                     <>
-                        We are a <span className="text-[#38bdf8] font-serif italic font-normal">selectively skilled</span> tech partner with a strong focus.
+                        We Are Syscorp – A <span className="text-[#38bdf8] font-serif italic font-normal">Leading Software Company</span> in Pondicherry.
                     </>
                 }
-                description="Empowering businesses with cutting-edge software solutions, Syscorp delivers customized technology services designed to accelerate growth and innovation. As a leading Software Company in Pondicherry, we transform ideas into powerful digital experiences through modern development practices, user-centric design, and reliable engineering excellence."
+                description="Recognized for delivering intelligent software solutions with innovation, technical excellence, and a commitment to long-term business success."
             />
 
             <CompanyOverview />
@@ -88,7 +88,7 @@ const Aboutus = () => {
             <MissionVisionSection />
             <CoreValues />
 
-            <TeamSection />
+            <OurTeam />
             <ProcessSection />
             <WhyChooseUs />
             <TechExpertise />

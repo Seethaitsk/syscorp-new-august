@@ -67,7 +67,7 @@ export default function WebDevelopmentPondicherryPage() {
             image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=800&auto=format&fit=crop",
             tag: "High Conversion Store",
             icon: ShoppingCart,
-            desc: "A successful online store requires more than just attractive design. It needs secure payment systems, smooth navigation, fast performance, and an excellent shopping experience.",
+            desc: "Our Ecommerce Website Development Services help businesses launch powerful online stores that increase sales and improve customer satisfaction.",
             features: [
                 "Product management systems",
                 "Secure payment gateway integration",
@@ -420,11 +420,11 @@ export default function WebDevelopmentPondicherryPage() {
                         <div className="lg:col-span-7 gsap-fade-up">
                             <div className="inline-flex items-center gap-2.5 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[13px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
                                 <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
-                                Premier Web Solutions
+                                Next-Gen Web Development
                             </div>
 
                             <h1 className="text-3xl md:text-5xl lg:text-[48px] font-bold text-[#011146] tracking-tight leading-[1.2] mb-6">
-                                Leading <span className="text-[#1A5CDD]">Web Development</span> Company in Pondicherry
+                                Professional <span className="text-[#1A5CDD]">Web Development</span> Services in Pondicherry
                             </h1>
 
                             <div className="space-y-4 mb-8">
@@ -962,10 +962,10 @@ export default function WebDevelopmentPondicherryPage() {
                             Technologies & Frameworks We Use
                         </h2>
                         <p className="text-slate-600 text-[16.5px] leading-[1.8] mb-4">
-                            As a modern Web Development Company in Pondicherry, SysCrop uses the latest technologies, frameworks, and development tools to build secure, scalable, and high-performing websites and web applications. Our experienced development team carefully selects the right technology stack based on your project requirements, business goals, and future growth plans.
+                            As a trusted Web Development Company in Pondicherry, we use modern technologies and frameworks to build secure, scalable, and high-performing websites and web applications tailored to your business needs. 
                         </p>
                         <p className="text-slate-600 text-[16.5px] leading-[1.8]">
-                            Whether you need a professional business website, an advanced eCommerce platform, a custom web application, or a complete digital solution, our Professional Web Development Services are powered by industry-leading technologies that ensure flexibility, reliability, speed, and long-term performance.
+                            Our Professional Web Development Services include business websites, eCommerce platforms, and custom web applications that deliver speed, reliability, flexibility, and long-term performance. 
                         </p>
                     </div>
 
@@ -1082,193 +1082,96 @@ export default function WebDevelopmentPondicherryPage() {
 
                 <div className="container mx-auto max-w-7xl px-6 relative z-10">
 
-                    {/* Section Top Grid: Text Header (Left 7) + Hero Image Visual (Right 5) */}
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-20">
-                        {/* Text Content */}
-                        <div className="lg:col-span-7">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/15 text-[#38bdf8] border border-[#38bdf8]/20 px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 backdrop-blur-md">
-                                <Sparkles size={14} /> Why Choose Us
-                            </span>
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-[1.2] tracking-tight">
-                                Why Choose <span className="bg-gradient-to-r from-[#38bdf8] via-blue-300 to-indigo-300 bg-clip-text text-transparent">SysCrop</span> as Your Web Development Company in Pondicherry?
-                            </h2>
-                            <p className="text-slate-300/90 text-[16.5px] leading-[1.8] mb-5">
-                                Choosing the right Web Development Company in Pondicherry is essential for building a website that not only looks professional but also supports your business growth. At SysCrop, we combine creativity, technical expertise, and industry experience to deliver websites that are fast, secure, scalable, and designed to generate measurable results.
-                            </p>
-                            <p className="text-slate-300/90 text-[16.5px] leading-[1.8] mb-5">
-                                As a trusted Software Company in Pondicherry, we understand that every business has unique goals. That's why our Professional Web Development Services are tailored to meet your specific requirements, helping you establish a strong online presence, improve customer engagement, and stay ahead of the competition.
-                            </p>
-                            <p className="text-slate-300/90 text-[16.5px] leading-[1.8]">
-                                Whether you need a corporate website, an eCommerce platform, or a custom web application, our Web Development Services in Pondicherry are designed to deliver long-term value through innovative technology, user-focused design, and reliable ongoing support.
-                            </p>
-                        </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                        {/* Left Side: Text Content */}
+                        <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
+                            <div>
+                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/15 text-[#38bdf8] border border-[#38bdf8]/20 px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 backdrop-blur-md">
+                                    <Sparkles size={14} /> Why Choose Us
+                                </span>
+                                <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-[42px] font-extrabold text-white mb-6 leading-[1.2] tracking-tight">
+                                    Why Choose <span className="bg-gradient-to-r from-[#38bdf8] via-blue-300 to-indigo-300 bg-clip-text text-transparent">SysCrop</span> as Your Web Development Company in Pondicherry?
+                                </h2>
+                                <p className="text-slate-300/90 text-[16px] leading-[1.8] mb-5">
+                                    Choosing the right Web Development Company in Pondicherry is essential for building a website that supports your business growth. We combine creativity, technical expertise, and industry experience to deliver fast, secure, and scalable websites that generate measurable results.
+                                </p>
+                                <p className="text-slate-300/90 text-[16px] leading-[1.8] mb-5">
+                                    As a trusted Software Company in Pondicherry, we provide Professional Web Development Services tailored to your business goals, helping you strengthen your online presence and improve customer engagement.
+                                </p>
+                                <p className="text-slate-300/90 text-[16px] leading-[1.8] mb-8">
+                                    Whether you need a corporate website, eCommerce platform, or custom web application, we create innovative, scalable, and user-focused solutions that deliver long-term business value.
+                                </p>
 
-                        {/* Image Visual Container */}
-                        <div className="lg:col-span-5 relative flex justify-center">
-                            <div className="relative w-full max-w-lg">
-                                {/* Decorative Glowing Backplate */}
-                                <div className="absolute -inset-2 bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8] rounded-[32px] blur-xl opacity-30 group-hover:opacity-60 transition duration-700 pointer-events-none" />
-
-                                <div className="relative rounded-[28px] overflow-hidden shadow-2xl border-4 border-white/10 bg-[#0A1E5C]/60 backdrop-blur-md group">
-                                    <div className="relative aspect-[4/3] w-full">
-                                        <img
-                                            src="/images/technical-seo-bright.png"
-                                            alt="Technical SEO Performance"
-                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-[#030C2A]/80 via-transparent to-transparent pointer-events-none" />
-                                    </div>
-
-                                    {/* Floating Badge 1 - Technical SEO */}
-                                    <div className="absolute top-4 right-4 bg-[#071642]/85 backdrop-blur-md border border-white/15 rounded-2xl px-4 py-2.5 flex items-center gap-3 shadow-xl">
-                                        <div className="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">
-                                            99%
-                                        </div>
-                                        <div>
-                                            <p className="text-white text-xs font-bold">Technical SEO</p>
-                                            <p className="text-emerald-400 text-[10px] font-medium">Optimized Score</p>
-                                        </div>
-                                    </div>
-
-                                    {/* Floating Badge 2 - High Performance */}
-                                    <div className="absolute bottom-4 left-4 bg-[#071642]/85 backdrop-blur-md border border-white/15 rounded-2xl px-4 py-2.5 flex items-center gap-3 shadow-xl">
-                                        <div className="w-8 h-8 rounded-xl bg-[#38bdf8]/20 text-[#38bdf8] flex items-center justify-center">
-                                            <Zap size={16} />
-                                        </div>
-                                        <div>
-                                            <p className="text-white text-xs font-bold">Fast Speed</p>
-                                            <p className="text-slate-300 text-[10px]">Sub-second loading</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Link
+                                    href="/contact"
+                                    className="inline-flex items-center gap-3 bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] text-white px-8 py-4 rounded-xl font-bold text-sm hover:scale-[1.02] shadow-lg shadow-blue-900/40 transition-all"
+                                >
+                                    <span>Get Free Consultation</span>
+                                    <ArrowRight size={18} />
+                                </Link>
                             </div>
                         </div>
-                    </div>
 
-                    {/* Interactive Reasons Browser (No Scrollbar) */}
-                    <div className="pt-8 border-t border-white/10">
-                        <div className="text-center max-w-2xl mx-auto mb-12">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/15 text-[#38bdf8] border border-[#38bdf8]/20 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4 backdrop-blur-md">
-                                <Sparkles size={14} /> 10 Key Advantages
-                            </span>
-                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
-                                Discover What Sets Us Apart
-                            </h3>
-                            <p className="text-slate-300 text-sm md:text-base">
-                                Select a key advantage below to explore how our web development expertise empowers your business.
-                            </p>
-                        </div>
+                        {/* Right Side: 10 Key Points Interactive Accordion */}
+                        <div className="lg:col-span-7 space-y-3">
+                            <div className="flex items-center justify-between mb-4 pb-2 border-b border-white/10">
+                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/15 text-[#38bdf8] border border-[#38bdf8]/20 px-3.5 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider backdrop-blur-md">
+                                    <Sparkles size={14} /> 10 Key Advantages
+                                </span>
+                                <span className="text-slate-400 text-xs font-medium">Click any advantage to view details</span>
+                            </div>
 
-                        <div className="grid lg:grid-cols-12 gap-8 items-start">
+                            {whyChooseReasons.map((item, index) => {
+                                const Icon = item.icon;
+                                const isSelected = activeIndex === index;
 
-                            {/* Left Navigation Menu (5 Columns - No Scrollbar, All 10 Items Visible) */}
-                            <div className="lg:col-span-5 space-y-2.5">
-                                {whyChooseReasons.map((item, index) => {
-                                    const Icon = item.icon;
-                                    const isSelected = activeIndex === index;
-
-                                    return (
+                                return (
+                                    <div
+                                        key={index}
+                                        className={`rounded-2xl transition-all duration-300 border overflow-hidden ${isSelected
+                                            ? "border-[#38bdf8]/70 bg-gradient-to-br from-[#0B2368]/95 via-[#07194D]/95 to-[#030D2F]/98 text-white shadow-xl shadow-blue-900/40"
+                                            : "border-white/10 bg-white/5 text-slate-300 hover:bg-white/10 hover:border-white/20"
+                                            }`}
+                                    >
                                         <button
-                                            key={index}
-                                            onClick={() => setActiveIndex(index)}
-                                            className={`w-full rounded-2xl p-3.5 text-left transition-all duration-300 flex items-center justify-between border ${isSelected
-                                                ? "border-[#38bdf8]/70 bg-gradient-to-r from-[#1A5CDD]/50 via-[#0E2F80]/90 to-[#0A2570]/95 text-white shadow-lg shadow-blue-900/40"
-                                                : "border-white/5 bg-white/5 text-slate-300 hover:bg-white/10 hover:border-white/15"
-                                                }`}
+                                            onClick={() => setActiveIndex(isSelected ? -1 : index)}
+                                            className="w-full p-4 text-left flex items-center justify-between gap-4"
                                         >
                                             <div className="flex items-center gap-3.5 pr-2">
                                                 <div
-                                                    className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isSelected
-                                                        ? "bg-[#38bdf8] text-[#030C2A] shadow-md scale-105"
+                                                    className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isSelected
+                                                        ? "bg-gradient-to-br from-[#38bdf8] to-[#1A5CDD] text-white shadow-md scale-105"
                                                         : "bg-white/10 text-slate-300"
                                                         }`}
                                                 >
-                                                    <Icon size={18} />
+                                                    <Icon size={20} />
                                                 </div>
-                                                <span className={`font-bold text-[14px] leading-snug ${isSelected ? "text-white" : "text-slate-200"}`}>
+                                                <span className={`font-bold text-[15px] sm:text-[16px] leading-snug ${isSelected ? "text-white" : "text-slate-200"}`}>
                                                     {item.title}
                                                 </span>
                                             </div>
 
-                                            <div className="flex items-center gap-2 shrink-0">
-                                                <span className={`text-[11px] font-extrabold px-2 py-0.5 rounded-full ${isSelected ? "bg-[#38bdf8]/20 text-[#38bdf8]" : "text-slate-500"}`}>
+                                            <div className="flex items-center gap-3 shrink-0">
+                                                <span className={`text-[11px] font-extrabold px-2.5 py-0.5 rounded-full ${isSelected ? "bg-[#38bdf8]/20 text-[#38bdf8]" : "text-slate-500 bg-white/5"}`}>
                                                     {String(index + 1).padStart(2, "0")}
                                                 </span>
-                                                <ChevronRight
-                                                    size={16}
-                                                    className={`transition-transform duration-300 ${isSelected ? "text-[#38bdf8] translate-x-1" : "text-slate-600"
-                                                        }`}
+                                                <ChevronDown
+                                                    size={18}
+                                                    className={`transition-transform duration-300 ${isSelected ? "text-[#38bdf8] rotate-180" : "text-slate-500"}`}
                                                 />
                                             </div>
                                         </button>
-                                    );
-                                })}
-                            </div>
 
-                            {/* Right Active Details Card (7 Columns - Sticky Top) */}
-                            <div className="lg:col-span-7 lg:sticky lg:top-24">
-                                <div className="w-full rounded-3xl bg-gradient-to-br from-[#0B2368]/95 via-[#07194D]/95 to-[#030D2F]/98 border border-white/15 p-8 lg:p-10 shadow-2xl relative overflow-hidden flex flex-col justify-between backdrop-blur-xl min-h-[580px]">
-                                    {/* Glow Orbs */}
-                                    <div className="absolute top-0 right-0 w-72 h-72 bg-[#38bdf8]/10 rounded-full blur-3xl pointer-events-none" />
-                                    <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#1A5CDD]/15 rounded-full blur-3xl pointer-events-none" />
-
-                                    <div className="relative z-10">
-                                        <div className="flex items-center justify-between mb-6">
-                                            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#38bdf8] to-[#1A5CDD] text-white flex items-center justify-center shadow-lg shadow-blue-500/25">
-                                                {(() => {
-                                                    const ActiveIcon = whyChooseReasons[activeIndex].icon;
-                                                    return <ActiveIcon size={28} />;
-                                                })()}
+                                        {isSelected && (
+                                            <div className="px-5 pb-5 pt-2 border-t border-white/10">
+                                                <p className="text-slate-300 text-[14.5px] leading-relaxed">
+                                                    {item.desc}
+                                                </p>
                                             </div>
-                                            <span className="text-xs font-extrabold uppercase tracking-widest text-[#38bdf8] bg-[#38bdf8]/10 border border-[#38bdf8]/20 px-3.5 py-1.5 rounded-full">
-                                                Reason {String(activeIndex + 1).padStart(2, "0")} / {String(whyChooseReasons.length).padStart(2, "0")}
-                                            </span>
-                                        </div>
-
-                                        <h3 className="text-2xl md:text-3xl font-extrabold text-white leading-snug mb-4">
-                                            {whyChooseReasons[activeIndex].title}
-                                        </h3>
-
-                                        <div className="h-1 w-20 rounded-full bg-gradient-to-r from-[#38bdf8] to-[#1A5CDD] mb-6" />
-
-                                        <p className="text-slate-300 text-[16px] leading-[1.8] mb-8">
-                                            {whyChooseReasons[activeIndex].desc}
-                                        </p>
-
-                                        {/* Value Badges */}
-                                        <div className="grid sm:grid-cols-2 gap-3 mb-8">
-                                            {[
-                                                "Industry Best Practices",
-                                                "Modern Technologies",
-                                                "Scalable Solutions",
-                                                "Dedicated Support"
-                                            ].map((feature, i) => (
-                                                <div key={i} className="flex items-center gap-3 rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-slate-200 font-medium text-sm">
-                                                    <div className="w-5 h-5 rounded-full bg-[#38bdf8]/20 text-[#38bdf8] flex items-center justify-center shrink-0">
-                                                        <Check size={12} strokeWidth={3} />
-                                                    </div>
-                                                    {feature}
-                                                </div>
-                                            ))}
-                                        </div>
+                                        )}
                                     </div>
-
-                                    <div className="pt-6 border-t border-white/10 relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4">
-                                        <Link
-                                            href="/contact"
-                                            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] px-8 py-3.5 font-bold text-white shadow-lg shadow-blue-600/30 hover:shadow-blue-500/50 hover:scale-[1.02] transition-all duration-300"
-                                        >
-                                            Get Free Consultation
-                                            <ArrowRight size={18} />
-                                        </Link>
-
-                                        <span className="text-xs text-slate-400 font-medium">
-                                            No obligation • Tailored strategy
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
+                                );
+                            })}
                         </div>
                     </div>
 

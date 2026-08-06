@@ -366,7 +366,7 @@ export default function ERPDevelopmentPondicherryPage() {
             <HeaderBanner
                 title={
                     <>
-                        Transform Your Business with <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Custom ERP Development</span> Services
+                       <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">ERP Development</span> in Pondicherry
                     </>
                 }
                 description="Streamline Operations, Automate Business Workflows & Drive Growth with Tailored Enterprise Solutions."
@@ -388,7 +388,7 @@ export default function ERPDevelopmentPondicherryPage() {
                             </span>
 
                             <h2 className="hero-animate text-3xl md:text-4xl lg:text-[42px] font-extrabold text-[#011146] tracking-tight leading-[1.15]">
-                                Elevate Your Business with <br className="hidden lg:block" /> <span className="text-[#1A5CDD]">Intelligent ERP Systems</span>
+                                Transform Your Business with  <br className="hidden lg:block" /> <span className="text-[#1A5CDD]">Custom ERP Development Services</span>
                             </h2>
 
                             <div className="hero-animate space-y-6 text-slate-600 text-lg md:text-xl md:leading-relaxed font-medium">
@@ -511,13 +511,10 @@ export default function ERPDevelopmentPondicherryPage() {
 
                             <div className="space-y-4 text-slate-600 text-base md:text-[16.5px] leading-[1.8]">
                                 <p>
-                                    Enterprise Resource Planning (ERP) software is an integrated business management solution that centralizes and automates core business operations within a single platform. Instead of managing separate systems for finance, inventory, sales, human resources, procurement, and customer management, an ERP system connects every department, allowing information to flow seamlessly across the organization.
+                                    Enterprise Resource Planning (ERP) software is an integrated business management solution that centralizes and automates core business operations within a single platform. It connects departments such as finance, inventory, sales, human resources, procurement, and customer management, enabling seamless information flow across the organization. 
                                 </p>
                                 <p>
-                                    ERP software provides real-time access to business data, improves communication between teams, eliminates duplicate data entry, and automates repetitive tasks. By integrating critical business functions into one centralized system, organizations can increase operational efficiency, enhance decision-making, improve customer service, and support sustainable business growth.
-                                </p>
-                                <p>
-                                    At Syscorp, we develop customized ERP software that adapts to your business workflows rather than forcing your business to adapt to generic software. As a trusted provider of ERP Software Development in Pondicherry, we create scalable, secure, and user-friendly ERP solutions that help organizations manage their operations more effectively while preparing for future growth.
+                                    ERP software provides real time access to business data, improves collaboration, eliminates duplicate data entry, automates repetitive tasks, and helps organizations improve operational efficiency, make informed decisions, enhance customer service, and support long term business growth. 
                                 </p>
                             </div>
                         </div>
