@@ -2,6 +2,14 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  experimental: {
+    optimizePackageImports: [
+      "lucide-react",
+      "gsap",
+      "embla-carousel-react",
+      "@radix-ui/react-navigation-menu",
+    ],
+  },
   images: {
     unoptimized: true,
     remotePatterns: [

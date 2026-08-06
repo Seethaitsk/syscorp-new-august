@@ -1,8 +1,10 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -10,6 +12,21 @@ if (typeof window !== "undefined") {
 
 export default function AboutSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const [emblaRef] = useEmblaCarousel(
+    {
+      loop: true,
+      align: "start",
+    },
+    [
+      Autoplay({
+        delay: 3500,
+        stopOnInteraction: false,
+        playOnInit: true,
+      }),
+    ]
+  );
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -133,7 +150,7 @@ export default function AboutSection() {
     <section
       ref={sectionRef}
       aria-labelledby="about-heading"
-      className="sky-about-section bg-grid-pattern py-[100px] overflow-hidden relative bg-white dark:bg-slate-950 transition-colors duration-500"
+      className="sky-about-section bg-grid-pattern py-[75px] overflow-hidden relative bg-white dark:bg-slate-950 transition-colors duration-500"
     >
       {/* ── Animated overlay orbs ── */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
@@ -198,10 +215,17 @@ export default function AboutSection() {
           animation: skyAboutShimmer 3.5s ease-in-out infinite;
           animation-delay: 1.2s;
         }
+        @keyframes skyAboutFadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+          animation: skyAboutFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
       `}</style>
 
       <div className="max-w-[1280px] mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 gap-[64px] items-center lg:grid-cols-[1.05fr_1.15fr] lg:gap-20">
+        <div className="grid grid-cols-1 gap-12 items-center lg:grid-cols-[1.05fr_1.15fr] lg:gap-14">
 
           {/* LEFT COLUMN: Overlapping Rounded Images + Vertical Outlined Text */}
           <div className="sky-about-left-col relative w-full pb-[40px] sm:pb-[60px]">
@@ -256,70 +280,144 @@ export default function AboutSection() {
           </div>
 
           {/* RIGHT COLUMN: Badge, Heading, Sub-text, Checklists, Bento Cards, CTA Footer */}
-          <div className="flex flex-col gap-7">
+          <div className="flex flex-col gap-5">
 
-            <div className="sky-about-badge-anim flex flex-col gap-[18px]">
+            <div className="sky-about-badge-anim flex flex-col gap-3">
               <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 dark:bg-blue-500/10 dark:border-blue-500/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] dark:text-blue-400 w-fit uppercase tracking-wider">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] dark:bg-blue-400 inline-block animate-pulse" />
                 Your Success
               </span>
               <h2 id="about-heading" className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight m-0 font-sans tracking-tight">
-                Building Digital Experiences That <span className="text-[#1A5CDD] dark:text-[#60A5FA]">Love & Trust</span>
+                Software Company in Pondicherry Delivering   Smart <span className="text-[#1A5CDD] dark:text-[#60A5FA]"> Digital Solutions for Every Business</span>
+
+               
               </h2>
             </div>
 
-            {/* Sub-description paragraph */}
-            <p className="sky-about-desc-text sky-about-desc-anim text-[15.5px] text-slate-600 dark:text-slate-400 leading-[1.7] m-0 transition-colors duration-300">
-              We put users at the center of our engineering process. By blending intuitive design, seamless user experience, and robust backend scalability, we deliver products that solve real problems and drive lasting adoption.
-            </p>
+          
 
-            {/* Horizontal Checkmark Row as Bento Pills */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-1 sky-about-check-anim">
-              <div className="flex items-center gap-3 bg-slate-100/70 dark:bg-slate-900/50 border border-slate-200/50 dark:border-white/5 rounded-2xl p-3.5 transition-all duration-300 hover:border-blue-500/20">
-                <span className="w-8 h-8 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center flex-shrink-0 text-sm font-bold">
-                  ✓
-                </span>
-                <span className="text-xs md:text-sm font-bold text-slate-800 dark:text-slate-200">User-First UX & Design</span>
-              </div>
-              <div className="flex items-center gap-3 bg-slate-100/70 dark:bg-slate-900/50 border border-slate-200/50 dark:border-white/5 rounded-2xl p-3.5 transition-all duration-300 hover:border-blue-500/20">
-                <span className="w-8 h-8 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center flex-shrink-0 text-sm font-bold">
-                  ✓
-                </span>
-                <span className="text-xs md:text-sm font-bold text-slate-800 dark:text-slate-200">Client-Driven Engineering</span>
-              </div>
+            {/* Sub-description paragraph with Read More toggle */}
+            <div className="sky-about-desc-anim flex flex-col gap-4">
+              <p className={`sky-about-desc-text text-[15.5px] text-slate-600 dark:text-slate-400 leading-[1.7] m-0 transition-all duration-300 ${!isExpanded ? "line-clamp-4" : ""}`}>
+                Technology is transforming the way businesses operate, and having the right technology partner can make all the difference. At Syscorp, we help businesses embrace digital transformation with innovative, scalable, and result-driven solutions. As a trusted Software Company in Pondicherry, we specialize in delivering custom software, responsive websites, digital marketing strategies, and cloud services that help organizations improve efficiency, increase productivity, and accelerate growth.
+              </p>
+
+              {!isExpanded && (
+                <button
+                  onClick={() => setIsExpanded(true)}
+                  className="text-left text-[#1A5CDD] dark:text-blue-400 font-extrabold hover:underline text-[14.5px] cursor-pointer mt-1 self-start flex items-center gap-1.5 transition-colors duration-200"
+                >
+                  Read More
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </button>
+              )}
+
+              {isExpanded && (
+                <div className="flex flex-col gap-4 animate-fadeIn">
+                  <p className="sky-about-desc-text text-[15.5px] text-slate-600 dark:text-slate-400 leading-[1.7] m-0 transition-colors duration-300">
+                    Our team works closely with startups, small businesses, and enterprises to understand their goals before developing solutions tailored to their unique requirements. Every project is designed with performance, security, scalability, and user experience in mind, ensuring your business is ready for future growth.
+                  </p>
+
+                  <p className="sky-about-desc-text text-[15.5px] text-slate-600 dark:text-slate-400 leading-[1.7] m-0 transition-colors duration-300">
+                    Whether you're launching a new product, modernizing an existing system, or expanding your online presence, Syscorp provides the expertise and technology to turn your ideas into successful digital solutions.
+                  </p>
+
+                  <button
+                    onClick={() => setIsExpanded(false)}
+                    className="text-left text-[#1A5CDD] dark:text-blue-400 font-extrabold hover:underline text-[14.5px] cursor-pointer mt-1 self-start flex items-center gap-1.5 transition-colors duration-200"
+                  >
+                    Read Less
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                    </svg>
+                  </button>
+                </div>
+              )}
             </div>
 
-            {/* Mission & Vision Side-by-Side Bento Cards */}
-            <div className="sky-about-cards-grid sky-about-card-anim grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {/* Bento Carousel Slider */}
+            <div className="sky-about-carousel-viewport overflow-hidden w-full cursor-grab active:cursor-grabbing sky-about-card-anim" ref={emblaRef}>
+              <div className="sky-about-carousel-container flex gap-5">
 
-              {/* Card 1: User Adoption */}
-              <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)]">
-                <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
-                <div className="w-10 h-10 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
-                  <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.007.03c0 .022-.012.045-.03.045m0 0H16.5m3-3h-3m1.372-1.372a3 3 0 1 1-3.692-3.692 3 3 0 0 1 3.692 3.692zM6.628 15.688a9 9 0 1 0-2.525-4.179m0 0L3.198 12.5a3 3 0 0 0 4.682 2.72m-.94-3.198.007-.03a.03.03 0 0 1 .03-.045m0 0H7.5m-3 3h3" />
-                  </svg>
+                {/* Card 1: Custom Software Development */}
+                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_48%] min-w-0 h-auto flex flex-col">
+                  <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
+                    <div>
+                      <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
+                      <div className="w-10 h-10 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                        </svg>
+                      </div>
+                      <h3 className="sky-about-card-title text-[16.5px] font-extrabold text-[#011146] dark:text-white m-0 mb-2 font-sans">Custom Software Development</h3>
+                      <p className="sky-about-card-desc text-[13px] text-slate-500 dark:text-slate-400 leading-[1.6] m-0">
+                        Develop intelligent, scalable, and secure software solutions tailored to your business needs. We build applications that automate workflows, improve operational efficiency, and support long-term business growth.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="sky-about-card-title text-[16.5px] font-extrabold text-[#011146] dark:text-white m-0 mb-2 font-sans">User Adoption</h3>
-                <p className="sky-about-card-desc text-[13px] text-slate-500 dark:text-slate-400 leading-[1.6] m-0">
-                  We design and develop helpful software applications that are intuitive to use and integrate seamlessly into daily operations.
-                </p>
-              </div>
 
-              {/* Card 2: Long-Term Growth */}
-              <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)]">
-                <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
-                <div className="w-10 h-10 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
-                  <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18a.75.75 0 0 0 1.2 1.2l3.6-3.6 1.8 1.8a.75.75 0 0 0 1.2-.2l6-9.5 4.5 4.5a.75.75 0 0 0 1.2-.2l3-5a.75.75 0 0 0-1.2-.8l-2.4 4-4.5-4.5a.75.75 0 0 0-1.2.2L9.6 15.4l-1.8-1.8a.75.75 0 0 0-1.2.2L2.25 18z" />
-                  </svg>
+                {/* Card 2: Website Development */}
+                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_48%] min-w-0 h-auto flex flex-col">
+                  <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
+                    <div>
+                      <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
+                      <div className="w-10 h-10 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
+                          <rect x="3" y="4" width="18" height="16" rx="2" strokeLinecap="round" strokeLinejoin="round" />
+                          <line x1="3" y1="9" x2="21" y2="9" strokeLinecap="round" strokeLinejoin="round" />
+                          <circle cx="6" cy="6.5" r="0.5" fill="currentColor" />
+                          <circle cx="8" cy="6.5" r="0.5" fill="currentColor" />
+                          <circle cx="10" cy="6.5" r="0.5" fill="currentColor" />
+                        </svg>
+                      </div>
+                      <h3 className="sky-about-card-title text-[16.5px] font-extrabold text-[#011146] dark:text-white m-0 mb-2 font-sans">Website Development</h3>
+                      <p className="sky-about-card-desc text-[13px] text-slate-500 dark:text-slate-400 leading-[1.6] m-0">
+                        Create modern, responsive, and SEO-friendly websites that deliver exceptional user experiences, strengthen your online presence, and convert visitors into loyal customers.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="sky-about-card-title text-[16.5px] font-extrabold text-[#011146] dark:text-white m-0 mb-2 font-sans">Long-Term Growth</h3>
-                <p className="sky-about-card-desc text-[13px] text-slate-500 dark:text-slate-400 leading-[1.6] m-0">
-                  We grow alongside our clients, providing continuous maintenance, support, and scaling systems as user numbers increase.
-                </p>
-              </div>
 
+                {/* Card 3: UI/UX Design */}
+                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_48%] min-w-0 h-auto flex flex-col">
+                  <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
+                    <div>
+                      <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
+                      <div className="w-10 h-10 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.04 5.025a15.998 15.998 0 0 0 3.398-1.626M11.1 11.1l7.153-7.153a2.25 2.25 0 0 1 3.182 3.182L14.283 14.28a3 3 0 0 1-3.182.802L9.63 13.63a3 3 0 0 1 .802-3.182Z" />
+                        </svg>
+                      </div>
+                      <h3 className="sky-about-card-title text-[16.5px] font-extrabold text-[#011146] dark:text-white m-0 mb-2 font-sans">UI/UX Design</h3>
+                      <p className="sky-about-card-desc text-[13px] text-slate-500 dark:text-slate-400 leading-[1.6] m-0">
+                        Design intuitive, visually engaging, and user-focused digital experiences that enhance usability, improve customer satisfaction, and create seamless interactions across web and mobile platforms.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 4: Cloud & Digital Solutions */}
+                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_48%] min-w-0 h-auto flex flex-col">
+                  <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
+                    <div>
+                      <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
+                      <div className="w-10 h-10 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                        </svg>
+                      </div>
+                      <h3 className="sky-about-card-title text-[16.5px] font-extrabold text-[#011146] dark:text-white m-0 mb-2 font-sans">Cloud &amp; Digital Solutions</h3>
+                      <p className="sky-about-card-desc text-[13px] text-slate-500 dark:text-slate-400 leading-[1.6] m-0">
+                        Accelerate digital transformation with secure cloud services, business automation, and scalable infrastructure that improves collaboration, protects data, and supports future business expansion.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
             {/* Footer CTA Row: Oval Button + Avatar & Link */}

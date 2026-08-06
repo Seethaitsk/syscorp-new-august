@@ -7,53 +7,123 @@ import Autoplay from "embla-carousel-autoplay";
 
 const services = [
   {
-    title: "Web & Mobile Development",
-    description: "Building responsive web applications and hybrid mobile apps with modern frameworks.",
-    bgImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?fm=jpg&q=75&w=500&auto=format&fit=crop",
+    title: "Custom Software Development",
+    description: "Build scalable and secure software solutions tailored to your business needs, helping you automate processes, improve efficiency, and accelerate growth.",
+    bgImage: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
       <svg className="sky-service-icon" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-        <rect x="3" y="3" width="11" height="11" rx="2" />
-        <rect x="10" y="10" width="11" height="11" rx="2" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
       </svg>
     ),
-    tags: ["React / Next.js", "iOS & Android", "Node.js API", "UI Integration"]
+    tags: ["Enterprise Software", "CRM Solutions", "ERP Development", "API Integration"]
+  },
+  {
+    title: "Website Development",
+    description: "Create modern, responsive, and SEO-friendly websites designed to enhance your online presence and deliver seamless digital experiences.",
+    bgImage: "https://images.unsplash.com/photo-1547658719-da2b81169b42?fm=jpg&q=75&w=600&auto=format&fit=crop",
+    icon: (
+      <svg className="sky-service-icon" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+        <rect x="2" y="3" width="20" height="14" rx="2" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8 21h8m-8-4h8M12 17v4" />
+      </svg>
+    ),
+    tags: ["React / Next.js", "CMS Development", "E-commerce Solutions", "Web Applications"]
+  },
+  {
+    title: "Mobile App Development",
+    description: "Develop high-performance Android and iOS applications with intuitive designs, smooth functionality, and business-focused features.",
+    bgImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?fm=jpg&q=75&w=600&auto=format&fit=crop",
+    icon: (
+      <svg className="sky-service-icon" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+        <rect x="5" y="2" width="14" height="20" rx="3" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 2h8" />
+      </svg>
+    ),
+    tags: ["iOS & Android", "Flutter Apps", "Native Apps", "Mobile UI"]
+  },
+  {
+    title: "UI/UX Design",
+    description: "Design engaging and user-friendly digital experiences that improve usability, customer satisfaction, and brand interaction.",
+    bgImage: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?fm=jpg&q=75&w=600&auto=format&fit=crop",
+    icon: (
+      <svg className="sky-service-icon" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 21L14.096 20.187L21 13.283L16.717 9L9.813 15.904Z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M14.5 10.5L17.5 13.5" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 14C4 10 7 7 11 7" strokeDasharray="3 3" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 19H12" />
+      </svg>
+    ),
+    tags: ["User Research", "Wireframing", "Prototyping", "Design Systems"]
+  },
+  {
+    title: "Cloud Solutions",
+    description: "Transform your business infrastructure with secure and scalable cloud solutions that improve flexibility, performance, and reliability.",
+    bgImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?fm=jpg&q=75&w=600&auto=format&fit=crop",
+    icon: (
+      <svg className="sky-service-icon" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+      </svg>
+    ),
+    tags: ["AWS / Azure", "Cloud Migration", "DevOps", "Cloud Security"]
+  },
+  {
+    title: "Digital Marketing",
+    description: "Grow your online visibility with data-driven marketing strategies focused on increasing traffic, engagement, and business conversions.",
+    bgImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=75&w=600&auto=format&fit=crop",
+    icon: (
+      <svg className="sky-service-icon" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+      </svg>
+    ),
+    tags: ["SEO", "PPC Campaigns", "Social Media", "Analytics"]
   },
   {
     title: "AI & Machine Learning",
-    description: "Integrating smart recommendation systems, predictive algorithms, and conversational agents.",
-    bgImage: "https://cdn.britannica.com/47/246247-050-F1021DE9/AI-text-to-image-photo-robot-with-computer.jpg",
+    description: "Implement intelligent AI solutions that automate decision-making, analyze data, and create smarter business experiences.",
+    bgImage: "https://images.unsplash.com/photo-1677442136019-21780efad99a?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
       <svg className="sky-service-icon" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-        <circle cx="7" cy="15" r="4" />
-        <circle cx="17" cy="15" r="4" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7 11V7a2 2 0 012-2h6a2 2 0 012 2v4M12 5v14" />
+        <rect x="5" y="5" width="14" height="14" rx="2" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4M9 9h6v6H9V9z" />
       </svg>
     ),
-    tags: ["NLP Models", "Predictive Analytics", "Custom LLMs", "Computer Vision"]
+    tags: ["Machine Learning", "NLP Models", "Predictive Analytics", "Custom AI Solutions"]
   },
   {
     title: "Cloud & Infrastructure",
-    description: "Designing secure cloud environments on AWS/Azure with automated CI/CD deployment pipelines.",
-    bgImage: "https://www.brainvire.com/blog/wp-content/uploads/2024/09/AI-In-Cloud-Computing-Is-Bringing-Efficiency-And-Scalability.webp",
+    description: "Build reliable digital infrastructure with secure cloud environments, automation, and modern deployment practices.",
+    bgImage: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
       <svg className="sky-service-icon" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-        <circle cx="12" cy="8" r="5" />
-        <circle cx="8" cy="14" r="5" />
-        <circle cx="16" cy="14" r="5" />
+        <rect x="2" y="3" width="20" height="5" rx="1" />
+        <rect x="2" y="10" width="20" height="5" rx="1" />
+        <rect x="2" y="17" width="20" height="5" rx="1" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6 5.5h.01M6 12.5h.01M6 19.5h.01M10 5.5h4M10 12.5h4M10 19.5h4" />
       </svg>
     ),
-    tags: ["AWS / Azure", "CI/CD Pipelines", "Docker / K8s", "Cloud Security"]
+    tags: ["AWS / Azure", "Docker / Kubernetes", "CI/CD Pipeline", "Cloud Security"]
   },
   {
-    title: "UI/UX & Design Systems",
-    description: "Crafting modern dashboard user interfaces, interaction flows, and corporate web experiences.",
-    bgImage: "https://www.milesweb.com/blog/wp-content/uploads/2024/06/ui-ux-trends.png",
+    title: "CRM Development",
+    description: "Develop customized CRM platforms that streamline customer management, improve collaboration, and increase business productivity.",
+    bgImage: "https://images.unsplash.com/photo-1552581230-c01bc9148c00?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
       <svg className="sky-service-icon" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6 9v3a6 6 0 0012 0V9m-12 0h3v3a3 3 0 006 0V9h3" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.209A9.342 9.342 0 0112 22.5c-2.786 0-5.3-.372-7.533-1.002zM15 5.25a3 3 0 11-6 0 3 3 0 016 0zM8 12a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    tags: ["Figma Prototypes", "Design Systems", "User Research", "Wireframing"]
+    tags: ["Custom CRM", "Sales Automation", "Customer Analytics", "Workflow Management"]
+  },
+  {
+    title: "Software Testing & Quality Assurance",
+    description: "Ensure reliable software performance with comprehensive testing solutions that improve quality, security, and user experience.",
+    bgImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?fm=jpg&q=75&w=600&auto=format&fit=crop",
+    icon: (
+      <svg className="sky-service-icon" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+      </svg>
+    ),
+    tags: ["Manual Testing", "Automation Testing", "Performance Testing", "Quality Assurance"]
   }
 ];
 
@@ -780,17 +850,17 @@ export default function ServicesSection() {
             <div className="sky-about-badge-anim flex flex-col gap-[18px]">
               <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 dark:bg-blue-500/10 dark:border-blue-500/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] dark:text-blue-400 w-fit uppercase tracking-wider">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] dark:bg-blue-400 inline-block animate-pulse" />
-                Our Services
+                OUR SERVICES
               </span>
               <h2 id="services-heading" className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight m-0 font-sans tracking-tight">
-                Expert IT Services That Shape <span className="text-[#1A5CDD] dark:text-[#60A5FA]">Powerful Software</span>
+                End-to-End IT Services for <span className="text-[#1A5CDD] dark:text-[#60A5FA]">Every Stage of Your Business</span>
               </h2>
             </div>
           </div>
 
           <div className="sky-services-header-right">
             <p className="sky-services-header-desc">
-              We provide end-to-end software engineering and digital transformation solutions focused on enhancing usability, improving scalability, and bringing your business ideas to life.
+              As a full-service Software Company in Pondicherry, Syscorp delivers innovative technology solutions that help businesses improve operations, enhance customer experiences, and achieve sustainable growth. Our services are designed to support your business from idea to execution with the right combination of strategy, technology, and ongoing support.
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap", justifyContent: "space-between", width: "100%" }}>
               <Link href="/services" className="sky-services-btn-pill">

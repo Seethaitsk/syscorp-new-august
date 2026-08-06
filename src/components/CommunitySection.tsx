@@ -6,7 +6,7 @@ const tabs = [
     id: "experts",
     label: "AI Experts",
     heading: "AI Experts:",
-    body: "We are AI & software experts known for delivering high-quality digital solutions with honesty, precision, and reliability. Every product is developed with advanced AI tools, scalable architecture, transparent processes, and a commitment to meeting timelines, ensuring software that is built to perform and earn lasting trust.",
+    body: "As a leading Software Company in Pondicherry, we are AI and software experts dedicated to delivering innovative, high-quality digital solutions with honesty, precision, and reliability. We leverage Artificial Intelligence, automation, and modern development technologies to build scalable, secure, and future-ready software tailored to your business needs. Every solution is developed with transparent processes, robust architecture, and a commitment to quality, ensuring long-term performance, seamless user experiences, and lasting business value.",
     icon: (
       <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 21m0 0l-.813-5.096m8.626 0L17 21m0 0l-.813-5.096M3 14.857A6 6 0 0112 3a6 6 0 019 11.857m-18 0a6.002 6.002 0 0012 0m-12 0H9m9 0h-2.187M9 14.857h7.188" />
@@ -22,10 +22,18 @@ const tabs = [
         ),
       },
       {
-        label: "Secure Cloud Stacks",
+        label: "Secure Cloud Infrastructure",
         icon: (
           <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+          </svg>
+        ),
+      },
+      {
+        label: "AI-Powered Solutions",
+        icon: (
+          <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
           </svg>
         ),
       },
@@ -34,14 +42,6 @@ const tabs = [
         icon: (
           <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.97 5.97 0 0 0-.75-2.906m-.173-4.062a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0zM5.186 12.583a8.224 8.224 0 0 0-1.444.479 3 3 0 0 0-4.682 2.72m.94 3.198.002.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 0 12 21c2.17 0 4.207-.576 5.963-1.584A6.062 6.062 0 0 0 18 18.722m-12 0a5.97 5.97 0 0 1 .75-2.907m-.173-4.062a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0z" />
-          </svg>
-        ),
-      },
-      {
-        label: "High-Performance Code",
-        icon: (
-          <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
           </svg>
         ),
       },
@@ -55,7 +55,7 @@ const tabs = [
     id: "builders",
     label: "Software Architects",
     heading: "Software Architects:",
-    body: "We are Software Architects known for designing robust and highly available application architectures. We turn complex requirements into clean, scalable codebase templates and enterprise systems that optimize your infrastructure costs and maximize speed.",
+    body: "Our experienced Software Architects design secure, scalable, and high-performance application architectures that power modern businesses. From enterprise software and cloud-native applications to custom software development, we transform complex business requirements into efficient, future-ready digital solutions. As a trusted Software Company in Pondicherry, we focus on building reliable systems that improve performance, reduce infrastructure costs, and support long-term business growth.",
     icon: (
       <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
@@ -104,7 +104,7 @@ const tabs = [
     id: "designers",
     label: "SaaS Engineers",
     heading: "SaaS Engineers:",
-    body: "We are SaaS Engineers focused on delivering responsive, interactive, and high-conversion client dashboards. Every line of our frontend code is handcrafted for speed, optimal UX, and seamless API integrations.",
+    body: "Our SaaS Engineers specialize in building secure, responsive, and scalable cloud-based applications that deliver exceptional user experiences. From intuitive client dashboards and enterprise SaaS platforms to seamless API integrations and modern frontend development, we create solutions that improve productivity, streamline operations, and support business growth. Every application is optimized for speed, usability, performance, and long-term scalability.",
     icon: (
       <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25" />
@@ -112,7 +112,7 @@ const tabs = [
     ),
     features: [
       {
-        label: "UI/UX Designers",
+        label: "UI/UX-Focused Development",
         icon: (
           <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9.53 16.122a3 3 0 00-1.305 3.579M3 22.25h18M9 3.75h6M12 18.5V3.75M9.53 16.122C10.239 16.5 11.094 16.5 11.8 16.122M9.53 16.122a3 3 0 01-3.071-3.071c0-1.272.772-2.42 1.947-2.909M11.8 16.122a3 3 0 003.072-3.072c0-1.272-.773-2.42-1.948-2.908M8.406 10.143a3.001 3.001 0 00-1.947-2.909M12.923 10.143a3.001 3.001 0 011.948-2.909" />
@@ -128,7 +128,7 @@ const tabs = [
         ),
       },
       {
-        label: "Modern CSS / Animations",
+        label: "Modern CSS & Animations",
         icon: (
           <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 21m0 0l-.813-5.096m8.626 0L17 21m0 0l-.813-5.096M3 14.857A6 6 0 0112 3a6 6 0 019 11.857m-18 0a6.002 6.002 0 0012 0m-12 0H9m9 0h-2.187M9 14.857h7.188" />
@@ -136,7 +136,7 @@ const tabs = [
         ),
       },
       {
-        label: "A/B Testing & SEO",
+        label: "SEO & Performance Optimization",
         icon: (
           <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.003V16.5a4.5 4.5 0 014.5-4.5h10.5a4.5 4.5 0 014.5 4.5v1.503m-19.5 0h19.5m-19.5 0l-.364-1.821A8.967 8.967 0 0112 7.5a8.967 8.967 0 017.614 4.182l-.364 1.821M12 12a3 3 0 100-6 3 3 0 000 6z" />
