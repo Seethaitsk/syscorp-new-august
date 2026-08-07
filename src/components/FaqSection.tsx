@@ -122,16 +122,7 @@ export default function FAQSection() {
               Find clear, honest answers to common questions from our team of experienced professionals.
             </p>
 
-            {/* Pill Button */}
-            <a
-              href="/contact"
-              className="no-underline inline-flex items-center gap-2.5 bg-[#1A5CDD] dark:bg-[#3B82F6] text-white font-bold text-sm px-6 py-3.5 rounded-full transition-all duration-300 hover:bg-[#154ebc] dark:hover:bg-[#2563EB] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(26,92,221,0.25)] dark:hover:shadow-[0_8px_24px_rgba(59,130,246,0.3)] w-fit mt-2"
-            >
-              View All FAQ&apos;s
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
-              </svg>
-            </a>
+
 
             {/* Divider line */}
             <div className="h-[1px] bg-[#1A5CDD]/10 dark:bg-white/10 my-4" />

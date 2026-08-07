@@ -38,46 +38,54 @@ const Breadcrumbs = () => {
                 </li>
 
                 {/* Dynamic Items */}
-                {pathSegments.map((segment, index) => {
-                    const href = `/${pathSegments.slice(0, index + 1).join("/")}`;
-                    const isLast = index === pathSegments.length - 1;
+                {pathSegments
+                    .filter((segment) => segment !== "website-development" && segment !== "seo-services")
+                    .map((segment, index, filteredArray) => {
+                        const isLast = index === filteredArray.length - 1;
 
-                    const label = decodeURIComponent(segment)
-                        .replace(/-/g, " ")
-                        .replace(/\b\w/g, (c) => c.toUpperCase());
+                        const href = segment === "services"
+                            ? "/services"
+                            : pathname;
 
-                    return (
-                        <li key={href} className="flex items-center leading-none">
-                            {/* Separator */}
-                            <ChevronRight size={14} className="mx-1.5 text-gray-400/80" />
+                        let label = decodeURIComponent(segment)
+                            .replace(/-/g, " ")
+                            .replace(/\b\w/g, (c) => c.toUpperCase());
 
-                            {isLast ? (
-                                <span className="text-white tracking-wide" aria-current="page">
-                                    {/* Mobile truncated */}
-                                    <span className="block sm:hidden">
-                                        {truncateText(label, 18)}
+                        if (label.toLowerCase() === "ui ux") label = "UI/UX Design";
+                        if (label.toLowerCase() === "seo") label = "SEO Service";
+
+                        return (
+                            <li key={segment} className="flex items-center leading-none">
+                                {/* Separator */}
+                                <ChevronRight size={14} className="mx-1.5 text-gray-400/80" />
+
+                                {isLast ? (
+                                    <span className="text-white tracking-wide" aria-current="page">
+                                        {/* Mobile truncated */}
+                                        <span className="block sm:hidden">
+                                            {truncateText(label, 18)}
+                                        </span>
+
+                                        {/* Desktop full */}
+                                        <span className="hidden sm:block">{label}</span>
                                     </span>
+                                ) : (
+                                    <Link
+                                        href={href}
+                                        className="hover:text-blue-400 transition-colors font-medium text-white"
+                                    >
+                                        {/* Mobile truncated */}
+                                        <span className="block sm:hidden">
+                                            {truncateText(label, 18)}
+                                        </span>
 
-                                    {/* Desktop full */}
-                                    <span className="hidden sm:block">{label}</span>
-                                </span>
-                            ) : (
-                                <Link
-                                    href={href}
-                                    className="hover:text-blue-400 transition-colors font-medium text-white"
-                                >
-                                    {/* Mobile truncated */}
-                                    <span className="block sm:hidden">
-                                        {truncateText(label, 18)}
-                                    </span>
-
-                                    {/* Desktop full */}
-                                    <span className="hidden sm:block">{label}</span>
-                                </Link>
-                            )}
-                        </li>
-                    );
-                })}
+                                        {/* Desktop full */}
+                                        <span className="hidden sm:block">{label}</span>
+                                    </Link>
+                                )}
+                            </li>
+                        );
+                    })}
             </ul>
         </nav>
     );

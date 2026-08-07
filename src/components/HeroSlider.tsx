@@ -1093,7 +1093,7 @@ export default function HeroSlider() {
 
                           {/* Two Buttons */}
                           <div className="flex gap-2 mt-4 relative z-10">
-                            <a href="/services/website-development" className="sky-card-btn-primary">
+                            <a href="/services/website-development/ui-ux" className="sky-card-btn-primary">
                               View Demo
                             </a>
                             <a href="/contact" className="sky-card-btn-secondary" aria-label="Learn more about our Custom Website design and development services">
@@ -1151,7 +1151,7 @@ export default function HeroSlider() {
 
                           {/* Two Buttons */}
                           <div className="flex gap-2 mt-4 relative z-10">
-                            <a href="/services" className="sky-card-btn-primary">
+                            <a href="/services/website-development/crm-development" className="sky-card-btn-primary">
                               View CRM
                             </a>
                             <a href="/contact" className="sky-card-btn-secondary" aria-label="Learn more about our CRM implementations and support services">
@@ -1214,7 +1214,7 @@ export default function HeroSlider() {
 
                           {/* Two Buttons */}
                           <div className="flex gap-2 mt-4 relative z-10">
-                            <a href="/services" className="sky-card-btn-primary">
+                            <a href="/services/seo-services/seo" className="sky-card-btn-primary">
                               View Report
                             </a>
                             <a href="/contact" className="sky-card-btn-secondary" aria-label="Learn more about our search engine optimization (SEO) and organic rankings services">
@@ -1276,7 +1276,7 @@ export default function HeroSlider() {
 
                           {/* Two Buttons */}
                           <div className="flex gap-2 mt-4 relative z-10">
-                            <a href="/services" className="sky-card-btn-primary">
+                            <a href="/services/website-development/cloud-server" className="sky-card-btn-primary">
                               View Plans
                             </a>
                             <a href="/contact" className="sky-card-btn-secondary" aria-label="Learn more about our cloud scalability, hosting, and application security services">

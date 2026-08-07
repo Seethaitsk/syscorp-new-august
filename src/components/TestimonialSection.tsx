@@ -705,7 +705,7 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
             </p>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "16px" }}>
               <a href="/contact" className="sky-testi-all-btn">
-                View All Reviews
+                Contact Us
                 <svg style={{ width: "14px", height: "14px" }} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
                 </svg>

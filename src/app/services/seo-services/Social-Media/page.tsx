@@ -1085,10 +1085,6 @@ export default function SocialMediaOptimizationPage() {
                                 Find clear, honest answers to common questions from our team of experienced professionals.
                             </p>
 
-                            <button className="bg-[#1A5CDD] hover:bg-[#011146] text-white px-6 py-3 rounded-full text-[14px] font-bold transition-colors shadow-lg shadow-blue-900/20 w-fit flex items-center gap-2 mb-10">
-                                View All FAQ's <ChevronRight size={16} strokeWidth={3} />
-                            </button>
-
                             {/* Avatars */}
                             <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
                                 <div className="flex -space-x-3.5">

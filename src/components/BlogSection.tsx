@@ -61,10 +61,6 @@ export default function BlogSection() {
           flex-direction: column;
           gap: 20px;
           text-decoration: none;
-          transition: transform 0.3s ease;
-        }
-        .sky-blog-card-wrap:hover {
-          transform: translateY(-4px);
         }
 
         .sky-blog-img-container {
@@ -74,9 +70,10 @@ export default function BlogSection() {
           overflow: hidden;
           position: relative;
           border: 1px solid rgba(26, 92, 221, 0.06);
-          transition: all 0.3s ease;
+          transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
         }
         .sky-blog-card-wrap:hover .sky-blog-img-container {
+          transform: translateY(-4px);
           box-shadow: 0 16px 40px rgba(26, 92, 221, 0.08);
           border-color: rgba(26, 92, 221, 0.15);
         }
@@ -100,8 +97,14 @@ export default function BlogSection() {
           margin: 0;
           transition: color 0.3s ease;
         }
+        .dark .sky-blog-title {
+          color: #FFFFFF;
+        }
         .sky-blog-card-wrap:hover .sky-blog-title {
           color: #1A5CDD;
+        }
+        .dark .sky-blog-card-wrap:hover .sky-blog-title {
+          color: #60A5FA;
         }
 
         .sky-blog-readmore {
@@ -112,12 +115,23 @@ export default function BlogSection() {
           font-weight: 800;
           color: #1A5CDD;
           text-decoration: none;
-          transition: gap 0.25s ease, color 0.25s ease;
+          transition: color 0.25s ease;
           width: fit-content;
+        }
+        .dark .sky-blog-readmore {
+          color: #60A5FA;
+        }
+        .sky-blog-readmore svg {
+          transition: transform 0.25s ease;
         }
         .sky-blog-card-wrap:hover .sky-blog-readmore {
           color: #154ebc;
-          gap: 10px;
+        }
+        .dark .sky-blog-card-wrap:hover .sky-blog-readmore {
+          color: #93C5FD;
+        }
+        .sky-blog-card-wrap:hover .sky-blog-readmore svg {
+          transform: translate(3px, -3px);
         }
 
         @media (max-width: 1024px) {

@@ -19,7 +19,7 @@ const megaMenuData = [
   {
     title: "WEBSITE & SOFTWARE",
     items: [
-      { label: "Custom Web Development", desc: "Next.js 15 & React enterprise web platforms", href: "/services/website-development", icon: "Code" },
+      { label: "Web Development", desc: "Next.js 15 & React enterprise web platforms", href: "/services/website-development", icon: "Code" },
       { label: "Edge Hosting & Maintenance", desc: "300+ Edge POPs & 99.99% uptime SLA", href: "/services/website-development", icon: "Server" },
     ]
   },
@@ -660,7 +660,7 @@ export default function Navbar() {
           {/* CTA (Sign In) + Hamburger */}
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
             <a href="/contact" className="sky-cta-btn">
-              Sign In
+              Get a Demo
               <svg style={{ width: "14px", height: "14px" }} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
@@ -776,7 +776,7 @@ export default function Navbar() {
           </div>
 
           <a href="/contact" className="sky-cta-btn" style={{ marginTop: "16px", justifyContent: "center" }}>
-            Sign In
+            Get a Demo
             <svg style={{ width: "14px", height: "14px" }} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>

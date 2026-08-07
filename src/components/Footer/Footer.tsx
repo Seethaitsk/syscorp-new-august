@@ -5,18 +5,19 @@ import Image from "next/image";
 
 const quickLinks = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Our Services", href: "/services" },
-  { label: "Projects", href: "/projects" },
+  { label: "Who We Are", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Career", href: "/career" },
+  { label: "Updates", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
 ];
 
 const ourServices = [
-  { label: "Custom Software Dev", href: "/services" },
-  { label: "Web App Development", href: "/services" },
-  { label: "Mobile App Development", href: "/services" },
-  { label: "UI/UX Creative Design", href: "/services" },
-  { label: "Cloud & DevOps Services", href: "/services" },
+  { label: "Web Development", href: "/services/website-development/web-development" },
+  { label: "Cloud & Server Solutions", href: "/services/website-development/cloud-server" },
+  { label: "UI/UX Design", href: "/services/website-development/ui-ux" },
+  { label: "SEO Services", href: "/services/seo-services/seo" },
+  { label: "AI Services", href: "/ai-service" },
 ];
 
 const Footer = () => {
@@ -209,7 +210,7 @@ const Footer = () => {
         {/* ─── COPYRIGHT BAR ─── */}
         <div className="pt-6 border-t border-white/8 text-center">
           <p className="text-[13px] text-gray-500 m-0">
-            Copyright &copy; 2025 All Rights Reserved.
+            Copyright &copy; {new Date().getFullYear()} All Rights Reserved.
           </p>
         </div>
 
