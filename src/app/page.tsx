@@ -2,20 +2,21 @@ import type { Metadata } from "next";
 import Index from "@/components/Home/Home";
 
 export const metadata: Metadata = {
-    title: "Best Software Company in Chennai | Syscorp",
+    title: "We Are Syscorp - A Leading Software Company in Pondicherry",
     description:
-        "Syscorp is the best software company in Chennai offering custom web development, AI-driven marketing, CRM systems, SEO, and cloud solutions to accelerate your digital transformation.",
+        "Software Company in Pondicherry delivering web development, AI services, SEO, digital marketing, and custom software solutions to accelerate your business growth.",
     keywords: [
-        "software company Chennai",
-        "best IT company Chennai",
-        "custom web development Chennai",
-        "AI marketing tools",
-        "CRM software Chennai",
-        "SEO services Chennai",
-        "cloud solutions India",
-        "digital transformation company",
-        "Next.js development",
-        "React web development",
+        "Software Company in Pondicherry",
+        "Software Development Company Pondicherry",
+        "IT Company Pondicherry",
+        "Custom Software Development Pondicherry",
+        "Software Solutions Pondicherry",
+        "Web Development Company Pondicherry",
+        "Mobile App Development Company Pondicherry",
+        "Enterprise Software Company Pondicherry",
+        "Software Development Services Pondicherry",
+        "Best Software Company Pondicherry",
+        "Software Company Near Me Pondicherry",
     ],
     authors: [{ name: "Syscorp", url: "https://syscorp.tech" }],
     creator: "Syscorp",
@@ -30,33 +31,55 @@ export const metadata: Metadata = {
     },
     openGraph: {
         type: "website",
-        url: "https://syscorp.tech/",
-        title: "Best Software Company in Chennai | Syscorp",
-        description:
-            "Syscorp delivers full-cycle software solutions, AI automation, CRM, and digital marketing services designed to accelerate your business growth.",
         siteName: "Syscorp",
+        title: "Leading Software Company in Pondicherry | Web, AI, SEO & Digital Solutions",
+        description:
+            "Syscorp is a best software company in Pondicherry offering web development, AI solutions, mobile app development, SEO, digital marketing, ERP, cloud services, and UI/UX design.",
+        url: "https://syscorp-new-august-j8mq.vercel.app/",
         images: [
             {
-                url: "https://syscorp.tech/images/og-syscorp.jpg",
+                url: "https://syscorp-new-august-j8mq.vercel.app/images/og-image.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Syscorp — Best Software Company in Chennai",
+                alt: "Syscorp — Leading Software Company in Pondicherry",
             },
         ],
+        locale: "en_IN",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Best Software Company in Chennai | Syscorp",
+        title: "We Are Syscorp - A Leading Software Company in Pondicherry",
         description:
-            "Custom software, AI marketing, CRM & SEO services by Syscorp — Chennai's leading digital transformation partner.",
+            "Software Company in Pondicherry delivering web development, AI services, SEO, digital marketing, and custom software solutions to accelerate your business growth.",
         images: ["https://syscorp.tech/images/og-syscorp.jpg"],
         creator: "@syscorptech",
     },
 };
 
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Syscorp",
+    "url": "https://syscorp-new-august-j8mq.vercel.app/",
+    "logo": "https://syscorp-new-august-j8mq.vercel.app/images/logo.png",
+    "description":
+        "Software Company in Pondicherry providing website development, software development, AI solutions, SEO, digital marketing, cloud services, ERP development, and UI/UX design.",
+    "email": "info@syscorp.in",
+    "telephone": "+91-XXXXXXXXXX",
+    "sameAs": [
+        "https://in.linkedin.com/company/syscorp-technology-private-limited",
+        "https://www.facebook.com/SyscorpTechnologyPvtLtd",
+        "https://www.instagram.com/syscorptechnologypvtltd/",
+    ],
+};
+
 export default function Home() {
     return (
         <section className="bg-zinc-50 font-sans dark:bg-black">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <Index />
         </section>
     );

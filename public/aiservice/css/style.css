@@ -1,6 +1,6 @@
 .aiservice-wrapper {
-    --navy: #f0f9ff;
-    --navy-2: #e0f2fe;
+    --navy: #011146;
+    --navy-2: #0a1845;
     --blue: #0284c7;
     --blue-light: #0ea5e9;
     --blue-pale: #e0f2fe;
@@ -29,7 +29,6 @@ html {
 .aiservice-wrapper h2,
 .aiservice-wrapper h3 {
     font-weight: 600;
-    color: var(--ink);
 }
 
 .text-gradient {
@@ -382,9 +381,17 @@ html {
 }
 
 .section-services {
-    padding: 60px 0;
-    background: var(--navy);
+    padding: 90px 0;
+    background: #011146 !important;
+    color: #ffffff;
+}
 
+.section-services h2 {
+    color: #ffffff !important;
+}
+
+.section-services p {
+    color: #cbd5e1 !important;
 }
 
 /* DOODLE BACKGROUND */
