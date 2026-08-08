@@ -219,7 +219,7 @@ export default function WhyChooseUs() {
                         </h2>
                     </div>
                     <p className="text-[15px] text-slate-600 dark:text-slate-400 max-w-sm leading-relaxed">
-                        Businesses choose Syscorp because we deliver more than software—we deliver value that boosts workflows and scales across all devices.
+                        Businesses choose Syscorp because we deliver more than software. we deliver value that boosts workflows and scales across all devices.
                     </p>
                 </div>
 
