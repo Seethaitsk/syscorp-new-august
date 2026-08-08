@@ -28,7 +28,7 @@ export default function FullStackDevelopmentPondicherryPage() {
             id: "frontend-development",
             title: "Frontend Development",
             subtitle: "Create Fast, Responsive & Engaging User Experiences",
-            desc: "Your application's frontend is the first impression users have of your business. A well-designed interface not only attracts visitors but also improves engagement, usability, and customer satisfaction. At SysCrop, our Full-Stack Development Company in Pondicherry builds modern, responsive, and visually appealing user interfaces that deliver seamless experiences across desktops, tablets, and mobile devices.\n\nWe focus on creating intuitive layouts, smooth navigation, and high-performance interfaces that enhance user interaction while maintaining accessibility and cross-browser compatibility. Every frontend application is optimized for speed, responsiveness, and search engine performance, ensuring your users enjoy a consistent experience regardless of the device they use.\n\nOur frontend developers work closely with UI/UX designers to transform creative designs into interactive applications using the latest frameworks and industry best practices. Whether you're developing a business portal, enterprise application, SaaS platform, or eCommerce website, we ensure your frontend is scalable, secure, and future-ready.",
+            desc: "Your application's frontend is the first impression users have of your business. A well-designed interface not only attracts visitors but also improves engagement, usability, and customer satisfaction. At Syscorp, our Full-Stack Development Company in Pondicherry builds modern, responsive, and visually appealing user interfaces that deliver seamless experiences across desktops, tablets, and mobile devices.\n\nWe focus on creating intuitive layouts, smooth navigation, and high-performance interfaces that enhance user interaction while maintaining accessibility and cross-browser compatibility. Every frontend application is optimized for speed, responsiveness, and search engine performance, ensuring your users enjoy a consistent experience regardless of the device they use.\n\nOur frontend developers work closely with UI/UX designers to transform creative designs into interactive applications using the latest frameworks and industry best practices. Whether you're developing a business portal, enterprise application, SaaS platform, or eCommerce website, we ensure your frontend is scalable, secure, and future-ready.",
             icon: Monitor,
             technologies: ["React.js", "Angular", "Vue.js", "Next.js", "HTML5", "CSS3", "JavaScript", "TypeScript", "Bootstrap", "Tailwind CSS"]
         },
@@ -36,7 +36,7 @@ export default function FullStackDevelopmentPondicherryPage() {
             id: "backend-development",
             title: "Backend Development",
             subtitle: "Build Secure, Scalable & High-Performance Business Applications",
-            desc: "A powerful backend is the foundation of every successful web application. It manages business logic, user authentication, database operations, APIs, and application performance behind the scenes. As a trusted Software Company in Pondicherry, SysCrop develops secure backend systems that ensure reliability, scalability, and smooth business operations.\n\nOur backend development services are designed to handle everything from simple business websites to large-scale enterprise applications with thousands of concurrent users. We build robust server-side architectures that efficiently process data, integrate third-party services, and maintain high levels of security and performance.\n\nWhether you're building a CRM, ERP, SaaS application, online marketplace, or enterprise platform, our backend solutions are developed to support future business growth while maintaining maximum uptime and security.",
+            desc: "A powerful backend is the foundation of every successful web application. It manages business logic, user authentication, database operations, APIs, and application performance behind the scenes. As a trusted Software Company in Pondicherry, Syscorp develops secure backend systems that ensure reliability, scalability, and smooth business operations.\n\nOur backend development services are designed to handle everything from simple business websites to large-scale enterprise applications with thousands of concurrent users. We build robust server-side architectures that efficiently process data, integrate third-party services, and maintain high levels of security and performance.\n\nWhether you're building a CRM, ERP, SaaS application, online marketplace, or enterprise platform, our backend solutions are developed to support future business growth while maintaining maximum uptime and security.",
             icon: Server,
             technologies: ["Node.js", "Express.js", "PHP", "Laravel", "Python", "Django", "ASP.NET Core", "Java", "Spring Boot"]
         },
@@ -52,7 +52,7 @@ export default function FullStackDevelopmentPondicherryPage() {
             id: "api-integration",
             title: "REST API & Third-Party API Integration",
             subtitle: "Connect Your Applications with Powerful API Solutions",
-            desc: "Modern web applications rely on seamless communication between multiple platforms and services. At SysCrop, we develop secure, scalable, and high-performance APIs that enable your applications to exchange data efficiently with third-party systems. As a leading Full-Stack Development Company in Pondicherry, we build custom REST APIs and integrate external services to enhance functionality, automate workflows, and improve business productivity.\n\nWhether you need payment gateway integration, CRM connectivity, ERP synchronization, cloud services, SMS gateways, or social media authentication, our API integration services ensure reliable communication while maintaining security and performance.\n\nOur developers follow industry standards and best practices to build APIs that are easy to maintain, scalable for future growth, and capable of supporting complex business operations.",
+            desc: "Modern web applications rely on seamless communication between multiple platforms and services. At Syscorp, we develop secure, scalable, and high-performance APIs that enable your applications to exchange data efficiently with third-party systems. As a leading Full-Stack Development Company in Pondicherry, we build custom REST APIs and integrate external services to enhance functionality, automate workflows, and improve business productivity.\n\nWhether you need payment gateway integration, CRM connectivity, ERP synchronization, cloud services, SMS gateways, or social media authentication, our API integration services ensure reliable communication while maintaining security and performance.\n\nOur developers follow industry standards and best practices to build APIs that are easy to maintain, scalable for future growth, and capable of supporting complex business operations.",
             icon: Zap,
             apiServices: [
                 "REST API Development",
@@ -98,7 +98,7 @@ export default function FullStackDevelopmentPondicherryPage() {
             id: "cloud-devops",
             title: "Cloud Deployment & DevOps",
             subtitle: "Deploy, Scale & Manage Applications with Confidence",
-            desc: "Building an application is only the beginning. Successful businesses require secure deployment, continuous integration, automated updates, and scalable infrastructure to support future growth.\n\nAt SysCrop, our cloud deployment and DevOps services help businesses deploy applications efficiently while maintaining high availability, security, and performance. As a trusted Software Company in Pondicherry, we configure reliable cloud environments that reduce downtime and improve operational efficiency.",
+            desc: "Building an application is only the beginning. Successful businesses require secure deployment, continuous integration, automated updates, and scalable infrastructure to support future growth.\n\nAt Syscorp, our cloud deployment and DevOps services help businesses deploy applications efficiently while maintaining high availability, security, and performance. As a trusted Software Company in Pondicherry, we configure reliable cloud environments that reduce downtime and improve operational efficiency.",
             icon: Cloud,
             platforms: [
                 "Amazon Web Services (AWS)",
@@ -171,7 +171,7 @@ export default function FullStackDevelopmentPondicherryPage() {
             id: "maintenance-support",
             title: "Maintenance & Support",
             subtitle: "Keep Your Applications Running Smoothly",
-            desc: "Application development doesn't end after deployment. Continuous maintenance is essential for keeping your software secure, updated, and optimized for changing business needs.\n\nAs an experienced Software Company in Pondicherry, SysCrop provides ongoing maintenance and technical support to ensure your application continues to perform efficiently while adapting to future business requirements.",
+            desc: "Application development doesn't end after deployment. Continuous maintenance is essential for keeping your software secure, updated, and optimized for changing business needs.\n\nAs an experienced Software Company in Pondicherry, Syscorp provides ongoing maintenance and technical support to ensure your application continues to perform efficiently while adapting to future business requirements.",
             icon: Wrench,
             supportServices: [
                 "Software Updates",
@@ -274,16 +274,16 @@ export default function FullStackDevelopmentPondicherryPage() {
             a: "Yes. A professional Full-Stack Development Company can build fully customized solutions such as CRM software, ERP systems, SaaS applications, business portals, eCommerce platforms, inventory management systems, and enterprise web applications based on your specific business needs."
         },
         {
-            q: "Why choose SysCrop for Full-Stack Development in Pondicherry?",
-            a: "SysCrop delivers end-to-end Full-Stack Development services using modern technologies and agile development practices. Our team focuses on building secure, scalable, and high-performance web applications that help businesses improve efficiency, streamline operations, and support long-term growth."
+            q: "Why choose Syscorp for Full-Stack Development in Pondicherry?",
+            a: "Syscorp delivers end-to-end Full-Stack Development services using modern technologies and agile development practices. Our team focuses on building secure, scalable, and high-performance web applications that help businesses improve efficiency, streamline operations, and support long-term growth."
         },
         {
-            q: "Does SysCrop provide support after the application is launched?",
-            a: "Yes. SysCrop offers ongoing maintenance and support services, including software updates, security patches, bug fixes, performance optimization, feature enhancements, and technical assistance to ensure your application continues to perform reliably after deployment."
+            q: "Does Syscorp provide support after the application is launched?",
+            a: "Yes. Syscorp offers ongoing maintenance and support services, including software updates, security patches, bug fixes, performance optimization, feature enhancements, and technical assistance to ensure your application continues to perform reliably after deployment."
         },
         {
-            q: "Which technologies does SysCrop use for Full-Stack Development?",
-            a: "SysCrop works with modern technologies such as React.js, Angular, Vue.js, Node.js, Laravel, Python, .NET, Java, MySQL, PostgreSQL, MongoDB, AWS, Microsoft Azure, Docker, and Kubernetes to build scalable, secure, and future-ready web applications."
+            q: "Which technologies does Syscorp use for Full-Stack Development?",
+            a: "Syscorp works with modern technologies such as React.js, Angular, Vue.js, Node.js, Laravel, Python, .NET, Java, MySQL, PostgreSQL, MongoDB, AWS, Microsoft Azure, Docker, and Kubernetes to build scalable, secure, and future-ready web applications."
         }
     ];
 
@@ -339,10 +339,10 @@ export default function FullStackDevelopmentPondicherryPage() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                         <div className="lg:col-span-7 gsap-fade-up">
-                            <div className="inline-flex items-center gap-2.5 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[12px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-5 shadow-sm">
-                                <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 End-to-End Engineering
-                            </div>
+                            </span>
 
                             <h2 className="text-3xl md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.12] mb-6">
                                 Best Full-Stack Development<br className="hidden xl:block" /> Company in Pondicherry
@@ -410,10 +410,10 @@ export default function FullStackDevelopmentPondicherryPage() {
 
                         {/* Right Column: Text Content & 3x3 Grid */}
                         <div className="lg:col-span-7 space-y-7 relative z-20">
-                            <div className="inline-flex items-center gap-2 bg-[#F0F6FF] text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-[#1A5CDD]/10">
-                                <Layers size={14} />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Core Concept
-                            </div>
+                            </span>
 
                             <h2 className="text-3xl md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.12]">
                                 What is Full Stack Development?
@@ -433,9 +433,9 @@ export default function FullStackDevelopmentPondicherryPage() {
                                         <Cpu size={22} />
                                     </div>
                                     <div>
-                                        <h4 className="text-[#011146] font-bold text-[16px] mb-1.5">The SysCrop Advantage</h4>
+                                        <h4 className="text-[#011146] font-bold text-[16px] mb-1.5">The Syscorp Advantage</h4>
                                         <p className="text-slate-500 text-[14px] leading-[1.7]">
-                                            At SysCrop, our full stack developers use modern technologies and industry best practices to build customized solutions that meet specific business requirements.
+                                            At Syscorp, our full stack developers use modern technologies and industry best practices to build customized solutions that meet specific business requirements.
                                         </p>
                                     </div>
                                 </div>
@@ -489,10 +489,10 @@ export default function FullStackDevelopmentPondicherryPage() {
                             {/* Left Column: Content */}
                             <div className="lg:col-span-7 space-y-6">
                                 <div className="flex items-center gap-3">
-                                    <span className="inline-flex items-center gap-2 bg-[#38bdf8]/15 text-[#011146] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#38bdf8]/30">
-                                        <Zap size={14} className="text-[#1A5CDD]" />
-                                        Strategic Value
-                                    </span>
+                                    <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Strategic Value
+                            </span>
                                 </div>
 
                                 <h2 className="text-3xl md:text-4xl lg:text-[42px] font-extrabold text-[#011146] tracking-tight leading-tight">
@@ -584,7 +584,7 @@ export default function FullStackDevelopmentPondicherryPage() {
                                             <div className="w-3 h-3 rounded-full bg-emerald-400 animate-ping" />
                                             <span className="text-xs font-semibold text-slate-200">End-to-End Synergy</span>
                                         </div>
-                                        <span className="text-xs font-mono text-[#38bdf8]">SysCrop Powered</span>
+                                        <span className="text-xs font-mono text-[#38bdf8]">Syscorp Powered</span>
                                     </div>
                                 </div>
                             </div>
@@ -600,10 +600,10 @@ export default function FullStackDevelopmentPondicherryPage() {
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#1A5CDD]/20 shadow-sm">
-                            <Sparkles size={14} />
-                            Full-Spectrum Capabilities
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Full-Spectrum Capabilities
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6">
                             What Our Full-Stack Development Services Cover
                         </h2>
@@ -826,15 +826,15 @@ export default function FullStackDevelopmentPondicherryPage() {
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-12">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#1A5CDD]/20 shadow-sm">
-                            <Sparkles size={14} />
-                            Agile Execution Roadmap
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Agile Execution Roadmap
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6">
                             Our Full-Stack Development Process
                         </h2>
                         <p className="text-slate-600 text-base md:text-[17px] leading-[1.8]">
-                            At SysCrop, we follow a structured and agile development process to build secure, scalable, and high-performance web applications. As a trusted Full-Stack Development Company in Pondicherry, we ensure every project is carefully planned, developed, tested, and deployed to meet your business goals. Our streamlined approach helps businesses receive reliable digital solutions from a leading Software Company in Pondicherry.
+                            At Syscorp, we follow a structured and agile development process to build secure, scalable, and high-performance web applications. As a trusted Full-Stack Development Company in Pondicherry, we ensure every project is carefully planned, developed, tested, and deployed to meet your business goals. Our streamlined approach helps businesses receive reliable digital solutions from a leading Software Company in Pondicherry.
                         </p>
                     </div>
                     <div className="relative group/slider">
@@ -946,36 +946,36 @@ export default function FullStackDevelopmentPondicherryPage() {
                 </div>
             </section>
 
-            {/* SECTION 5: Why Choose SysCrop? */}
+            {/* SECTION 5: Why Choose Syscorp? */}
             <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-gradient-to-r from-[#1A5CDD]/8 via-[#38bdf8]/6 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute inset-0 opacity-[0.035] pointer-events-none" style={{ backgroundImage: `radial-gradient(#1A5CDD 1.5px, transparent 1.5px)`, backgroundSize: `32px 32px` }} />
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#1A5CDD]/20 shadow-sm">
-                            <Shield size={14} />
-                            Trusted Engineering Partner
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Trusted Engineering Partner
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-3">
-                            Why Choose SysCrop?
+                            Why Choose Syscorp?
                         </h2>
                         <h3 className="text-xl font-bold text-[#1A5CDD] mb-6">
                             Your Trusted Full-Stack Development Company in Pondicherry
                         </h3>
                         <p className="text-slate-600 text-base md:text-[17px] leading-[1.8] mb-4">
-                            Choosing the right technology partner is essential for building successful digital products. At SysCrop, we combine technical expertise, industry experience, and innovative technologies to deliver web applications that help businesses grow faster and operate more efficiently.
+                            Choosing the right technology partner is essential for building successful digital products. At Syscorp, we combine technical expertise, industry experience, and innovative technologies to deliver web applications that help businesses grow faster and operate more efficiently.
                         </p>
                         <p className="text-slate-600 text-base md:text-[17px] leading-[1.8]">
                             As a reliable Full-Stack Development Company in Pondicherry, we focus on delivering high-quality applications that are secure, scalable, and customized to your business needs.
                         </p>
                     </div>
 
-                    {/* Why Businesses Choose SysCrop Grid */}
+                    {/* Why Businesses Choose Syscorp Grid */}
                     <div className="bg-white/80 backdrop-blur-xl rounded-[36px] p-8 md:p-12 border border-slate-200/90 shadow-[0_10px_35px_rgba(1,17,70,0.05)] mb-12 relative overflow-hidden">
 
                         <h4 className="text-2xl md:text-3xl font-extrabold text-[#011146] mb-10 text-center tracking-tight">
-                            Why Businesses Choose SysCrop
+                            Why Businesses Choose Syscorp
                         </h4>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
@@ -1015,10 +1015,10 @@ export default function FullStackDevelopmentPondicherryPage() {
                         <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-br from-[#1A5CDD]/20 via-[#38bdf8]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#1A5CDD]/15 rounded-full blur-2xl pointer-events-none" />
 
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/20 text-[#38bdf8] px-4 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider mb-4 border border-[#1A5CDD]/30">
-                            <Sparkles size={14} />
-                            ENGINEERING VALUE COMMITMENT
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider mb-4">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                ENGINEERING VALUE COMMITMENT
+                            </span>
 
                         <p className="text-slate-200 text-base md:text-lg leading-relaxed max-w-3xl mx-auto font-medium relative z-10">
                             Whether you're developing a startup MVP, enterprise application, CRM, ERP, SaaS platform, or eCommerce solution, our team is committed to delivering digital products that create measurable business value.

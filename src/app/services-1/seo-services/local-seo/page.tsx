@@ -153,7 +153,7 @@ export default function LocalSEOServicesPage() {
         { q: "How long does it take to see results from Local SEO?", a: "The timeline depends on your industry, competition, and the current state of your online presence. Most businesses begin seeing noticeable improvements within 2 to 4 months, with continued growth through ongoing optimization." },
         { q: "Do I need a Google Business Profile for Local SEO?", a: "Yes. A well-optimized Google Business Profile is one of the most important factors for improving visibility in local search results and Google Maps." },
         { q: "Can Local SEO help businesses with multiple locations?", a: "Absolutely. We create customized Local SEO strategies for businesses operating in multiple cities or branches, optimizing each location to improve local search visibility." },
-        { q: "Why should I choose SysCrop for Local SEO Services?", a: "SysCrop delivers customized Local SEO strategies tailored to your business goals, combining technical expertise, local search optimization, citation management, and reputation building to help you attract more local customers and achieve sustainable growth." }
+        { q: "Why should I choose Syscorp for Local SEO Services?", a: "Syscorp delivers customized Local SEO strategies tailored to your business goals, combining technical expertise, local search optimization, citation management, and reputation building to help you attract more local customers and achieve sustainable growth." }
     ];
 
     return (
@@ -181,7 +181,7 @@ export default function LocalSEOServicesPage() {
                                 Connect with Customers <span className="text-[#1A5CDD]">Searching Locally</span>
                             </h2>
                             <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                                At SysCrop, our Local SEO Services in Pondicherry help businesses improve their visibility in local search results and connect with customers who are actively searching for products and services in their area. As a trusted Local SEO Company in Pondicherry, we implement customized local search strategies that strengthen your online presence, improve local rankings, and generate more enquiries, phone calls, and store visits.
+                                At Syscorp, our Local SEO Services in Pondicherry help businesses improve their visibility in local search results and connect with customers who are actively searching for products and services in their area. As a trusted Local SEO Company in Pondicherry, we implement customized local search strategies that strengthen your online presence, improve local rankings, and generate more enquiries, phone calls, and store visits.
                             </p>
                             <p className="text-slate-600 text-lg leading-relaxed mb-6">
                                 Our Local SEO approach goes beyond simply optimizing your Google Business Profile. We focus on local keyword targeting, business listings, citation management, location-specific content, review management, and local search optimization to ensure your business stands out in Google Search and Google Maps. Whether you're a startup, retail store, healthcare provider, educational institution, restaurant, or service-based business, our Local SEO solutions are designed to help you reach nearby customers and achieve sustainable business growth.
@@ -393,7 +393,7 @@ export default function LocalSEOServicesPage() {
                             What Our Local SEO Services Cover
                         </h2>
                         <p className="text-slate-300 text-[16px] leading-relaxed max-w-2xl mx-auto">
-                            At SysCrop, we provide comprehensive Local SEO Services designed to improve your visibility in Google Search, Google Maps, and other location-based search results.
+                            At Syscorp, we provide comprehensive Local SEO Services designed to improve your visibility in Google Search, Google Maps, and other location-based search results.
                         </p>
                     </div>
 
@@ -472,13 +472,13 @@ export default function LocalSEOServicesPage() {
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="text-center max-w-4xl mx-auto mb-16">
                         <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
-                            Why SysCrop
+                            Why Syscorp
                         </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
-                            Why Choose SysCrop for Local SEO?
+                            Why Choose Syscorp for Local SEO?
                         </h2>
                         <p className="mt-6 text-slate-600 text-[16px] leading-relaxed">
-                            At SysCrop, we understand that local customers are the driving force behind business growth. Our Local SEO strategies are tailored to your industry, target audience, service areas, and business objectives, ensuring your business appears where your customers are actively searching. By combining technical expertise, local search optimization, reputation management, and data-driven strategies, we help businesses improve local visibility, generate qualified leads, and achieve sustainable long-term growth through ethical SEO practices.
+                            At Syscorp, we understand that local customers are the driving force behind business growth. Our Local SEO strategies are tailored to your industry, target audience, service areas, and business objectives, ensuring your business appears where your customers are actively searching. By combining technical expertise, local search optimization, reputation management, and data-driven strategies, we help businesses improve local visibility, generate qualified leads, and achieve sustainable long-term growth through ethical SEO practices.
                         </p>
                     </div>
 

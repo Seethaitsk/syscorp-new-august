@@ -129,9 +129,9 @@ export default function ContentMarketingPage() {
     const faqs = [
         { q: "What are Content Marketing Services?", a: "Content Marketing Services involve creating, optimizing, and promoting valuable content to attract customers, improve brand visibility, and support business growth." },
         { q: "Why is content marketing important for SEO?", a: "Content marketing helps improve SEO by creating keyword-focused content, increasing website relevance, attracting organic traffic, and improving search rankings." },
-        { q: "What types of content does SysCrop create?", a: "SysCrop creates blogs, website content, landing pages, SEO articles, social media content, email content, infographics, press releases, guest posts, and video content strategies." },
+        { q: "What types of content does Syscorp create?", a: "Syscorp creates blogs, website content, landing pages, SEO articles, social media content, email content, infographics, press releases, guest posts, and video content strategies." },
         { q: "How can content marketing help generate leads?", a: "Content marketing educates potential customers, builds trust, attracts targeted visitors, and encourages users to take actions such as enquiries or purchases." },
-        { q: "Does SysCrop provide SEO-friendly content writing?", a: "Yes. We create SEO-optimized content based on keyword research, search intent, and user experience to improve online visibility." },
+        { q: "Does Syscorp provide SEO-friendly content writing?", a: "Yes. We create SEO-optimized content based on keyword research, search intent, and user experience to improve online visibility." },
         { q: "How long does it take to see results from content marketing?", a: "Content marketing is a long-term strategy. Results depend on factors such as competition, industry, content quality, SEO efforts, and consistency." }
     ];
 
@@ -172,7 +172,7 @@ export default function ContentMarketingPage() {
                                 Create Powerful Content That Builds Brand Authority, Attracts Customers, and Drives Business Growth
                             </p>
                             <p className="text-slate-600 text-[16px] md:text-[17px] leading-relaxed mb-6">
-                                At SysCrop, we provide professional Content Marketing Services in Pondicherry that help businesses create, optimize, and distribute valuable content to attract the right audience and achieve their marketing goals. As a trusted Content Marketing Company in Pondicherry, we develop customized content strategies that improve online visibility, strengthen brand authority, increase audience engagement, and support long-term business growth.
+                                At Syscorp, we provide professional Content Marketing Services in Pondicherry that help businesses create, optimize, and distribute valuable content to attract the right audience and achieve their marketing goals. As a trusted Content Marketing Company in Pondicherry, we develop customized content strategies that improve online visibility, strengthen brand authority, increase audience engagement, and support long-term business growth.
                             </p>
 
                             <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isIntroExpanded ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
@@ -271,7 +271,7 @@ export default function ContentMarketingPage() {
                                         Content Marketing is a strategic approach to creating and sharing valuable, relevant, and informative content to attract, engage, and convert your target audience. Instead of directly promoting products or services, content marketing focuses on educating users, solving their problems, and building trust with your brand.
                                     </p>
                                     <p className="text-slate-300 text-[15px] leading-relaxed">
-                                        At SysCrop, we create content strategies that combine SEO optimization, industry insights, and audience-focused messaging to improve your digital presence. From increasing organic visibility to supporting lead generation, effective content marketing helps businesses establish authority and create long-term relationships with customers.
+                                        At Syscorp, we create content strategies that combine SEO optimization, industry insights, and audience-focused messaging to improve your digital presence. From increasing organic visibility to supporting lead generation, effective content marketing helps businesses establish authority and create long-term relationships with customers.
                                     </p>
                                 </div>
                             </div>
@@ -355,10 +355,10 @@ export default function ContentMarketingPage() {
             <section className="pt-20 pb-12 lg:pt-24 lg:pb-16 bg-white border-y border-slate-100 relative">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-20">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
-                            Why It Matters
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Why It Matters
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-8 leading-[1.15]">
                             Benefits of <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Content Marketing</span>
                         </h2>
@@ -553,7 +553,7 @@ export default function ContentMarketingPage() {
                 </div>
             </section>
 
-            {/* Why Choose SysCrop */}
+            {/* Why Choose Syscorp */}
             <section className="py-20 bg-[#F0F8FF] relative overflow-hidden">
                 <div className="container mx-auto px-4 relative max-w-7xl">
                     <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-20">
@@ -563,13 +563,13 @@ export default function ContentMarketingPage() {
                                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
                                     <Activity className="text-[#1A5CDD]" size={20} />
                                 </div>
-                                <h3 className="text-xl font-bold text-[#011146]">Why SysCrop</h3>
+                                <h3 className="text-xl font-bold text-[#011146]">Why Syscorp</h3>
                             </div>
                             <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] mb-6 leading-tight">
-                                Why Choose SysCrop for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Content Marketing Services in Pondicherry?</span>
+                                Why Choose Syscorp for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Content Marketing Services in Pondicherry?</span>
                             </h2>
                             <p className="text-slate-600 text-[15px] leading-relaxed mb-5">
-                                At SysCrop, our Content Marketing Services in Pondicherry combine creativity, SEO expertise, and data-driven strategies to create high-quality content that attracts your target audience, builds brand authority, and generates measurable business results.
+                                At Syscorp, our Content Marketing Services in Pondicherry combine creativity, SEO expertise, and data-driven strategies to create high-quality content that attracts your target audience, builds brand authority, and generates measurable business results.
                             </p>
                         </div>
 
@@ -602,7 +602,7 @@ export default function ContentMarketingPage() {
                     </div>
 
                     <div className="mt-16 text-center max-w-3xl mx-auto mb-12">
-                        <h3 className="text-2xl md:text-3xl font-bold text-[#011146] tracking-tight">What Sets SysCrop Apart?</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold text-[#011146] tracking-tight">What Sets Syscorp Apart?</h3>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
@@ -692,87 +692,80 @@ export default function ContentMarketingPage() {
                 <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-[#011146] to-transparent pointer-events-none z-10" />
                 <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-[#011146] to-transparent pointer-events-none z-10" />
             </section>
-
-
-            {/* FAQs */}
-            <section className="py-20 lg:py-28 bg-[#F8FAFC]">
+            {/* FAQ Section */}
+            <section className="py-20 bg-[#F8FAFC]">
                 <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
                         
-                        {/* Left Column: Heading & Widget */}
-                        <div className="lg:w-5/12">
-                            <div className="sticky top-32">
-                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-600 text-xs font-bold tracking-widest uppercase border border-blue-100 mb-6">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
-                                    Frequently Asked Questions
-                                </span>
-                                
-                                <h2 className="text-4xl md:text-5xl font-extrabold text-[#011146] mb-6 tracking-tight leading-tight">
-                                    Your Questions <br/>
-                                    <span className="text-blue-600">Answered</span>
-                                </h2>
-                                
-                                <p className="text-slate-500 text-lg leading-relaxed mb-10">
-                                    Find clear, honest answers to common questions from our team of experienced professionals.
-                                </p>
-                                
-                                <hr className="border-slate-200 mb-8" />
-                                
-                                <div className="flex items-center gap-4">
-                                    <div className="flex -space-x-3">
-                                        <div className="w-12 h-12 rounded-full border-2 border-white bg-slate-200 overflow-hidden relative shadow-sm">
-                                            <Image src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop" alt="Expert" fill className="object-cover" />
-                                        </div>
-                                        <div className="w-12 h-12 rounded-full border-2 border-white bg-slate-200 overflow-hidden relative shadow-sm">
-                                            <Image src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=100&auto=format&fit=crop" alt="Expert" fill className="object-cover" />
-                                        </div>
-                                        <div className="w-12 h-12 rounded-full border-2 border-white bg-slate-200 overflow-hidden relative shadow-sm">
-                                            <Image src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=100&auto=format&fit=crop" alt="Expert" fill className="object-cover" />
-                                        </div>
-                                        <div className="w-12 h-12 rounded-full border-2 border-white bg-[#011146] flex items-center justify-center text-white text-xs font-bold relative z-10 shadow-sm">
-                                            +10
-                                        </div>
+                        {/* Left Column - Content */}
+                        <div className="lg:w-1/3 flex flex-col justify-start top-32">
+                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
+                                FREQUENTLY ASKED QUESTIONS
+                            </div>
+                            
+                            <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
+                                Your Questions <br />
+                                <span className="text-[#1A5CDD]">Answered</span>
+                            </h2>
+                            
+                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-10 max-w-sm">
+                                Find clear, honest answers to common questions from our team of experienced professionals.
+                            </p>
+                            
+                            {/* Avatars */}
+                            <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
+                                <div className="flex -space-x-3.5">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-30" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-20" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-10" alt="Consulting Expert" />
+                                    <div className="w-[42px] h-[42px] rounded-full bg-[#011146] border-[2.5px] border-[#F8FAFC] flex items-center justify-center text-white text-[11px] font-bold shadow-sm relative z-0">
+                                        +10
                                     </div>
-                                    <p className="text-sm text-slate-500 font-medium leading-tight max-w-[150px]">
-                                        Answers curated directly from our consulting experts.
-                                    </p>
                                 </div>
+                                <p className="text-[12.5px] text-slate-500 font-medium leading-snug max-w-[140px]">
+                                    Answers curated directly from our consulting experts.
+                                </p>
                             </div>
                         </div>
 
-                        {/* Right Column: Accordions */}
-                        <div className="lg:w-7/12">
-                            <div className="space-y-4">
-                                {faqs.map((item, index) => {
-                                    const isOpen = activeFaq === index;
-                                    return (
-                                        <div
-                                            key={index}
-                                            className={`rounded-[20px] border transition-all duration-300 overflow-hidden bg-white ${isOpen ? "border-blue-600 shadow-md shadow-blue-900/5" : "border-slate-200 hover:border-slate-300"}`}
+                        {/* Right Column - Accordions */}
+                        <div className="lg:w-2/3 w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {faqs.map((faq, index) => (
+                                    <div
+                                        key={index}
+                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index 
+                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]" 
+                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
+                                            }`}
+                                    >
+                                        <button
+                                            className="w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer group"
+                                            onClick={() => setActiveFaq(activeFaq === index ? null : index)}
                                         >
-                                            <button
-                                                onClick={() => setActiveFaq(isOpen ? null : index)}
-                                                className="w-full flex items-center justify-between p-6 text-left focus:outline-none group"
-                                            >
-                                                <h3 className="text-[16px] font-bold text-[#011146] pr-8 group-hover:text-blue-600 transition-colors duration-300">
-                                                    {index + 1}. {item.q}
-                                                </h3>
-                                                <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300 ${isOpen ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-500 group-hover:bg-slate-200'}`}>
-                                                    <span className="text-xl font-light leading-none relative -top-[1px]">{isOpen ? '-' : '+'}</span>
-                                                </div>
-                                            </button>
-                                            <div
-                                                className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-                                            >
-                                                <div className="overflow-hidden">
-                                                    <div className="px-6 pb-6 pt-2 text-slate-600 text-[15px] leading-relaxed">
-                                                        {item.a}
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${activeFaq === index ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
+                                                {index + 1}. {faq.q}
+                                            </span>
+                                            <span className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-200/60 text-slate-600 group-hover:bg-slate-200 group-hover:text-slate-800"}`}>
+                                                {activeFaq === index ? (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" /></svg>
+                                                ) : (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                                                )}
+                                            </span>
+                                        </button>
+                                        <div
+                                            className={`transition-all duration-300 ease-in-out ${activeFaq === index ? "max-h-96 opacity-100 pb-7 px-6" : "max-h-0 opacity-0 overflow-hidden px-6"
+                                                }`}
+                                        >
+                                            <div className="w-full h-px bg-slate-100 mb-5"></div>
+                                            <p className="text-slate-500 leading-relaxed text-[14.5px] font-medium pr-4">
+                                                {faq.a}
+                                            </p>
                                         </div>
-                                    );
-                                })}
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>

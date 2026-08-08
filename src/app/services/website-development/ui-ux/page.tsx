@@ -367,7 +367,7 @@ export default function UIUXDesignPondicherryPage() {
         },
     ];
 
-    // Why Choose SysCrop Reasons
+    // Why Choose Syscorp Reasons
     const whyChooseReasons = [
         {
             title: "User-Centered Design",
@@ -426,15 +426,15 @@ export default function UIUXDesignPondicherryPage() {
             a: "The timeline varies depending on the scope of the project. A simple website design may take a few weeks, while complex web applications or mobile apps require more time for research, wireframing, prototyping, testing, and final design delivery.",
         },
         {
-            q: "4. Why choose SysCrop for UI/UX Design Services in Pondicherry?",
-            a: "SysCrop combines industry expertise, user-centered design practices, and modern design tools to create intuitive and engaging digital experiences. Our team works closely with clients to deliver customized UI/UX solutions that align with their business goals and user expectations.",
+            q: "4. Why choose Syscorp for UI/UX Design Services in Pondicherry?",
+            a: "Syscorp combines industry expertise, user-centered design practices, and modern design tools to create intuitive and engaging digital experiences. Our team works closely with clients to deliver customized UI/UX solutions that align with their business goals and user expectations.",
         },
         {
-            q: "5. Does SysCrop provide UI/UX design for both websites and mobile applications?",
+            q: "5. Does Syscorp provide UI/UX design for both websites and mobile applications?",
             a: "Yes. Our UI/UX Design Services in Pondicherry include website UI/UX design, mobile app design, SaaS platforms, CRM and ERP interfaces, dashboards, eCommerce websites, and enterprise applications. Every design is responsive, scalable, and optimized for a seamless user experience.",
         },
         {
-            q: "6. Does SysCrop redesign existing websites and applications?",
+            q: "6. Does Syscorp redesign existing websites and applications?",
             a: "Yes. If your current website or application has usability issues, outdated visuals, or poor user engagement, our team can redesign the interface, improve the user experience, optimize navigation, and create a modern design that better supports your business objectives.",
         },
     ];
@@ -468,10 +468,10 @@ export default function UIUXDesignPondicherryPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                         {/* Left: Text Content */}
                         <div className="lg:col-span-7">
-                            <div className="inline-flex items-center gap-2.5 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[13px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
-                                <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 UI/UX Design Excellence
-                            </div>
+                            </span>
 
                             <h1 className="text-3xl md:text-5xl lg:text-[48px] font-bold text-[#011146] tracking-tight leading-[1.2] mb-4">
                                 Top <span className="text-[#1A5CDD]">UI/UX Design Services</span> in Pondicherry
@@ -486,7 +486,7 @@ export default function UIUXDesignPondicherryPage() {
 
                             <div className="space-y-4 mb-8">
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
-                                    A successful digital product combines attractive design with a seamless user experience. At SysCrop, we provide UI/UX Design Services in Pondicherry to help businesses create intuitive, responsive, and visually engaging websites and applications.
+                                    A successful digital product combines attractive design with a seamless user experience. At Syscorp, we provide UI/UX Design Services in Pondicherry to help businesses create intuitive, responsive, and visually engaging websites and applications.
                                 </p>
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
                                     We design user-friendly interfaces for websites, mobile apps, SaaS platforms, CRM, ERP systems, dashboards, and custom business applications. Every design is based on user research, business goals, and modern design principles to improve usability, engagement, and conversions.
@@ -545,7 +545,7 @@ export default function UIUXDesignPondicherryPage() {
                                         <span className="w-3 h-3 rounded-full bg-emerald-400" />
                                     </div>
                                     <div className="flex-1 bg-white rounded-md px-3 py-1 text-xs text-slate-400 font-medium ml-2 border border-slate-200 flex items-center justify-between">
-                                        <span>syscrop.in/ui-ux-design</span>
+                                        <span>syscorp.in/ui-ux-design</span>
                                         <span className="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded flex items-center gap-1">
                                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping inline-block" />
                                             Figma Canvas Active
@@ -663,8 +663,9 @@ export default function UIUXDesignPondicherryPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Text Content */}
                         <div>
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 shadow-sm border border-[#1A5CDD]/10">
-                                <Palette size={14} /> Understanding UI/UX Design
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Understanding UI/UX Design
                             </span>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#011146] mb-3 leading-tight">
@@ -733,8 +734,9 @@ export default function UIUXDesignPondicherryPage() {
                     <div className="grid grid-cols-1 xl:grid-cols-12 gap-16 items-center">
                         {/* Text Content */}
                         <div className="xl:col-span-5">
-                            <span className="inline-flex items-center gap-2 bg-white/10 text-[#38bdf8] border border-white/10 px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 backdrop-blur-md">
-                                <TrendingUp size={14} /> Essential Business Impact
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                Essential Business Impact
                             </span>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
@@ -799,9 +801,10 @@ export default function UIUXDesignPondicherryPage() {
                 <div className="container mx-auto max-w-7xl px-6 relative z-10">
                     {/* Section Header */}
                     <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-16">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-blue-100/80 text-[#1A5CDD] border border-blue-200/60 px-5 py-2 text-xs font-extrabold uppercase tracking-widest shadow-2xs backdrop-blur-md">
-                            <Sparkles size={14} /> Comprehensive UI/UX Offerings
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Comprehensive UI/UX Offerings
+                            </span>
 
                         <h2 className="mt-5 text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
                             Our UI/UX <span className="bg-gradient-to-r from-[#1A5CDD] via-[#2E8BFF] to-[#38bdf8] bg-clip-text text-transparent">Design Services</span>
@@ -812,7 +815,7 @@ export default function UIUXDesignPondicherryPage() {
                         </p>
 
                         <p className="mt-4 text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-                            At SysCrop, we provide UI/UX Design Services in Pondicherry to help businesses create intuitive, engaging, and user-friendly digital products. We design websites, mobile applications, SaaS platforms, CRM, ERP systems, enterprise software, and eCommerce solutions that deliver seamless user experiences and strengthen your brand.
+                            At Syscorp, we provide UI/UX Design Services in Pondicherry to help businesses create intuitive, engaging, and user-friendly digital products. We design websites, mobile applications, SaaS platforms, CRM, ERP systems, enterprise software, and eCommerce solutions that deliver seamless user experiences and strengthen your brand.
                         </p>
 
                         {/* Quick Stats Pills */}
@@ -913,9 +916,10 @@ export default function UIUXDesignPondicherryPage() {
 
                 <div className="container mx-auto max-w-7xl px-6 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-8">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] border border-[#1A5CDD]/20 px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-xs backdrop-blur-md">
-                            <Sliders size={13} /> Modern Technology Stack
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Modern Technology Stack
+                            </span>
 
                         <h2 className="mt-3 text-2xl md:text-4xl font-extrabold text-[#011146] tracking-tight">
                             Design Tools & <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">Technologies We Use</span>
@@ -926,7 +930,7 @@ export default function UIUXDesignPondicherryPage() {
                         </p>
 
                         <p className="mt-2 text-slate-600 text-sm leading-relaxed">
-                            At SysCrop, we use industry-leading design tools to deliver innovative UI/UX Design Services in Pondicherry. As a trusted UI/UX Design Company in Pondicherry, we create responsive interfaces, interactive prototypes, and user-friendly digital experiences using the latest design technologies.
+                            At Syscorp, we use industry-leading design tools to deliver innovative UI/UX Design Services in Pondicherry. As a trusted UI/UX Design Company in Pondicherry, we create responsive interfaces, interactive prototypes, and user-friendly digital experiences using the latest design technologies.
                         </p>
                     </div>
 
@@ -981,9 +985,10 @@ export default function UIUXDesignPondicherryPage() {
                                 {/* Header Bar */}
                                 <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-3">
                                     <div className="flex items-center gap-2.5">
-                                        <span className="inline-flex items-center gap-1.5 bg-white/10 text-[#38bdf8] border border-white/20 px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider backdrop-blur-md">
-                                            <Sparkles size={12} /> Spotlight Category
-                                        </span>
+                                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                Spotlight Category
+                            </span>
                                         <span className="text-[11px] font-bold text-blue-200/80">
                                             Category 0{activeToolCategory + 1} of 0{toolCategories.length}
                                         </span>
@@ -1068,9 +1073,10 @@ export default function UIUXDesignPondicherryPage() {
             <section className="py-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto max-w-7xl px-6 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-20">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-blue-100/80 text-[#1A5CDD] border border-blue-200/60 px-5 py-2 text-xs font-extrabold uppercase tracking-widest shadow-sm">
-                            <Workflow size={14} /> Proven Methodology
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Proven Methodology
+                            </span>
 
                         <h2 className="mt-6 text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
                             Our UI/UX <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">Design Process</span>
@@ -1081,7 +1087,7 @@ export default function UIUXDesignPondicherryPage() {
                         </p>
 
                         <p className="mt-5 text-slate-600 text-[16.5px] leading-relaxed">
-                            Creating an exceptional digital experience requires more than attractive visuals—it requires research, planning, and collaboration. At SysCrop, we follow a structured design methodology that transforms business ideas into intuitive digital experiences. As a trusted provider of UI/UX Design Services in Pondicherry, we focus on understanding user needs and creating visually appealing, user-friendly interfaces.
+                            Creating an exceptional digital experience requires more than attractive visuals—it requires research, planning, and collaboration. At Syscorp, we follow a structured design methodology that transforms business ideas into intuitive digital experiences. As a trusted provider of UI/UX Design Services in Pondicherry, we focus on understanding user needs and creating visually appealing, user-friendly interfaces.
                         </p>
                         <p className="mt-4 text-slate-600 text-[16.5px] leading-relaxed">
                             From user research and wireframing to prototyping, usability testing, and final design delivery, every stage is carefully planned to ensure a seamless user experience. Whether you're building a new product or redesigning an existing one, our process helps improve usability, reduce development risks, and deliver scalable digital solutions.
@@ -1177,7 +1183,7 @@ export default function UIUXDesignPondicherryPage() {
                 </div>
             </section>
 
-            {/* SECTION 7: Why Businesses Choose SysCrop */}
+            {/* SECTION 7: Why Businesses Choose Syscorp */}
             <section className="py-20 bg-gradient-to-b from-[#010D33] via-[#05164E] to-[#010B29] text-white relative overflow-hidden">
                 {/* Ambient Decorative Blurs */}
                 <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-[#1A5CDD]/20 rounded-full blur-[120px] pointer-events-none" />
@@ -1192,12 +1198,13 @@ export default function UIUXDesignPondicherryPage() {
 
                 <div className="container mx-auto max-w-7xl px-6 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-white/10 text-[#38bdf8] border border-white/15 px-5 py-2 text-xs font-extrabold uppercase tracking-widest backdrop-blur-md shadow-inner">
-                            <Award size={14} /> Why Choose Us
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                Why Choose Us
+                            </span>
 
                         <h2 className="mt-6 text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                            Why Businesses <span className="text-[#38bdf8]">Choose SysCrop</span>
+                            Why Businesses <span className="text-[#38bdf8]">Choose Syscorp</span>
                         </h2>
 
                         <p className="mt-3 text-xl font-bold text-[#38bdf8]">
@@ -1205,7 +1212,7 @@ export default function UIUXDesignPondicherryPage() {
                         </p>
 
                         <p className="mt-5 text-blue-100/80 text-[16.5px] leading-relaxed">
-                            At SysCrop, we combine creativity, strategy, and technology to deliver exceptional UI/UX Design Services in Pondicherry. Backed by 20+ years of combined industry experience, our team designs intuitive and engaging digital experiences that help businesses improve user satisfaction, strengthen their brand, and achieve long-term growth. As a trusted UI/UX Design Company in Pondicherry, we focus on creating user-centric designs that are scalable, responsive, and built for success.
+                            At Syscorp, we combine creativity, strategy, and technology to deliver exceptional UI/UX Design Services in Pondicherry. Backed by 20+ years of combined industry experience, our team designs intuitive and engaging digital experiences that help businesses improve user satisfaction, strengthen their brand, and achieve long-term growth. As a trusted UI/UX Design Company in Pondicherry, we focus on creating user-centric designs that are scalable, responsive, and built for success.
                         </p>
                     </div>
 
@@ -1247,8 +1254,9 @@ export default function UIUXDesignPondicherryPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                         {/* Left Column: Heading & Info */}
                         <div className="lg:col-span-5 lg:sticky">
-                            <span className="inline-flex items-center gap-2 rounded-full bg-blue-100/80 text-[#1A5CDD] border border-blue-200/60 px-5 py-2 text-xs font-extrabold uppercase tracking-widest shadow-sm mb-6">
-                                <HelpCircle size={14} /> Clear Answers
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Clear Answers
                             </span>
 
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">

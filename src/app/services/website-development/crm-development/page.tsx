@@ -278,8 +278,8 @@ export default function CRMDevelopmentPondicherryPage() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center gsap-fade-up">
                         <div className="lg:col-span-6 space-y-6">
-                            <span className="inline-flex items-center gap-2 bg-white border border-slate-200 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
-                                <Briefcase size={14} />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Scalable Business Growth
                             </span>
 
@@ -338,8 +338,8 @@ export default function CRMDevelopmentPondicherryPage() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="max-w-4xl mx-auto text-center space-y-8">
                         <div>
-                            <span className="inline-flex items-center gap-2 bg-[#38bdf8]/10 text-[#38bdf8] px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-[#38bdf8]/20 shadow-sm mb-6">
-                                <Users size={14} />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
                                 Centralized Business Intelligence
                             </span>
 
@@ -366,10 +366,10 @@ export default function CRMDevelopmentPondicherryPage() {
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-5">
-                        <span className="inline-flex items-center gap-2 bg-white text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-slate-200 shadow-sm">
-                            <Zap size={14} />
-                            End-To-End CRM Capabilities
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                End-To-End CRM Capabilities
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
                             Our CRM Development <span className="text-[#1A5CDD]">Services</span>
                         </h2>
@@ -469,10 +469,10 @@ export default function CRMDevelopmentPondicherryPage() {
             <section className="py-20  bg-white relative overflow-hidden">
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-5">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-[#1A5CDD]/20 shadow-sm">
-                            <Layers size={14} />
-                            Modular CRM Studio
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Modular CRM Studio
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
                             CRM Solutions We <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Develop</span>
                         </h2>
@@ -533,10 +533,10 @@ export default function CRMDevelopmentPondicherryPage() {
             <section className="py-20  bg-[#F8FAFC] relative overflow-hidden">
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-5">
-                        <span className="inline-flex items-center gap-2 bg-white border border-slate-200 text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
-                            <Code size={14} />
-                            Modern Tech Stack
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Modern Tech Stack
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
                             Technologies We <span className="text-[#1A5CDD]">Use</span>
                         </h2>
@@ -574,10 +574,10 @@ export default function CRMDevelopmentPondicherryPage() {
                 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-20 space-y-6">
-                        <span className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
-                            <RefreshCw size={14} />
-                            Seamless Connectivity
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                Seamless Connectivity
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
                             CRM <span className="text-[#1A5CDD]">Integration</span> Services
                         </h2>
@@ -614,10 +614,10 @@ export default function CRMDevelopmentPondicherryPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="space-y-8">
                             <div>
-                                <span className="inline-flex items-center gap-2 bg-[#F0F6FF] text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-[#1A5CDD]/10 mb-6">
-                                    <Shield size={14} />
-                                    Trusted Partner
-                                </span>
+                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Trusted Partner
+                            </span>
                                 <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-[1.15]">
                                     Why Choose Our CRM Development <br className="hidden lg:block" /> Company in <span className="text-[#1A5CDD]">Pondicherry?</span>
                                 </h2>
@@ -649,10 +649,10 @@ export default function CRMDevelopmentPondicherryPage() {
             <section className="py-20  bg-[#F8FAFC] relative overflow-hidden">
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16 space-y-5">
-                        <span className="inline-flex items-center gap-2 bg-white border border-slate-200 text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
-                            <HelpCircle size={14} />
-                            Knowledge Base
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Knowledge Base
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
                             Frequently Asked <span className="text-[#1A5CDD]">Questions</span>
                         </h2>

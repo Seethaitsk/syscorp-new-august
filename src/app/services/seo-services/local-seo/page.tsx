@@ -153,7 +153,7 @@ export default function LocalSEOServicesPage() {
         { q: "How long does it take to see results from Local SEO?", a: "The timeline depends on your industry, competition, and the current state of your online presence. Most businesses begin seeing noticeable improvements within 2 to 4 months, with continued growth through ongoing optimization." },
         { q: "Do I need a Google Business Profile for Local SEO?", a: "Yes. A well-optimized Google Business Profile is one of the most important factors for improving visibility in local search results and Google Maps." },
         { q: "Can Local SEO help businesses with multiple locations?", a: "Absolutely. We create customized Local SEO strategies for businesses operating in multiple cities or branches, optimizing each location to improve local search visibility." },
-        { q: "Why should I choose SysCrop for Local SEO Services?", a: "SysCrop delivers customized Local SEO strategies tailored to your business goals, combining technical expertise, local search optimization, citation management, and reputation building to help you attract more local customers and achieve sustainable growth." }
+        { q: "Why should I choose Syscorp for Local SEO Services?", a: "Syscorp delivers customized Local SEO strategies tailored to your business goals, combining technical expertise, local search optimization, citation management, and reputation building to help you attract more local customers and achieve sustainable growth." }
     ];
 
     return (
@@ -181,7 +181,7 @@ export default function LocalSEOServicesPage() {
                                 Connect with Customers <span className="text-[#1A5CDD]">Searching Locally</span>
                             </h2>
                             <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                                At SysCrop, our Local SEO Services in Pondicherry help businesses improve their visibility in local search results and connect with customers who are actively searching for products and services in their area. As a trusted Local SEO Company in Pondicherry, we implement customized local search strategies that strengthen your online presence, improve local rankings, and generate more enquiries, phone calls, and store visits.
+                                At Syscorp, our Local SEO Services in Pondicherry help businesses improve their visibility in local search results and connect with customers who are actively searching for products and services in their area. As a trusted Local SEO Company in Pondicherry, we implement customized local search strategies that strengthen your online presence, improve local rankings, and generate more enquiries, phone calls, and store visits.
                             </p>
                             <p className="text-slate-600 text-lg leading-relaxed mb-6">
                                 Our Local SEO approach goes beyond simply optimizing your Google Business Profile. We focus on local keyword targeting, business listings, citation management, location-specific content, review management, and local search optimization to ensure your business stands out in Google Search and Google Maps. Whether you're a startup, retail store, healthcare provider, educational institution, restaurant, or service-based business, our Local SEO solutions are designed to help you reach nearby customers and achieve sustainable business growth.
@@ -331,6 +331,7 @@ export default function LocalSEOServicesPage() {
                         {/* Left Side: Header & Graphic */}
                         <div className="lg:w-5/12">
                             <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Measurable Growth
                             </span>
                             <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">
@@ -398,7 +399,7 @@ export default function LocalSEOServicesPage() {
                             What Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#1A5CDD]">Local SEO</span> Services Cover
                         </h2>
                         <p className="text-slate-300 text-[16px] md:text-[17px] leading-relaxed max-w-3xl mx-auto">
-                            At SysCrop, we provide comprehensive Local SEO Services designed to improve your visibility in Google Search, Google Maps, and other location-based search results.
+                            At Syscorp, we provide comprehensive Local SEO Services designed to improve your visibility in Google Search, Google Maps, and other location-based search results.
                         </p>
                     </div>
 
@@ -435,8 +436,9 @@ export default function LocalSEOServicesPage() {
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
-                            How We Work
-                        </span>
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                How We Work
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
                             Our Local SEO Process
                         </h2>
@@ -478,11 +480,11 @@ export default function LocalSEOServicesPage() {
                     <div className="text-center max-w-4xl mx-auto mb-16">
                         <div className="inline-flex items-center justify-center mb-6">
                             <span className="px-5 py-1.5 rounded-full bg-[#1A5CDD]/5 border border-[#1A5CDD]/10 text-[#1A5CDD] text-[13px] font-extrabold tracking-widest uppercase shadow-sm">
-                                Why SysCrop
+                                Why Syscorp
                             </span>
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-[44px] font-extrabold text-[#011146] tracking-tight leading-[1.15] mb-6">
-                            Why Choose SysCrop for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Local SEO</span>?
+                            Why Choose Syscorp for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Local SEO</span>?
                         </h2>
                         <p className="text-slate-600 text-[16px] md:text-[17px] leading-relaxed max-w-3xl mx-auto">
                             We help businesses improve their local search presence by creating SEO strategies based on their industry, audience, service areas, and goals. Our Local SEO approach focuses on improving rankings, increasing online visibility, managing reputation, and helping businesses connect with customers who are actively searching for their services.  
@@ -647,11 +649,11 @@ export default function LocalSEOServicesPage() {
                                             <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${activeFaq === index ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
                                                 {index + 1}. {faq.q}
                                             </span>
-                                            <span className={`w-[34px] h-[34px] rounded-full flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-100 text-slate-400 group-hover:bg-slate-200 group-hover:text-slate-600"}`}>
+                                            <span className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-200/60 text-slate-600 group-hover:bg-slate-200 group-hover:text-slate-800"}`}>
                                                 {activeFaq === index ? (
-                                                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" /></svg>
                                                 ) : (
-                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
                                                 )}
                                             </span>
                                         </button>

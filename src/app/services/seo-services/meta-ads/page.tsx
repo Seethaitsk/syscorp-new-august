@@ -77,6 +77,20 @@ export default function MetaAdsPage() {
                     }
                 );
             });
+
+            gsap.fromTo(
+                ".gsap-line-draw",
+                { width: "0%" },
+                {
+                    width: "100%",
+                    duration: 2,
+                    ease: "power3.inOut",
+                    scrollTrigger: {
+                        trigger: ".gsap-line-draw",
+                        start: "top 80%",
+                    }
+                }
+            );
         }, mainRef);
 
         return () => ctx.revert();
@@ -132,11 +146,11 @@ export default function MetaAdsPage() {
 
     const faqs = [
         { q: "What is Meta Ads Management?", a: "Meta Ads Management is the process of creating, managing, and optimizing paid advertising campaigns across Facebook and Instagram. It helps businesses reach their target audience, increase brand awareness, generate leads, and promote products or services effectively." },
-        { q: "Why should I choose SysCrop for Meta Ads Management Services?", a: "SysCrop provides customized Meta Ads Management Services based on your business goals, target audience, and budget. Our team manages campaign planning, audience targeting, ad creation, optimization, and reporting to help businesses improve their Facebook and Instagram advertising performance." },
-        { q: "What types of Facebook and Instagram Ads does SysCrop manage?", a: "We manage various Meta advertising campaigns, including Facebook Feed Ads, Instagram Feed Ads, Stories Ads, Reels Ads, Carousel Ads, Video Ads, Lead Generation Ads, Remarketing Ads, and Catalog Ads based on your business objectives." },
+        { q: "Why should I choose Syscorp for Meta Ads Management Services?", a: "Syscorp provides customized Meta Ads Management Services based on your business goals, target audience, and budget. Our team manages campaign planning, audience targeting, ad creation, optimization, and reporting to help businesses improve their Facebook and Instagram advertising performance." },
+        { q: "What types of Facebook and Instagram Ads does Syscorp manage?", a: "We manage various Meta advertising campaigns, including Facebook Feed Ads, Instagram Feed Ads, Stories Ads, Reels Ads, Carousel Ads, Video Ads, Lead Generation Ads, Remarketing Ads, and Catalog Ads based on your business objectives." },
         { q: "How can Meta Ads help my business grow?", a: "Meta Ads help businesses connect with potential customers based on their interests, location, demographics, and online behaviour. They can help increase brand visibility, drive website traffic, generate enquiries, improve customer engagement, and support sales growth." },
-        { q: "Can SysCrop manage my existing Facebook and Instagram Ads campaigns?", a: "Yes. We can analyze your existing campaigns, identify improvement areas, optimize audience targeting, ad creatives, budgets, and campaign settings to improve advertising performance." },
-        { q: "Does SysCrop provide Meta Ads campaign reports?", a: "Yes. We provide detailed performance reports that include important metrics such as reach, impressions, clicks, engagement, leads, conversions, and campaign insights to help you understand your advertising results." }
+        { q: "Can Syscorp manage my existing Facebook and Instagram Ads campaigns?", a: "Yes. We can analyze your existing campaigns, identify improvement areas, optimize audience targeting, ad creatives, budgets, and campaign settings to improve advertising performance." },
+        { q: "Does Syscorp provide Meta Ads campaign reports?", a: "Yes. We provide detailed performance reports that include important metrics such as reach, impressions, clicks, engagement, leads, conversions, and campaign insights to help you understand your advertising results." }
     ];
 
     const whyChooseUs = [
@@ -153,14 +167,14 @@ export default function MetaAdsPage() {
             <HeaderBanner
                 title={
                     <>
-                        Meta Ads <span className="text-[#38bdf8] font-serif italic font-normal">(Social Media Ads)</span>
+                        Meta Ads Service in Pondicherry<span className="text-[#38bdf8] font-serif italic font-normal">(Social Media Ads)</span>
                     </>
                 }
                 description="Leading Meta Ads (Social Media Ads) Services in Pondicherry"
             />
 
             {/* Intro Section */}
-            <section className="py-20 lg:py-28 bg-[#F0F8FF]/60 relative overflow-hidden">
+            <section className="py-20 bg-[#F0F8FF]/60 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -176,7 +190,7 @@ export default function MetaAdsPage() {
                                 Expand Your Reach, Generate High-Quality Leads, and Grow Your Business with Professional Meta Ads Management.
                             </p>
                             <p className="text-slate-600 text-[16px] md:text-[17px] leading-relaxed mb-6">
-                                At SysCrop, we provide professional Meta Ads Management (Facebook & Instagram Ads) Services in Pondicherry that help businesses increase brand visibility, generate quality leads, and connect with the right audience through Facebook and Instagram advertising. As a trusted Meta Ads Agency in Pondicherry, we create and manage customized advertising campaigns tailored to your business goals and target audience.
+                                At Syscorp, we provide professional Meta Ads Management (Facebook & Instagram Ads) Services in Pondicherry that help businesses increase brand visibility, generate quality leads, and connect with the right audience through Facebook and Instagram advertising. As a trusted Meta Ads Agency in Pondicherry, we create and manage customized advertising campaigns tailored to your business goals and target audience.
                             </p>
 
                             <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isIntroExpanded ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
@@ -209,14 +223,14 @@ export default function MetaAdsPage() {
                         <div className="gsap-fade-up lg:col-span-5 relative w-full h-[450px] md:h-[550px] flex items-center justify-center mt-12 lg:mt-0">
 
                             {/* Primary Large Image */}
-                            <div className="relative w-[85%] sm:w-[80%] h-[90%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.12)] z-10 group">
+                            <div className="relative w-[85%] sm:w-[80%] h-[90%] rounded-[24px] overflow-hidden z-10 group">
                                 <Image
-                                    src="/images/services_images/metaad-1.jpeg"
+                                    src="/images/seo/metadd.png"
                                     alt="Meta Ads Management"
                                     fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    priority
+                                    className="object-cover transition-transform duration-700"
                                 />
-                                <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500" />
                             </div>
 
                             {/* Floating Badge (Top Right) */}
@@ -306,18 +320,14 @@ export default function MetaAdsPage() {
 
                             {/* Main Image Container */}
                             <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_50px_rgba(1,17,70,0.1)] border-[6px] border-white z-10 w-full aspect-[4/3] group/image bg-white">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="Meta Ads Performance Impact" className="w-full h-full object-cover transform group-hover/image:scale-110 transition-transform duration-700" />
+                                <Image
+                                    src="/images/seo/why_meta.png"
+                                    alt="Meta Ads Performance Impact"
+                                    fill
+                                    priority
+                                    className="w-full h-full object-cover transform transition-transform duration-700"
+                                />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/30 to-transparent pointer-events-none opacity-0 group-hover/image:opacity-100 transition-opacity duration-500" />
-                            </div>
-
-                            {/* Floating Play Button (Center) */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                                <div className="relative group/play cursor-pointer">
-                                    <div className="absolute inset-0 bg-[#38bdf8]/40 rounded-full animate-ping" />
-                                    <div className="relative w-20 h-20 bg-white/90 backdrop-blur-md rounded-full shadow-2xl flex items-center justify-center border border-white transform transition-transform duration-300 group-hover/play:scale-110 group-hover/play:bg-white">
-                                        <Play className="text-[#1A5CDD] fill-[#1A5CDD] ml-1" size={28} />
-                                    </div>
-                                </div>
                             </div>
 
                             {/* Floating Stat Card (Bottom Left) */}
@@ -425,7 +435,7 @@ export default function MetaAdsPage() {
                             Explore Our Meta Advertising Solutions
                         </h2>
                         <p className="text-slate-500 text-[15px] leading-relaxed">
-                            Reach your ideal audience with the right advertising format on Facebook and Instagram. At SysCrop, our Meta Ads Services in Pondicherry include creating and managing a wide range of Meta advertising campaigns tailored to your business goals, helping you increase brand awareness, generate quality leads, drive website traffic, and boost online sales.
+                            Reach your ideal audience with the right advertising format on Facebook and Instagram. At Syscorp, our Meta Ads Services in Pondicherry include creating and managing a wide range of Meta advertising campaigns tailored to your business goals, helping you increase brand awareness, generate quality leads, drive website traffic, and boost online sales.
                         </p>
                     </div>
                 </div>
@@ -469,7 +479,7 @@ export default function MetaAdsPage() {
             </section>
 
             {/* What Our Meta Ads Services Cover */}
-            <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] mt-12 mb-32">
+            <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] my-12 ">
                 {/* Blueprint Grid Background Pattern */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
 
@@ -477,7 +487,7 @@ export default function MetaAdsPage() {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#1A5CDD]/20 blur-[120px] rounded-full pointer-events-none" />
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="text-center max-w-3xl mx-auto mb-20">
+                    <div className="text-center max-w-3xl mx-auto">
                         <div className="inline-flex items-center justify-center mb-6">
                             <span className="px-5 py-1.5 rounded-full bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 text-[#38bdf8] text-[12px] font-bold tracking-wider uppercase backdrop-blur-sm">
                                 Complete Social Media Ads Solutions
@@ -487,11 +497,11 @@ export default function MetaAdsPage() {
                             What Our Meta Ads Management Services Cover
                         </h2>
                         <p className="text-slate-300 text-[16px] leading-relaxed max-w-2xl mx-auto">
-                           Our Meta Ads Management Services in Pondicherry help businesses create, manage, and optimize effective Facebook and Instagram advertising campaigns. We handle campaign planning, audience targeting, ad creation, optimization, and performance tracking to improve reach, engagement, and conversions.  
-                           </p>
+                            Our Meta Ads Management Services in Pondicherry help businesses create, manage, and optimize effective Facebook and Instagram advertising campaigns. We handle campaign planning, audience targeting, ad creation, optimization, and performance tracking to improve reach, engagement, and conversions.
+                        </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14 pt-10">
                         {services.map((item, index) => {
                             const Icon = item.icon || Activity;
                             return (
@@ -538,7 +548,9 @@ export default function MetaAdsPage() {
 
                     <div className="relative mt-16">
                         {/* Horizontal Connecting Line (Desktop) */}
-                        <div className="absolute top-[45px] left-[10%] w-[80%] h-[2px] bg-slate-200 hidden lg:block" />
+                        <div className="absolute top-[45px] left-[10%] w-[80%] h-[2px] bg-slate-200 hidden lg:block overflow-hidden">
+                            <div className="gsap-line-draw h-full bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]" />
+                        </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 relative z-10">
                             {seoProcess.map((item, index) => (
@@ -563,8 +575,8 @@ export default function MetaAdsPage() {
                 </div>
             </section>
 
-            {/* Why Choose SysCrop */}
-            <section className="py-20 bg-[#F0F8FF] relative overflow-hidden">
+            {/* Why Choose Syscorp */}
+            <section className="py-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4 relative max-w-7xl">
                     <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-20">
                         {/* Right Side: Text */}
@@ -573,13 +585,13 @@ export default function MetaAdsPage() {
                                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
                                     <Activity className="text-[#1A5CDD]" size={20} />
                                 </div>
-                                <h3 className="text-xl font-bold text-[#011146]">Why SysCrop</h3>
+                                <h3 className="text-xl font-bold text-[#011146]">Why Syscorp</h3>
                             </div>
                             <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] mb-6 leading-tight">
-                                Why Choose SysCrop for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Meta Ads Management?</span>
+                                Why Choose Syscorp for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Meta Ads Management?</span>
                             </h2>
                             <p className="text-slate-600 text-[15px] leading-relaxed mb-5">
-                                At SysCrop, our Meta Ads Services in Pondicherry help businesses build effective Facebook and Instagram advertising campaigns that connect with the right audience and support their marketing goals. Our Meta Ads Management Services focus on strategic planning, creative advertising, audience targeting, and continuous optimization to help businesses improve their online presence and generate valuable customer engagement.
+                                At Syscorp, our Meta Ads Services in Pondicherry help businesses build effective Facebook and Instagram advertising campaigns that connect with the right audience and support their marketing goals. Our Meta Ads Management Services focus on strategic planning, creative advertising, audience targeting, and continuous optimization to help businesses improve their online presence and generate valuable customer engagement.
                             </p>
                         </div>
 
@@ -590,7 +602,7 @@ export default function MetaAdsPage() {
                                 <div className="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
                                     <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden bg-slate-900">
                                         <Image
-                                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+                                            src="/images/seo/metaadd.png"
                                             alt="Meta Ads Expertise"
                                             fill
                                             className="object-cover transform group-hover:scale-110 transition-transform duration-700"
@@ -612,7 +624,7 @@ export default function MetaAdsPage() {
                     </div>
 
                     <div className="mt-16 text-center max-w-3xl mx-auto mb-12">
-                        <h3 className="text-2xl md:text-3xl font-bold text-[#011146] tracking-tight">What Sets SysCrop Apart?</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold text-[#011146] tracking-tight">What Sets Syscorp Apart?</h3>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
@@ -633,80 +645,80 @@ export default function MetaAdsPage() {
                     </div>
                 </div>
             </section>
-
-
-
-            {/* FAQs */}
-            <section className="py-20 lg:py-28 bg-white border-t border-slate-100">
+            {/* FAQ Section */}
+            <section className="py-20 bg-[#F8FAFC]">
                 <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-                        {/* Left Side: Sticky Content */}
-                        <div className="lg:w-1/3">
-                            <div className="sticky top-32">
-                                <span className="inline-flex items-center gap-2 text-[11px] uppercase font-extrabold tracking-wider text-[#1A5CDD] px-4 py-2 bg-[#1A5CDD]/10 rounded-full mb-6">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
-                                    Social Media Ads Knowledge
-                                </span>
-
-                                <h2 className="text-4xl md:text-5xl font-extrabold text-[#011146] mb-6 tracking-tight leading-tight">
-                                    Your Questions <br />
-                                    <span className="text-[#1A5CDD]">Answered</span>
-                                </h2>
-
-                                <p className="text-slate-500 text-[16px] leading-relaxed mb-10">
-                                    Find clear, honest answers to common questions from our team of experienced professionals.
-                                </p>
-
-                                <div className="border-t border-slate-100 pt-8 flex items-center gap-5">
-                                    <div className="flex -space-x-3">
-                                        <img className="w-11 h-11 rounded-full border-[3px] border-white shadow-sm object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" alt="Expert 1" />
-                                        <img className="w-11 h-11 rounded-full border-[3px] border-white shadow-sm object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop" alt="Expert 2" />
-                                        <img className="w-11 h-11 rounded-full border-[3px] border-white shadow-sm object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Expert 3" />
-                                        <div className="w-11 h-11 rounded-full border-[3px] border-white bg-[#011146] text-white text-[11px] font-bold flex items-center justify-center shadow-sm relative z-10">
-                                            +10
-                                        </div>
+                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+                        
+                        {/* Left Column - Content */}
+                        <div className="lg:w-1/3 flex flex-col justify-start top-32">
+                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
+                                FREQUENTLY ASKED QUESTIONS
+                            </div>
+                            
+                            <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
+                                Your Questions <br />
+                                <span className="text-[#1A5CDD]">Answered</span>
+                            </h2>
+                            
+                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-10 max-w-sm">
+                                Find clear, honest answers to common questions from our team of experienced professionals.
+                            </p>
+                            
+                            {/* Avatars */}
+                            <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
+                                <div className="flex -space-x-3.5">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-30" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-20" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-10" alt="Consulting Expert" />
+                                    <div className="w-[42px] h-[42px] rounded-full bg-[#011146] border-[2.5px] border-[#F8FAFC] flex items-center justify-center text-white text-[11px] font-bold shadow-sm relative z-0">
+                                        +10
                                     </div>
-                                    <p className="text-[12px] font-medium text-slate-400 leading-snug">
-                                        Answers curated <br /> directly from our <br /> consulting experts.
-                                    </p>
                                 </div>
+                                <p className="text-[12.5px] text-slate-500 font-medium leading-snug max-w-[140px]">
+                                    Answers curated directly from our consulting experts.
+                                </p>
                             </div>
                         </div>
 
-                        {/* Right Side: Accordion */}
-                        <div className="lg:w-2/3">
-                            <div className="space-y-4">
-                                {faqs.map((item, index) => {
-                                    const isOpen = activeFaq === index;
-                                    return (
+                        {/* Right Column - Accordions */}
+                        <div className="lg:w-2/3 w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {faqs.map((faq, index) => (
+                                    <div
+                                        key={index}
+                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index 
+                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]" 
+                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
+                                            }`}
+                                    >
+                                        <button
+                                            className="w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer group"
+                                            onClick={() => setActiveFaq(activeFaq === index ? null : index)}
+                                        >
+                                            <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${activeFaq === index ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
+                                                {index + 1}. {faq.q}
+                                            </span>
+                                            <span className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-200/60 text-slate-600 group-hover:bg-slate-200 group-hover:text-slate-800"}`}>
+                                                {activeFaq === index ? (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" /></svg>
+                                                ) : (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                                                )}
+                                            </span>
+                                        </button>
                                         <div
-                                            key={index}
-                                            className={`rounded-[20px] border transition-all duration-300 overflow-hidden bg-white ${isOpen ? "border-[#1A5CDD] shadow-[0_10px_30px_rgba(26,92,221,0.08)]" : "border-slate-100 hover:border-slate-300"
+                                            className={`transition-all duration-300 ease-in-out ${activeFaq === index ? "max-h-96 opacity-100 pb-7 px-6" : "max-h-0 opacity-0 overflow-hidden px-6"
                                                 }`}
                                         >
-                                            <button
-                                                onClick={() => setActiveFaq(isOpen ? null : index)}
-                                                className="w-full flex items-center justify-between p-6 text-left focus:outline-none group"
-                                            >
-                                                <h3 className={`text-[16px] font-bold pr-8 transition-colors duration-300 ${isOpen ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
-                                                    {index + 1}. {item.q}
-                                                </h3>
-                                                <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${isOpen ? "bg-[#1A5CDD] text-white" : "bg-slate-50 text-slate-400 group-hover:bg-slate-100 group-hover:text-[#1A5CDD]"}`}>
-                                                    <span className="text-xl font-light leading-none">{isOpen ? "−" : "+"}</span>
-                                                </div>
-                                            </button>
-                                            <div
-                                                className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-                                            >
-                                                <div className="overflow-hidden">
-                                                    <div className="px-6 pb-6 pt-0 text-slate-500 text-[15px] leading-relaxed">
-                                                        {item.a}
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <div className="w-full h-px bg-slate-100 mb-5"></div>
+                                            <p className="text-slate-500 leading-relaxed text-[14.5px] font-medium pr-4">
+                                                {faq.a}
+                                            </p>
                                         </div>
-                                    );
-                                })}
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>

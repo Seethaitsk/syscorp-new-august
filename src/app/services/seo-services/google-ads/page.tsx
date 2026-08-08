@@ -150,11 +150,11 @@ export default function GoogleAdsPage() {
 
     const faqs = [
         { q: "What are Google Ads (PPC) Services?", a: "Google Ads (PPC) Services involve creating, managing, and optimizing paid advertising campaigns on Google to help businesses increase website traffic, generate qualified leads, boost online sales, and improve brand visibility. Businesses only pay when someone clicks on their advertisement, making PPC a measurable and cost-effective digital marketing strategy." },
-        { q: "Why should I choose SysCrop for Google Ads (PPC) Services?", a: "SysCrop provides customized Google Ads (PPC) Services tailored to your business goals, target audience, and budget. Our team manages everything from keyword research and campaign setup to optimization, conversion tracking, and performance reporting, helping you maximize your return on investment (ROI)." },
-        { q: "Which Google Ads campaign types does SysCrop manage?", a: "Our Google Ads experts manage a wide range of campaign types, including Google Search Ads, Display Ads, Shopping Ads, YouTube Ads, Performance Max Campaigns, Remarketing Campaigns, and Local Ads. We recommend the most suitable campaign type based on your business objectives and target audience." },
-        { q: "How does SysCrop optimize Google Ads campaigns?", a: "We continuously monitor campaign performance by analyzing keywords, bidding strategies, audience targeting, ad copy, and conversion data. Through ongoing optimization and A/B testing, we improve campaign performance, reduce advertising costs, and maximize conversions." },
+        { q: "Why should I choose Syscorp for Google Ads (PPC) Services?", a: "Syscorp provides customized Google Ads (PPC) Services tailored to your business goals, target audience, and budget. Our team manages everything from keyword research and campaign setup to optimization, conversion tracking, and performance reporting, helping you maximize your return on investment (ROI)." },
+        { q: "Which Google Ads campaign types does Syscorp manage?", a: "Our Google Ads experts manage a wide range of campaign types, including Google Search Ads, Display Ads, Shopping Ads, YouTube Ads, Performance Max Campaigns, Remarketing Campaigns, and Local Ads. We recommend the most suitable campaign type based on your business objectives and target audience." },
+        { q: "How does Syscorp optimize Google Ads campaigns?", a: "We continuously monitor campaign performance by analyzing keywords, bidding strategies, audience targeting, ad copy, and conversion data. Through ongoing optimization and A/B testing, we improve campaign performance, reduce advertising costs, and maximize conversions." },
         { q: "How soon can I see results from Google Ads?", a: "Google Ads can start driving traffic and leads as soon as your campaigns are approved and published. While immediate visibility is possible, campaign performance typically improves over time through continuous optimization and data-driven improvements." },
-        { q: "Can SysCrop manage my existing Google Ads account?", a: "Yes. Whether you have an existing Google Ads account or are starting from scratch, our team can audit, optimize, and manage your campaigns to improve performance, reduce wasted ad spend, and increase your return on investment." },
+        { q: "Can Syscorp manage my existing Google Ads account?", a: "Yes. Whether you have an existing Google Ads account or are starting from scratch, our team can audit, optimize, and manage your campaigns to improve performance, reduce wasted ad spend, and increase your return on investment." },
         { q: "How much should I invest in Google Ads?", a: "There is no fixed advertising budget for Google Ads. Our team helps you determine an appropriate budget based on your business goals, industry competition, target keywords, and expected campaign performance to ensure cost-effective advertising." },
         { q: "Do you provide Google Ads performance reports?", a: "Yes. We provide transparent performance reports that include key metrics such as impressions, clicks, click-through rate (CTR), conversions, cost per click (CPC), conversion rate, and return on investment (ROI). These insights help you understand campaign performance and make informed business decisions." }
     ];
@@ -187,7 +187,7 @@ export default function GoogleAdsPage() {
                 {/* Advanced Animated Background Grid & Glowing Orbs */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(26,92,221,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(26,92,221,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-[#1A5CDD]/20 to-[#38bdf8]/10 rounded-full blur-[100px] animate-pulse pointer-events-none" />
-                <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-gradient-to-tr from-[#3B82F6]/10 to-transparent rounded-full blur-[120px] pointer-events-none" />
+                <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-gradient-to-tr from-[#38bdf8]/10 to-transparent rounded-full blur-[120px] pointer-events-none" />
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
@@ -195,11 +195,10 @@ export default function GoogleAdsPage() {
                             {/* Decorative background shape behind text */}
                             <div className="absolute -left-10 top-10 w-32 h-32 bg-[#1A5CDD]/5 rounded-full blur-2xl -z-10" />
 
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3B82F6]/20 shadow-sm mb-6 relative overflow-hidden group">
-                                <div className="absolute inset-0 bg-gradient-to-r from-[#1A5CDD]/0 via-[#1A5CDD]/10 to-[#1A5CDD]/0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
-                                <span className="w-2 h-2 rounded-full bg-[#3B82F6] animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
-                                <span className="text-[13px] font-bold text-[#011146] uppercase tracking-wider">Maximize Your ROI</span>
-                            </div>
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Maximize Your ROI
+                            </span>
 
                             <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">
                                 Leading <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8] relative inline-block">Google Ads (PPC)
@@ -210,7 +209,7 @@ export default function GoogleAdsPage() {
                                 Drive Instant Traffic, Qualified Leads & Higher ROI with Expert Google Ads Management
                             </p>
                             <p className="text-slate-600 text-[16px] leading-[1.8] mb-6">
-                                At SysCrop, we provide professional Google Ads (PPC) Services in Pondicherry to help businesses increase online visibility, attract qualified customers, and generate valuable leads through targeted Google advertising. As a trusted Google Ads Company in Pondicherry, we create and manage customized PPC campaigns that connect your business with customers actively searching for your products and services while maximizing your advertising budget.
+                                At Syscorp, we provide professional Google Ads (PPC) Services in Pondicherry to help businesses increase online visibility, attract qualified customers, and generate valuable leads through targeted Google advertising. As a trusted Google Ads Company in Pondicherry, we create and manage customized PPC campaigns that connect your business with customers actively searching for your products and services while maximizing your advertising budget.
                             </p>
 
                             <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isIntroExpanded ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
@@ -291,7 +290,7 @@ export default function GoogleAdsPage() {
                             {/* Floating Badge (Top Left) */}
                             <div className="absolute top-10 -left-12 bg-white rounded-2xl px-5 py-3 shadow-[0_15px_30px_rgba(0,0,0,0.1)] border border-slate-50 z-20 flex items-center gap-3 animate-[bounce_4s_infinite]">
                                 <div className="w-10 h-10 bg-[#EEF4FF] rounded-full flex items-center justify-center">
-                                    <Target className="text-[#3B82F6]" size={20} />
+                                    <Target className="text-[#38bdf8]" size={20} />
                                 </div>
                                 <div>
                                     <p className="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Targeting</p>
@@ -312,7 +311,7 @@ export default function GoogleAdsPage() {
 
                             {/* Floating Badge (Bottom Left) */}
                             <div className="absolute -bottom-6 -left-6 bg-white px-6 py-4 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 border border-slate-50 z-30 min-w-[210px]">
-                                <div className="w-12 h-12 bg-[#EEF4FF] text-[#3B82F6] rounded-full flex items-center justify-center shrink-0">
+                                <div className="w-12 h-12 bg-[#EEF4FF] text-[#38bdf8] rounded-full flex items-center justify-center shrink-0">
                                     <Activity size={24} strokeWidth={2.5} />
                                 </div>
                                 <div>
@@ -328,23 +327,23 @@ export default function GoogleAdsPage() {
             {/* What is Google Ads Section */}
             <section className="py-20 bg-white relative">
                 <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="bg-[#011146] rounded-tl-[32px] rounded-tr-[100px] rounded-br-[32px] rounded-bl-[100px] relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-slate-800">
+                    <div className="bg-[#011146] rounded-[40px] relative overflow-hidden shadow-2xl">
                         {/* Blueprint Background */}
                         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
-                        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#3B82F6]/15 rounded-full blur-[100px] pointer-events-none" />
+                        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#38bdf8]/15 rounded-full blur-[100px] pointer-events-none" />
 
                         <div className="relative z-10 flex flex-col md:flex-row items-stretch">
 
                             <div className="md:w-5/12 p-12 md:p-16 flex flex-col justify-center border-b md:border-b-0 md:border-r border-white/10 relative">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-[radial-gradient(#3B82F6_2px,transparent_2px)] [background-size:16px_16px] opacity-20" />
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-[radial-gradient(#38bdf8_2px,transparent_2px)] [background-size:16px_16px] opacity-20" />
                                 <div className="inline-flex items-center gap-2 mb-8">
-                                    <div className="w-8 h-1 bg-[#3B82F6] rounded-full" />
-                                    <span className="text-[#3B82F6] text-[13px] font-bold tracking-widest uppercase">PPC Fundamentals</span>
+                                    <div className="w-8 h-1 bg-[#38bdf8] rounded-full" />
+                                    <span className="text-[#38bdf8] text-[13px] font-bold tracking-widest uppercase">PPC Fundamentals</span>
                                 </div>
                                 <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-[1.15] mb-6">
                                     What is <br className="hidden md:block" />
-                                    <span className="text-[#3B82F6] relative inline-block mt-2">Google Ads?
-                                        <div className="absolute -bottom-2 left-0 w-10 h-1.5 bg-[#3B82F6] rounded-full"></div>
+                                    <span className="text-[#38bdf8] relative inline-block mt-2">Google Ads?
+                                        <div className="absolute -bottom-2 left-0 w-10 h-1.5 bg-[#38bdf8] rounded-full"></div>
                                     </span>
                                 </h2>
                             </div>
@@ -367,9 +366,9 @@ export default function GoogleAdsPage() {
             {/* Why Google Ads is Important Section */}
             <section className="py-20 relative overflow-hidden bg-gradient-to-br from-[#F0F6FF] via-[#F8FAFF] to-[#EEF4FF]">
                 {/* Decorative Background Elements */}
-                <div className="absolute left-[-200px] top-1/4 w-[600px] h-[600px] bg-[#3B82F6]/8 blur-[150px] rounded-full pointer-events-none" />
+                <div className="absolute left-[-200px] top-1/4 w-[600px] h-[600px] bg-[#38bdf8]/8 blur-[150px] rounded-full pointer-events-none" />
                 <div className="absolute right-[-150px] bottom-1/4 w-[500px] h-[500px] bg-[#38bdf8]/6 blur-[130px] rounded-full pointer-events-none" />
-                <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[90%] h-px bg-gradient-to-r from-transparent via-[#3B82F6]/10 to-transparent pointer-events-none" />
+                <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[90%] h-px bg-gradient-to-r from-transparent via-[#38bdf8]/10 to-transparent pointer-events-none" />
 
                 <div className="container mx-auto px-6 lg:px-8 relative max-w-7xl z-10">
                     <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
@@ -377,8 +376,8 @@ export default function GoogleAdsPage() {
                         {/* Left Side: Text Content (55%) */}
                         <div className="lg:w-[55%] w-full relative">
                             {/* Glassmorphism Badge */}
-                            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/70 backdrop-blur-xl border border-[#3B82F6]/15 shadow-[0_4px_20px_rgba(59,130,246,0.08)] mb-10">
-                                <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] flex items-center justify-center shadow-sm">
+                            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/70 backdrop-blur-xl border border-[#38bdf8]/15 shadow-[0_4px_20px_rgba(59,130,246,0.08)] mb-10">
+                                <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#38bdf8] to-[#1D4ED8] flex items-center justify-center shadow-sm">
                                     <Target className="text-white" size={14} strokeWidth={2.5} />
                                 </div>
                                 <span className="text-[13px] font-bold text-[#011146] tracking-wide">Business Impact</span>
@@ -387,7 +386,7 @@ export default function GoogleAdsPage() {
                             {/* Heading */}
                             <div className="mb-10">
                                 <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
-                                    Why Google Ads (PPC) <br className="hidden sm:block" />is <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] relative inline-block">Important</span> for Your Business
+                                    Why Google Ads (PPC) <br className="hidden sm:block" />is <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#1D4ED8] relative inline-block">Important</span> for Your Business
                                 </h2>
                             </div>
 
@@ -428,7 +427,7 @@ export default function GoogleAdsPage() {
 
                             {/* Floating Stat Badge — Top Left */}
                             <div className="absolute top-8 left-0 bg-white/95 backdrop-blur-xl px-5 py-4 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-slate-100 z-30 flex items-center gap-3.5 transform transition-transform hover:-translate-y-1 hidden md:flex">
-                                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] flex items-center justify-center shadow-sm">
+                                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#38bdf8] to-[#1D4ED8] flex items-center justify-center shadow-sm">
                                     <TrendingUp className="text-white" size={20} strokeWidth={2.5} />
                                 </div>
                                 <div>
@@ -449,7 +448,7 @@ export default function GoogleAdsPage() {
                             </div>
 
                             {/* Decorative dotted pattern */}
-                            <div className="absolute -top-4 right-[10%] w-28 h-28 bg-[radial-gradient(#3B82F6_1.5px,transparent_1.5px)] [background-size:18px_18px] opacity-15 pointer-events-none z-0" />
+                            <div className="absolute -top-4 right-[10%] w-28 h-28 bg-[radial-gradient(#38bdf8_1.5px,transparent_1.5px)] [background-size:18px_18px] opacity-15 pointer-events-none z-0" />
                             <div className="absolute bottom-[15%] left-[25%] w-24 h-24 bg-[radial-gradient(#1D4ED8_1.5px,transparent_1.5px)] [background-size:16px_16px] opacity-10 pointer-events-none z-0" />
                         </div>
                     </div>
@@ -464,14 +463,14 @@ export default function GoogleAdsPage() {
                         {/* Left: Sticky Sidebar */}
                         <div className="lg:w-1/3 w-full">
                             <div className="sticky top-32">
-                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3B82F6]/20 shadow-sm mb-6">
-                                    <TrendingUp className="text-[#3B82F6]" size={14} />
+                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#38bdf8]/20 shadow-sm mb-6">
+                                    <TrendingUp className="text-[#38bdf8]" size={14} />
                                     <span className="text-[13px] font-bold text-[#011146]">Google Ads Benefits</span>
                                 </div>
 
                                 <h3 className="text-3xl md:text-4xl lg:text-[44px] font-extrabold text-[#011146] mb-8 leading-[1.15]">
                                     Benefits of <br className="hidden lg:block" />
-                                    <span className="text-[#3B82F6] relative inline-block mt-2">
+                                    <span className="text-[#38bdf8] relative inline-block mt-2">
                                         Google Ads (PPC)
                                     </span>
                                 </h3>
@@ -503,7 +502,7 @@ export default function GoogleAdsPage() {
                                     return (
                                         <div key={i} className="bg-white border border-slate-100 rounded-[24px] p-8 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_40px_rgba(59,130,246,0.08)] transition-all duration-300 flex flex-col group cursor-default">
                                             <div className="mb-6">
-                                                <div className="w-12 h-12 rounded-full bg-[#EEF4FF] border border-[#3B82F6]/10 flex items-center justify-center text-[#3B82F6] group-hover:bg-[#3B82F6] group-hover:text-white transition-colors duration-300">
+                                                <div className="w-12 h-12 rounded-full bg-[#EEF4FF] border border-[#38bdf8]/10 flex items-center justify-center text-[#38bdf8] group-hover:bg-[#38bdf8] group-hover:text-white transition-colors duration-300">
                                                     <Icon size={20} strokeWidth={2} />
                                                 </div>
                                             </div>
@@ -541,7 +540,7 @@ export default function GoogleAdsPage() {
                             What Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38bdf8] to-[#1A5CDD]">Google Ads (PPC)</span><br className="hidden lg:block" /> Services Cover
                         </h2>
                         <p className="text-slate-300 text-[16px] md:text-[17px] leading-relaxed max-w-3xl mx-auto">
-                            At SysCrop, we offer comprehensive Google Ads (PPC) Services in Pondicherry designed to help businesses attract high-intent customers, generate qualified leads, and maximize their return on investment (ROI). Our Google Ads Management Services cover every aspect of your PPC campaigns, from strategic planning and keyword research to campaign optimization, conversion tracking, and performance reporting. Whether your goal is lead generation, online sales, local business growth, or brand awareness, we create customized Google Ads campaigns that deliver measurable and sustainable results.
+                            At Syscorp, we offer comprehensive Google Ads (PPC) Services in Pondicherry designed to help businesses attract high-intent customers, generate qualified leads, and maximize their return on investment (ROI). Our Google Ads Management Services cover every aspect of your PPC campaigns, from strategic planning and keyword research to campaign optimization, conversion tracking, and performance reporting. Whether your goal is lead generation, online sales, local business growth, or brand awareness, we create customized Google Ads campaigns that deliver measurable and sustainable results.
                         </p>
                     </div>
 
@@ -588,27 +587,27 @@ export default function GoogleAdsPage() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-20">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3B82F6]/20 shadow-sm mb-6">
-                            <Activity className="text-[#3B82F6]" size={14} />
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#38bdf8]/20 shadow-sm mb-6">
+                            <Activity className="text-[#38bdf8]" size={14} />
                             <span className="text-[13px] font-bold text-[#011146]">Campaign Management</span>
                         </div>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">
                             Our Google Ads (PPC) <br className="hidden sm:block" />Management Process
                         </h2>
                         <p className="text-slate-600 text-[16px] leading-[1.8]">
-                            At SysCrop, we follow a strategic and data-driven Google Ads Management process that helps businesses reach the right audience, maximize advertising performance, and achieve measurable business results.
+                            At Syscorp, we follow a strategic and data-driven Google Ads Management process that helps businesses reach the right audience, maximize advertising performance, and achieve measurable business results.
                         </p>
                     </div>
 
                     <div className="relative max-w-6xl mx-auto">
                         {/* Connecting Line (Desktop - Row 1) */}
-                        <div className="hidden lg:block absolute top-[52px] left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-transparent via-[#3B82F6]/20 to-transparent z-0" />
+                        <div className="hidden lg:block absolute top-[52px] left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-transparent via-[#38bdf8]/20 to-transparent z-0" />
 
                         {/* Connecting Line (Desktop - Row 2) */}
-                        <div className="hidden lg:block absolute top-[calc(50%+52px)] left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-transparent via-[#3B82F6]/20 to-transparent z-0" />
+                        <div className="hidden lg:block absolute top-[calc(50%+52px)] left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-transparent via-[#38bdf8]/20 to-transparent z-0" />
 
                         {/* Connecting Line (Mobile/Tablet Vertical) */}
-                        <div className="lg:hidden absolute top-0 bottom-0 left-[52px] w-[2px] bg-gradient-to-b from-transparent via-[#3B82F6]/20 to-transparent z-0" />
+                        <div className="lg:hidden absolute top-0 bottom-0 left-[52px] w-[2px] bg-gradient-to-b from-transparent via-[#38bdf8]/20 to-transparent z-0" />
 
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-16 relative z-10">
                             {seoProcess.map((item, index) => {
@@ -620,20 +619,20 @@ export default function GoogleAdsPage() {
                                         <div className="flex flex-row lg:flex-col items-center lg:items-center gap-6 lg:gap-8 w-full">
                                             {/* Icon Node */}
                                             <div className="relative shrink-0">
-                                                <div className="w-[104px] h-[104px] rounded-full bg-white border border-[#3B82F6]/10 flex items-center justify-center shadow-[0_8px_30px_rgba(0,0,0,0.04)] group-hover:border-[#3B82F6]/30 group-hover:shadow-[0_15px_40px_rgba(59,130,246,0.15)] transition-all duration-300 relative z-10">
-                                                    <div className="w-16 h-16 rounded-full bg-[#EEF4FF] flex items-center justify-center text-[#3B82F6] group-hover:scale-110 transition-transform duration-300">
+                                                <div className="w-[104px] h-[104px] rounded-full bg-white border border-[#38bdf8]/10 flex items-center justify-center shadow-[0_8px_30px_rgba(0,0,0,0.04)] group-hover:border-[#38bdf8]/30 group-hover:shadow-[0_15px_40px_rgba(59,130,246,0.15)] transition-all duration-300 relative z-10">
+                                                    <div className="w-16 h-16 rounded-full bg-[#EEF4FF] flex items-center justify-center text-[#38bdf8] group-hover:scale-110 transition-transform duration-300">
                                                         <Icon size={28} strokeWidth={2} />
                                                     </div>
                                                 </div>
                                                 {/* Step Badge */}
-                                                <div className="absolute -top-2 -right-2 lg:top-0 lg:right-0 w-8 h-8 rounded-full bg-[#3B82F6] text-white flex items-center justify-center font-bold text-[14px] shadow-md z-20 border-2 border-white">
+                                                <div className="absolute -top-2 -right-2 lg:top-0 lg:right-0 w-8 h-8 rounded-full bg-[#38bdf8] text-white flex items-center justify-center font-bold text-[14px] shadow-md z-20 border-2 border-white">
                                                     {item.step}
                                                 </div>
                                             </div>
 
                                             {/* Content */}
                                             <div className="flex-1">
-                                                <h3 className="text-[18px] font-bold text-[#011146] mb-3 group-hover:text-[#3B82F6] transition-colors">{item.title}</h3>
+                                                <h3 className="text-[18px] font-bold text-[#011146] mb-3 group-hover:text-[#38bdf8] transition-colors">{item.title}</h3>
                                                 <p className="text-slate-500 text-[14.5px] leading-[1.7]">{item.desc}</p>
                                             </div>
                                         </div>
@@ -645,7 +644,7 @@ export default function GoogleAdsPage() {
                 </div>
             </section>
 
-            {/* Why Choose SysCrop */}
+            {/* Why Choose Syscorp */}
             <section className="py-20 bg-[#F0F8FF] relative overflow-hidden">
                 <div className="container mx-auto px-6 relative max-w-7xl">
                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mb-16">
@@ -701,20 +700,20 @@ export default function GoogleAdsPage() {
 
                         {/* Right Side: Text */}
                         <div className="lg:w-1/2 w-full mt-10 lg:mt-0">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3B82F6]/20 shadow-sm mb-5">
-                                <Zap className="text-[#3B82F6] fill-[#3B82F6]" size={14} />
-                                <span className="text-[13px] font-bold text-[#011146]">Why SysCrop</span>
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#38bdf8]/20 shadow-sm mb-5">
+                                <Zap className="text-[#38bdf8] fill-[#38bdf8]" size={14} />
+                                <span className="text-[13px] font-bold text-[#011146]">Why Syscorp</span>
                             </div>
 
                             <h2 className="text-3xl md:text-4xl lg:text-[42px] font-extrabold text-[#011146] mb-5 tracking-tight leading-[1.15]">
-                                Why Choose SysCrop for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8] relative inline-block mt-1">
+                                Why Choose Syscorp for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8] relative inline-block mt-1">
                                     Google Ads (PPC)?
                                 </span>
                             </h2>
 
                             <div className="space-y-5">
                                 <p className="text-slate-600 text-[15.5px] leading-relaxed">
-                                    At SysCrop, we believe that a successful Google Ads campaign is more than simply creating advertisements. It's about reaching the right audience, maximizing every advertising budget, and generating measurable business results. Our Google Ads (PPC) Services are tailored to your business goals, target audience, and industry, ensuring every campaign is strategically planned, professionally managed, and continuously optimized for long-term success.
+                                    At Syscorp, we believe that a successful Google Ads campaign is more than simply creating advertisements. It's about reaching the right audience, maximizing every advertising budget, and generating measurable business results. Our Google Ads (PPC) Services are tailored to your business goals, target audience, and industry, ensuring every campaign is strategically planned, professionally managed, and continuously optimized for long-term success.
                                 </p>
                                 <p className="text-slate-600 text-[15.5px] leading-relaxed">
                                     By combining strategic keyword research, compelling ad creation, audience targeting, campaign optimization, and performance analysis, we help businesses increase online visibility, generate qualified leads, improve conversion rates, and maximize return on investment (ROI). Whether you're a startup, small business, eCommerce brand, or established enterprise, our customized Google Ads Management Services are designed to deliver consistent growth and measurable results.
@@ -724,7 +723,7 @@ export default function GoogleAdsPage() {
                     </div>
 
                     <div className="mt-20 text-center max-w-3xl mx-auto mb-14">
-                        <h3 className="text-2xl md:text-3xl font-extrabold text-[#011146] tracking-tight">What Sets SysCrop Apart?</h3>
+                        <h3 className="text-2xl md:text-3xl font-extrabold text-[#011146] tracking-tight">What Sets Syscorp Apart?</h3>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10 max-w-7xl mx-auto">
@@ -775,92 +774,81 @@ export default function GoogleAdsPage() {
                     </div>
                 </div>
             </section>
-
-            {/* FAQs - 2 Column Pill Layout */}
-            <section className="py-20 bg-white border-t border-slate-100 overflow-hidden">
+            {/* FAQ Section */}
+            <section className="py-20 bg-[#F8FAFC]">
                 <div className="container mx-auto px-6 max-w-7xl">
-                    {/* Header Section */}
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F4F7FE] border border-[#1A5CDD]/10 mb-6">
-                            <HelpCircle className="text-[#1A5CDD]" size={14} />
-                            <span className="text-[13px] font-bold text-[#011146]">Got Questions?</span>
-                        </div>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight mb-6">
-                            Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Questions</span>
-                        </h2>
-                        <p className="text-slate-600 text-[16px] md:text-[17px] leading-relaxed">
-                            Find answers to common questions about our Google Ads (PPC) services, strategies, and management processes. If you have any other questions, please feel free to reach out to our team of experts.
-                        </p>
-                    </div>
-
-                    {/* FAQ Columns */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-0">
-                        {/* Left Column */}
-                        <div>
-                            {faqs.slice(0, Math.ceil(faqs.length / 2)).map((item, i) => {
-                                const index = i;
-                                const isOpen = activeFaq === index;
-                                return (
-                                    <div key={index} className="mb-4">
-                                        <div className={`rounded-[16px] border transition-all duration-300 overflow-hidden bg-white hover:border-[#38bdf8]/40 hover:shadow-[0_8px_24px_rgba(56,189,248,0.06)] ${isOpen ? 'border-[#38bdf8]/40 shadow-[0_8px_24px_rgba(56,189,248,0.06)]' : 'border-slate-200'}`}>
-                                            <button
-                                                onClick={() => setActiveFaq(isOpen ? null : index)}
-                                                className="w-full flex items-center justify-between py-4 px-6 text-left"
-                                            >
-                                                <h3 className={`text-[15px] font-bold pr-6 transition-colors duration-300 ${isOpen ? 'text-[#1A5CDD]' : 'text-[#011146]'}`}>
-                                                    {item.q}
-                                                </h3>
-                                                <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? 'bg-[#1A5CDD] text-white shadow-md' : 'bg-[#F4F7FE] text-[#1A5CDD]'}`}>
-                                                    {isOpen ? <Minus size={16} strokeWidth={2.5} /> : <Plus size={16} strokeWidth={2.5} />}
-                                                </div>
-                                            </button>
-                                            <div
-                                                className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-                                            >
-                                                <div className="overflow-hidden">
-                                                    <div className="px-6 pb-5 pt-0 text-slate-500 text-[14.5px] leading-relaxed">
-                                                        {item.a}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+                        
+                        {/* Left Column - Content */}
+                        <div className="lg:w-1/3 flex flex-col justify-start top-32">
+                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
+                                FREQUENTLY ASKED QUESTIONS
+                            </div>
+                            
+                            <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
+                                Your Questions <br />
+                                <span className="text-[#1A5CDD]">Answered</span>
+                            </h2>
+                            
+                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-10 max-w-sm">
+                                Find clear, honest answers to common questions from our team of experienced professionals.
+                            </p>
+                            
+                            {/* Avatars */}
+                            <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
+                                <div className="flex -space-x-3.5">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-30" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-20" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-10" alt="Consulting Expert" />
+                                    <div className="w-[42px] h-[42px] rounded-full bg-[#011146] border-[2.5px] border-[#F8FAFC] flex items-center justify-center text-white text-[11px] font-bold shadow-sm relative z-0">
+                                        +10
                                     </div>
-                                );
-                            })}
+                                </div>
+                                <p className="text-[12.5px] text-slate-500 font-medium leading-snug max-w-[140px]">
+                                    Answers curated directly from our consulting experts.
+                                </p>
+                            </div>
                         </div>
 
-                        {/* Right Column */}
-                        <div>
-                            {faqs.slice(Math.ceil(faqs.length / 2)).map((item, i) => {
-                                const index = i + Math.ceil(faqs.length / 2);
-                                const isOpen = activeFaq === index;
-                                return (
-                                    <div key={index} className="mb-4">
-                                        <div className={`rounded-[16px] border transition-all duration-300 overflow-hidden bg-white hover:border-[#38bdf8]/40 hover:shadow-[0_8px_24px_rgba(56,189,248,0.06)] ${isOpen ? 'border-[#38bdf8]/40 shadow-[0_8px_24px_rgba(56,189,248,0.06)]' : 'border-slate-200'}`}>
-                                            <button
-                                                onClick={() => setActiveFaq(isOpen ? null : index)}
-                                                className="w-full flex items-center justify-between py-4 px-6 text-left"
-                                            >
-                                                <h3 className={`text-[15px] font-bold pr-6 transition-colors duration-300 ${isOpen ? 'text-[#1A5CDD]' : 'text-[#011146]'}`}>
-                                                    {item.q}
-                                                </h3>
-                                                <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? 'bg-[#1A5CDD] text-white shadow-md' : 'bg-[#F4F7FE] text-[#1A5CDD]'}`}>
-                                                    {isOpen ? <Minus size={16} strokeWidth={2.5} /> : <Plus size={16} strokeWidth={2.5} />}
-                                                </div>
-                                            </button>
-                                            <div
-                                                className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-                                            >
-                                                <div className="overflow-hidden">
-                                                    <div className="px-6 pb-5 pt-0 text-slate-500 text-[14.5px] leading-relaxed">
-                                                        {item.a}
-                                                    </div>
-                                                </div>
-                                            </div>
+                        {/* Right Column - Accordions */}
+                        <div className="lg:w-2/3 w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {faqs.map((faq, index) => (
+                                    <div
+                                        key={index}
+                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index 
+                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]" 
+                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
+                                            }`}
+                                    >
+                                        <button
+                                            className="w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer group"
+                                            onClick={() => setActiveFaq(activeFaq === index ? null : index)}
+                                        >
+                                            <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${activeFaq === index ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
+                                                {index + 1}. {faq.q}
+                                            </span>
+                                            <span className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-200/60 text-slate-600 group-hover:bg-slate-200 group-hover:text-slate-800"}`}>
+                                                {activeFaq === index ? (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" /></svg>
+                                                ) : (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                                                )}
+                                            </span>
+                                        </button>
+                                        <div
+                                            className={`transition-all duration-300 ease-in-out ${activeFaq === index ? "max-h-96 opacity-100 pb-7 px-6" : "max-h-0 opacity-0 overflow-hidden px-6"
+                                                }`}
+                                        >
+                                            <div className="w-full h-px bg-slate-100 mb-5"></div>
+                                            <p className="text-slate-500 leading-relaxed text-[14.5px] font-medium pr-4">
+                                                {faq.a}
+                                            </p>
                                         </div>
                                     </div>
-                                );
-                            })}
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

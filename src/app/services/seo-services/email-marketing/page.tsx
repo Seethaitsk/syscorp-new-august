@@ -22,6 +22,7 @@ export default function EmailMarketingPage() {
     const mainRef = useRef<HTMLDivElement>(null);
     const [isIntroExpanded, setIsIntroExpanded] = useState(false);
     const [openFaq, setOpenFaq] = useState<number | null>(0);
+    const [activeFaq, setActiveFaq] = useState<number | null>(null);
     const [activeDiff, setActiveDiff] = useState(0);
 
     useEffect(() => {
@@ -102,12 +103,12 @@ export default function EmailMarketingPage() {
     ];
 
     const faqs = [
-        { q: "What are Email Marketing Services?", a: "Email Marketing Services help businesses communicate with customers through targeted email campaigns. At SysCrop, our Email Marketing Services in Pondicherry include campaign strategy, email design, content creation, automation, audience segmentation, and performance tracking to improve customer engagement and business growth." },
-        { q: "Why should I choose SysCrop for Email Marketing Services in Pondicherry?", a: "SysCrop provides customized Email Marketing Services in Pondicherry tailored to your business goals. We create personalized email campaigns, automate customer journeys, monitor campaign performance, and continuously optimize strategies to help you generate leads, increase customer engagement, and improve conversions." },
-        { q: "What types of email campaigns does SysCrop create?", a: "We create a wide range of email campaigns, including promotional emails, newsletters, welcome emails, lead nurturing campaigns, drip campaigns, abandoned cart emails, customer retention campaigns, transactional emails, event invitations, and re-engagement campaigns." },
+        { q: "What are Email Marketing Services?", a: "Email Marketing Services help businesses communicate with customers through targeted email campaigns. At Syscorp, our Email Marketing Services in Pondicherry include campaign strategy, email design, content creation, automation, audience segmentation, and performance tracking to improve customer engagement and business growth." },
+        { q: "Why should I choose Syscorp for Email Marketing Services in Pondicherry?", a: "Syscorp provides customized Email Marketing Services in Pondicherry tailored to your business goals. We create personalized email campaigns, automate customer journeys, monitor campaign performance, and continuously optimize strategies to help you generate leads, increase customer engagement, and improve conversions." },
+        { q: "What types of email campaigns does Syscorp create?", a: "We create a wide range of email campaigns, including promotional emails, newsletters, welcome emails, lead nurturing campaigns, drip campaigns, abandoned cart emails, customer retention campaigns, transactional emails, event invitations, and re-engagement campaigns." },
         { q: "How can Email Marketing help my business grow?", a: "Email marketing helps businesses build stronger customer relationships, increase website traffic, promote products and services, generate quality leads, improve customer retention, and encourage repeat purchases through personalized communication." },
-        { q: "Can SysCrop manage and automate my email marketing campaigns?", a: "Yes. Our team manages the complete email marketing process, including audience segmentation, campaign creation, email automation, scheduling, A/B testing, performance monitoring, and campaign optimization to ensure effective results." },
-        { q: "Does SysCrop provide email marketing performance reports?", a: "Yes. We provide detailed campaign reports that include important metrics such as email open rates, click-through rates, conversions, subscriber engagement, and campaign performance insights to help you measure success and improve future email marketing campaigns." }
+        { q: "Can Syscorp manage and automate my email marketing campaigns?", a: "Yes. Our team manages the complete email marketing process, including audience segmentation, campaign creation, email automation, scheduling, A/B testing, performance monitoring, and campaign optimization to ensure effective results." },
+        { q: "Does Syscorp provide email marketing performance reports?", a: "Yes. We provide detailed campaign reports that include important metrics such as email open rates, click-through rates, conversions, subscriber engagement, and campaign performance insights to help you measure success and improve future email marketing campaigns." }
     ];
 
     return (
@@ -122,30 +123,25 @@ export default function EmailMarketingPage() {
             />
 
             {/* Intro Section */}
-            <section className="py-20 lg:py-28 bg-[#F0F8FF]/60 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
+            <section className="py-20 bg-[#F0F8FF]/60 relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        <div className="gsap-fade-up lg:col-span-7">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
-                                Drive Conversions
-                            </span>
-                            <h2 className="text-4xl md:text-5xl lg:text-[54px] font-extrabold text-[#011146] tracking-tight mb-8 leading-[1.15]">
-                                Reach the Right Audience
+                        <div className="gsap-fade-up lg:col-span-6 lg:pr-8">
+                            <h2 className="text-[32px] md:text-4xl lg:text-[46px] font-extrabold text-[#011146] tracking-tight mb-6 leading-[1.2]">
+                                Reach the Right Audience <br className="hidden lg:block" />
                                 with Strategic <br className="hidden lg:block" />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Email Marketing</span>
                             </h2>
 
-                            <p className="text-slate-700 text-[18px] md:text-[20px] font-medium leading-relaxed mb-8">
-                                At SysCrop, we provide professional Email Marketing Services in Pondicherry to help businesses connect with their target audience, generate quality leads, improve customer engagement, and increase conversions. As a trusted Email Marketing Agency in Pondicherry, we create customized email campaigns tailored to your business goals and customer journey.
+                            <p className="text-[#011146] text-[15px] leading-[1.8] mb-6 font-medium">
+                                At Syscorp, we provide professional Email Marketing Services in Pondicherry to help businesses connect with their target audience, generate quality leads, improve customer engagement, and increase conversions. As a trusted Email Marketing Agency in Pondicherry, we create customized email campaigns tailored to your business goals and customer journey.
                             </p>
 
-                            <div className="pl-6 border-l-4 border-[#1A5CDD]/20 space-y-5 mb-10">
-                                <p className="text-slate-600 text-[15px] md:text-[16px] leading-relaxed">
+                            <div className="pl-5 border-l-3 border-[#1A5CDD]/20 space-y-5 mb-10">
+                                <p className="text-slate-600 text-[14px] leading-[1.8]">
                                     Our Email Marketing Services include email strategy, audience segmentation, campaign creation, email automation, performance optimization, and reporting. Whether you want to promote products, nurture leads, boost online sales, or improve customer retention, we deliver personalized email marketing solutions that drive measurable results.
                                 </p>
-                                <p className="text-slate-600 text-[15px] md:text-[16px] leading-relaxed">
+                                <p className="text-slate-600 text-[14px] leading-[1.8]">
                                     Whether you're a startup, eCommerce business, educational institution, healthcare provider, retail brand, or service-based company, our Email Marketing Services in Pondicherry help you strengthen customer relationships, build brand loyalty, and achieve long-term business growth.
                                 </p>
                             </div>
@@ -160,56 +156,24 @@ export default function EmailMarketingPage() {
                             </div>
                         </div>
 
-                        {/* Image Right Side (Refined with Overlapping Layout from SEO) */}
-                        <div className="gsap-fade-up lg:col-span-5 relative w-full h-[500px] md:h-[600px] flex items-center justify-center lg:justify-end mt-12 lg:mt-0">
-
+                        {/* Image Right Side */}
+                        <div className="gsap-fade-up lg:col-span-6 relative w-full h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center mt-12 lg:mt-0">
                             {/* Primary Large Image */}
-                            <div className="relative w-[85%] h-[85%] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.1)] border-[6px] border-white z-10 group">
+                            <div className="relative w-full h-full lg:scale-110 z-10">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=800&auto=format&fit=crop"
+                                    src="/images/seo/email_marketing.svg"
                                     alt="Email Marketing Campaigns"
                                     fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-[#011146]/10 group-hover:bg-transparent transition-colors duration-500" />
-                            </div>
-
-                            {/* Secondary Overlapping Image (Bottom Left) */}
-                            <div className="absolute -bottom-4 -left-2 lg:-left-6 w-[70%] h-[50%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.15)] border-[6px] border-white z-20 group">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
-                                    alt="Email Marketing Analytics"
-                                    fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="object-contain drop-shadow-2xl"
                                 />
                             </div>
-
-                            {/* Floating Badge (Top Right) */}
-                            <div className="absolute top-10 -right-2 lg:-right-6 bg-white px-5 py-3.5 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-100 z-30 animate-bounce-slow">
-                                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
-                                <p className="text-[#011146] font-extrabold text-[14px]">Average Open Rate: 35%+</p>
-                            </div>
-
-                            {/* Floating Badge (Middle/Top Left) */}
-                            <div className="absolute top-20 -left-2 lg:-left-8 bg-white px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-100 z-30 animate-bounce-slow" style={{ animationDelay: "1s" }}>
-                                <div className="w-10 h-10 bg-[#F0F8FF] text-[#1A5CDD] rounded-full flex items-center justify-center font-bold text-lg shadow-sm border border-[#1A5CDD]/10">
-                                    <MessageCircle size={18} strokeWidth={2.5} />
-                                </div>
-                                <div>
-                                    <p className="text-[#011146] font-extrabold text-[14px]">Higher Conversions</p>
-                                    <p className="text-slate-500 text-[11px] font-medium mt-0.5">Through Automation</p>
-                                </div>
-                            </div>
-
-                            {/* Decorative Dots */}
-                            <div className="absolute -top-6 left-12 w-24 h-24 bg-[radial-gradient(#1A5CDD_2px,transparent_2px)] [background-size:12px_12px] opacity-20 z-0" />
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* What is Email Marketing Section */}
-            <section className="py-20 lg:py-28">
+            <section className="py-20">
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="bg-[#011146] rounded-[40px] p-8 lg:p-14 shadow-2xl border border-[#1A5CDD]/20 flex flex-col lg:flex-row gap-12 lg:gap-16 items-center relative overflow-hidden">
 
@@ -225,14 +189,14 @@ export default function EmailMarketingPage() {
                         </div>
 
                         {/* Image Content */}
-                        <div className="lg:w-7/12 w-full relative z-10">
-                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                        <div className="lg:w-7/12 w-full relative z-10 flex justify-end">
+                            <div className="relative w-full rounded-[32px] overflow-hidden">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1683117927786-f146451082fb?q=80&w=800&auto=format&fit=crop"
+                                    src="/images/seo/why_email_marketing.svg"
                                     alt="Email Marketing Analytics Dashboard"
-                                    width={800}
-                                    height={500}
-                                    className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
+                                    width={900}
+                                    height={550}
+                                    className="w-full h-full object-cover scale-[1.02]"
                                 />
                             </div>
                         </div>
@@ -250,10 +214,10 @@ export default function EmailMarketingPage() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-24">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
-                            Why It Matters
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Why It Matters
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-8 leading-[1.15]">
                             Why Email Marketing is Important
                         </h2>
@@ -294,15 +258,15 @@ export default function EmailMarketingPage() {
             <section className="py-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-20">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
-                            Our Solutions
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Our Solutions
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-8 leading-[1.15]">
                             Explore Our Email Marketing Solutions
                         </h2>
                         <p className="text-slate-600 text-[16px] md:text-[18px] leading-relaxed">
-                            Reach your customers with personalized email campaigns designed to engage, nurture, and convert. At SysCrop, our Email Marketing Services in Pondicherry include a wide range of email campaigns tailored to your business goals, helping you strengthen customer relationships, increase engagement, and drive more conversions.
+                            Reach your customers with personalized email campaigns designed to engage, nurture, and convert. At Syscorp, our Email Marketing Services in Pondicherry include a wide range of email campaigns tailored to your business goals, helping you strengthen customer relationships, increase engagement, and drive more conversions.
                         </p>
                     </div>
 
@@ -328,7 +292,7 @@ export default function EmailMarketingPage() {
             </section>
 
             {/* What Our Email Marketing Services Cover (Premium Glassmorphism) */}
-            <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] mt-12 mb-32">
+            <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] my-12">
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#1A5CDD]/20 blur-[120px] rounded-full pointer-events-none" />
 
@@ -369,7 +333,7 @@ export default function EmailMarketingPage() {
             </section>
 
             {/* Our Email Marketing Process Section (Premium Timeline UI) */}
-            <section className="relative bg-[#F8FAFC] py-28 overflow-hidden">
+            <section className="py-20 relative bg-[#F8FAFC] overflow-hidden">
                 {/* Decorative Background Elements */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#1A5CDD]/5 blur-[120px]" />
@@ -378,7 +342,7 @@ export default function EmailMarketingPage() {
 
                 <div className="relative max-w-7xl mx-auto px-6">
                     {/* Heading Area with Image */}
-                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-16">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-20">
                         {/* Text Content */}
                         <div className="lg:w-1/2">
                             <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white border border-slate-200 mb-6 shadow-sm">
@@ -396,21 +360,38 @@ export default function EmailMarketingPage() {
                             </h2>
 
                             <p className="mt-6 text-[17px] leading-[1.8] text-slate-600">
-                                At SysCrop, we follow a strategic and data-driven approach to deliver successful Email Marketing Services in Pondicherry. Our process focuses on understanding your audience, creating engaging email campaigns, and continuously optimizing performance to improve customer engagement, lead generation, and conversions.
+                                At Syscorp, we follow a strategic and data-driven approach to deliver successful Email Marketing Services in Pondicherry. Our process focuses on understanding your audience, creating engaging email campaigns, and continuously optimizing performance to improve customer engagement, lead generation, and conversions.
                             </p>
                         </div>
 
-                        {/* Right Image */}
-                        <div className="lg:w-1/2 relative w-full">
-                            <div className="relative w-full h-[350px] lg:h-[450px] bg-white rounded-[40px] border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] overflow-hidden group hover:shadow-[0_20px_50px_rgba(26,92,221,0.12)] transition-shadow duration-500">
-                                {/* Decorative ambient glow */}
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[#1A5CDD]/5 rounded-full blur-[80px] pointer-events-none group-hover:bg-[#1A5CDD]/15 transition-colors duration-700" />
-                                <Image 
-                                    src="/images/services/email-management-dashboard.png"
-                                    alt="Email Marketing Dashboard Illustration"
-                                    fill
-                                    className="object-contain p-6 lg:p-10 hover:scale-[1.03] transition-transform duration-700 ease-out z-10 mix-blend-multiply"
-                                />
+                        {/* Right Image Section - Floating & Borderless */}
+                        <div className="lg:w-1/2 relative w-full flex items-center justify-center mt-12 lg:mt-0 lg:pl-10">
+                            
+                            {/* Static Ambient Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] max-w-[400px] max-h-[400px] bg-gradient-to-tr from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-[80px] pointer-events-none -z-10" />
+
+                            <div className="relative w-full h-[350px] lg:h-[480px] group">
+                                
+                                {/* Dynamic Hover Glows (Activates on hover for depth) */}
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] bg-[#1A5CDD]/0 rounded-full blur-[50px] pointer-events-none group-hover:bg-[#1A5CDD]/15 transition-colors duration-700" />
+                                <div className="absolute top-1/4 right-1/4 w-[200px] h-[200px] bg-[#38bdf8]/0 rounded-full blur-[50px] pointer-events-none group-hover:bg-[#38bdf8]/15 transition-colors duration-700 delay-100" />
+
+                                {/* The Illustration with gentle floating animation */}
+                                <div className="absolute inset-0">
+                                    <Image 
+                                        src="/images/seo/our_email_marketing.svg"
+                                        alt="Email Marketing Dashboard Illustration"
+                                        fill
+                                        className="object-contain transition-transform duration-700 ease-out z-10 mix-blend-multiply"
+                                        priority
+                                        unoptimized
+                                    />
+                                </div>
+                                
+                                {/* Decorative Particles */}
+                                <div className="absolute top-16 right-8 lg:right-16 w-3 h-3 bg-[#38bdf8] rounded-full opacity-40 blur-[1px] animate-pulse shadow-[0_0_10px_rgba(56,189,248,0.8)]" />
+                                <div className="absolute bottom-24 left-8 lg:left-12 w-4 h-4 bg-[#1A5CDD] rounded-full opacity-30 blur-[2px] animate-bounce shadow-[0_0_15px_rgba(26,92,221,0.6)]" style={{ animationDuration: '3s' }} />
+                                <div className="absolute top-1/2 right-4 w-2 h-2 bg-emerald-400 rounded-full opacity-50 blur-[0.5px] animate-ping" style={{ animationDuration: '4s' }} />
                             </div>
                         </div>
                     </div>
@@ -470,7 +451,7 @@ export default function EmailMarketingPage() {
                 </div>
             </section>
 
-            {/* Why Choose SysCrop Section */}
+            {/* Why Choose Syscorp Section */}
             <section className="py-20 bg-[#011146] relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:32px_32px] opacity-50" />
                 
@@ -478,10 +459,10 @@ export default function EmailMarketingPage() {
                     <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-0">
                         <div className="lg:w-1/2">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-[1.2] mb-6">
-                                Why Choose SysCrop for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Email Marketing Services?</span>
+                                Why Choose Syscorp for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Email Marketing Services?</span>
                             </h2>
                             <p className="text-slate-300 text-lg leading-relaxed mb-8">
-                                At SysCrop, we provide strategic and personalized Email Marketing Services in Pondicherry that help businesses strengthen customer relationships, improve engagement, and increase conversions. Our team combines creative content, audience segmentation, automation, and performance analysis to deliver email campaigns that support your business goals and maximize marketing results.
+                                At Syscorp, we provide strategic and personalized Email Marketing Services in Pondicherry that help businesses strengthen customer relationships, improve engagement, and increase conversions. Our team combines creative content, audience segmentation, automation, and performance analysis to deliver email campaigns that support your business goals and maximize marketing results.
                             </p>
                         </div>
                         <div className="lg:w-1/2 w-full">
@@ -489,8 +470,8 @@ export default function EmailMarketingPage() {
                                 <div className="absolute inset-0 bg-gradient-to-tr from-[#1A5CDD]/40 to-[#38bdf8]/40 rounded-[40px] blur-3xl -m-4 opacity-50 group-hover:opacity-80 transition-opacity duration-700" />
                                 <div className="relative rounded-[40px] overflow-hidden border-2 border-[#38bdf8]/30 shadow-2xl group-hover:border-[#38bdf8]/60 transition-colors duration-500">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop"
-                                        alt="Why Choose SysCrop"
+                                        src="/images/seo/why_choose_syscorp.svg"
+                                        alt="Why Choose Syscorp"
                                         width={800}
                                         height={600}
                                         className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
@@ -502,7 +483,7 @@ export default function EmailMarketingPage() {
                         </div>
                     </div>
 
-                    <div className="mt-16 pt-16 border-t border-white/10">
+                    <div className="mt-16 pt-8">
                         <div className="text-center mb-12">
                             <span className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 mb-6 shadow-sm backdrop-blur-sm">
                                 <Star className="text-[#38bdf8]" size={16} strokeWidth={2.5} />
@@ -510,12 +491,12 @@ export default function EmailMarketingPage() {
                                     Our Advantage
                                 </span>
                             </span>
-                            <h3 className="text-3xl md:text-5xl font-extrabold text-white leading-[1.1] tracking-tight">What Makes SysCrop Different?</h3>
+                            <h3 className="text-3xl md:text-5xl font-extrabold text-white leading-[1.1] tracking-tight">What Makes Syscorp Different?</h3>
                         </div>
 
-                        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 max-w-6xl mx-auto">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 max-w-6xl mx-auto">
                             {/* Left Side: Interactive Tabs */}
-                            <div className="lg:w-5/12 flex flex-col gap-3">
+                            <div className="lg:col-span-5 flex flex-col gap-3">
                                 {differentiators.map((diff, index) => {
                                     const isActive = activeDiff === index;
                                     return (
@@ -548,7 +529,7 @@ export default function EmailMarketingPage() {
                             </div>
 
                             {/* Right Side: Showcase Panel */}
-                            <div className="lg:w-7/12 mt-8 lg:mt-0">
+                            <div className="lg:col-span-7 mt-8 lg:mt-0">
                                 <div className="lg:sticky lg:top-32 h-full lg:min-h-[500px]">
                                     <div className="absolute inset-0 bg-gradient-to-br from-[#1A5CDD]/20 to-[#38bdf8]/20 rounded-[40px] blur-[80px] -z-10 transition-all duration-700" />
                                     
@@ -580,63 +561,80 @@ export default function EmailMarketingPage() {
                     </div>
                 </div>
             </section>
-
-            {/* FAQs */}
-            <section className="py-20 bg-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#1A5CDD]/[0.02] rounded-full blur-[100px] pointer-events-none" />
-                
-                <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
+            {/* FAQ Section */}
+            <section className="py-20 bg-[#F8FAFC]">
+                <div className="container mx-auto px-6 max-w-7xl">
+                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
                         
-                        {/* Left Side: Heading & Intro */}
-                        <div className="lg:w-1/3 relative">
-                            <div className="lg:sticky">
-                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1A5CDD]/5 border border-[#1A5CDD]/10 mb-6 shadow-sm">
-                                    <MessageCircle className="text-[#1A5CDD]" size={16} strokeWidth={2.5} />
-                                    <span className="text-[12px] font-extrabold text-[#1A5CDD] tracking-[2px] uppercase">
-                                        Got Questions?
-                                    </span>
-                                </span>
-                                
-                                <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#011146] mb-6 leading-[1.15] tracking-tight">
-                                    Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Questions</span>
-                                </h2>
-                                
-                                <p className="text-slate-600 text-[17px] leading-[1.8] mb-8">
-                                    Find answers to common questions about our Email Marketing Services in Pondicherry. Can't find what you're looking for? Reach out to our team!
+                        {/* Left Column - Content */}
+                        <div className="lg:w-1/3 flex flex-col justify-start top-32">
+                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
+                                FREQUENTLY ASKED QUESTIONS
+                            </div>
+                            
+                            <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
+                                Your Questions <br />
+                                <span className="text-[#1A5CDD]">Answered</span>
+                            </h2>
+                            
+                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-10 max-w-sm">
+                                Find clear, honest answers to common questions from our team of experienced professionals.
+                            </p>
+                            
+                            {/* Avatars */}
+                            <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
+                                <div className="flex -space-x-3.5">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-30" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-20" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-10" alt="Consulting Expert" />
+                                    <div className="w-[42px] h-[42px] rounded-full bg-[#011146] border-[2.5px] border-[#F8FAFC] flex items-center justify-center text-white text-[11px] font-bold shadow-sm relative z-0">
+                                        +10
+                                    </div>
+                                </div>
+                                <p className="text-[12.5px] text-slate-500 font-medium leading-snug max-w-[140px]">
+                                    Answers curated directly from our consulting experts.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Right Side: Accordion List */}
-                        <div className="lg:w-2/3">
-                            <div className="space-y-4">
-                        {faqs.map((faq, index) => (
-                            <div
-                                key={index}
-                                className={`border border-slate-200 rounded-2xl overflow-hidden transition-all duration-300 ${openFaq === index ? 'bg-slate-50 shadow-md border-blue-200' : 'bg-white hover:border-slate-300'}`}
-                            >
-                                <button
-                                    className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
-                                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                                >
-                                    <span className={`font-bold text-[16px] md:text-[18px] pr-8 ${openFaq === index ? 'text-[#1A5CDD]' : 'text-[#011146]'}`}>
-                                        {faq.q}
-                                    </span>
-                                    <ChevronDown
-                                        className={`shrink-0 text-slate-400 transition-transform duration-300 ${openFaq === index ? 'rotate-180 text-[#1A5CDD]' : ''}`}
-                                        size={20}
-                                    />
-                                </button>
-                                <div
-                                    className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openFaq === index ? 'max-h-96 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
-                                >
-                                    <p className="text-slate-600 leading-relaxed text-[15px] md:text-[16px]">
-                                        {faq.a}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
+                        {/* Right Column - Accordions */}
+                        <div className="lg:w-2/3 w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {faqs.map((faq, index) => (
+                                    <div
+                                        key={index}
+                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index 
+                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]" 
+                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
+                                            }`}
+                                    >
+                                        <button
+                                            className="w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer group"
+                                            onClick={() => setActiveFaq(activeFaq === index ? null : index)}
+                                        >
+                                            <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${activeFaq === index ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
+                                                {index + 1}. {faq.q}
+                                            </span>
+                                            <span className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-200/60 text-slate-600 group-hover:bg-slate-200 group-hover:text-slate-800"}`}>
+                                                {activeFaq === index ? (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" /></svg>
+                                                ) : (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                                                )}
+                                            </span>
+                                        </button>
+                                        <div
+                                            className={`transition-all duration-300 ease-in-out ${activeFaq === index ? "max-h-96 opacity-100 pb-7 px-6" : "max-h-0 opacity-0 overflow-hidden px-6"
+                                                }`}
+                                        >
+                                            <div className="w-full h-px bg-slate-100 mb-5"></div>
+                                            <p className="text-slate-500 leading-relaxed text-[14.5px] font-medium pr-4">
+                                                {faq.a}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>

@@ -150,7 +150,7 @@ export default function SocialMediaOptimizationPage() {
         { q: "Which social media platforms do you optimize?", a: "We provide optimization services for major social media platforms, including Facebook, Instagram, LinkedIn, X (Twitter), YouTube, Pinterest, and Google Business Profile, based on your business requirements." },
         { q: "How is SMO different from Social Media Marketing (SMM)?", a: "SMO focuses on improving your organic social media presence through profile optimization, content strategy, and audience engagement. SMM focuses on paid advertising campaigns to generate immediate reach, traffic, and conversions." },
         { q: "How long does it take to see results from SMO?", a: "Social Media Optimization is a long-term strategy. While improvements in profile quality and engagement can be seen within a few weeks, significant growth in audience engagement and brand visibility typically develops over several months through consistent optimization." },
-        { q: "Why should I choose SysCrop for Social Media Optimization Services?", a: "SysCrop delivers customized SMO strategies that combine professional profile optimization, engaging content planning, audience engagement, and continuous performance monitoring. Our goal is to help your business build a stronger social media presence, improve brand credibility, and achieve sustainable digital growth." }
+        { q: "Why should I choose Syscorp for Social Media Optimization Services?", a: "Syscorp delivers customized SMO strategies that combine professional profile optimization, engaging content planning, audience engagement, and continuous performance monitoring. Our goal is to help your business build a stronger social media presence, improve brand credibility, and achieve sustainable digital growth." }
     ];
 
     const whyChooseUs = [
@@ -178,7 +178,7 @@ export default function SocialMediaOptimizationPage() {
             />
 
             {/* Intro Section - Hero Redesign */}
-            <section className="py-20 lg:py-28 bg-[#F0F6FF] relative overflow-hidden">
+            <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
                 {/* Background Decorators */}
                 {/* 1. Light blue radial gradient & blur circles */}
                 <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[700px] h-[700px] bg-[#1A5CDD]/10 rounded-full blur-3xl pointer-events-none" />
@@ -248,10 +248,10 @@ export default function SocialMediaOptimizationPage() {
                         {/* Left Side: Content (lg:col-span-7) */}
                         <div className="lg:col-span-7 gsap-fade-up max-w-[560px]">
                             {/* Animated Badge */}
-                            <div className="inline-flex items-center gap-2.5 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[13px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm animate-badge-slide">
-                                <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Boost Your Reach
-                            </div>
+                            </span>
 
                             {/* Heading: 42–48px */}
                             <h1 className="text-[42px] sm:text-[46px] lg:text-[48px] font-extrabold text-[#011146] tracking-tight mb-6 leading-[1.15]">
@@ -261,7 +261,7 @@ export default function SocialMediaOptimizationPage() {
                             {/* Paragraphs: 16–17px, Line-height: 1.8–1.9, Max text width: 520–560px */}
                             <div className="space-y-6 mb-8 max-w-[550px]">
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
-                                    At SysCrop, we provide professional Social Media Optimization (SMO) Services in Pondicherry that help businesses build a strong social media presence, increase brand awareness, and connect with their target audience. As a trusted Social Media Optimization Company in Pondicherry, we optimize your social media profiles, create engaging content strategies, and improve audience engagement to ensure your business stands out across leading social media platforms.
+                                    At Syscorp, we provide professional Social Media Optimization (SMO) Services in Pondicherry that help businesses build a strong social media presence, increase brand awareness, and connect with their target audience. As a trusted Social Media Optimization Company in Pondicherry, we optimize your social media profiles, create engaging content strategies, and improve audience engagement to ensure your business stands out across leading social media platforms.
                                 </p>
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
                                     Our SMO services go beyond simply posting content. We focus on optimizing your social media profiles, strengthening brand identity, improving content visibility, increasing organic reach, and encouraging meaningful customer interactions. Whether you're a startup, small business, enterprise, educational institution, healthcare provider, retail store, or service-based business, our customized SMO strategies help you establish a credible online presence and support long-term business growth.
@@ -308,7 +308,7 @@ export default function SocialMediaOptimizationPage() {
                             {/* Decorative Background Blob */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#1A5CDD]/15 via-[#38bdf8]/15 to-transparent rounded-full blur-3xl pointer-events-none opacity-80" />
 
-                            <div className="relative w-full max-w-[480px]">
+                            <div className="relative w-full max-w-[620px]">
                                 {/* Main Image Card */}
                                 <div className="relative w-full aspect-[4/3] sm:aspect-square rounded-[32px] border-4 border-white bg-white shadow-2xl shadow-blue-900/10 overflow-hidden group z-10">
                                     <Image
@@ -532,7 +532,7 @@ export default function SocialMediaOptimizationPage() {
 
                                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[14px]">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1200&auto=format&fit=crop"
+                                        src="/images/seo/social_media.png"
                                         alt="Instagram Card - Social Media Optimization"
                                         fill
                                         className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -620,8 +620,8 @@ export default function SocialMediaOptimizationPage() {
 
                     {/* Section Header */}
                     <div className="text-center max-w-3xl mx-auto mb-16 gsap-fade-up">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[13px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-4 shadow-sm">
-                            <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                             Strategic Value
                         </span>
                         <h3 className="text-3xl md:text-4xl lg:text-[44px] font-bold text-[#011146] tracking-tight mb-4 leading-tight">
@@ -734,7 +734,7 @@ export default function SocialMediaOptimizationPage() {
             </section>
 
             {/* What Our SMO Services Cover */}
-            <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] mt-12 mb-32">
+            <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] my-12">
                 {/* Blueprint Grid Background Pattern */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
 
@@ -752,7 +752,7 @@ export default function SocialMediaOptimizationPage() {
                             What Our Social Media Optimization (SMO) Services Cover
                         </h2>
                         <p className="text-slate-300 text-[16px] leading-relaxed max-w-2xl mx-auto">
-                            At SysCrop, we offer comprehensive Social Media Optimization (SMO) Services designed to strengthen your brand presence, improve audience engagement, and maximize your organic reach across major social media platforms.
+                            At Syscorp, we offer comprehensive Social Media Optimization (SMO) Services designed to strengthen your brand presence, improve audience engagement, and maximize your organic reach across major social media platforms.
                         </p>
                     </div>
 
@@ -787,14 +787,15 @@ export default function SocialMediaOptimizationPage() {
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
                         <div className="max-w-2xl">
-                            <span className="inline-flex items-center gap-2 text-[#3B82F6] font-semibold text-sm tracking-wide mb-3">
-                                <span className="text-[#3B82F6]/60">//</span> Our Work Process
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4 w-fit">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block" />
+                                Our Work Process
                             </span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
                                 Our Proven <span className="text-[#3B82F6]">Work Process</span>
                             </h2>
                             <p className="text-slate-600 text-[16px] leading-relaxed mt-6">
-                                At SysCrop, we follow a strategic and results-driven Social Media Optimization process that helps businesses build a strong online presence, increase audience engagement, and achieve long-term brand growth.
+                                At Syscorp, we follow a strategic and results-driven Social Media Optimization process that helps businesses build a strong online presence, increase audience engagement, and achieve long-term brand growth.
                             </p>
                         </div>
 
@@ -850,7 +851,7 @@ export default function SocialMediaOptimizationPage() {
                 </div>
             </section>
 
-            {/* Why Choose SysCrop Section - Modern SaaS Bento Grid */}
+            {/* Why Choose Syscorp Section - Modern SaaS Bento Grid */}
             <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
                 {/* Background Decorators */}
                 {/* 1. Floating Blur Circles */}
@@ -890,21 +891,21 @@ export default function SocialMediaOptimizationPage() {
                 </div>
 
                 <div className="container mx-auto px-4 relative max-w-7xl z-10">
-                    {/* Upper Why Choose SysCrop split graphic & text */}
+                    {/* Upper Why Choose Syscorp split graphic & text */}
                     <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-20">
                         {/* Right Side: Text */}
                         <div className="lg:w-1/2">
-                            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-[#1A5CDD]/5 border border-[#1A5CDD]/10 mb-8">
-                                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
-                                    <Activity className="text-[#1A5CDD]" size={20} />
+                            <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-[#1A5CDD]/5 border border-[#1A5CDD]/10 mb-6 w-fit">
+                                <div className="w-7 h-7 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                    <Activity className="text-[#3B82F6]" size={14} strokeWidth={2.5} />
                                 </div>
-                                <h3 className="text-xl font-bold text-[#011146]">Why SysCrop</h3>
+                                <span className="text-[15px] font-bold text-[#011146] pr-2 tracking-wide">Why Syscorp</span>
                             </div>
                             <h2 className="text-3xl md:text-[48px] font-bold text-[#011146] mb-6 leading-tight">
-                                Why Choose SysCrop for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Social Media Optimization (SMO)?</span>
+                                Why Choose Syscorp for <br className="hidden lg:block" /><span className="text-[#3B82F6]">Social Media Optimization (SMO)?</span>
                             </h2>
                             <p className="text-slate-600 text-[16px] leading-[1.8] mb-5">
-                                At SysCrop, we believe that social media is more than just sharing posts—it's about building meaningful relationships, strengthening brand credibility, and creating opportunities for business growth. Our Social Media Optimization (SMO) Services are tailored to your industry, target audience, and business objectives, ensuring your brand maintains a strong and consistent presence across all major social media platforms.
+                                At Syscorp, we believe that social media is more than just sharing posts—it's about building meaningful relationships, strengthening brand credibility, and creating opportunities for business growth. Our Social Media Optimization (SMO) Services are tailored to your industry, target audience, and business objectives, ensuring your brand maintains a strong and consistent presence across all major social media platforms.
                             </p>
                             <p className="text-slate-600 text-[16px] leading-[1.8]">
                                 By combining creative content strategies, profile optimization, audience engagement, and data-driven insights, we help businesses improve their online visibility, increase organic engagement, and establish long-term connections with their customers. Whether you're a startup, small business, or established enterprise, our customized SMO solutions are designed to deliver measurable results and sustainable digital growth.
@@ -918,8 +919,8 @@ export default function SocialMediaOptimizationPage() {
                                 <div className="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
                                     <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden bg-slate-900">
                                         <Image
-                                            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop"
-                                            alt="Why Choose SysCrop for SMO"
+                                            src="/images/seo/why_syscorp.png"
+                                            alt="Why Choose Syscorp for SMO"
                                             fill
                                             className="object-cover transform group-hover:scale-110 transition-transform duration-700"
                                             sizes="(max-width: 768px) 100vw, 50vw"
@@ -939,9 +940,9 @@ export default function SocialMediaOptimizationPage() {
                         </div>
                     </div>
 
-                    {/* Header for "What Sets SysCrop Apart?" */}
+                    {/* Header for "What Sets Syscorp Apart?" */}
                     <div className="mt-16 text-center max-w-3xl mx-auto mb-14">
-                        <h3 className="text-3xl md:text-[48px] font-bold text-[#011146] tracking-tight">What Sets SysCrop Apart?</h3>
+                        <h3 className="text-3xl md:text-[48px] font-bold text-[#011146] tracking-tight">What Sets Syscorp Apart?</h3>
                     </div>
 
                     {/* Asymmetric Modern SaaS Bento Grid (Vercel & Linear Style) */}
@@ -1063,32 +1064,27 @@ export default function SocialMediaOptimizationPage() {
                     </div>
                 </div>
             </section>
-
             {/* FAQ Section */}
             <section className="py-20 bg-[#F8FAFC]">
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
-
+                        
                         {/* Left Column - Content */}
                         <div className="lg:w-1/3 flex flex-col justify-start top-32">
                             <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
                                 FREQUENTLY ASKED QUESTIONS
                             </div>
-
+                            
                             <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
                                 Your Questions <br />
                                 <span className="text-[#1A5CDD]">Answered</span>
                             </h2>
-
-                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-8 max-w-sm">
+                            
+                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-10 max-w-sm">
                                 Find clear, honest answers to common questions from our team of experienced professionals.
                             </p>
-
-                            <button className="bg-[#1A5CDD] hover:bg-[#011146] text-white px-6 py-3 rounded-full text-[14px] font-bold transition-colors shadow-lg shadow-blue-900/20 w-fit flex items-center gap-2 mb-10">
-                                View All FAQ's <ChevronRight size={16} strokeWidth={3} />
-                            </button>
-
+                            
                             {/* Avatars */}
                             <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
                                 <div className="flex -space-x-3.5">
@@ -1111,9 +1107,9 @@ export default function SocialMediaOptimizationPage() {
                                 {faqs.map((faq, index) => (
                                     <div
                                         key={index}
-                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index
-                                            ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]"
-                                            : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
+                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index 
+                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]" 
+                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
                                             }`}
                                     >
                                         <button
@@ -1123,11 +1119,11 @@ export default function SocialMediaOptimizationPage() {
                                             <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${activeFaq === index ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
                                                 {index + 1}. {faq.q}
                                             </span>
-                                            <span className={`w-[34px] h-[34px] rounded-full flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-100 text-slate-400 group-hover:bg-slate-200 group-hover:text-slate-600"}`}>
+                                            <span className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-200/60 text-slate-600 group-hover:bg-slate-200 group-hover:text-slate-800"}`}>
                                                 {activeFaq === index ? (
-                                                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" /></svg>
                                                 ) : (
-                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
                                                 )}
                                             </span>
                                         </button>

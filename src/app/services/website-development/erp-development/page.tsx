@@ -346,16 +346,16 @@ export default function ERPDevelopmentPondicherryPage() {
             a: "ERP software is suitable for businesses across various industries, including manufacturing, retail, healthcare, education, logistics, finance, construction, hospitality, distribution, and service-based organizations. A customized ERP system helps improve efficiency, automate workflows, and centralize business operations regardless of the industry."
         },
         {
-            q: "Why choose SysCrop for ERP Development in Pondicherry?",
-            a: "SysCrop delivers customized ERP solutions designed around your unique business processes. Our team develops secure, scalable, and feature-rich ERP systems that integrate finance, HR, inventory, sales, procurement, and other business functions into one centralized platform, helping businesses improve productivity and operational efficiency."
+            q: "Why choose Syscorp for ERP Development in Pondicherry?",
+            a: "Syscorp delivers customized ERP solutions designed around your unique business processes. Our team develops secure, scalable, and feature-rich ERP systems that integrate finance, HR, inventory, sales, procurement, and other business functions into one centralized platform, helping businesses improve productivity and operational efficiency."
         },
         {
-            q: "Does SysCrop provide ERP implementation, migration, and ongoing support?",
-            a: "Yes. SysCrop offers complete ERP services, including business analysis, custom ERP development, implementation, cloud deployment, legacy ERP migration, third-party integrations, user training, and ongoing maintenance to ensure your ERP system continues to perform efficiently as your business evolves."
+            q: "Does Syscorp provide ERP implementation, migration, and ongoing support?",
+            a: "Yes. Syscorp offers complete ERP services, including business analysis, custom ERP development, implementation, cloud deployment, legacy ERP migration, third-party integrations, user training, and ongoing maintenance to ensure your ERP system continues to perform efficiently as your business evolves."
         },
         {
-            q: "Can SysCrop customize ERP software for my business requirements?",
-            a: "Absolutely. Every business operates differently, so SysCrop develops fully customized ERP software tailored to your workflows, departments, and industry requirements. Whether you need CRM, HRMS, Finance, Inventory, Manufacturing, Payroll, or other modules, we build flexible ERP solutions that can be expanded as your business grows."
+            q: "Can Syscorp customize ERP software for my business requirements?",
+            a: "Absolutely. Every business operates differently, so Syscorp develops fully customized ERP software tailored to your workflows, departments, and industry requirements. Whether you need CRM, HRMS, Finance, Inventory, Manufacturing, Payroll, or other modules, we build flexible ERP solutions that can be expanded as your business grows."
         }
     ];
 
@@ -382,8 +382,8 @@ export default function ERPDevelopmentPondicherryPage() {
 
                         {/* Left Side: Content */}
                         <div className="lg:col-span-6 space-y-6">
-                            <span className="hero-animate inline-flex items-center gap-2 bg-white border border-slate-200 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
-                                <Briefcase size={14} />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Enterprise ERP Solutions
                             </span>
 
@@ -496,10 +496,10 @@ export default function ERPDevelopmentPondicherryPage() {
                         {/* Right Column: Content */}
                         <div className="lg:col-span-7 space-y-6 order-1 lg:order-2">
                             <div className="flex items-center gap-3">
-                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
-                                    <Cpu size={14} />
-                                    Core Architecture
-                                </span>
+                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Core Architecture
+                            </span>
                                 <span className="text-xs font-extrabold uppercase tracking-wider text-slate-400">
                                     What is ERP Software?
                                 </span>
@@ -536,10 +536,10 @@ export default function ERPDevelopmentPondicherryPage() {
                             {/* Left Column (55%): Content & Value Points */}
                             <div className="lg:col-span-7 space-y-6">
                                 <div className="flex items-center gap-3">
-                                    <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
-                                        <Zap size={14} />
-                                        Strategic Advantage
-                                    </span>
+                                    <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Strategic Advantage
+                            </span>
                                 </div>
 
                                 <h2 className="text-3xl md:text-4xl lg:text-[42px] font-extrabold text-[#011146] tracking-tight leading-tight">
@@ -697,10 +697,10 @@ export default function ERPDevelopmentPondicherryPage() {
             <section className="py-20 bg-white relative overflow-hidden">
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-6xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
-                            <Sparkles size={14} />
-                            End-to-End Solutions
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                End-to-End Solutions
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
                             Our ERP Development Services
                         </h2>
@@ -765,10 +765,10 @@ export default function ERPDevelopmentPondicherryPage() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     {/* Header */}
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-white border border-slate-200 text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
-                            <Sparkles size={14} className="text-[#38bdf8]" />
-                            Enterprise Architecture
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                Enterprise Architecture
+                            </span>
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#011146] tracking-tight leading-tight">
                             ERP Modules We <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Develop</span>
                         </h2>
@@ -885,8 +885,8 @@ export default function ERPDevelopmentPondicherryPage() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
                         <div className="space-y-4 max-w-4xl">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
-                                <Workflow size={14} />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Agile Roadmap
                             </span>
                             <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
@@ -1054,8 +1054,8 @@ export default function ERPDevelopmentPondicherryPage() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="bg-white/95 backdrop-blur-xl rounded-[36px] p-8 md:p-12 lg:p-14 border border-slate-200/90 shadow-[0_10px_40px_rgba(1,17,70,0.06)] relative overflow-hidden">
                         <div className="max-w-4xl mx-auto text-center space-y-4 mb-14">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
-                                <Shield size={14} />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Proven Expertise
                             </span>
 
@@ -1110,10 +1110,10 @@ export default function ERPDevelopmentPondicherryPage() {
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-white/10 text-[#38bdf8] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-white/15 backdrop-blur-md shadow-sm">
-                            <TrendingUp size={14} />
-                            Why Syscorp
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                Why Syscorp
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
                             Delivering ERP Excellence <span className="text-[#38bdf8] bg-clip-text text-transparent bg-gradient-to-r from-[#38bdf8] to-[#60a5fa]">Across Industries</span>
                         </h2>

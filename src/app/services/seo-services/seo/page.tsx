@@ -9,7 +9,7 @@ import {
     Zap, LineChart, MapPin, Activity, LayoutDashboard, Database, Smartphone, Headset,
     ScanSearch, Bot, Gauge, Rocket, CopyCheck, Link2, Braces, TriangleAlert, Code2,
     BookOpen, Building2, Bookmark, UserCircle, MessageSquare, Megaphone, ShieldAlert, PieChart, Star, ThumbsUp, RefreshCw, Filter, Map, Image as ImageIcon,
-    Palmtree, Flower2, GraduationCap, Utensils, Home, ShoppingCart, Scale, Stethoscope, Truck, Dumbbell, Palette, Wrench
+    Palmtree, Flower2, GraduationCap, Utensils, Home, ShoppingCart, Scale, Stethoscope, Truck, Dumbbell, Palette, Wrench, Plus, Minus, ChevronRight
 } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -220,8 +220,8 @@ export default function SEOServicesPage() {
 
     const faqs = [
         { q: "Why should I invest in SEO for my business?", a: "SEO helps your business rank higher on search engines, attract qualified organic traffic, increase brand visibility, and generate more leads without relying solely on paid advertising." },
-        { q: "How long does it take to see results from SEO?", a: "SEO results vary depending on your industry, competition, website condition, and target keywords. Typically, businesses start seeing measurable improvements within 3 to 6 months. However, at SysCrop, we implement data-driven SEO strategies and prioritize high-impact optimizations to help many businesses achieve noticeable improvements within the first 2 months, wherever possible." },
-        { q: "How much do SEO Services in Pondicherry cost?", a: "The cost of SEO depends on your business goals, website size, target keywords, and market competition. SysCrop offers flexible and customized SEO packages designed to suit your business requirements and budget." },
+        { q: "How long does it take to see results from SEO?", a: "SEO results vary depending on your industry, competition, website condition, and target keywords. Typically, businesses start seeing measurable improvements within 3 to 6 months. However, at Syscorp, we implement data-driven SEO strategies and prioritize high-impact optimizations to help many businesses achieve noticeable improvements within the first 2 months, wherever possible." },
+        { q: "How much do SEO Services in Pondicherry cost?", a: "The cost of SEO depends on your business goals, website size, target keywords, and market competition. Syscorp offers flexible and customized SEO packages designed to suit your business requirements and budget." },
         { q: "Will I receive regular SEO reports and updates?", a: "Yes. We provide detailed monthly SEO reports that include keyword rankings, organic traffic growth, website performance, backlink progress, and recommendations, ensuring complete transparency throughout your SEO campaign." },
         { q: "Can SEO help my business generate more leads and sales?", a: "Yes. A well-planned SEO strategy attracts users who are actively searching for your products or services. By improving your website's visibility for high-intent keywords, SEO helps drive qualified traffic, increase enquiries, and support long-term business growth." }
     ];
@@ -249,7 +249,7 @@ export default function SEOServicesPage() {
             />
 
             {/* Intro Section */}
-            <section className="py-20 lg:py-28 bg-[#F0F8FF]/60 relative overflow-hidden">
+            <section className="py-20 bg-[#F0F8FF]/60 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -262,7 +262,7 @@ export default function SEOServicesPage() {
                                 Professional <span className="text-[#1A5CDD]">SEO Services</span> in Pondicherry
                             </h2>
                             <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                                At SysCrop, we deliver result-driven SEO Services in Pondicherry to help businesses improve search engine rankings, increase organic traffic, generate qualified leads, and achieve long-term growth. As a trusted SEO Company Pondicherry, we use data-driven strategies and ethical SEO practices to deliver measurable results.
+                                At Syscorp, we deliver result-driven SEO Services in Pondicherry to help businesses improve search engine rankings, increase organic traffic, generate qualified leads, and achieve long-term growth. As a trusted SEO Company Pondicherry, we use data-driven strategies and ethical SEO practices to deliver measurable results.
                             </p>
                             <p className="text-slate-600 text-lg leading-relaxed mb-6">
                                 Our professional SEO in Pondicherry helps your business improve online visibility, attract the right audience, and stay ahead of the competition. We provide customized SEO solutions for startups, local businesses, eCommerce stores, healthcare, education, real estate, and enterprises. Whether you want to rank for local keywords, boost website traffic, improve brand visibility, or increase sales, our SEO Services in Pondicherry are designed for sustainable business growth.
@@ -383,10 +383,11 @@ export default function SEOServicesPage() {
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
-                            Why SysCrop
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                            Why Syscorp
                         </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
-                            Why Choose SysCrop as Your SEO Company in Pondicherry?
+                            Why Choose Syscorp as Your SEO Company in Pondicherry?
                         </h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 mt-4">
@@ -424,7 +425,7 @@ export default function SEOServicesPage() {
 
                                 <div className="space-y-4">
                                     <p className="text-slate-200 text-[17px] leading-relaxed font-medium">
-                                        At SysCrop, our On-Page SEO Services are designed to optimize every element of your website to improve search engine visibility, enhance user experience, and increase organic traffic.
+                                        At Syscorp, our On-Page SEO Services are designed to optimize every element of your website to improve search engine visibility, enhance user experience, and increase organic traffic.
                                     </p>
                                     <p className="text-slate-400 text-[16px] leading-relaxed">
                                         As a trusted provider of SEO Services in Pondicherry, we focus on optimizing each webpage according to Google's latest ranking guidelines, ensuring your website performs well for both search engines and potential customers. Our On-Page SEO process is comprehensive and tailored to your business goals.
@@ -658,7 +659,7 @@ export default function SEOServicesPage() {
                             </h3>
 
                             <p className="text-slate-600 text-[16px] leading-relaxed mb-6">
-                                At SysCrop, our Technical SEO Services are designed to ensure your website is fully optimized for search engine crawling, indexing, and overall performance.
+                                At Syscorp, our Technical SEO Services are designed to ensure your website is fully optimized for search engine crawling, indexing, and overall performance.
                             </p>
                             <p className="text-slate-600 text-[16px] leading-relaxed">
                                 We implement industry best practices to improve your website's health, enhance user experience, and create a solid technical foundation for long-term organic growth.
@@ -737,60 +738,57 @@ export default function SEOServicesPage() {
                 <div className="container mx-auto px-4 relative max-w-7xl">
 
                     {/* Hero Split for Off-Page SEO */}
-                    <div className="flex flex-col lg:flex-row-reverse gap-16 lg:gap-20 items-center mb-20">
+                    <div className="flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center mb-24">
                         {/* Right Side: Compact Text & Features */}
                         <div className="lg:w-1/2 relative z-10">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-4">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]" />
+                            <span className="inline-flex items-center gap-2 bg-[#EBF3FE] rounded-full px-4 py-2 text-[11px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block" />
                                 Off-Page SEO Services
                             </span>
 
-                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#011146] mb-4 leading-tight">
-                                Strengthen Your Website Authority & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Organic Growth</span>
+                            <h2 className="text-[32px] md:text-4xl lg:text-[42px] font-extrabold text-[#011146] mb-5 leading-[1.2] tracking-tight">
+                                Strengthen Your Website Authority <br className="hidden lg:block" />
+                                & <span className="text-[#38bdf8]">Organic Growth</span>
                             </h2>
 
-                            <p className="text-slate-600 text-[15px] leading-relaxed mb-5">
-                                At SysCrop, our Off-Page SEO Services strengthen your website's authority, credibility, and online reputation beyond your site. We implement strategic White Hat techniques including brand outreach, local citations, Google Business Profile optimization, and high-quality link building to boost domain authority and search engine rankings.
+                            <p className="text-slate-500 text-[15px] leading-[1.8] mb-8">
+                                At Syscorp, our Off-Page SEO Services strengthen your website's authority, credibility, and online reputation beyond your site. We implement strategic White Hat techniques including brand outreach, local citations, Google Business Profile optimization, and high-quality link building to boost domain authority and search engine rankings.
                             </p>
 
                             {/* Feature Pills */}
-                            <div className="grid grid-cols-2 gap-3 mb-5">
-                                <div className="bg-[#F8FAFC] border border-slate-100 rounded-xl p-3 flex items-center gap-2.5 shadow-sm">
-                                    <div className="w-5 h-5 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center shrink-0">
-                                        <CheckCircle2 size={12} strokeWidth={3} />
-                                    </div>
-                                    <span className="text-[#011146] font-bold text-xs sm:text-[13px]">Ethical White Hat SEO</span>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                                <div className="bg-[#F8FAFC] border border-slate-100/80 rounded-xl px-5 py-4 flex items-center gap-3">
+                                    <CheckCircle2 size={18} strokeWidth={2.5} className="text-[#1A5CDD]" />
+                                    <span className="text-[#011146] font-extrabold text-[13px]">Ethical White Hat SEO</span>
                                 </div>
-                                <div className="bg-[#F8FAFC] border border-slate-100 rounded-xl p-3 flex items-center gap-2.5 shadow-sm">
-                                    <div className="w-5 h-5 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center shrink-0">
-                                        <CheckCircle2 size={12} strokeWidth={3} />
-                                    </div>
-                                    <span className="text-[#011146] font-bold text-xs sm:text-[13px]">High-Quality Links</span>
+                                <div className="bg-[#F8FAFC] border border-slate-100/80 rounded-xl px-5 py-4 flex items-center gap-3">
+                                    <CheckCircle2 size={18} strokeWidth={2.5} className="text-[#1A5CDD]" />
+                                    <span className="text-[#011146] font-extrabold text-[13px]">High-Quality Links</span>
                                 </div>
                             </div>
 
                             {/* Compact Feature Cards Grid */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div className="bg-[#F8FAFC] border border-slate-100 rounded-2xl p-4 group hover:border-[#1A5CDD]/20 hover:bg-white hover:shadow-md transition-all duration-300">
-                                    <div className="flex items-center gap-2.5 mb-1.5">
-                                        <div className="w-7 h-7 rounded-lg bg-blue-100/50 text-[#1A5CDD] flex items-center justify-center shrink-0 group-hover:bg-[#1A5CDD] group-hover:text-white transition-colors">
-                                            <TrendingUp size={15} strokeWidth={2.5} />
+                                <div className="bg-[#F8FAFC] rounded-[20px] p-6">
+                                    <div className="flex items-center gap-3 mb-3">
+                                        <div className="w-8 h-8 rounded-full bg-[#EBF3FE] text-[#1A5CDD] flex items-center justify-center shrink-0">
+                                            <TrendingUp size={16} strokeWidth={2.5} />
                                         </div>
-                                        <h4 className="text-[#011146] font-extrabold text-sm">Earn Greater Trust</h4>
+                                        <h4 className="text-[#011146] font-extrabold text-[14px]">Earn Greater Trust</h4>
                                     </div>
-                                    <p className="text-slate-500 text-xs leading-relaxed">
+                                    <p className="text-slate-500 text-[13px] leading-relaxed">
                                         Earn greater trust from search engines and attract sustainable qualified organic traffic.
                                     </p>
                                 </div>
 
-                                <div className="bg-[#F8FAFC] border border-slate-100 rounded-2xl p-4 group hover:border-[#1A5CDD]/20 hover:bg-white hover:shadow-md transition-all duration-300">
-                                    <div className="flex items-center gap-2.5 mb-1.5">
-                                        <div className="w-7 h-7 rounded-lg bg-blue-100/50 text-[#1A5CDD] flex items-center justify-center shrink-0 group-hover:bg-[#1A5CDD] group-hover:text-white transition-colors">
-                                            <Globe size={15} strokeWidth={2.5} />
+                                <div className="bg-[#F8FAFC] rounded-[20px] p-6">
+                                    <div className="flex items-center gap-3 mb-3">
+                                        <div className="w-8 h-8 rounded-full bg-[#EBF3FE] text-[#1A5CDD] flex items-center justify-center shrink-0">
+                                            <Globe size={16} strokeWidth={2.5} />
                                         </div>
-                                        <h4 className="text-[#011146] font-extrabold text-sm">Measurable Results</h4>
+                                        <h4 className="text-[#011146] font-extrabold text-[14px]">Measurable Results</h4>
                                     </div>
-                                    <p className="text-slate-500 text-xs leading-relaxed">
+                                    <p className="text-slate-500 text-[13px] leading-relaxed">
                                         Expand digital presence and improve search visibility with custom off-page strategies.
                                     </p>
                                 </div>
@@ -798,45 +796,31 @@ export default function SEOServicesPage() {
                         </div>
 
                         {/* Left Side: Image Composition */}
-                        <div className="lg:w-1/2 relative w-full h-[550px] md:h-[650px] flex items-center justify-center lg:justify-end mt-8 lg:mt-0">
-
-                            {/* Main Background Blob to give depth */}
-                            <div className="absolute top-1/2 right-10 -translate-y-1/2 w-[70%] h-[95%] bg-[#F8FAFF] rounded-[40px] -z-10" />
-
+                        <div className="lg:w-1/2 relative w-full flex items-center justify-center mt-12 lg:mt-0">
                             {/* Primary Large Image */}
-                            <div className="relative w-[75%] h-[85%] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.1)] group z-10 mr-8">
+                            <div className="relative w-full max-w-[500px] z-10">
                                 <img
-                                    src="/images/off-page-seo-new.png"
+                                    src="/images/seo/Off-Page_seo.png"
                                     alt="Global Network Off-Page SEO"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="w-full h-auto object-contain rounded-[32px]"
                                 />
-                                <div className="absolute inset-0 bg-[#011146]/10 group-hover:bg-transparent transition-colors duration-500" />
-                            </div>
 
-                            {/* Secondary Overlapping Image (Bottom Left) */}
-                            <div className="absolute -bottom-2 left-4 lg:left-0 w-[55%] h-[40%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.15)] border-[8px] border-white z-20 group">
-                                <img
-                                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
-                                    alt="SEO Outreach Team"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                />
-                            </div>
-
-                            {/* Floating Badge (Left Side) */}
-                            <div className="absolute bottom-24 -left-4 bg-white/95 backdrop-blur-md px-6 py-4 rounded-2xl shadow-xl border border-slate-100 z-30 flex items-center gap-4 transform transition-transform hover:-translate-y-1">
-                                <div className="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center">
-                                    <TrendingUp size={20} strokeWidth={2.5} />
+                                {/* Floating Badge (Left Side) */}
+                                <div className="absolute bottom-[10%] -left-6 lg:-left-12 bg-white px-5 py-4 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.08)] z-30 flex items-center gap-4 border border-slate-50">
+                                    <div className="w-10 h-10 bg-emerald-50 text-emerald-500 rounded-full flex items-center justify-center">
+                                        <TrendingUp size={20} strokeWidth={2.5} />
+                                    </div>
+                                    <div>
+                                        <p className="text-[#011146] font-black text-[16px] leading-none mb-1">85K+</p>
+                                        <p className="text-slate-500 text-[11px] font-semibold">Organic Traffic Growth</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p className="text-[#011146] font-extrabold text-[15px]">85k+</p>
-                                    <p className="text-slate-500 text-xs font-semibold mt-0.5">Organic Traffic Growth</p>
-                                </div>
-                            </div>
 
-                            {/* Floating Badge (Right Side) */}
-                            <div className="absolute top-20 -right-2 bg-white/95 backdrop-blur-md px-5 py-3 rounded-full shadow-lg border border-slate-100 z-30 flex items-center gap-2.5 transform transition-transform hover:-translate-y-1">
-                                <span className="w-2.5 h-2.5 rounded-full bg-[#1A5CDD] animate-pulse" />
-                                <p className="text-[#011146] font-bold text-sm">High Domain Authority</p>
+                                {/* Floating Badge (Right Side) */}
+                                <div className="absolute top-[15%] -right-4 lg:-right-8 bg-white px-5 py-2.5 rounded-full shadow-[0_15px_40px_rgba(0,0,0,0.08)] z-30 flex items-center gap-2.5 border border-slate-50">
+                                    <span className="w-2 h-2 rounded-full bg-[#81A3F5]" />
+                                    <p className="text-[#011146] font-bold text-[12px]">High Domain Authority</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1021,7 +1005,7 @@ export default function SEOServicesPage() {
                                                 <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-[#1A5CDD] group-hover:text-white transition-colors duration-300">
                                                     <Icon size={12} />
                                                 </div>
-                                                <span className="truncate">syscrop.com › services › {item.title.toLowerCase().replace(/ & /g, '-').replace(/\s+/g, '-')}</span>
+                                                <span className="truncate">syscorp.com › services › {item.title.toLowerCase().replace(/ & /g, '-').replace(/\s+/g, '-')}</span>
                                             </div>
                                             <h4 className="text-[19px] text-[#1A5CDD] group-hover:underline font-medium mb-1.5 leading-tight">
                                                 {item.title}
@@ -1418,7 +1402,8 @@ export default function SEOServicesPage() {
                         {/* Left Side: Sticky Title */}
                         <div className="lg:w-5/12 relative z-10">
                             <div className="sticky top-32">
-                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
+                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                     How We Work
                                 </span>
                                 <h2 className="text-4xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-8 leading-tight">
@@ -1475,53 +1460,82 @@ export default function SEOServicesPage() {
                     </div>
                 </div>
             </section>
-
-            {/* FAQs */}
-            <section className="py-20 lg:py-28 bg-[#F0F8FF]/50 border-t border-[#1A5CDD]/10">
-                <div className="container mx-auto px-6 max-w-4xl">
-                    <div className="text-center mb-16">
-                        <span className="text-xs uppercase font-extrabold tracking-wider text-[#1A5CDD] px-3.5 py-1.5 bg-[#1A5CDD]/10 rounded-full">
-                            Have Questions?
-                        </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] mt-4 tracking-tight">
-                            Frequently Asked Questions (FAQs)
-                        </h2>
-                    </div>
-
-                    <div className="space-y-4">
-                        {faqs.map((item, index) => {
-                            const isOpen = activeFaq === index;
-                            return (
-                                <div
-                                    key={index}
-                                    className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen ? "border-[#1A5CDD] shadow-lg shadow-blue-900/5" : "border-slate-200 hover:border-slate-300"
-                                        }`}
-                                >
-                                    <button
-                                        onClick={() => setActiveFaq(isOpen ? null : index)}
-                                        className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
-                                    >
-                                        <h3 className="text-[17px] font-bold text-[#011146] pr-8">
-                                            {index + 1}. {item.q}
-                                        </h3>
-                                        <ChevronDown
-                                            className={`text-[#1A5CDD] transition-transform duration-300 flex-shrink-0 ${isOpen ? "rotate-180" : "rotate-0"
-                                                }`}
-                                            size={20}
-                                        />
-                                    </button>
-                                    <div
-                                        className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-                                    >
-                                        <div className="overflow-hidden">
-                                            <div className="px-6 pb-6 text-slate-600 text-[15px] leading-relaxed">
-                                                {item.a}
-                                            </div>
-                                        </div>
+            {/* FAQ Section */}
+            <section className="py-20 bg-[#F8FAFC]">
+                <div className="container mx-auto px-6 max-w-7xl">
+                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+                        
+                        {/* Left Column - Content */}
+                        <div className="lg:w-1/3 flex flex-col justify-start top-32">
+                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
+                                FREQUENTLY ASKED QUESTIONS
+                            </div>
+                            
+                            <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
+                                Your Questions <br />
+                                <span className="text-[#1A5CDD]">Answered</span>
+                            </h2>
+                            
+                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-10 max-w-sm">
+                                Find clear, honest answers to common questions from our team of experienced professionals.
+                            </p>
+                            
+                            {/* Avatars */}
+                            <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
+                                <div className="flex -space-x-3.5">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-30" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-20" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-10" alt="Consulting Expert" />
+                                    <div className="w-[42px] h-[42px] rounded-full bg-[#011146] border-[2.5px] border-[#F8FAFC] flex items-center justify-center text-white text-[11px] font-bold shadow-sm relative z-0">
+                                        +10
                                     </div>
                                 </div>
-                            );
-                        })}
+                                <p className="text-[12.5px] text-slate-500 font-medium leading-snug max-w-[140px]">
+                                    Answers curated directly from our consulting experts.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Right Column - Accordions */}
+                        <div className="lg:w-2/3 w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {faqs.map((faq, index) => (
+                                    <div
+                                        key={index}
+                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index 
+                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]" 
+                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
+                                            }`}
+                                    >
+                                        <button
+                                            className="w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer group"
+                                            onClick={() => setActiveFaq(activeFaq === index ? null : index)}
+                                        >
+                                            <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${activeFaq === index ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
+                                                {index + 1}. {faq.q}
+                                            </span>
+                                            <span className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-200/60 text-slate-600 group-hover:bg-slate-200 group-hover:text-slate-800"}`}>
+                                                {activeFaq === index ? (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" /></svg>
+                                                ) : (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                                                )}
+                                            </span>
+                                        </button>
+                                        <div
+                                            className={`transition-all duration-300 ease-in-out ${activeFaq === index ? "max-h-96 opacity-100 pb-7 px-6" : "max-h-0 opacity-0 overflow-hidden px-6"
+                                                }`}
+                                        >
+                                            <div className="w-full h-px bg-slate-100 mb-5"></div>
+                                            <p className="text-slate-500 leading-relaxed text-[14.5px] font-medium pr-4">
+                                                {faq.a}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

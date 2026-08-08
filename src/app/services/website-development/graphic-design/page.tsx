@@ -422,10 +422,10 @@ export default function GraphicDesignPondicherryPage() {
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                         <div className="lg:col-span-7 gsap-fade-up">
-                            <div className="inline-flex items-center gap-2.5 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[13px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
-                                <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Creative Visual Solutions
-                            </div>
+                            </span>
 
                             <h1 className="text-3xl md:text-5xl lg:text-[48px] font-bold text-[#011146] tracking-tight leading-[1.2] mb-6">
                                 Professional Graphic Design Services
@@ -433,7 +433,7 @@ export default function GraphicDesignPondicherryPage() {
 
                             <div className="space-y-4 mb-8">
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
-                                    At SysCrop, we provide Graphic Design Services in Pondicherry that help businesses build a strong and consistent brand identity. As a trusted Graphic Design Company in Pondicherry, we create visually compelling designs that enhance brand recognition, improve customer engagement, and support marketing success.
+                                    At Syscorp, we provide Graphic Design Services in Pondicherry that help businesses build a strong and consistent brand identity. As a trusted Graphic Design Company in Pondicherry, we create visually compelling designs that enhance brand recognition, improve customer engagement, and support marketing success.
                                 </p>
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
                                     From logo design and branding to social media creatives, brochures, banners, and marketing materials, our creative team delivers designs that are modern, impactful, and aligned with your business goals.
@@ -468,7 +468,7 @@ export default function GraphicDesignPondicherryPage() {
                                             <Palette size={20} />
                                         </div>
                                         <div>
-                                            <h4 className="text-xs font-bold text-[#011146]">SysCrop Creative Studio</h4>
+                                            <h4 className="text-xs font-bold text-[#011146]">Syscorp Creative Studio</h4>
                                             <p className="text-[11px] text-slate-500">Logo, Branding & Digital Creatives</p>
                                         </div>
                                     </div>
@@ -553,7 +553,7 @@ export default function GraphicDesignPondicherryPage() {
                                 Graphic Design Services involve creating visual content that represents a business, communicates its message, and strengthens its brand identity. Professional designs help businesses connect with their audience through logos, brochures, social media creatives, advertisements, packaging, and other marketing materials.
                             </p>
                             <p className="text-slate-600 text-[16.5px] leading-[1.9] mb-8">
-                                As an experienced Graphic Design Company in Pondicherry, SysCrop delivers creative design solutions that combine aesthetics with strategy to help businesses stand out in today's competitive market.
+                                As an experienced Graphic Design Company in Pondicherry, Syscorp delivers creative design solutions that combine aesthetics with strategy to help businesses stand out in today's competitive market.
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-4 border-t border-slate-200/80">
@@ -631,15 +631,15 @@ export default function GraphicDesignPondicherryPage() {
                     
                     {/* Section Header */}
                     <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
-                            <Sparkles size={14} />
-                            Full-Spectrum Design Studio
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Full-Spectrum Design Studio
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
                             Our Graphic Design <span className="text-[#1A5CDD]">Services</span>
                         </h2>
                         <p className="text-slate-600 text-base md:text-lg leading-relaxed">
-                            At SysCrop, we offer Graphic Design Services in Pondicherry that combine creativity with strategy to help businesses build a strong and consistent brand identity.
+                            At Syscorp, we offer Graphic Design Services in Pondicherry that combine creativity with strategy to help businesses build a strong and consistent brand identity.
                         </p>
                     </div>
 
@@ -748,10 +748,10 @@ export default function GraphicDesignPondicherryPage() {
             <section className="py-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
-                            <Settings size={14} />
-                            Creative Workflow
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Creative Workflow
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
                             Our Graphic Design <span className="text-[#1A5CDD]">Process</span>
                         </h2>
@@ -799,10 +799,10 @@ export default function GraphicDesignPondicherryPage() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-white/10 text-[#38bdf8] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-white/15 backdrop-blur-md shadow-sm">
-                            <Cpu size={14} />
-                            Creative Stack
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                Creative Stack
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
                             Design Tools & <span className="text-[#38bdf8] bg-clip-text text-transparent bg-gradient-to-r from-[#38bdf8] to-[#1A5CDD]">Technologies</span>
                         </h2>
@@ -842,19 +842,19 @@ export default function GraphicDesignPondicherryPage() {
                 </div>
             </section>
 
-            {/* SECTION 6: Why Choose SysCrop for Graphic Design Services in Pondicherry? */}
+            {/* SECTION 6: Why Choose Syscorp for Graphic Design Services in Pondicherry? */}
             <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
-                            <Shield size={14} />
-                            Proven Excellence
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Proven Excellence
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
-                            Why Choose SysCrop for <span className="text-[#1A5CDD]">Graphic Design Services</span> in Pondicherry?
+                            Why Choose Syscorp for <span className="text-[#1A5CDD]">Graphic Design Services</span> in Pondicherry?
                         </h2>
                         <p className="text-slate-600 text-base md:text-lg max-w-3xl mx-auto pt-1 leading-relaxed">
-                            Choosing the right design partner is essential for building a strong and memorable brand. SysCrop combines creativity, industry expertise, and a customer-focused approach to deliver designs that align with your business goals. As a trusted Graphic Design Company in Pondicherry, we create visual solutions that strengthen brand identity and support business growth.
+                            Choosing the right design partner is essential for building a strong and memorable brand. Syscorp combines creativity, industry expertise, and a customer-focused approach to deliver designs that align with your business goals. As a trusted Graphic Design Company in Pondicherry, we create visual solutions that strengthen brand identity and support business growth.
                         </p>
                     </div>
 
@@ -893,10 +893,10 @@ export default function GraphicDesignPondicherryPage() {
                     
                     {/* Header Section (Centered) */}
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
-                            <HelpCircle size={14} />
-                            FAQ
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                FAQ
+                            </span>
                         
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
                             Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Questions</span>

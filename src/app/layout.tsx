@@ -72,7 +72,7 @@ export default function RootLayout({
         <html lang="en" suppressHydrationWarning>
             <head>
                 <meta name="theme-color" content="#02071f" />
-                <meta name="color-scheme" content="dark" />
+                <meta name="color-scheme" content="light" />
                 <link rel="preconnect" href="https://images.unsplash.com" />
                 <link rel="dns-prefetch" href="https://images.unsplash.com" />
                 <script
