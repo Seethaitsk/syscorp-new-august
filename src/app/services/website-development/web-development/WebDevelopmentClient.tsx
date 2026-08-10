@@ -10,7 +10,7 @@ import {
     Settings, Wrench, Search, LayoutDashboard, Monitor, RefreshCw,
     Users, Building2, Stethoscope, GraduationCap, Home, Utensils,
     Palmtree, Truck, Flower2, Scale, DollarSign, HelpCircle, Laptop,
-    Cloud, HardDrive, FileText, CheckCircle, Target
+    Cloud, HardDrive, FileText, CheckCircle, Target, Star
 } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -29,11 +29,11 @@ export default function WebDevelopmentClient() {
     const [activeAccordion, setActiveAccordion] = useState<number | null>(0);
 
 
-    const services = [
+     const services = [
         {
             id: "custom-website",
             title: "Custom Website Development",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+            image: "/images/webdevelopment/1.svg",
             tag: "Custom Architecture",
             icon: Code,
             desc: "Every business has unique goals, and your website should represent your brand, services, and vision effectively. Our Custom Website Development Services focus on creating personalized websites that match your business objectives and customer expectations.\n\nAs a leading Web Development Company in Pondicherry, we develop scalable, secure, and SEO-optimized websites that provide seamless performance across all devices. From planning and design to development and deployment, we ensure every website delivers a smooth user experience and supports business growth.",
@@ -49,7 +49,7 @@ export default function WebDevelopmentClient() {
         {
             id: "business-website",
             title: "Business Website Development",
-            image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+            image: "/images/webdevelopment/2.svg",
             tag: "Corporate & Brand",
             icon: Building2,
             desc: "Your website is often the first interaction customers have with your business. A professionally designed business website helps you create a strong first impression and build trust with your audience.\n\nOur Business Website Development Services help companies showcase their products, services, expertise, and brand values through modern and engaging websites.",
@@ -64,7 +64,7 @@ export default function WebDevelopmentClient() {
         {
             id: "ecommerce-website",
             title: "Ecommerce Website Development",
-            image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=800&auto=format&fit=crop",
+            image: "/images/webdevelopment/3.svg",
             tag: "High Conversion Store",
             icon: ShoppingCart,
             desc: "Our Ecommerce Website Development Services help businesses launch powerful online stores that increase sales and improve customer satisfaction.",
@@ -81,7 +81,7 @@ export default function WebDevelopmentClient() {
         {
             id: "web-application",
             title: "Web Application Development",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+            image: "/images/webdevelopment/4.svg",
             tag: "SaaS & Cloud Software",
             icon: Cpu,
             desc: "Businesses today need powerful digital solutions to automate processes, improve productivity, and deliver better services. Our Web Application Development Services provide customized applications designed around your business needs.",
@@ -97,7 +97,7 @@ export default function WebDevelopmentClient() {
         {
             id: "responsive-website",
             title: "Responsive Website Development",
-            image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop",
+            image: "/images/webdevelopment/5.svg",
             tag: "Cross-Device Fluidity",
             icon: Smartphone,
             desc: "With users accessing websites from multiple devices, responsive design is essential for online success. Our Responsive Website Development Services ensure your website delivers an excellent experience on desktops, tablets, and smartphones.",
@@ -112,7 +112,7 @@ export default function WebDevelopmentClient() {
         {
             id: "cms-website",
             title: "CMS Website Development",
-            image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=800&auto=format&fit=crop",
+            image: "/images/webdevelopment/6.svg",
             tag: "Easy Content Control",
             icon: LayoutDashboard,
             desc: "Managing website content should be simple and efficient. Our CMS development solutions allow businesses to easily update website pages, images, blogs, and other content without technical expertise.",
@@ -127,7 +127,7 @@ export default function WebDevelopmentClient() {
         {
             id: "website-maintenance",
             title: "Website Maintenance & Support",
-            image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=800&auto=format&fit=crop",
+            image: "/images/webdevelopment/7.svg",
             tag: "24/7 Technical Support",
             icon: Settings,
             desc: "A website requires regular updates and maintenance to maintain security, performance, and reliability. Our website maintenance services help businesses keep their websites running smoothly.",
@@ -407,8 +407,8 @@ export default function WebDevelopmentClient() {
 "
             />
 
-            {/* SECTION 1: Intro Hero Section */}
-            <section className="py-20 lg:py-28 bg-[#F0F6FF] relative overflow-hidden">
+             {/* SECTION 1: Intro Hero Section */}
+            <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
                 {/* Background Decorators */}
                 <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[700px] h-[700px] bg-[#1A5CDD]/8 rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute top-10 left-10 w-[400px] h-[400px] bg-[#1A5CDD]/6 rounded-full blur-3xl pointer-events-none" />
@@ -419,10 +419,10 @@ export default function WebDevelopmentClient() {
 
                         {/* Left: Text Content */}
                         <div className="lg:col-span-7 gsap-fade-up">
-                            <div className="inline-flex items-center gap-2.5 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[13px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
-                                <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Next-Gen Web Development
-                            </div>
+                            </span>
 
                             <h1 className="text-3xl md:text-5xl lg:text-[48px] font-bold text-[#011146] tracking-tight leading-[1.2] mb-6">
                                 Professional <span className="text-[#1A5CDD]">Web Development</span> Services in Pondicherry
@@ -430,7 +430,7 @@ export default function WebDevelopmentClient() {
 
                             <div className="space-y-4 mb-8">
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
-                                    At SysCrop, we help businesses build powerful digital experiences through modern, scalable, and result-driven web development solutions. As a leading Web Development Company in Pondicherry, we create high-performance websites with attractive design, seamless functionality, strong security, and SEO-friendly architecture.
+                                    At Syscorp, we help businesses build powerful digital experiences through modern, scalable, and result-driven web development solutions. As a leading Web Development Company in Pondicherry, we create high-performance websites with attractive design, seamless functionality, strong security, and SEO-friendly architecture.
                                 </p>
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
                                     Whether you're a startup, a growing business, or an enterprise, we deliver customized websites aligned with your business goals. Our services include corporate websites, eCommerce platforms, CMS websites, custom web applications, business portals, and website redesign solutions.
@@ -455,13 +455,7 @@ export default function WebDevelopmentClient() {
                                 ))}
                             </div>
 
-                            <Link
-                                href="/contact"
-                                className="group relative inline-flex items-center gap-3 bg-[#011146] text-white px-8 py-4 rounded-xl font-bold text-[15px] transition-all duration-300 shadow-lg shadow-blue-900/15 hover:bg-[#1A5CDD] hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(26,92,221,0.35)] overflow-hidden"
-                            >
-                                <span className="relative z-10">Get a Free Consultation</span>
-                                <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1.5 transition-transform duration-300" />
-                            </Link>
+                           
                         </div>
 
                         {/* Right: Premium Visual Panel */}
@@ -469,82 +463,24 @@ export default function WebDevelopmentClient() {
 
                             {/* Main card — browser mockup style */}
                             <div className="relative w-full rounded-[28px] overflow-hidden shadow-2xl border-4 border-white bg-white">
-                                {/* Browser chrome bar */}
-                                <div className="bg-slate-100 px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                                    <div className="flex gap-1.5">
-                                        <span className="w-3 h-3 rounded-full bg-red-400" />
-                                        <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                                        <span className="w-3 h-3 rounded-full bg-emerald-400" />
-                                    </div>
-                                    <div className="flex-1 bg-white rounded-md px-3 py-1 text-xs text-slate-400 font-medium ml-2 border border-slate-200">
-                                        syscrop.in/your-website
-                                    </div>
-                                </div>
+                                
                                 {/* Main image */}
-                                <div className="relative h-[280px] w-full">
+                                <div className="relative h-[420px] w-full">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000&auto=format&fit=crop"
+                                        src="/images/webdevelopment/web_development_1.svg"
                                         alt="Developer writing code on laptop"
                                         fill
                                         className="object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/30 to-transparent" />
                                 </div>
-                                {/* Card footer stats */}
-                                <div className="bg-white px-5 py-4 flex items-center justify-between">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-full bg-[#1A5CDD]/10 flex items-center justify-center text-[#1A5CDD]">
-                                            <Globe size={20} />
-                                        </div>
-                                        <div>
-                                            <p className="text-[#011146] font-extrabold text-sm">Live & Deployed</p>
-                                            <p className="text-slate-400 text-[11px]">Optimized for speed</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center gap-1.5 bg-emerald-50 text-emerald-600 border border-emerald-200 text-xs font-bold px-3 py-1.5 rounded-full">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping inline-block" />
-                                        Online
-                                    </div>
-                                </div>
+                                
                             </div>
 
-                            {/* Row of 2 smaller cards below */}
-                            <div className="grid grid-cols-2 gap-4 mt-4">
-
-                                {/* Responsive design image card */}
-                                <div className="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white h-[150px] group">
-                                    <Image
-                                        src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=600&auto=format&fit=crop"
-                                        alt="Responsive web design"
-                                        fill
-                                        className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/60 to-transparent" />
-                                    <div className="absolute bottom-3 left-3 right-3">
-                                        <p className="text-white font-bold text-xs leading-tight">Responsive Design</p>
-                                        <p className="text-blue-200 text-[10px] mt-0.5">All devices</p>
-                                    </div>
-                                </div>
-
-                                {/* Stats dark card */}
-                                <div className="bg-[#011146] rounded-2xl p-4 flex flex-col justify-between shadow-lg border-4 border-white h-[150px] relative overflow-hidden">
-                                    <div className="absolute top-0 right-0 w-20 h-20 bg-[#1A5CDD]/30 rounded-full blur-2xl" />
-                                    <div className="flex items-center gap-2">
-                                        <div className="w-8 h-8 bg-[#38bdf8]/20 rounded-lg flex items-center justify-center text-[#38bdf8]">
-                                            <TrendingUp size={15} />
-                                        </div>
-                                        <p className="text-white/70 text-[10px] font-bold uppercase tracking-wider">Performance</p>
-                                    </div>
-                                    <div>
-                                        <p className="text-3xl font-extrabold text-white">500+</p>
-                                        <p className="text-[#38bdf8] text-[10px] font-bold uppercase tracking-wider mt-0.5">Websites Launched</p>
-                                    </div>
-                                </div>
-
-                            </div>
+                            
 
                             {/* Floating badge — top right */}
-                            <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl border border-slate-100 px-4 py-3 flex items-center gap-3 z-20 animate-bounce-slow">
+                            <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl border border-slate-100 px-4 py-3 flex items-center gap-3 z-20 animate-bounce" style={{ animationDuration: '3s' }}>
                                 <div className="w-10 h-10 bg-[#1A5CDD]/10 text-[#1A5CDD] rounded-full flex items-center justify-center">
                                     <Code size={20} />
                                 </div>
@@ -580,8 +516,9 @@ export default function WebDevelopmentClient() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Text Content */}
                         <div className="gsap-fade-up">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 shadow-sm border border-[#1A5CDD]/10">
-                                <Code size={14} /> Understanding Web Development
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Understanding Web Development
                             </span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#011146] mb-6 leading-tight">
                                 What exactly is <br /><span className="text-[#1A5CDD]">Web Development?</span>
@@ -593,11 +530,11 @@ export default function WebDevelopmentClient() {
                                 A professionally developed website is more than just an online presence. It acts as a powerful business tool that helps companies showcase their services, generate qualified leads, improve customer communication, and support digital marketing strategies.
                             </p>
 
-                            <div className="bg-[#F0F6FF] rounded-2xl p-6 md:p-8 border border-blue-100">
-                                <p className="text-[#011146] font-bold text-[17px] mb-5 flex items-center gap-2">
+                            <div className="bg-[#F0F6FF] rounded-2xl p-5 md:p-6 border border-blue-100">
+                                <p className="text-[#011146] font-bold text-[17px] mb-4 flex items-center gap-2">
                                     <Sparkles size={18} className="text-[#1A5CDD]" /> Our focus areas:
                                 </p>
-                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6">
                                     {[
                                         "Fast & responsive",
                                         "Easy to navigate",
@@ -618,33 +555,61 @@ export default function WebDevelopmentClient() {
                         </div>
 
                         {/* Visual Right Side */}
-                        <div className="relative w-full h-[500px] lg:h-[600px] flex justify-center items-center gsap-fade-up">
+                        <div className="relative w-full h-[500px] lg:h-[600px] gsap-fade-up mt-12 lg:mt-0">
+                            
                             {/* Decorative background shape */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#1A5CDD]/5 to-transparent rounded-[40px] transform rotate-3" />
+                            <div className="absolute top-4 right-0 w-[80%] h-[85%] bg-[#F0F6FF] rounded-[32px] transform translate-x-4 -translate-y-4" />
 
-                            <div className="relative w-[90%] h-[90%] rounded-[32px] overflow-hidden shadow-2xl border-8 border-white z-10 group">
+                            {/* Main Image (Right aligned, tall) */}
+                            <div className="absolute top-8 right-4 w-[75%] h-[80%] rounded-[32px] overflow-hidden shadow-2xl z-10 border-4 border-white">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop"
                                     alt="Web Development Process"
                                     fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="object-cover hover:scale-105 transition-transform duration-700"
                                 />
-                                <div className="absolute inset-0 bg-[#011146]/20 mix-blend-multiply" />
+                                <div className="absolute inset-0 bg-[#011146]/10 mix-blend-multiply" />
                             </div>
 
-                            {/* Floating Card 1 */}
-                            <div className="absolute top-10 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 z-20 flex items-center gap-4 animate-bounce-slow">
-                                <div className="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center">
-                                    <Code size={24} />
+                            {/* Secondary Image (Left aligned, bottom, overlapping) */}
+                            <div className="absolute bottom-6 left-0 w-[55%] h-[45%] rounded-[32px] overflow-hidden shadow-2xl border-[6px] border-white z-20">
+                                <Image
+                                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=400&auto=format&fit=crop"
+                                    alt="Web Development Team"
+                                    fill
+                                    className="object-cover hover:scale-105 transition-transform duration-700"
+                                />
+                            </div>
+
+                            {/* Top Left Floating Card (10/10 Overall rating) */}
+                            <div className="absolute top-16 -left-4 bg-white p-4 pr-6 rounded-2xl shadow-xl z-30 flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
+                                <div className="w-12 h-12 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center shrink-0">
+                                    <Star size={24} fill="currentColor" className="text-orange-500" />
                                 </div>
                                 <div>
-                                    <p className="font-extrabold text-[#011146] text-lg">100%</p>
-                                    <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider">Custom Code</p>
+                                    <p className="font-extrabold text-[#011146] text-xl leading-none mb-1">10/10</p>
+                                    <p className="text-slate-500 text-sm font-semibold">Overall rating</p>
                                 </div>
                             </div>
 
-                            {/* Floating Card 2 */}
-                            <div className="absolute bottom-12 -right-6 bg-white p-5 rounded-2xl shadow-xl border border-slate-100 z-20 animate-bounce-slow" style={{ animationDelay: '1.5s' }}>
+                            {/* Top Right Circular Badge (Since 2012) */}
+                            <div className="absolute -top-4 right-0 w-32 h-32 bg-[#011146] rounded-full text-white flex items-center justify-center shadow-2xl z-30">
+                                {/* Center Text */}
+                                <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+                                    <span className="font-black text-2xl leading-none text-white">10+</span>
+                                    <span className="text-[10px] font-bold text-[#38bdf8] uppercase tracking-wider mt-1">Years</span>
+                                </div>
+                                {/* Rotating Text */}
+                                <svg viewBox="0 0 100 100" className="w-full h-full animate-spin" style={{ animationDuration: '12s' }}>
+                                    <path id="circlePath2" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="none" />
+                                    <text className="text-[9.5px] font-bold uppercase tracking-widest" fill="currentColor">
+                                        <textPath href="#circlePath2" startOffset="0%">Syscorp Technology • Since 2012 •</textPath>
+                                    </text>
+                                </svg>
+                            </div>
+
+                            {/* Bottom Left Floating Card (+5k Projects Delivered) */}
+                            <div className="absolute bottom-2 left-8 bg-white p-4 px-5 rounded-2xl shadow-xl z-30 animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '3s' }}>
                                 <div className="flex items-center gap-3 mb-2">
                                     <div className="flex -space-x-2">
                                         {[
@@ -652,12 +617,12 @@ export default function WebDevelopmentClient() {
                                             "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&auto=format&fit=crop",
                                             "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop"
                                         ].map((img, i) => (
-                                            <div key={i} className="w-8 h-8 rounded-full border-2 border-white overflow-hidden relative">
+                                            <div key={i} className="w-9 h-9 rounded-full border-2 border-white overflow-hidden relative shadow-sm">
                                                 <Image src={img} alt="User" fill className="object-cover" />
                                             </div>
                                         ))}
                                     </div>
-                                    <div className="w-8 h-8 rounded-full bg-[#1A5CDD] text-white flex items-center justify-center text-xs font-bold border-2 border-white relative -ml-2">
+                                    <div className="w-9 h-9 rounded-full bg-[#1A5CDD] text-white flex items-center justify-center text-xs font-bold border-2 border-white relative -ml-2 shadow-sm">
                                         +5k
                                     </div>
                                 </div>
@@ -680,8 +645,9 @@ export default function WebDevelopmentClient() {
 
                         {/* Text Content */}
                         <div className="xl:col-span-5 gsap-fade-up">
-                            <span className="inline-flex items-center gap-2 bg-white/10 text-[#38bdf8] border border-white/10 px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 backdrop-blur-md">
-                                <TrendingUp size={14} /> Business Growth Impact
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                Business Growth Impact
                             </span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                                 Why Your Business Needs a <span className="text-[#38bdf8]">Professional Website</span>
@@ -690,7 +656,7 @@ export default function WebDevelopmentClient() {
                                 In today's digital-first market, your website is often the first interaction customers have with your brand. A slow, outdated, or poorly designed website can reduce trust and drive potential customers toward competitors.
                             </p>
                             <p className="text-blue-100/80 text-[16.5px] leading-[1.8] mb-8">
-                                At SysCrop, we design websites that are not only visually appealing but also built to achieve real business objectives. Our development process focuses on combining design, technology, SEO, and performance to create websites that deliver measurable value.
+                                At Syscorp, we design websites that are not only visually appealing but also built to achieve real business objectives. Our development process focuses on combining design, technology, SEO, and performance to create websites that deliver measurable value.
                             </p>
 
                             <div className="flex items-center gap-4 text-white font-bold text-lg bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm w-fit">
@@ -739,9 +705,10 @@ export default function WebDevelopmentClient() {
 
                     {/* Heading */}
                     <div className="text-center max-w-3xl mx-auto mb-24">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-blue-100/80 text-[#1A5CDD] border border-blue-200/60 px-5 py-2 text-xs font-extrabold uppercase tracking-widest shadow-sm">
-                            <Sparkles size={14} /> Comprehensive Solutions
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Comprehensive Solutions
+                            </span>
 
                         <h2 className="mt-6 text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
                             Our Professional <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">Web Development Services</span>
@@ -774,7 +741,7 @@ export default function WebDevelopmentClient() {
                                             <img
                                                 src={service.image}
                                                 alt={service.title}
-                                                className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-700 ease-out"
+                                                className="w-full h-full object-cover object-left group-hover/img:scale-105 transition-transform duration-700 ease-out"
                                                 onError={(e) => {
                                                     (e.target as HTMLImageElement).src = "/images/services/Custom-Website.webp";
                                                 }}
@@ -784,9 +751,10 @@ export default function WebDevelopmentClient() {
                                             <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/60 via-transparent to-black/10 pointer-events-none" />
 
                                             {/* Floating Category Tag */}
-                                            <div className="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md border border-white/60 text-[#1A5CDD] px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider shadow-md flex items-center gap-1.5 z-10">
-                                                <Sparkles size={11} className="text-[#1A5CDD]" /> {service.tag}
-                                            </div>
+                                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                {service.tag}
+                            </span>
 
                                             {/* Floating Quality Badge */}
                                             <div className="absolute bottom-3.5 left-3.5 bg-[#011146]/85 backdrop-blur-md text-white border border-white/10 px-3 py-1 rounded-xl text-[11px] font-bold shadow-md flex items-center gap-1.5 z-10">
@@ -864,16 +832,17 @@ export default function WebDevelopmentClient() {
             <section className="py-24 bg-[#F0F6FF] relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] border border-[#1A5CDD]/20 px-4.5 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider mb-5 shadow-sm">
-                            <Sparkles size={14} className="text-[#1A5CDD]" /> Proven Methodology
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-5">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Proven Methodology
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">
                             Our Website <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">Development Process</span>
                         </h2>
 
                         <div className="space-y-5 text-slate-600 text-[16.5px] md:text-[17.5px] leading-[1.85]">
                             <p>
-                                As a leading <span className="font-bold text-[#011146]">Web Development Company in Pondicherry</span>, SysCrop follows a proven and transparent website development process that delivers high-quality digital solutions for businesses of all sizes. Our <span className="font-bold text-[#1A5CDD]">Professional Web Development Services</span> are designed to ensure every website is visually appealing, technically robust, SEO-friendly, and built to achieve your business goals.
+                                As a leading <span className="font-bold text-[#011146]">Web Development Company in Pondicherry</span>, Syscorp follows a proven and transparent website development process that delivers high-quality digital solutions for businesses of all sizes. Our <span className="font-bold text-[#1A5CDD]">Professional Web Development Services</span> are designed to ensure every website is visually appealing, technically robust, SEO-friendly, and built to achieve your business goals.
                             </p>
                             <p>
                                 Being an experienced <span className="font-bold text-[#011146]">Software Company in Pondicherry</span>, we believe every successful website starts with proper planning, strategic execution, and continuous collaboration. Our <span className="font-bold text-[#1A5CDD]">Web Development Services in Pondicherry</span> cover everything from business consultation and UI/UX design to development, testing, deployment, and ongoing support, ensuring a smooth experience from start to finish.
@@ -956,9 +925,10 @@ export default function WebDevelopmentClient() {
             <section className="py-24 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4">
-                            Technology Stack
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Technology Stack
+                            </span>
                         <h2 className="text-3xl md:text-5xl font-bold text-[#011146] tracking-tight mb-6">
                             Technologies & Frameworks We Use
                         </h2>
@@ -1003,9 +973,10 @@ export default function WebDevelopmentClient() {
                                                         {tech.category}
                                                     </h3>
 
-                                                    <span className="rounded-full bg-blue-50 px-4 py-2 text-xs font-bold uppercase tracking-widest text-[#1A5CDD]">
-                                                        Latest Stack
-                                                    </span>
+                                                    <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Latest Stack
+                            </span>
 
                                                 </div>
 
@@ -1074,7 +1045,7 @@ export default function WebDevelopmentClient() {
                 </div>
             </section>
 
-            {/* SECTION 6: Why Choose SysCrop as Your Web Development Company in Pondicherry? */}
+            {/* SECTION 6: Why Choose Syscorp as Your Web Development Company in Pondicherry? */}
             <section className="py-24 bg-[#030C2A] relative overflow-hidden">
                 {/* Background Ambient Glows */}
                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#1A5CDD]/20 rounded-full blur-[140px] pointer-events-none" />
@@ -1085,13 +1056,14 @@ export default function WebDevelopmentClient() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                         {/* Left Side: Text Content */}
-                        <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
+                        <div className="lg:col-span-6 space-y-6 lg:sticky">
                             <div>
-                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/15 text-[#38bdf8] border border-[#38bdf8]/20 px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 backdrop-blur-md">
-                                    <Sparkles size={14} /> Why Choose Us
-                                </span>
+                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                Why Choose Us
+                            </span>
                                 <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-[42px] font-extrabold text-white mb-6 leading-[1.2] tracking-tight">
-                                    Why Choose <span className="bg-gradient-to-r from-[#38bdf8] via-blue-300 to-indigo-300 bg-clip-text text-transparent">SysCrop</span> as Your Web Development Company in Pondicherry?
+                                    Why Choose <span className="bg-gradient-to-r from-[#38bdf8] via-blue-300 to-indigo-300 bg-clip-text text-transparent">Syscorp</span> as Your Web Development Company in Pondicherry?
                                 </h2>
                                 <p className="text-slate-300/90 text-[16px] leading-[1.8] mb-5">
                                     Choosing the right Web Development Company in Pondicherry is essential for building a website that supports your business growth. We combine creativity, technical expertise, and industry experience to deliver fast, secure, and scalable websites that generate measurable results.
@@ -1114,14 +1086,7 @@ export default function WebDevelopmentClient() {
                         </div>
 
                         {/* Right Side: 10 Key Points Interactive Accordion */}
-                        <div className="lg:col-span-7 space-y-3">
-                            <div className="flex items-center justify-between mb-4 pb-2 border-b border-white/10">
-                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/15 text-[#38bdf8] border border-[#38bdf8]/20 px-3.5 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider backdrop-blur-md">
-                                    <Sparkles size={14} /> 10 Key Advantages
-                                </span>
-                                <span className="text-slate-400 text-xs font-medium">Click any advantage to view details</span>
-                            </div>
-
+                        <div className="lg:col-span-6 space-y-3">
                             {whyChooseReasons.map((item, index) => {
                                 const Icon = item.icon;
                                 const isSelected = activeIndex === index;
@@ -1262,9 +1227,10 @@ export default function WebDevelopmentClient() {
                         {/* Left Column: Heading & Sticky Context */}
                         <div className="lg:w-5/12">
                             <div className="lg:sticky">
-                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] text-xs font-extrabold uppercase tracking-wider mb-6 border border-[#1A5CDD]/20">
-                                    <Sparkles size={14} /> Got Questions?
-                                </span>
+                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Got Questions?
+                            </span>
 
                                 <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-[1.15] mb-6">
                                     Frequently Asked <br />
@@ -1297,8 +1263,8 @@ export default function WebDevelopmentClient() {
                                     <div
                                         key={index}
                                         className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen
-                                            ? "border-[#1A5CDD] shadow-xl shadow-blue-900/5 ring-1 ring-[#1A5CDD]/30"
-                                            : "border-slate-200/80 hover:border-slate-300"
+                                                ? "border-[#1A5CDD] shadow-xl shadow-blue-900/5 ring-1 ring-[#1A5CDD]/30"
+                                                : "border-slate-200/80 hover:border-slate-300"
                                             }`}
                                     >
                                         <button
@@ -1316,11 +1282,17 @@ export default function WebDevelopmentClient() {
                                                 <ChevronDown size={18} />
                                             </div>
                                         </button>
-                                        {isOpen && (
-                                            <div className="px-6 pb-6 text-slate-600 text-[15.5px] leading-relaxed border-t border-slate-100 pt-4">
-                                                {faq.a}
+                                        <div
+                                            className={`grid transition-all duration-300 ease-in-out ${
+                                                isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                                            }`}
+                                        >
+                                            <div className="overflow-hidden">
+                                                <div className="px-6 pb-6 text-slate-600 text-[15.5px] leading-relaxed border-t border-slate-100 pt-4">
+                                                    {faq.a}
+                                                </div>
                                             </div>
-                                        )}
+                                        </div>
                                     </div>
                                 );
                             })}
@@ -1328,6 +1300,7 @@ export default function WebDevelopmentClient() {
                     </div>
                 </div>
             </section>
+
 
 
         </main>

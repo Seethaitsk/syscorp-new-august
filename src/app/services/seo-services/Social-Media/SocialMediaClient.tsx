@@ -178,12 +178,14 @@ export default function SocialMediaClient() {
             />
 
             {/* Intro Section - Hero Redesign */}
-            <section className="py-20 lg:py-28 bg-[#F0F6FF] relative overflow-hidden">
+            <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
                 {/* Background Decorators */}
+                {/* 1. Light blue radial gradient & blur circles */}
                 <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[700px] h-[700px] bg-[#1A5CDD]/10 rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute top-10 left-10 w-[400px] h-[400px] bg-[#1A5CDD]/8 rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute bottom-0 right-10 w-[450px] h-[450px] bg-[#38bdf8]/12 rounded-full blur-3xl pointer-events-none" />
 
+                {/* 2. Background Dot Pattern */}
                 <div
                     className="absolute inset-0 opacity-[0.05] pointer-events-none"
                     style={{
@@ -192,6 +194,7 @@ export default function SocialMediaClient() {
                     }}
                 />
 
+                {/* 3. Abstract Wave Shapes */}
                 <div className="absolute inset-0 pointer-events-none opacity-20">
                     <svg className="w-full h-full" viewBox="0 0 1440 800" fill="none" preserveAspectRatio="none">
                         <path d="M-100,300 C250,150 650,450 1000,280 C1250,180 1450,380 1600,250 L1600,800 L-100,800 Z" fill="url(#hero-wave-1)" opacity="0.3" />
@@ -204,6 +207,7 @@ export default function SocialMediaClient() {
                     </svg>
                 </div>
 
+                {/* 4. Subtle Noise Texture */}
                 <div className="absolute inset-0 pointer-events-none opacity-[0.025] mix-blend-overlay">
                     <svg className="w-full h-full">
                         <filter id="heroNoiseFilter">
@@ -241,36 +245,44 @@ export default function SocialMediaClient() {
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
-                        {/* Left Side: Content */}
+                        {/* Left Side: Content (lg:col-span-7) */}
                         <div className="lg:col-span-7 gsap-fade-up max-w-[560px]">
-                            <div className="inline-flex items-center gap-2.5 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[13px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm animate-badge-slide">
-                                <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
+                            {/* Animated Badge */}
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Boost Your Reach
-                            </div>
+                            </span>
 
+                            {/* Heading: 42–48px */}
                             <h1 className="text-[42px] sm:text-[46px] lg:text-[48px] font-extrabold text-[#011146] tracking-tight mb-6 leading-[1.15]">
                                 Professional <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">SMO Services</span> in Pondicherry
                             </h1>
 
+                            {/* Paragraphs: 16–17px, Line-height: 1.8–1.9, Max text width: 520–560px */}
                             <div className="space-y-6 mb-8 max-w-[550px]">
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
-                                    At SysCrop, we provide professional Social Media Optimization (SMO) Services in Pondicherry that help businesses build a strong social media presence, increase brand awareness, and connect with their target audience. As a trusted Social Media Optimization Company in Pondicherry, we optimize your social media profiles, create engaging content strategies, and improve audience engagement to ensure your business stands out across leading social media platforms.
+                                    At Syscorp, we provide professional Social Media Optimization (SMO) Services in Pondicherry that help businesses build a strong social media presence, increase brand awareness, and connect with their target audience. As a trusted Social Media Optimization Company in Pondicherry, we optimize your social media profiles, create engaging content strategies, and improve audience engagement to ensure your business stands out across leading social media platforms.
                                 </p>
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
                                     Our SMO services go beyond simply posting content. We focus on optimizing your social media profiles, strengthening brand identity, improving content visibility, increasing organic reach, and encouraging meaningful customer interactions. Whether you're a startup, small business, enterprise, educational institution, healthcare provider, retail store, or service-based business, our customized SMO strategies help you establish a credible online presence and support long-term business growth.
                                 </p>
                             </div>
 
+                            {/* CTA & Trust Badge */}
                             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                                {/* CTA Button with Micro Interactions */}
                                 <Link
                                     href="/contact"
                                     className="group relative inline-flex items-center gap-3 bg-[#011146] text-white px-8 py-4 rounded-xl font-bold text-[15px] transition-all duration-300 shadow-lg shadow-blue-900/15 hover:bg-[#1A5CDD] hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(26,92,221,0.35)] overflow-hidden"
                                 >
+                                    {/* Button Ripple / Glow overlay effect */}
                                     <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
+
                                     <span className="relative z-10">Get a Free SMO Strategy</span>
                                     <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1.5 transition-transform duration-300" />
                                 </Link>
 
+                                {/* Trust Signal */}
                                 <div className="flex items-center gap-3">
                                     <div className="flex -space-x-2">
                                         {[1, 2, 3, 4].map((i) => (
@@ -291,11 +303,13 @@ export default function SocialMediaClient() {
                             </div>
                         </div>
 
-                        {/* Right Side: Dynamic UI Composition */}
+                        {/* Right Side: Dynamic UI Composition (lg:col-span-5) */}
                         <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-end mt-12 lg:mt-0">
+                            {/* Decorative Background Blob */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-[#1A5CDD]/15 via-[#38bdf8]/15 to-transparent rounded-full blur-3xl pointer-events-none opacity-80" />
 
-                            <div className="relative w-full max-w-[480px]">
+                            <div className="relative w-full max-w-[620px]">
+                                {/* Main Image Card */}
                                 <div className="relative w-full aspect-[4/3] sm:aspect-square rounded-[32px] border-4 border-white bg-white shadow-2xl shadow-blue-900/10 overflow-hidden group z-10">
                                     <Image
                                         src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=1000&auto=format&fit=crop"
@@ -305,9 +319,11 @@ export default function SocialMediaClient() {
                                         priority
                                         sizes="(max-width: 768px) 100vw, 45vw"
                                     />
+                                    {/* Glass Overlay */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/40 via-transparent to-transparent opacity-50 group-hover:opacity-30 transition-opacity duration-500" />
                                 </div>
 
+                                {/* Floating Stat Card 1 (Top Left) - Follower Growth */}
                                 <div className="absolute -top-6 -left-6 sm:-left-12 z-20 bg-white/95 backdrop-blur-md rounded-[20px] p-5 shadow-xl shadow-[#011146]/5 border border-white/60 animate-hero-float flex flex-col gap-2 transform -rotate-3 hover:rotate-0 transition-transform duration-300 w-[200px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center">
@@ -325,6 +341,7 @@ export default function SocialMediaClient() {
                                     </div>
                                 </div>
 
+                                {/* Floating Stat Card 2 (Bottom Right) - Engagement Pulse */}
                                 <div className="absolute -bottom-6 -right-4 sm:-right-8 z-20 bg-[#011146]/95 backdrop-blur-md rounded-[20px] p-4 shadow-2xl shadow-[#011146]/20 border border-[#38bdf8]/30 flex items-center gap-4 transform rotate-2 hover:rotate-0 transition-transform duration-300" style={{ animation: 'heroFloat 6s ease-in-out infinite 2s' }}>
                                     <div className="relative">
                                         <div className="w-12 h-12 rounded-full border-2 border-[#38bdf8] bg-slate-800 overflow-hidden relative">
@@ -341,6 +358,7 @@ export default function SocialMediaClient() {
                                     </div>
                                 </div>
 
+                                {/* Floating Platform Icon (Instagram-style) */}
                                 <div className="absolute top-1/2 -right-6 sm:-right-10 z-20 w-14 h-14 bg-white rounded-2xl shadow-lg shadow-pink-500/10 border border-slate-100 flex items-center justify-center transform -translate-y-1/2 hover:scale-110 transition-transform duration-300" style={{ animation: 'heroFloat 5s ease-in-out infinite 1s' }}>
                                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="url(#ig-grad)">
                                         <defs>
@@ -370,6 +388,7 @@ export default function SocialMediaClient() {
                         <div className="absolute -bottom-20 left-[20%] w-64 h-64 bg-[#38bdf8]/10 rounded-full blur-[80px] pointer-events-none" />
 
                         <div className="flex flex-col md:flex-row items-stretch gap-0 relative z-10">
+
                             <div className="md:w-5/12 p-10 md:p-14 flex flex-col justify-center border-b md:border-b-0 md:border-r border-white/10">
                                 <div className="flex items-center gap-2 mb-6">
                                     <div className="w-8 h-1 bg-[#38bdf8] rounded-full" />
@@ -400,9 +419,11 @@ export default function SocialMediaClient() {
 
             {/* Why SMO is Important Section - Bento Grid Layout */}
             <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
+                {/* Background Decorator 1: Blurred Circles */}
                 <div className="absolute top-10 left-1/4 -translate-x-1/2 w-[600px] h-[600px] bg-[#1A5CDD]/10 rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-[#38bdf8]/15 rounded-full blur-3xl pointer-events-none" />
 
+                {/* Background Decorator 2: Dot Pattern */}
                 <div
                     className="absolute inset-0 opacity-[0.06] pointer-events-none"
                     style={{
@@ -411,6 +432,7 @@ export default function SocialMediaClient() {
                     }}
                 />
 
+                {/* Background Decorator 3: Abstract Wave Shapes */}
                 <div className="absolute inset-0 pointer-events-none opacity-30">
                     <svg className="w-full h-full" viewBox="0 0 1440 800" fill="none" preserveAspectRatio="none">
                         <path d="M-100,200 C300,100 500,400 900,250 C1200,150 1400,350 1600,200 L1600,800 L-100,800 Z" fill="url(#wave-grad-1)" opacity="0.4" />
@@ -428,6 +450,7 @@ export default function SocialMediaClient() {
                     </svg>
                 </div>
 
+                {/* Background Decorator 4: Very Subtle Noise Texture */}
                 <div className="absolute inset-0 pointer-events-none opacity-[0.03] mix-blend-overlay">
                     <svg className="w-full h-full">
                         <filter id="noiseFilter">
@@ -463,11 +486,15 @@ export default function SocialMediaClient() {
                 `}} />
 
                 <div className="container mx-auto px-4 lg:px-6 relative max-w-7xl z-10">
+                    {/* Bento Grid Layout: 2 Columns on desktop (Left: Business Impact, Right: Stacked Cards) */}
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-0">
 
-                        {/* Left Card: Business Impact */}
+                        {/* Left Card: Business Impact (lg:col-span-7) */}
                         <div className="lg:col-span-7 gsap-fade-up bg-white/90 backdrop-blur-md rounded-[36px] p-8 md:p-12 border border-[#1A5CDD]/15 shadow-[0_15px_40px_rgba(1,17,70,0.05)] hover:shadow-[0_25px_60px_rgba(26,92,221,0.12)] hover:-translate-y-1.5 transition-all duration-500 flex flex-col justify-between group relative overflow-hidden">
+                            {/* Accent Neon Top Border Highlight Removed */}
+
                             <div>
+                                {/* Badge -> 13px */}
                                 <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#1A5CDD]/10 border border-[#1A5CDD]/25 mb-6 shadow-sm animate-smo-badge">
                                     <Settings className="text-[#1A5CDD]" size={15} />
                                     <span className="text-[13px] font-extrabold text-[#1A5CDD] tracking-wider uppercase">
@@ -475,10 +502,12 @@ export default function SocialMediaClient() {
                                     </span>
                                 </div>
 
+                                {/* Heading -> 32px */}
                                 <h2 className="text-[32px] md:text-[36px] font-extrabold text-[#011146] mb-6 leading-[1.25] tracking-tight group-hover:text-[#011146]">
                                     Why Social Media Optimization is Important for Your Business
                                 </h2>
 
+                                {/* Paragraphs -> 16px, Line height -> 1.8 */}
                                 <div className="space-y-5">
                                     <p className="text-slate-600 text-[16px] leading-[1.8] font-normal">
                                         In today's digital landscape, customers often visit a company's social media profiles before making a purchasing decision. An inactive or poorly optimized profile can reduce customer confidence and cause potential leads to choose your competitors.
@@ -493,22 +522,26 @@ export default function SocialMediaClient() {
                             </div>
                         </div>
 
-                        {/* Right Side Stacked Cards */}
+                        {/* Right Side Stacked Cards (lg:col-span-5) */}
                         <div className="lg:col-span-5 flex flex-col gap-6 justify-between">
 
+                            {/* Card 1: Instagram Card (Image Card) */}
                             <div className="gsap-fade-up relative rounded-[24px] border-[10px] border-white bg-white shadow-xl shadow-blue-900/10 hover:scale-[1.03] transition-all duration-500 overflow-hidden animate-smo-float animate-smo-glow group cursor-pointer">
+                                {/* Ambient Glow Aura around Image Card */}
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#1A5CDD]/20 via-transparent to-[#38bdf8]/20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[14px]">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1200&auto=format&fit=crop"
+                                        src="/images/seo/social_media.png"
                                         alt="Instagram Card - Social Media Optimization"
                                         fill
                                         className="object-cover group-hover:scale-105 transition-transform duration-700"
                                         sizes="(max-width: 768px) 100vw, 40vw"
                                     />
+                                    {/* Overlay Gradient */}
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/40 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 
+                                    {/* Floating Badge overlay on image */}
                                     <div className="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/60 text-[12px] font-bold text-[#011146] shadow-md flex items-center gap-2">
                                         <span className="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 animate-pulse" />
                                         Instagram Card
@@ -516,7 +549,9 @@ export default function SocialMediaClient() {
                                 </div>
                             </div>
 
+                            {/* Card 2: Decorative Social Icons Card */}
                             <div className="gsap-fade-up bg-white/80 backdrop-blur-md rounded-[28px] p-6 md:p-8 border border-[#1A5CDD]/20 shadow-[0_10px_30px_rgba(26,92,221,0.08)] hover:shadow-[0_15px_40px_rgba(26,92,221,0.18)] hover:border-[#1A5CDD]/40 transition-all duration-500 group relative overflow-hidden flex flex-col justify-center">
+                                {/* Frosted neon highlight background */}
                                 <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#1A5CDD]/10 rounded-full blur-2xl pointer-events-none" />
 
                                 <div className="flex items-center justify-between mb-5">
@@ -529,7 +564,9 @@ export default function SocialMediaClient() {
                                     </span>
                                 </div>
 
+                                {/* Social Media Icons Grid / Row */}
                                 <div className="grid grid-cols-5 gap-3 items-center justify-between">
+                                    {/* Facebook Icon */}
                                     <div className="group/icon flex flex-col items-center gap-1.5 p-2.5 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-[#1877F2] hover:border-[#1877F2] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-pointer">
                                         <svg className="w-6 h-6 fill-slate-700 group-hover/icon:fill-white transition-colors" viewBox="0 0 24 24">
                                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C20.412 23.027 24 18.062 24 12.073z" />
@@ -537,6 +574,7 @@ export default function SocialMediaClient() {
                                         <span className="text-[10px] font-bold text-slate-500 group-hover/icon:text-white transition-colors">FB</span>
                                     </div>
 
+                                    {/* Instagram Icon */}
                                     <div className="group/icon flex flex-col items-center gap-1.5 p-2.5 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 hover:border-transparent hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-pointer">
                                         <svg className="w-6 h-6 fill-slate-700 group-hover/icon:fill-white transition-colors" viewBox="0 0 24 24">
                                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
@@ -544,6 +582,7 @@ export default function SocialMediaClient() {
                                         <span className="text-[10px] font-bold text-slate-500 group-hover/icon:text-white transition-colors">IG</span>
                                     </div>
 
+                                    {/* X (Twitter) Icon */}
                                     <div className="group/icon flex flex-col items-center gap-1.5 p-2.5 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-black hover:border-black hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-pointer">
                                         <svg className="w-6 h-6 fill-slate-700 group-hover/icon:fill-white transition-colors" viewBox="0 0 24 24">
                                             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -551,6 +590,7 @@ export default function SocialMediaClient() {
                                         <span className="text-[10px] font-bold text-slate-500 group-hover/icon:text-white transition-colors">X</span>
                                     </div>
 
+                                    {/* LinkedIn Icon */}
                                     <div className="group/icon flex flex-col items-center gap-1.5 p-2.5 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-[#0A66C2] hover:border-[#0A66C2] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-pointer">
                                         <svg className="w-6 h-6 fill-slate-700 group-hover/icon:fill-white transition-colors" viewBox="0 0 24 24">
                                             <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-1.3.7-2.1 1.76-2.1s1.72.8 1.72 2.1v4.93h2.77M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
@@ -558,6 +598,7 @@ export default function SocialMediaClient() {
                                         <span className="text-[10px] font-bold text-slate-500 group-hover/icon:text-white transition-colors">IN</span>
                                     </div>
 
+                                    {/* YouTube Icon */}
                                     <div className="group/icon flex flex-col items-center gap-1.5 p-2.5 rounded-2xl bg-slate-50 border border-slate-100 hover:bg-[#FF0000] hover:border-[#FF0000] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-pointer">
                                         <svg className="w-6 h-6 fill-slate-700 group-hover/icon:fill-white transition-colors" viewBox="0 0 24 24">
                                             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
@@ -577,9 +618,10 @@ export default function SocialMediaClient() {
             <section className="py-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4 lg:px-6 relative max-w-7xl z-10">
 
+                    {/* Section Header */}
                     <div className="text-center max-w-3xl mx-auto mb-16 gsap-fade-up">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[13px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-4 shadow-sm">
-                            <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                             Strategic Value
                         </span>
                         <h3 className="text-3xl md:text-4xl lg:text-[44px] font-bold text-[#011146] tracking-tight mb-4 leading-tight">
@@ -590,7 +632,9 @@ export default function SocialMediaClient() {
                         </p>
                     </div>
 
+                    {/* Featured Dashboard Card */}
                     <div className="bg-gradient-to-r from-[#011146] via-[#0A2540] to-[#1A5CDD] rounded-[32px] p-8 md:p-12 mb-12 text-white relative overflow-hidden shadow-2xl shadow-blue-950/20 border border-white/10 group cursor-default gsap-fade-up">
+                        {/* Decorative Radial Grid Pattern Background */}
                         <div
                             className="absolute inset-0 opacity-15 pointer-events-none group-hover:scale-105 transition-transform duration-1000"
                             style={{
@@ -599,9 +643,11 @@ export default function SocialMediaClient() {
                             }}
                         />
 
+                        {/* Floating Ambient Glow aura */}
                         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-[#38bdf8]/20 rounded-full blur-3xl pointer-events-none animate-pulse" />
 
                         <div className="flex flex-col md:flex-row items-center gap-8 relative z-10">
+                            {/* Large Icon with Glassmorphic Highlight & Floating Animation */}
                             <div className="w-20 h-20 md:w-24 md:h-24 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shrink-0 shadow-xl group-hover:bg-[#1A5CDD] group-hover:scale-105 transition-all duration-500 animate-hero-float">
                                 <TrendingUp size={44} className="text-[#38bdf8] group-hover:text-white transition-colors duration-300" />
                             </div>
@@ -622,6 +668,7 @@ export default function SocialMediaClient() {
                         </div>
                     </div>
 
+                    {/* Benefit Cards Grid (4 Columns for Rows 1 & 2, 2 Wide Cards for Last Row) */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
                         {benefits.map((item, i) => {
                             const Icon = item.icon;
@@ -639,6 +686,7 @@ export default function SocialMediaClient() {
                             ];
                             const trend = trends[i % trends.length];
 
+                            // Last 2 cards (index 8 and 9) span 2 columns on desktop so the last row has 2 wide cards filling the full 4-column width
                             const isLastRow = i >= 8;
                             const colSpanClass = isLastRow ? "lg:col-span-2" : "lg:col-span-1";
 
@@ -647,14 +695,18 @@ export default function SocialMediaClient() {
                                     key={i}
                                     className={`group bg-white/90 backdrop-blur-md rounded-[24px] p-7 border border-slate-200/80 hover:border-[#1A5CDD]/30 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(26,92,221,0.18)] hover:-translate-y-[8px] transition-all duration-300 relative overflow-hidden flex flex-col justify-between cursor-default gsap-fade-up ${colSpanClass}`}
                                 >
+                                    {/* Hover Glow Accent */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-[#1A5CDD]/5 via-transparent to-[#38bdf8]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
                                     <div>
+                                        {/* Top Header: Icon & Integrated Badge */}
                                         <div className="flex items-center justify-between mb-6 relative z-10">
+                                            {/* Icon with scale effect on hover */}
                                             <div className="w-12 h-12 rounded-[16px] bg-slate-50 border border-slate-100 flex items-center justify-center text-[#1A5CDD] group-hover:bg-[#1A5CDD] group-hover:text-white group-hover:border-[#1A5CDD] group-hover:scale-110 transition-all duration-300 shadow-sm group-hover:shadow-[0_8px_20px_rgba(26,92,221,0.3)]">
                                                 <Icon size={22} strokeWidth={2} />
                                             </div>
 
+                                            {/* Integrated Header Badge */}
                                             <span className={`text-[12px] font-bold px-3 py-1 rounded-full border flex items-center gap-1.5 shadow-sm transition-colors duration-300 ${trend.isGreen
                                                 ? 'bg-emerald-50 text-emerald-600 border-emerald-100 group-hover:bg-emerald-500 group-hover:text-white group-hover:border-emerald-500'
                                                 : 'bg-blue-50 text-[#1A5CDD] border-blue-100 group-hover:bg-[#1A5CDD] group-hover:text-white group-hover:border-[#1A5CDD]'
@@ -664,10 +716,12 @@ export default function SocialMediaClient() {
                                             </span>
                                         </div>
 
+                                        {/* Card Title -> 20-22px */}
                                         <h4 className="font-bold text-[#011146] text-[20px] mb-2.5 group-hover:text-[#1A5CDD] transition-colors duration-300 relative z-10 leading-snug">
                                             {item.title}
                                         </h4>
 
+                                        {/* Paragraph -> 15.5px, Line Height 1.8 */}
                                         <p className="text-slate-600 text-[15.5px] leading-[1.8] relative z-10 flex-1">
                                             {item.desc}
                                         </p>
@@ -680,9 +734,11 @@ export default function SocialMediaClient() {
             </section>
 
             {/* What Our SMO Services Cover */}
-            <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] mt-12 mb-32">
+            <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] my-12">
+                {/* Blueprint Grid Background Pattern */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
 
+                {/* Subtle Radial Glow in Center */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#1A5CDD]/20 blur-[120px] rounded-full pointer-events-none" />
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
@@ -696,7 +752,7 @@ export default function SocialMediaClient() {
                             What Our Social Media Optimization (SMO) Services Cover
                         </h2>
                         <p className="text-slate-300 text-[16px] leading-relaxed max-w-2xl mx-auto">
-                            At SysCrop, we offer comprehensive Social Media Optimization (SMO) Services designed to strengthen your brand presence, improve audience engagement, and maximize your organic reach across major social media platforms.
+                            At Syscorp, we offer comprehensive Social Media Optimization (SMO) Services designed to strengthen your brand presence, improve audience engagement, and maximize your organic reach across major social media platforms.
                         </p>
                     </div>
 
@@ -705,10 +761,12 @@ export default function SocialMediaClient() {
                             const Icon = item.icon;
                             return (
                                 <div key={index} className="group flex items-start gap-5 cursor-default">
+                                    {/* Icon Container with Blueprint styling */}
                                     <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[#38bdf8] shrink-0 group-hover:bg-[#1A5CDD] group-hover:border-[#1A5CDD] group-hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(26,92,221,0.15)] group-hover:shadow-[0_0_25px_rgba(26,92,221,0.4)]">
                                         <Icon size={22} strokeWidth={1.8} />
                                     </div>
 
+                                    {/* Content */}
                                     <div className="flex-1 pt-1">
                                         <h4 className="text-white text-[16px] font-bold mb-2 group-hover:text-[#38bdf8] transition-colors duration-300">
                                             {item.title}
@@ -729,176 +787,362 @@ export default function SocialMediaClient() {
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
                         <div className="max-w-2xl">
-                            <span className="inline-flex items-center gap-2 text-[#3B82F6] font-semibold text-sm tracking-wide mb-3">
-                                <span className="text-[#3B82F6]/60">//</span> Our Work Process
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4 w-fit">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block" />
+                                Our Work Process
                             </span>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
                                 Our Proven <span className="text-[#3B82F6]">Work Process</span>
                             </h2>
                             <p className="text-slate-600 text-[16px] leading-relaxed mt-6">
-                                At SysCrop, we follow a strategic and results-driven Social Media Optimization process that helps businesses build a strong online presence, increase audience engagement, and achieve long-term brand growth.
+                                At Syscorp, we follow a strategic and results-driven Social Media Optimization process that helps businesses build a strong online presence, increase audience engagement, and achieve long-term brand growth.
                             </p>
                         </div>
 
-                        <div className="flex items-center gap-3">
-                            <button
-                                onClick={scrollPrev}
-                                className="w-12 h-12 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:bg-[#3B82F6] hover:text-white hover:border-[#3B82F6] transition-all shadow-sm group"
-                                aria-label="Previous step"
-                            >
-                                <ArrowLeft size={20} className="group-hover:-translate-x-0.5 transition-transform" />
+                        {/* Navigation Buttons */}
+                        <div className="flex items-center gap-4 shrink-0 lg:pb-2">
+                            <button onClick={scrollPrev} className="w-12 h-12 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-500 hover:text-[#1A5CDD] hover:border-[#1A5CDD] hover:bg-[#F0F6FF] transition-all duration-300 shadow-sm focus:outline-none cursor-pointer">
+                                <ArrowLeft size={20} strokeWidth={2.5} />
                             </button>
-                            <button
-                                onClick={scrollNext}
-                                className="w-12 h-12 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:bg-[#3B82F6] hover:text-white hover:border-[#3B82F6] transition-all shadow-sm group"
-                                aria-label="Next step"
-                            >
-                                <ArrowRight size={20} className="group-hover:translate-x-0.5 transition-transform" />
+                            <button onClick={scrollNext} className="w-12 h-12 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-500 hover:text-[#1A5CDD] hover:border-[#1A5CDD] hover:bg-[#F0F6FF] transition-all duration-300 shadow-sm focus:outline-none cursor-pointer">
+                                <ArrowRight size={20} strokeWidth={2.5} />
                             </button>
                         </div>
                     </div>
 
-                    <div className="overflow-hidden" ref={processRef}>
+                    <div className="overflow-hidden relative z-10 -mx-4 px-4 py-8" ref={processRef}>
                         <div className="flex -ml-6">
-                            {seoProcess.map((item, index) => (
-                                <div key={index} className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] pl-6">
-                                    <div className="bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:border-slate-200 transition-all duration-300 h-full flex flex-col justify-between group">
-                                        <div>
-                                            <div className="flex items-center justify-between mb-8">
-                                                <span className="text-4xl font-extrabold text-[#3B82F6] group-hover:scale-110 transition-transform duration-300 inline-block">
-                                                    0{item.step}
-                                                </span>
-                                                <div className="w-10 h-10 rounded-xl bg-[#F0F4FF] flex items-center justify-center text-[#3B82F6] group-hover:bg-[#3B82F6] group-hover:text-white transition-colors duration-300">
-                                                    <ArrowRight size={18} />
+                            {seoProcess.map((item, index) => {
+                                const icons = [Search, Target, Settings, LayoutDashboard, Users, Activity];
+                                const Icon = icons[index % icons.length];
+
+                                return (
+                                    <div key={index} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0 pl-6 cursor-grab active:cursor-grabbing">
+                                        <div className="group h-full bg-white rounded-[24px] p-8 border border-slate-200/60 shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:-translate-y-2 transition-all duration-300 relative overflow-hidden flex flex-col cursor-default">
+                                            {/* Top Hover Gradient Line */}
+                                            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+
+                                            {/* Content Container */}
+                                            <div className="relative z-10 flex-1 flex flex-col">
+                                                {/* Header Row: Icon & Small Step Badge */}
+                                                <div className="flex items-center justify-between mb-8">
+                                                    <div className="w-12 h-12 rounded-xl bg-[#F0F6FF] border border-[#1A5CDD]/10 flex items-center justify-center text-[#1A5CDD] group-hover:bg-[#1A5CDD] group-hover:text-white group-hover:scale-110 transition-all duration-300 shadow-sm">
+                                                        <Icon size={22} strokeWidth={2} />
+                                                    </div>
+                                                    <span className="text-[11px] font-extrabold tracking-widest text-slate-400 uppercase">
+                                                        Step 0{item.step}
+                                                    </span>
                                                 </div>
+
+                                                <h3 className="text-[20px] font-bold text-[#011146] mb-3 group-hover:text-[#1A5CDD] transition-colors duration-300 leading-snug">
+                                                    {item.title}
+                                                </h3>
+                                                <p className="text-slate-500 text-[15px] leading-[1.8] flex-1">
+                                                    {item.desc}
+                                                </p>
                                             </div>
-
-                                            <h3 className="text-xl font-bold text-[#011146] mb-4 group-hover:text-[#3B82F6] transition-colors">
-                                                {item.title}
-                                            </h3>
-
-                                            <p className="text-slate-600 text-sm leading-relaxed">
-                                                {item.desc}
-                                            </p>
-                                        </div>
-
-                                        <div className="w-full h-1 bg-slate-100 rounded-full mt-8 overflow-hidden">
-                                            <div className="w-0 h-full bg-[#3B82F6] group-hover:w-full transition-all duration-500" />
                                         </div>
                                     </div>
-                                </div>
-                            ))}
+                                );
+                            })}
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Why Choose Us Section */}
-            <section className="py-20 bg-white relative">
-                <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
-                            Why SysCrop
-                        </span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
-                            Why Choose SysCrop as Your Social Media Optimization Company?
-                        </h2>
+            {/* Why Choose Syscorp Section - Modern SaaS Bento Grid */}
+            <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
+                {/* Background Decorators */}
+                {/* 1. Floating Blur Circles */}
+                <div className="absolute top-1/4 left-10 w-[500px] h-[500px] bg-[#1A5CDD]/10 rounded-full blur-3xl pointer-events-none" />
+                <div className="absolute bottom-10 right-10 w-[550px] h-[550px] bg-[#38bdf8]/12 rounded-full blur-3xl pointer-events-none" />
+
+                {/* 2. Dot Grid Pattern */}
+                <div
+                    className="absolute inset-0 opacity-[0.05] pointer-events-none"
+                    style={{
+                        backgroundImage: `radial-gradient(#1A5CDD 1.5px, transparent 1.5px)`,
+                        backgroundSize: `24px 24px`
+                    }}
+                />
+
+                {/* 3. Abstract SVG Waves */}
+                <div className="absolute inset-0 pointer-events-none opacity-20">
+                    <svg className="w-full h-full" viewBox="0 0 1440 900" fill="none" preserveAspectRatio="none">
+                        <path d="M-100,250 C300,100 650,400 1050,220 C1300,120 1500,320 1650,200 L1650,900 L-100,900 Z" fill="url(#bento-wave-1)" opacity="0.3" />
+                        <defs>
+                            <linearGradient id="bento-wave-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stopColor="#1A5CDD" stopOpacity="0.15" />
+                                <stop offset="100%" stopColor="#38bdf8" stopOpacity="0.03" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+
+                {/* 4. Very Light Noise Texture */}
+                <div className="absolute inset-0 pointer-events-none opacity-[0.025] mix-blend-overlay">
+                    <svg className="w-full h-full">
+                        <filter id="bentoNoiseFilter">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+                        </filter>
+                        <rect width="100%" height="100%" filter="url(#bentoNoiseFilter)" />
+                    </svg>
+                </div>
+
+                <div className="container mx-auto px-4 relative max-w-7xl z-10">
+                    {/* Upper Why Choose Syscorp split graphic & text */}
+                    <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-20">
+                        {/* Right Side: Text */}
+                        <div className="lg:w-1/2">
+                            <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-[#1A5CDD]/5 border border-[#1A5CDD]/10 mb-6 w-fit">
+                                <div className="w-7 h-7 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                    <Activity className="text-[#3B82F6]" size={14} strokeWidth={2.5} />
+                                </div>
+                                <span className="text-[15px] font-bold text-[#011146] pr-2 tracking-wide">Why Syscorp</span>
+                            </div>
+                            <h2 className="text-3xl md:text-[48px] font-bold text-[#011146] mb-6 leading-tight">
+                                Why Choose Syscorp for <br className="hidden lg:block" /><span className="text-[#3B82F6]">Social Media Optimization (SMO)?</span>
+                            </h2>
+                            <p className="text-slate-600 text-[16px] leading-[1.8] mb-5">
+                                At Syscorp, we believe that social media is more than just sharing posts—it's about building meaningful relationships, strengthening brand credibility, and creating opportunities for business growth. Our Social Media Optimization (SMO) Services are tailored to your industry, target audience, and business objectives, ensuring your brand maintains a strong and consistent presence across all major social media platforms.
+                            </p>
+                            <p className="text-slate-600 text-[16px] leading-[1.8]">
+                                By combining creative content strategies, profile optimization, audience engagement, and data-driven insights, we help businesses improve their online visibility, increase organic engagement, and establish long-term connections with their customers. Whether you're a startup, small business, or established enterprise, our customized SMO solutions are designed to deliver measurable results and sustainable digital growth.
+                            </p>
+                        </div>
+
+                        {/* Left Side: Graphic */}
+                        <div className="lg:w-1/2 relative">
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
+                            <div className="relative group">
+                                <div className="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
+                                    <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden bg-slate-900">
+                                        <Image
+                                            src="/images/seo/why_syscorp.png"
+                                            alt="Why Choose Syscorp for SMO"
+                                            fill
+                                            className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="absolute -bottom-8 -left-8 bg-white/90 backdrop-blur-md p-6 rounded-[24px] shadow-xl border border-white max-w-[220px] transform group-hover:-translate-y-2 transition-transform duration-500 hidden md:block">
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <div className="w-10 h-10 bg-blue-100 text-[#1A5CDD] rounded-full flex items-center justify-center">
+                                            <ShieldCheck size={20} strokeWidth={2.5} />
+                                        </div>
+                                        <span className="font-extrabold text-2xl text-[#011146]">100%</span>
+                                    </div>
+                                    <p className="text-sm font-semibold text-slate-600 leading-snug">Brand Consistency</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 mt-4">
-                        {whyChooseUs.map((item, index) => (
-                            <FeatureCard key={index} item={item} />
+                    {/* Header for "What Sets Syscorp Apart?" */}
+                    <div className="mt-16 text-center max-w-3xl mx-auto mb-14">
+                        <h3 className="text-3xl md:text-[48px] font-bold text-[#011146] tracking-tight">What Sets Syscorp Apart?</h3>
+                    </div>
+
+                    {/* Asymmetric Modern SaaS Bento Grid (Vercel & Linear Style) */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+                        {whyChooseUs.map((item, i) => {
+                            const Icon = item.icon;
+                            // Determine featured large cards for uneven bento grid rhythm (Row 1 left, Row 3 right -> 12 cols total across 4 rows)
+                            const isFeatured = i === 0 || i === 6;
+                            const colSpanClass = isFeatured ? "lg:col-span-2" : "lg:col-span-1";
+
+                            return (
+                                <div
+                                    key={i}
+                                    className={`group bg-white/90 backdrop-blur-md rounded-[24px] p-8 border border-slate-200/80 hover:border-[#1A5CDD]/40 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_45px_rgba(26,92,221,0.18)] hover:-translate-y-[10px] transition-all duration-[350ms] ease-out relative overflow-hidden flex flex-col justify-between cursor-default ${colSpanClass}`}
+                                >
+                                    {/* Hover Background Glow */}
+                                    <div className="absolute inset-0 bg-gradient-to-br from-[#1A5CDD]/5 via-transparent to-[#38bdf8]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-[350ms] pointer-events-none" />
+
+                                    {/* Top Neon Accent Border on Hover */}
+                                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8] opacity-0 group-hover:opacity-100 transition-opacity duration-[350ms]" />
+
+                                    <div>
+                                        <div className="flex items-center justify-between mb-6 relative z-10">
+                                            {/* Icon with 8deg rotation on hover */}
+                                            <div className="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-[#1A5CDD] group-hover:bg-gradient-to-br group-hover:from-[#1A5CDD] group-hover:to-[#38bdf8] group-hover:text-white group-hover:border-transparent group-hover:rotate-[8deg] transition-all duration-[350ms] shadow-sm group-hover:shadow-[0_8px_20px_rgba(26,92,221,0.3)]">
+                                                <Icon size={24} strokeWidth={2} />
+                                            </div>
+
+                                            {isFeatured && (
+                                                <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#1A5CDD] bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 px-3 py-1 rounded-full">
+                                                    Core Strength
+                                                </span>
+                                            )}
+                                        </div>
+
+                                        {/* Card Title -> 22px */}
+                                        <h4 className="font-bold text-[#011146] text-[22px] mb-3 group-hover:text-[#1A5CDD] transition-colors duration-[350ms] relative z-10 leading-tight">
+                                            {item.title}
+                                        </h4>
+
+                                        {/* Paragraph -> 16px, Line Height -> 1.8 */}
+                                        <p className="text-slate-600 text-[16px] leading-[1.8] relative z-10 flex-1">
+                                            {item.desc}
+                                        </p>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            </section>
+
+            {/* Industries We Serve - Infinite Marquee */}
+            <section className="py-20 bg-[#011146] relative overflow-hidden mt-12 mb-12 rounded-[40px] mx-4 lg:mx-auto max-w-[96%]">
+                {/* Background effects */}
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#1A5CDD]/25 rounded-full blur-[120px] pointer-events-none" />
+                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#38bdf8]/15 rounded-full blur-[120px] pointer-events-none" />
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+
+                <div className="container mx-auto px-6 max-w-7xl relative z-10">
+                    <div className="text-center mb-16">
+                        <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[#38bdf8] text-xs font-bold tracking-wider uppercase mb-5 border border-white/10 backdrop-blur-sm">Tailored Solutions</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-5">Industries We Serve</h2>
+                        <p className="text-slate-300 max-w-2xl mx-auto text-[16px] leading-relaxed">
+                            Our Social Media Optimization Services are suitable for businesses across a wide range of industries. Whether you're looking to build brand awareness, engage your audience, or strengthen your online presence, we create customized SMO strategies that align with your business objectives.
+                        </p>
+                    </div>
+                </div>
+
+                <style dangerouslySetInnerHTML={{
+                    __html: `
+                    @keyframes scroll {
+                        0% { transform: translateX(0); }
+                        100% { transform: translateX(-50%); }
+                    }
+                    .marquee-container {
+                        display: flex;
+                        width: fit-content;
+                        animation: scroll 40s linear infinite;
+                    }
+                    .marquee-container:hover {
+                        animation-play-state: paused;
+                    }
+                    .marquee-container.reverse {
+                        animation-direction: reverse;
+                        animation-duration: 45s;
+                    }
+                `}} />
+
+                <div className="relative z-10 flex flex-col gap-6 overflow-hidden py-4">
+                    {/* Fade Edges for seamless loop effect */}
+                    <div className="absolute inset-y-0 left-0 w-16 md:w-40 bg-gradient-to-r from-[#011146] to-transparent z-20 pointer-events-none" />
+                    <div className="absolute inset-y-0 right-0 w-16 md:w-40 bg-gradient-to-l from-[#011146] to-transparent z-20 pointer-events-none" />
+
+                    {/* Row 1 - Moving Left */}
+                    <div className="marquee-container">
+                        {[...industries.slice(0, 8), ...industries.slice(0, 8)].map((ind, i) => (
+                            <div key={i} className="w-[300px] shrink-0 group relative bg-white/5 border border-white/10 rounded-full p-3 pr-8 mx-3 hover:bg-[#1A5CDD] hover:border-[#1A5CDD] hover:shadow-[0_10px_30px_rgba(26,92,221,0.4)] transition-all duration-500 overflow-hidden backdrop-blur-sm flex items-center gap-5 cursor-default">
+                                <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                <div className="w-14 h-14 shrink-0 rounded-full bg-[#1A5CDD]/20 flex items-center justify-center group-hover:bg-white text-[#38bdf8] group-hover:text-[#1A5CDD] shadow-inner border border-white/5 group-hover:border-white transition-all duration-500 group-hover:scale-90 group-hover:rotate-12">
+                                    <ind.icon size={24} strokeWidth={1.5} />
+                                </div>
+                                <span className="font-bold text-white text-[15px] leading-tight relative z-10 whitespace-nowrap">{ind.title}</span>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Row 2 - Moving Right */}
+                    <div className="marquee-container reverse ml-[-200px]">
+                        {[...industries.slice(8, 15), ...industries.slice(8, 15)].map((ind, i) => (
+                            <div key={i} className="w-[300px] shrink-0 group relative bg-white/5 border border-white/10 rounded-full p-3 pr-8 mx-3 hover:bg-white hover:border-white hover:shadow-[0_10px_30px_rgba(255,255,255,0.15)] transition-all duration-500 overflow-hidden backdrop-blur-sm flex items-center gap-5 cursor-default">
+                                <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                <div className="w-14 h-14 shrink-0 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-[#1A5CDD] text-white group-hover:text-white shadow-inner border border-white/5 group-hover:border-[#1A5CDD] transition-all duration-500 group-hover:scale-90 group-hover:-rotate-12">
+                                    <ind.icon size={24} strokeWidth={1.5} />
+                                </div>
+                                <span className="font-bold text-white group-hover:text-[#011146] text-[15px] leading-tight relative z-10 transition-colors duration-500 whitespace-nowrap">{ind.title}</span>
+                            </div>
                         ))}
                     </div>
                 </div>
             </section>
-
-            {/* Industries We Serve Section */}
-            <section className="py-20 bg-[#F8FAFC] border-t border-slate-100">
+            {/* FAQ Section */}
+            <section className="py-20 bg-[#F8FAFC]">
                 <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="text-center mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
-                            Tailored Solutions
-                        </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] tracking-tight">
-                            Industries We Serve
-                        </h2>
-                        <p className="text-slate-600 text-[15px] mt-4 max-w-2xl mx-auto">
-                            Our Social Media Optimization Services are customized for businesses across various industries, ensuring you connect with the right audience.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                        {industries.map((ind, index) => {
-                            const Icon = ind.icon;
-                            return (
-                                <div
-                                    key={index}
-                                    className="group flex flex-col items-center justify-center text-center p-6 bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-[#1A5CDD]/30 transition-all duration-300 cursor-pointer hover:-translate-y-1"
-                                >
-                                    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-4 transition-colors duration-300 ${ind.color}`}>
-                                        <Icon size={24} strokeWidth={2} />
+                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+                        
+                        {/* Left Column - Content */}
+                        <div className="lg:w-1/3 flex flex-col justify-start top-32">
+                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
+                                FREQUENTLY ASKED QUESTIONS
+                            </div>
+                            
+                            <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
+                                Your Questions <br />
+                                <span className="text-[#1A5CDD]">Answered</span>
+                            </h2>
+                            
+                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-10 max-w-sm">
+                                Find clear, honest answers to common questions from our team of experienced professionals.
+                            </p>
+                            
+                            {/* Avatars */}
+                            <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
+                                <div className="flex -space-x-3.5">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-30" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-20" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-10" alt="Consulting Expert" />
+                                    <div className="w-[42px] h-[42px] rounded-full bg-[#011146] border-[2.5px] border-[#F8FAFC] flex items-center justify-center text-white text-[11px] font-bold shadow-sm relative z-0">
+                                        +10
                                     </div>
-                                    <h3 className="font-bold text-[#011146] text-[15px] group-hover:text-[#1A5CDD] transition-colors">
-                                        {ind.title}
-                                    </h3>
                                 </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
+                                <p className="text-[12.5px] text-slate-500 font-medium leading-snug max-w-[140px]">
+                                    Answers curated directly from our consulting experts.
+                                </p>
+                            </div>
+                        </div>
 
-            {/* FAQs */}
-            <section className="py-20 lg:py-28 bg-[#F0F8FF]/50 border-t border-[#1A5CDD]/10">
-                <div className="container mx-auto px-6 max-w-4xl">
-                    <div className="text-center mb-16">
-                        <span className="text-xs uppercase font-extrabold tracking-wider text-[#1A5CDD] px-3.5 py-1.5 bg-[#1A5CDD]/10 rounded-full">
-                            Have Questions?
-                        </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] mt-4 tracking-tight">
-                            Frequently Asked Questions (FAQs)
-                        </h2>
-                    </div>
-
-                    <div className="space-y-4">
-                        {faqs.map((item, index) => {
-                            const isOpen = activeFaq === index;
-                            return (
-                                <div
-                                    key={index}
-                                    className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen ? "border-[#1A5CDD] shadow-lg shadow-blue-900/5" : "border-slate-200 hover:border-slate-300"
-                                        }`}
-                                >
-                                    <button
-                                        onClick={() => setActiveFaq(isOpen ? null : index)}
-                                        className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
-                                    >
-                                        <h3 className="text-[17px] font-bold text-[#011146] pr-8">
-                                            {index + 1}. {item.q}
-                                        </h3>
-                                        <ChevronDown
-                                            className={`text-[#1A5CDD] transition-transform duration-300 flex-shrink-0 ${isOpen ? "rotate-180" : "rotate-0"
-                                                }`}
-                                            size={20}
-                                        />
-                                    </button>
+                        {/* Right Column - Accordions */}
+                        <div className="lg:w-2/3 w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {faqs.map((faq, index) => (
                                     <div
-                                        className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+                                        key={index}
+                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index 
+                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]" 
+                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
+                                            }`}
                                     >
-                                        <div className="overflow-hidden">
-                                            <div className="px-6 pb-6 text-slate-600 text-[15px] leading-relaxed">
-                                                {item.a}
-                                            </div>
+                                        <button
+                                            className="w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer group"
+                                            onClick={() => setActiveFaq(activeFaq === index ? null : index)}
+                                        >
+                                            <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${activeFaq === index ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
+                                                {index + 1}. {faq.q}
+                                            </span>
+                                            <span className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-200/60 text-slate-600 group-hover:bg-slate-200 group-hover:text-slate-800"}`}>
+                                                {activeFaq === index ? (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" /></svg>
+                                                ) : (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                                                )}
+                                            </span>
+                                        </button>
+                                        <div
+                                            className={`transition-all duration-300 ease-in-out ${activeFaq === index ? "max-h-96 opacity-100 pb-7 px-6" : "max-h-0 opacity-0 overflow-hidden px-6"
+                                                }`}
+                                        >
+                                            <div className="w-full h-px bg-slate-100 mb-5"></div>
+                                            <p className="text-slate-500 leading-relaxed text-[14.5px] font-medium pr-4">
+                                                {faq.a}
+                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                            );
-                        })}
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-
         </main>
     );
 }

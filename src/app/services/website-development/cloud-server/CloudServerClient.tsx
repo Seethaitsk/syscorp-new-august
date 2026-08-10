@@ -730,14 +730,15 @@ export default function CloudServerClient() {
                 description="Scalable Cloud & Server Services with 99.99% Uptime, Expert Management, and Enterprise-Grade Security"
             />
 
-            {/* SECTION 1: HERO / INTRO SECTION (Light Background) */}
+        {/* SECTION 1: HERO / INTRO SECTION (Light Background) */}
             <section className="py-16 lg:py-20 bg-white relative">
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="grid lg:grid-cols-12 gap-12 items-center">
                         {/* Left Side (7 cols) */}
                         <div className="lg:col-span-7 space-y-6">
-                            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] text-xs font-black uppercase tracking-wider border border-[#1A5CDD]/20">
-                                <Cloud size={14} className="text-[#1A5CDD]" /> Enterprise Cloud Infrastructure
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Enterprise Cloud Infrastructure
                             </span>
 
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#011146] tracking-tight leading-[1.15]">
@@ -771,9 +772,9 @@ export default function CloudServerClient() {
                         {/* Right Side Visual Component (5 cols Overlapping Image Layout) */}
                         <div className="lg:col-span-5 relative w-full h-[450px] sm:h-[500px] flex items-center justify-center mt-10 lg:mt-0">
                             {/* Primary Large Image (Cloud Server Datacenter Rack) */}
-                            <div className="relative w-[82%] h-[85%] rounded-[28px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.15)] z-10 group border-4 border-white">
+                            <div className="relative w-[82%] h-[85%] rounded-[28px] overflow-hidden z-10 group">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop"
+                                    src="/images/webdevelopment/cloud_server_services.svg"
                                     alt="Cloud Infrastructure Data Center"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -781,17 +782,6 @@ export default function CloudServerClient() {
                                     priority
                                 />
                                 <div className="absolute inset-0 bg-slate-900/15 group-hover:bg-transparent transition-colors duration-500" />
-                            </div>
-
-                            {/* Secondary Overlapping Image (Cloud Engineer / Server Rack Ops) */}
-                            <div className="absolute -bottom-2 right-0 lg:-right-4 w-[65%] h-[48%] rounded-[20px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.25)] border-[4px] border-white z-20 group">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=800&auto=format&fit=crop"
-                                    alt="Cloud Engineer Operations"
-                                    fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
-                                />
                             </div>
 
                             {/* Floating Badge (Top Right) */}
@@ -879,9 +869,10 @@ export default function CloudServerClient() {
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="grid lg:grid-cols-12 gap-12 items-center">
                         {/* Left Side (7 cols) */}
-                        <div className="lg:col-span-7 space-y-6">
-                            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] text-xs font-black uppercase tracking-wider border border-[#1A5CDD]/20">
-                                <Sparkles size={12} /> Technology Overview
+                        <div className="lg:col-span-6 space-y-6">
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Technology Overview
                             </span>
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#011146] tracking-tight">
                                 What is Cloud Computing?
@@ -907,14 +898,14 @@ export default function CloudServerClient() {
                         </div>
 
                         {/* Right Side Visual Graphic Container (5 cols Modern Enterprise Card Layout) */}
-                        <div className="lg:col-span-5 relative">
+                        <div className="lg:col-span-6 relative">
                             {/* Ambient Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-gradient-to-br from-[#1A5CDD]/15 to-[#38bdf8]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
 
                             <div className="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white bg-white group">
                                 <div className="relative w-full h-[360px] sm:h-[400px]">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+                                        src="/images/webdevelopment/cloud_1.svg"
                                         alt="Modern Cloud Infrastructure & Virtualization"
                                         fill
                                         className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -973,8 +964,9 @@ export default function CloudServerClient() {
                     <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center border-b border-white/10 pb-10">
                         {/* Left Side Column */}
                         <div className="lg:col-span-6 space-y-4">
-                            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#112356] text-[#38bdf8] text-xs font-bold uppercase tracking-wider border border-[#1D3A80]">
-                                <Award size={14} /> Proven Excellence
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                Proven Excellence
                             </span>
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.18]">
                                 Why Choose Syscorp as Your <br className="hidden sm:inline" />
@@ -1051,9 +1043,10 @@ export default function CloudServerClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10 mb-12">
                     <div className="text-center max-w-3xl mx-auto">
-                        <span className="inline-block px-4 py-1.5 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#1A5CDD]/20">
-                            Complete Package
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Complete Package
+                            </span>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#011146] tracking-tight">
                             What You Get with Our Cloud Computing Services
                         </h2>
@@ -1260,9 +1253,10 @@ export default function CloudServerClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="max-w-3xl mx-auto text-center mb-14">
-                        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] text-xs font-black uppercase tracking-wider mb-4 border border-[#1A5CDD]/20 shadow-xs">
-                            <Terminal size={14} /> Proven Methodology
-                        </span>
+                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Proven Methodology
+                            </span>
                         <h2 className="text-3xl sm:text-5xl font-extrabold text-[#011146] tracking-tight mb-4 leading-tight">
                             Our Cloud Implementation Process
                         </h2>
@@ -1331,9 +1325,10 @@ export default function CloudServerClient() {
                                                     <div className="w-10 h-10 rounded-xl bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] flex items-center justify-center">
                                                         <StepIcon size={19} strokeWidth={2.2} />
                                                     </div>
-                                                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] text-xs font-black uppercase tracking-wider border border-[#1A5CDD]/20">
-                                                        Phase {stepItem.step}
-                                                    </span>
+                                                    <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Phase {stepItem.step}
+                            </span>
                                                 </div>
 
                                                 <span className="text-2xl font-black text-slate-300 select-none font-mono">
@@ -1386,9 +1381,10 @@ export default function CloudServerClient() {
                         {/* Left Column: Heading & Sticky Context */}
                         <div className="lg:w-5/12">
                             <div className="lg:sticky">
-                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] text-xs font-extrabold uppercase tracking-wider mb-6 border border-[#1A5CDD]/20">
-                                    <Sparkles size={14} /> Got Questions?
-                                </span>
+                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Got Questions?
+                            </span>
 
                                 <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-[1.15] mb-6">
                                     Frequently Asked <br />
