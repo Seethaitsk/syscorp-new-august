@@ -159,8 +159,9 @@ export default function MetaAdsClient() {
                 description="Leading Meta Ads (Social Media Ads) Services in Pondicherry"
             />
 
+            
             {/* Intro Section */}
-            <section className="py-20 lg:py-28 bg-[#F0F8FF]/60 relative overflow-hidden">
+            <section className="py-20 bg-[#F0F8FF]/60 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -169,14 +170,14 @@ export default function MetaAdsClient() {
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Maximize Your ROI
                             </span>
-                            <h1 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">
+                            <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">
                                 Leading <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Meta Ads Management Services</span> in Pondicherry for Facebook & Instagram Advertising
-                            </h1>
+                            </h2>
                             <p className="text-slate-700 text-[18px] leading-relaxed mb-6 font-bold">
                                 Expand Your Reach, Generate High-Quality Leads, and Grow Your Business with Professional Meta Ads Management.
                             </p>
                             <p className="text-slate-600 text-[16px] md:text-[17px] leading-relaxed mb-6">
-                                At SysCrop, we provide professional Meta Ads Management (Facebook & Instagram Ads) Services in Pondicherry that help businesses increase brand visibility, generate quality leads, and connect with the right audience through Facebook and Instagram advertising. As a trusted Meta Ads Agency in Pondicherry, we create and manage customized advertising campaigns tailored to your business goals and target audience.
+                                At Syscorp, we provide professional Meta Ads Management (Facebook & Instagram Ads) Services in Pondicherry that help businesses increase brand visibility, generate quality leads, and connect with the right audience through Facebook and Instagram advertising. As a trusted Meta Ads Agency in Pondicherry, we create and manage customized advertising campaigns tailored to your business goals and target audience.
                             </p>
 
                             <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isIntroExpanded ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
@@ -205,24 +206,27 @@ export default function MetaAdsClient() {
                             </div>
                         </div>
 
-                        {/* Image Right Side */}
+                        {/* Image Right Side (Redesigned with Overlapping Layout) */}
                         <div className="gsap-fade-up lg:col-span-5 relative w-full h-[450px] md:h-[550px] flex items-center justify-center mt-12 lg:mt-0">
 
-                            <div className="relative w-[85%] sm:w-[80%] h-[90%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.12)] z-10 group">
+                            {/* Primary Large Image */}
+                            <div className="relative w-[85%] sm:w-[80%] h-[90%] rounded-[24px] overflow-hidden z-10 group">
                                 <Image
-                                    src="/images/services_images/metaad-1.jpeg"
+                                    src="/images/seo/metadd.png"
                                     alt="Meta Ads Management"
                                     fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    priority
+                                    className="object-cover transition-transform duration-700"
                                 />
-                                <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500" />
                             </div>
 
+                            {/* Floating Badge (Top Right) */}
                             <div className="absolute top-16 -right-6 lg:-right-8 bg-white px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2.5 border border-slate-100 z-30 animate-bounce-slow">
                                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
                                 <p className="text-[#011146] font-bold text-[13px]">Active Clients 200+</p>
                             </div>
 
+                            {/* Floating Badge (Bottom Left) */}
                             <div className="absolute bottom-24 -left-6 lg:-left-8 bg-white px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-100 z-30 animate-bounce-slow" style={{ animationDelay: "1s" }}>
                                 <div className="w-10 h-10 bg-[#F0F8FF] text-[#1A5CDD] rounded-full flex items-center justify-center font-bold text-lg shadow-sm border border-[#1A5CDD]/10">
                                     <TrendingUp size={18} strokeWidth={2.5} />
@@ -273,10 +277,13 @@ export default function MetaAdsClient() {
 
             {/* Why Meta Ads is Important Section */}
             <section className="py-20 bg-[#F8FAFF] relative overflow-hidden">
+                {/* Background ambient light */}
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#1A5CDD]/5 blur-3xl rounded-full pointer-events-none" />
 
                 <div className="container mx-auto px-4 relative max-w-7xl">
+                    {/* Hero Split for Why Meta Ads is Important */}
                     <div className="flex flex-col lg:flex-row items-center gap-10 rounded-[40px] p-4 lg:p-6 shadow-[0_8px_30px_rgba(0,0,0,0.04)] bg-white border border-slate-100 group/hero relative overflow-hidden">
+                        {/* Left Side: Text Content */}
                         <div className="lg:w-1/2 p-6 lg:p-10 relative z-10">
                             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 mb-8 shadow-sm">
                                 <Target className="text-[#1A5CDD]" size={16} />
@@ -292,23 +299,25 @@ export default function MetaAdsClient() {
                             </p>
                         </div>
 
+                        {/* Right Side: Image (Premium Layout) */}
                         <div className="lg:w-1/2 relative z-10 p-6 lg:p-10">
+
+                            {/* Decorative ambient glow behind image */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-to-tr from-[#1A5CDD]/30 to-[#38bdf8]/30 rounded-full blur-[80px] -z-10 pointer-events-none" />
 
+                            {/* Main Image Container */}
                             <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_50px_rgba(1,17,70,0.1)] border-[6px] border-white z-10 w-full aspect-[4/3] group/image bg-white">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="Meta Ads Performance Impact" className="w-full h-full object-cover transform group-hover/image:scale-110 transition-transform duration-700" />
+                                <Image
+                                    src="/images/seo/why_meta.png"
+                                    alt="Meta Ads Performance Impact"
+                                    fill
+                                    priority
+                                    className="w-full h-full object-cover transform transition-transform duration-700"
+                                />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/30 to-transparent pointer-events-none opacity-0 group-hover/image:opacity-100 transition-opacity duration-500" />
                             </div>
 
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                                <div className="relative group/play cursor-pointer">
-                                    <div className="absolute inset-0 bg-[#38bdf8]/40 rounded-full animate-ping" />
-                                    <div className="relative w-20 h-20 bg-white/90 backdrop-blur-md rounded-full shadow-2xl flex items-center justify-center border border-white transform transition-transform duration-300 group-hover/play:scale-110 group-hover/play:bg-white">
-                                        <Play className="text-[#1A5CDD] fill-[#1A5CDD] ml-1" size={28} />
-                                    </div>
-                                </div>
-                            </div>
-
+                            {/* Floating Stat Card (Bottom Left) */}
                             <div className="absolute -bottom-4 -left-2 lg:-left-6 z-30">
                                 <div className="bg-white px-6 py-5 rounded-[24px] shadow-[0_20px_40px_rgba(0,0,0,0.12)] border border-slate-100 flex items-center gap-5 animate-bounce-slow">
                                     <div className="w-14 h-14 rounded-[16px] bg-[#1A5CDD]/10 flex items-center justify-center text-[#1A5CDD] border border-[#1A5CDD]/20">
@@ -325,11 +334,12 @@ export default function MetaAdsClient() {
                 </div>
             </section>
 
-            {/* Benefits of Meta Ads */}
+            {/* Benefits of Meta Ads (Social Media Ads) - Sticky Sidebar Layout */}
             <section className="py-20 bg-white border-y border-slate-100 relative">
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 relative">
 
+                        {/* Left: Sticky Sidebar */}
                         <div className="lg:w-1/3 w-full">
                             <div className="sticky top-32">
                                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1A5CDD]/10 border border-[#1A5CDD]/10 text-[#1A5CDD] text-[13px] font-bold tracking-wide uppercase mb-6 shadow-sm">
@@ -345,19 +355,25 @@ export default function MetaAdsClient() {
                                 <p className="text-slate-500 text-[16px] leading-relaxed mb-8">
                                     Our Meta Ads (Social Media Ads) Services help businesses maximize their online visibility by reaching potential customers at the right time, driving qualified traffic, and improving conversion rates. Through strategic campaign management and continuous optimization, we help your business achieve measurable results while maximizing your advertising return on investment (ROI).
                                 </p>
+
+
+
                             </div>
                         </div>
 
+                        {/* Right: Flowing Borderless List */}
                         <div className="lg:w-2/3 w-full">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
                                 {benefits.map((item, i) => {
                                     const Icon = item.icon || Activity;
                                     return (
                                         <div key={i} className="group flex items-start gap-5 cursor-default">
+                                            {/* Icon Node */}
                                             <div className="w-12 h-12 rounded-[14px] bg-white border border-slate-200 shadow-sm text-[#1A5CDD] flex items-center justify-center shrink-0 group-hover:bg-[#1A5CDD] group-hover:text-white group-hover:border-[#1A5CDD] group-hover:shadow-[0_8px_20px_rgba(26,92,221,0.25)] transition-all duration-300 group-hover:-translate-y-1">
                                                 <Icon size={20} strokeWidth={2} />
                                             </div>
 
+                                            {/* Content */}
                                             <div className="flex-1 pt-1">
                                                 <h4 className="text-[16px] font-bold text-[#011146] mb-2 group-hover:text-[#1A5CDD] transition-colors duration-300">
                                                     {item.title}
@@ -374,7 +390,6 @@ export default function MetaAdsClient() {
                     </div>
                 </div>
             </section>
-
             {/* Explore Our Meta Advertising Solutions */}
             <section className="py-20 bg-[#F8FAFC] relative overflow-hidden">
                 <style>{`
@@ -407,15 +422,18 @@ export default function MetaAdsClient() {
                             Explore Our Meta Advertising Solutions
                         </h2>
                         <p className="text-slate-500 text-[15px] leading-relaxed">
-                            Reach your ideal audience with the right advertising format on Facebook and Instagram. At SysCrop, our Meta Ads Services in Pondicherry include creating and managing a wide range of Meta advertising campaigns tailored to your business goals, helping you increase brand awareness, generate quality leads, drive website traffic, and boost online sales.
+                            Reach your ideal audience with the right advertising format on Facebook and Instagram. At Syscorp, our Meta Ads Services in Pondicherry include creating and managing a wide range of Meta advertising campaigns tailored to your business goals, helping you increase brand awareness, generate quality leads, drive website traffic, and boost online sales.
                         </p>
                     </div>
                 </div>
 
+                {/* Marquees */}
                 <div className="w-full overflow-hidden marquee-container flex flex-col gap-6 relative py-6 -my-6">
+                    {/* Fading Edges */}
                     <div className="absolute inset-y-0 left-0 w-24 md:w-40 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
                     <div className="absolute inset-y-0 right-0 w-24 md:w-40 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
+                    {/* Row 1: Left Scroll */}
                     <div className="flex w-max animate-marquee-left gap-6">
                         {[...adFormats, ...adFormats].map((format, index) => {
                             const Icon = format.icon || Activity;
@@ -430,6 +448,7 @@ export default function MetaAdsClient() {
                         })}
                     </div>
 
+                    {/* Row 2: Right Scroll */}
                     <div className="flex w-max animate-marquee-right gap-6">
                         {[...adFormats.slice().reverse(), ...adFormats.slice().reverse()].map((format, index) => {
                             const Icon = format.icon || Activity;
@@ -447,12 +466,15 @@ export default function MetaAdsClient() {
             </section>
 
             {/* What Our Meta Ads Services Cover */}
-            <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] mt-12 mb-32">
+            <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] my-12 ">
+                {/* Blueprint Grid Background Pattern */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
+
+                {/* Subtle Radial Glow in Center */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#1A5CDD]/20 blur-[120px] rounded-full pointer-events-none" />
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="text-center max-w-3xl mx-auto mb-20">
+                    <div className="text-center max-w-3xl mx-auto">
                         <div className="inline-flex items-center justify-center mb-6">
                             <span className="px-5 py-1.5 rounded-full bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 text-[#38bdf8] text-[12px] font-bold tracking-wider uppercase backdrop-blur-sm">
                                 Complete Social Media Ads Solutions
@@ -462,19 +484,21 @@ export default function MetaAdsClient() {
                             What Our Meta Ads Management Services Cover
                         </h2>
                         <p className="text-slate-300 text-[16px] leading-relaxed max-w-2xl mx-auto">
-                            Our Meta Ads Management Services in Pondicherry help businesses create, manage, and optimize effective Facebook and Instagram advertising campaigns. We handle campaign planning, audience targeting, ad creation, optimization, and performance tracking to improve reach, engagement, and conversions.  
+                            Our Meta Ads Management Services in Pondicherry help businesses create, manage, and optimize effective Facebook and Instagram advertising campaigns. We handle campaign planning, audience targeting, ad creation, optimization, and performance tracking to improve reach, engagement, and conversions.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-14 pt-10">
                         {services.map((item, index) => {
                             const Icon = item.icon || Activity;
                             return (
                                 <div key={index} className="group flex items-start gap-5 cursor-default">
+                                    {/* Icon Container with Blueprint styling */}
                                     <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[#38bdf8] shrink-0 group-hover:bg-[#1A5CDD] group-hover:border-[#1A5CDD] group-hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(26,92,221,0.15)] group-hover:shadow-[0_0_25px_rgba(26,92,221,0.4)]">
                                         <Icon size={22} strokeWidth={1.8} />
                                     </div>
 
+                                    {/* Content */}
                                     <div className="flex-1 pt-1">
                                         <h4 className="text-white text-[16px] font-bold mb-2 group-hover:text-[#38bdf8] transition-colors duration-300">
                                             {item.title}
@@ -490,8 +514,9 @@ export default function MetaAdsClient() {
                 </div>
             </section>
 
-            {/* Meta Ads Process Section */}
+            {/* Meta Ads Process Section - Horizontal Pipeline */}
             <section className="py-20 bg-[#F8FAFC] relative overflow-hidden">
+                {/* Background Decor */}
                 <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-[#1A5CDD]/5 to-transparent rounded-full blur-[80px] pointer-events-none" />
                 <div className="absolute bottom-0 left-[-200px] w-[600px] h-[600px] bg-gradient-to-tr from-[#38bdf8]/5 to-transparent rounded-full blur-[80px] pointer-events-none" />
 
@@ -509,16 +534,23 @@ export default function MetaAdsClient() {
                     </div>
 
                     <div className="relative mt-16">
-                        <div className="absolute top-[45px] left-[10%] w-[80%] h-[2px] bg-slate-200 hidden lg:block" />
+                        {/* Horizontal Connecting Line (Desktop) */}
+                        <div className="absolute top-[45px] left-[10%] w-[80%] h-[2px] bg-slate-200 hidden lg:block overflow-hidden">
+                            <div className="gsap-line-draw h-full bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]" />
+                        </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 relative z-10">
                             {seoProcess.map((item, index) => (
                                 <div key={index} className="flex flex-col items-center text-center group cursor-default relative">
+
+                                    {/* Number Node */}
                                     <div className="w-[90px] h-[90px] rounded-full bg-white border-[4px] border-slate-100 text-slate-300 font-black text-3xl flex items-center justify-center mb-8 group-hover:border-[#1A5CDD] group-hover:text-[#1A5CDD] group-hover:shadow-[0_10px_30px_rgba(26,92,221,0.2)] transition-all duration-300 relative z-10">
                                         0{item.step}
+                                        {/* Pulse effect */}
                                         <div className="absolute inset-0 rounded-full border-2 border-[#1A5CDD] scale-100 opacity-0 group-hover:animate-ping" style={{ animationDuration: '2s' }} />
                                     </div>
 
+                                    {/* Card Content */}
                                     <div className="bg-white p-6 md:p-8 rounded-[24px] border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] group-hover:shadow-[0_10px_40px_rgba(0,0,0,0.08)] group-hover:border-[#1A5CDD]/20 transition-all duration-300 w-full flex-1 flex flex-col relative z-10 group-hover:-translate-y-1">
                                         <h3 className="text-[17px] md:text-[18px] font-bold text-[#011146] mb-3 leading-snug group-hover:text-[#1A5CDD] transition-colors">{item.title}</h3>
                                         <p className="text-slate-500 text-[14px] leading-relaxed">{item.desc}</p>
@@ -530,32 +562,34 @@ export default function MetaAdsClient() {
                 </div>
             </section>
 
-            {/* Why Choose SysCrop */}
-            <section className="py-20 bg-[#F0F8FF] relative overflow-hidden">
+            {/* Why Choose Syscorp */}
+            <section className="py-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4 relative max-w-7xl">
                     <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-20">
+                        {/* Right Side: Text */}
                         <div className="lg:w-1/2">
                             <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-[#1A5CDD]/5 border border-[#1A5CDD]/10 mb-8">
                                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
                                     <Activity className="text-[#1A5CDD]" size={20} />
                                 </div>
-                                <h3 className="text-xl font-bold text-[#011146]">Why SysCrop</h3>
+                                <h3 className="text-xl font-bold text-[#011146]">Why Syscorp</h3>
                             </div>
                             <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] mb-6 leading-tight">
-                                Why Choose SysCrop for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Meta Ads Management?</span>
+                                Why Choose Syscorp for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Meta Ads Management?</span>
                             </h2>
                             <p className="text-slate-600 text-[15px] leading-relaxed mb-5">
-                                At SysCrop, our Meta Ads Services in Pondicherry help businesses build effective Facebook and Instagram advertising campaigns that connect with the right audience and support their marketing goals. Our Meta Ads Management Services focus on strategic planning, creative advertising, audience targeting, and continuous optimization to help businesses improve their online presence and generate valuable customer engagement.
+                                At Syscorp, our Meta Ads Services in Pondicherry help businesses build effective Facebook and Instagram advertising campaigns that connect with the right audience and support their marketing goals. Our Meta Ads Management Services focus on strategic planning, creative advertising, audience targeting, and continuous optimization to help businesses improve their online presence and generate valuable customer engagement.
                             </p>
                         </div>
 
+                        {/* Left Side: Graphic */}
                         <div className="lg:w-1/2 relative">
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
                             <div className="relative group">
                                 <div className="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
                                     <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden bg-slate-900">
                                         <Image
-                                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+                                            src="/images/seo/metaadd.png"
                                             alt="Meta Ads Expertise"
                                             fill
                                             className="object-cover transform group-hover:scale-110 transition-transform duration-700"
@@ -577,7 +611,7 @@ export default function MetaAdsClient() {
                     </div>
 
                     <div className="mt-16 text-center max-w-3xl mx-auto mb-12">
-                        <h3 className="text-2xl md:text-3xl font-bold text-[#011146] tracking-tight">What Sets SysCrop Apart?</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold text-[#011146] tracking-tight">What Sets Syscorp Apart?</h3>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
@@ -598,76 +632,80 @@ export default function MetaAdsClient() {
                     </div>
                 </div>
             </section>
-
-            {/* FAQs */}
-            <section className="py-20 lg:py-28 bg-white border-t border-slate-100">
+            {/* FAQ Section */}
+            <section className="py-20 bg-[#F8FAFC]">
                 <div className="container mx-auto px-6 max-w-7xl">
-                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-                        <div className="lg:w-1/3">
-                            <div className="sticky top-32">
-                                <span className="inline-flex items-center gap-2 text-[11px] uppercase font-extrabold tracking-wider text-[#1A5CDD] px-4 py-2 bg-[#1A5CDD]/10 rounded-full mb-6">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
-                                    Social Media Ads Knowledge
-                                </span>
-
-                                <h2 className="text-4xl md:text-5xl font-extrabold text-[#011146] mb-6 tracking-tight leading-tight">
-                                    Your Questions <br />
-                                    <span className="text-[#1A5CDD]">Answered</span>
-                                </h2>
-
-                                <p className="text-slate-500 text-[16px] leading-relaxed mb-10">
-                                    Find clear, honest answers to common questions from our team of experienced professionals.
-                                </p>
-
-                                <div className="border-t border-slate-100 pt-8 flex items-center gap-5">
-                                    <div className="flex -space-x-3">
-                                        <img className="w-11 h-11 rounded-full border-[3px] border-white shadow-sm object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" alt="Expert 1" />
-                                        <img className="w-11 h-11 rounded-full border-[3px] border-white shadow-sm object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop" alt="Expert 2" />
-                                        <img className="w-11 h-11 rounded-full border-[3px] border-white shadow-sm object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Expert 3" />
-                                        <div className="w-11 h-11 rounded-full border-[3px] border-white bg-[#011146] text-white text-[11px] font-bold flex items-center justify-center shadow-sm relative z-10">
-                                            +10
-                                        </div>
+                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+                        
+                        {/* Left Column - Content */}
+                        <div className="lg:w-1/3 flex flex-col justify-start top-32">
+                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
+                                FREQUENTLY ASKED QUESTIONS
+                            </div>
+                            
+                            <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
+                                Your Questions <br />
+                                <span className="text-[#1A5CDD]">Answered</span>
+                            </h2>
+                            
+                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-10 max-w-sm">
+                                Find clear, honest answers to common questions from our team of experienced professionals.
+                            </p>
+                            
+                            {/* Avatars */}
+                            <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
+                                <div className="flex -space-x-3.5">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-30" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-20" alt="Consulting Expert" />
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-10" alt="Consulting Expert" />
+                                    <div className="w-[42px] h-[42px] rounded-full bg-[#011146] border-[2.5px] border-[#F8FAFC] flex items-center justify-center text-white text-[11px] font-bold shadow-sm relative z-0">
+                                        +10
                                     </div>
-                                    <p className="text-[12px] font-medium text-slate-400 leading-snug">
-                                        Answers curated <br /> directly from our <br /> consulting experts.
-                                    </p>
                                 </div>
+                                <p className="text-[12.5px] text-slate-500 font-medium leading-snug max-w-[140px]">
+                                    Answers curated directly from our consulting experts.
+                                </p>
                             </div>
                         </div>
 
-                        <div className="lg:w-2/3">
-                            <div className="space-y-4">
-                                {faqs.map((item, index) => {
-                                    const isOpen = activeFaq === index;
-                                    return (
+                        {/* Right Column - Accordions */}
+                        <div className="lg:w-2/3 w-full">
+                            <div className="flex flex-col gap-3.5">
+                                {faqs.map((faq, index) => (
+                                    <div
+                                        key={index}
+                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index 
+                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]" 
+                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
+                                            }`}
+                                    >
+                                        <button
+                                            className="w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer group"
+                                            onClick={() => setActiveFaq(activeFaq === index ? null : index)}
+                                        >
+                                            <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${activeFaq === index ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
+                                                {index + 1}. {faq.q}
+                                            </span>
+                                            <span className={`w-[34px] h-[34px] rounded-[10px] flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${activeFaq === index ? "bg-[#1A5CDD] text-white" : "bg-slate-200/60 text-slate-600 group-hover:bg-slate-200 group-hover:text-slate-800"}`}>
+                                                {activeFaq === index ? (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" /></svg>
+                                                ) : (
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                                                )}
+                                            </span>
+                                        </button>
                                         <div
-                                            key={index}
-                                            className={`rounded-[20px] border transition-all duration-300 overflow-hidden bg-white ${isOpen ? "border-[#1A5CDD] shadow-[0_10px_30px_rgba(26,92,221,0.08)]" : "border-slate-100 hover:border-slate-300"
+                                            className={`transition-all duration-300 ease-in-out ${activeFaq === index ? "max-h-96 opacity-100 pb-7 px-6" : "max-h-0 opacity-0 overflow-hidden px-6"
                                                 }`}
                                         >
-                                            <button
-                                                onClick={() => setActiveFaq(isOpen ? null : index)}
-                                                className="w-full flex items-center justify-between p-6 text-left focus:outline-none group"
-                                            >
-                                                <h3 className={`text-[16px] font-bold pr-8 transition-colors duration-300 ${isOpen ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
-                                                    {index + 1}. {item.q}
-                                                </h3>
-                                                <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${isOpen ? "bg-[#1A5CDD] text-white" : "bg-slate-50 text-slate-400 group-hover:bg-slate-100 group-hover:text-[#1A5CDD]"}`}>
-                                                    <span className="text-xl font-light leading-none">{isOpen ? "−" : "+"}</span>
-                                                </div>
-                                            </button>
-                                            <div
-                                                className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-                                            >
-                                                <div className="overflow-hidden">
-                                                    <div className="px-6 pb-6 pt-0 text-slate-500 text-[15px] leading-relaxed">
-                                                        {item.a}
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <div className="w-full h-px bg-slate-100 mb-5"></div>
+                                            <p className="text-slate-500 leading-relaxed text-[14.5px] font-medium pr-4">
+                                                {faq.a}
+                                            </p>
                                         </div>
-                                    );
-                                })}
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
