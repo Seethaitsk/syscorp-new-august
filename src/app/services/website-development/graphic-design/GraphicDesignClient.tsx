@@ -8,7 +8,7 @@ import {
     Building2, Package, Target, Layers, Video, Film, Box, PieChart,
     Printer, ArrowRight, CheckCircle2, Check, Shield, Zap, Users,
     Clock, Cpu, Settings, HelpCircle, FileText, ChevronDown, CheckCircle, Plus, Minus,
-    ChevronLeft, ChevronRight, MessageSquare
+    ChevronLeft, ChevronRight, MessageSquare, Award
 } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -427,9 +427,16 @@ export default function GraphicDesignClient() {
                                 Creative Visual Solutions
                             </div>
 
-                            <h1 className="text-3xl md:text-5xl lg:text-[48px] font-bold text-[#011146] tracking-tight leading-[1.2] mb-6">
-                                Professional Graphic Design Services
+                            <h1 className="text-3xl md:text-5xl lg:text-[48px] font-bold text-[#011146] tracking-tight leading-[1.2] mb-4">
+                                Top <span className="text-[#1A5CDD]">Graphic Design Services</span> in Pondicherry
                             </h1>
+
+                            <div className="inline-block bg-gradient-to-r from-[#1A5CDD]/10 via-[#38bdf8]/15 to-blue-50 border border-[#1A5CDD]/20 px-5 py-2.5 rounded-2xl mb-6 shadow-xs">
+                                <h2 className="text-lg md:text-xl font-extrabold text-[#1A5CDD] tracking-wide flex items-center gap-2">
+                                    <Sparkles size={18} className="text-[#38bdf8]" />
+                                    Elevate Your Brand Identity with Stunning Designs
+                                </h2>
+                            </div>
 
                             <div className="space-y-4 mb-8">
                                 <p className="text-slate-600 text-[16.5px] leading-[1.85] font-normal">
@@ -450,27 +457,54 @@ export default function GraphicDesignClient() {
                         </div>
 
                         {/* Right Side Visual Showcase Card */}
-                        <div className="lg:col-span-5 relative flex justify-center">
-                            <div className="relative w-full max-w-[460px] aspect-[4/3] sm:aspect-square rounded-[28px] border-[10px] border-white bg-white shadow-2xl shadow-blue-950/15 overflow-hidden group cursor-pointer z-10">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop"
-                                    alt="Graphic Design Services in Pondicherry"
-                                    fill
-                                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
-                                    priority
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/60 via-transparent to-transparent opacity-80" />
+                        <div className="lg:col-span-5 relative flex justify-center items-center mt-12 lg:mt-0">
+                            {/* Ambient Background Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] max-w-[500px] max-h-[500px] bg-gradient-to-tr from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-[100px] pointer-events-none -z-10" />
 
-                                <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-white/20 shadow-lg">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-xl bg-[#1A5CDD] text-white flex items-center justify-center font-bold">
-                                            <Palette size={20} />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-xs font-bold text-[#011146]">SysCrop Creative Studio</h4>
-                                            <p className="text-[11px] text-slate-500">Logo, Branding & Digital Creatives</p>
-                                        </div>
+                            <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] group overflow-visible">
+                                {/* Expanding the image container */}
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] lg:w-[140%] lg:h-[140%]">
+                                    <Image
+                                        src="/images/webdevelopment/graphic_design.svg"
+                                        alt="Graphic Design Services in Pondicherry"
+                                        fill
+                                        className="object-contain transform transition-transform duration-700 ease-out z-10"
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
+                                        priority
+                                    />
+                                </div>
+
+                                {/* Floating Badges */}
+                                {/* Left Badge */}
+                                <div className="absolute top-[15%] -left-4 md:-left-12 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl px-4 py-3 shadow-[0_15px_35px_rgba(0,0,0,0.06)] flex items-center gap-3 z-20 hover:-translate-y-1 transition-transform duration-300 hidden sm:flex">
+                                    <div className="w-9 h-9 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center font-bold">
+                                        <Palette size={18} />
+                                    </div>
+                                    <div>
+                                        <p className="text-xl font-extrabold text-[#011146] leading-none">100%</p>
+                                        <p className="text-slate-500 text-[11px] font-semibold mt-0.5">Creative Designs</p>
+                                    </div>
+                                </div>
+
+                                {/* Right Badge */}
+                                <div className="absolute top-[65%] right-0 md:-right-8 lg:-right-4 xl:-right-10 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl px-4 py-3 shadow-[0_15px_35px_rgba(0,0,0,0.06)] flex items-center gap-3 z-20 hover:-translate-y-1 transition-transform duration-300 hidden sm:flex">
+                                    <div className="w-9 h-9 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center font-bold">
+                                        <Award size={18} />
+                                    </div>
+                                    <div>
+                                        <p className="text-xl font-extrabold text-[#011146] leading-none">Premium</p>
+                                        <p className="text-slate-500 text-[11px] font-semibold mt-0.5">Brand Identity</p>
+                                    </div>
+                                </div>
+                                
+                                {/* Bottom Badge */}
+                                <div className="absolute -bottom-2 -left-2 md:left-4 lg:left-8 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl px-4 py-3 shadow-[0_15px_35px_rgba(0,0,0,0.06)] flex items-center gap-3 z-20 hover:-translate-y-1 transition-transform duration-300 hidden sm:flex">
+                                    <div className="w-9 h-9 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center font-bold">
+                                        <CheckCircle size={18} />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-sm font-extrabold text-[#011146] leading-none">SysCrop Studio</h4>
+                                        <p className="text-[11px] text-slate-500 font-semibold mt-0.5">Logo & Creatives</p>
                                     </div>
                                 </div>
                             </div>
@@ -486,77 +520,46 @@ export default function GraphicDesignClient() {
                 <div className="absolute right-[-150px] bottom-1/4 w-[500px] h-[500px] bg-[#38bdf8]/10 blur-[130px] rounded-full pointer-events-none" />
 
                 <div className="container mx-auto px-6 lg:px-8 relative max-w-7xl z-10">
-                    <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
-                        {/* Left Side: Multi-Image Collage (45%) */}
-                        <div className="lg:w-[45%] w-full relative min-h-[480px] order-2 lg:order-1">
-                            {/* Primary Image */}
-                            <div className="absolute -top-4 left-0 w-[82%] h-[68%] rounded-[28px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.12)] border-[6px] border-white z-10 group/main bg-white">
-                                <img
-                                    src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop"
-                                    alt="Graphic Design Studio Work"
-                                    className="w-full h-full object-cover transform group-hover/main:scale-105 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/20 to-transparent pointer-events-none" />
-                            </div>
+                        {/* Left Side: Visual Presentation (45%) */}
+                        <div className="lg:w-[45%] w-full relative min-h-[400px] lg:min-h-[500px] order-2 lg:order-1 flex justify-center items-center">
+                            {/* Ambient Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-to-tr from-[#1A5CDD]/10 to-[#38bdf8]/15 rounded-full blur-[80px] pointer-events-none -z-10" />
 
-                            {/* Secondary Image */}
-                            <div className="absolute -bottom-4 right-0 w-[58%] h-[52%] rounded-[24px] overflow-hidden shadow-[0_25px_60px_rgba(1,17,70,0.15)] border-[6px] border-white z-20 group/secondary bg-white">
-                                <img
-                                    src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=800&auto=format&fit=crop"
-                                    alt="Brand Identity Systems"
-                                    className="w-full h-full object-cover transform group-hover/secondary:scale-105 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/10 to-transparent pointer-events-none" />
-                            </div>
-
-                            {/* Floating Badge (Top Right) */}
-                            <div className="absolute top-6 right-0 bg-white/95 backdrop-blur-xl px-5 py-4 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-slate-100 z-30 flex items-center gap-3.5 transform transition-transform hover:-translate-y-1 hidden md:flex">
-                                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#1A5CDD] to-[#38bdf8] flex items-center justify-center text-white shadow-sm">
-                                    <Sparkles size={20} strokeWidth={2.5} />
-                                </div>
-                                <div>
-                                    <p className="text-[#011146] font-extrabold text-[16px] leading-tight">100% Custom</p>
-                                    <p className="text-slate-500 text-[11px] font-semibold mt-0.5">Vector Art & Branding</p>
-                                </div>
-                            </div>
-
-                            {/* Floating Badge (Bottom Left) */}
-                            <div className="absolute bottom-8 left-0 bg-white/95 backdrop-blur-xl px-5 py-4 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-slate-100 z-30 flex items-center gap-3.5 transform transition-transform hover:-translate-y-1 hidden md:flex">
-                                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white shadow-sm">
-                                    <CheckCircle2 size={20} strokeWidth={2.5} />
-                                </div>
-                                <div>
-                                    <p className="text-[#011146] font-extrabold text-[16px] leading-tight">Brand Impact</p>
-                                    <p className="text-slate-500 text-[11px] font-semibold mt-0.5">+85% Customer Trust</p>
+                            <div className="relative w-full h-[350px] sm:h-[450px] lg:h-[550px] group overflow-visible">
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] lg:w-[130%] lg:h-[130%]">
+                                    <Image
+                                        src="/images/webdevelopment/graphic_design_1.svg"
+                                        alt="Graphic Design Studio Work"
+                                        fill
+                                        className="object-contain transform transition-transform duration-700 ease-out z-10"
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
+                                    />
                                 </div>
                             </div>
                         </div>
 
                         {/* Right Side: Content (55%) */}
                         <div className="lg:w-[55%] w-full relative order-1 lg:order-2">
-                            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/80 backdrop-blur-xl border border-[#1A5CDD]/15 shadow-[0_4px_20px_rgba(26,92,221,0.08)] mb-8">
-                                <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#1A5CDD] to-[#38bdf8] flex items-center justify-center shadow-sm">
-                                    <Palette className="text-white" size={14} strokeWidth={2.5} />
-                                </div>
-                                <span className="text-[13px] font-bold text-[#011146] tracking-wide">Understanding Design</span>
-                            </div>
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 shadow-sm border border-[#1A5CDD]/10">
+                                <Palette size={14} /> Understanding Graphic Design
+                            </span>
 
-                            <div className="flex gap-6 mb-8">
-                                <div className="hidden lg:block w-1.5 rounded-full bg-gradient-to-b from-[#1A5CDD] to-[#38bdf8] shrink-0 self-stretch" />
+                            <div className="flex gap-4 mb-5">
                                 <h2 className="text-3xl md:text-4xl lg:text-[48px] font-extrabold text-[#011146] leading-[1.12] tracking-tight">
-                                    What are <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8] relative inline-block">Graphic Design Services?</span>
+                                    What are <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8] relative">Graphic Design Services?</span>
                                 </h2>
                             </div>
 
-                            <p className="text-slate-600 text-[16.5px] leading-[1.9] mb-6">
+                            <p className="text-slate-600 text-[16.5px] leading-[1.9] mb-4">
                                 Graphic Design Services involve creating visual content that represents a business, communicates its message, and strengthens its brand identity. Professional designs help businesses connect with their audience through logos, brochures, social media creatives, advertisements, packaging, and other marketing materials.
                             </p>
-                            <p className="text-slate-600 text-[16.5px] leading-[1.9] mb-8">
+                            <p className="text-slate-600 text-[16.5px] leading-[1.9] mb-6">
                                 As an experienced Graphic Design Company in Pondicherry, SysCrop delivers creative design solutions that combine aesthetics with strategy to help businesses stand out in today's competitive market.
                             </p>
 
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-4 border-t border-slate-200/80">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 pt-2">
                                 {[
                                     "Custom Logo & Brand Identity",
                                     "Social Media Posts & Banners",
@@ -564,11 +567,11 @@ export default function GraphicDesignClient() {
                                     "Packaging, Labels & Print Media",
                                     "UI/UX Interface & Motion Graphics"
                                 ].map((item, idx) => (
-                                    <div key={idx} className="flex items-center gap-3 bg-white p-3.5 rounded-xl border border-slate-200/60 shadow-sm text-[#011146] font-bold text-[14.5px] hover:border-[#1A5CDD]/30 transition-colors">
-                                        <div className="w-6 h-6 rounded-full bg-[#1A5CDD] text-white flex items-center justify-center shrink-0">
-                                            <Check size={14} strokeWidth={3} />
+                                    <div key={idx} className="flex items-center gap-3.5 py-2 group cursor-pointer">
+                                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-blue-50 to-slate-100 border border-blue-100/50 flex items-center justify-center shrink-0 shadow-[0_2px_8px_rgba(26,92,221,0.06)] group-hover:shadow-[0_4px_12px_rgba(26,92,221,0.15)] group-hover:scale-110 transition-all duration-300">
+                                            <Check size={13} strokeWidth={3} className="text-[#1A5CDD]" />
                                         </div>
-                                        <span>{item}</span>
+                                        <span className="text-slate-700 font-semibold text-[14.5px] group-hover:text-[#011146] group-hover:translate-x-1 transition-all duration-300">{item}</span>
                                     </div>
                                 ))}
                             </div>
@@ -610,8 +613,8 @@ export default function GraphicDesignClient() {
                         ].map((item, idx) => {
                             const Icon = item.icon;
                             return (
-                                <div key={idx} className="bg-[#031B66]/90 backdrop-blur-xl rounded-[28px] p-8 border border-white/10 hover:border-[#38bdf8]/40 hover:-translate-y-2 transition-all duration-300 shadow-xl flex flex-col justify-between group">
-                                    <div>
+                                <div key={idx} className="bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-xl rounded-[28px] p-8 border border-white/10 hover:border-[#38bdf8]/50 hover:from-white/15 hover:to-white/10 hover:-translate-y-2 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col justify-between group relative overflow-hidden">
+                                    <div className="relative z-10">
                                         <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#1A5CDD] to-[#38bdf8] flex items-center justify-center text-white shadow-lg mb-6 group-hover:scale-110 transition-transform">
                                             <Icon size={22} strokeWidth={2.5} />
                                         </div>

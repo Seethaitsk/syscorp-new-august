@@ -494,30 +494,6 @@ export default function UIUXClient() {
                                 </p>
                             </div>
 
-                            <div className="flex flex-wrap gap-3.5 mb-8">
-                                {[
-                                    { label: "User-Centered Design", value: "100%", icon: Users },
-                                    { label: "Combined Experience", value: "20+ Yrs", icon: Award },
-                                    { label: "Cross-Platform UI", value: "Scalable", icon: Monitor },
-                                ].map((stat, i) => {
-                                    const StatIcon = stat.icon;
-                                    return (
-                                        <div
-                                            key={i}
-                                            className="bg-white border border-slate-200/90 rounded-2xl px-4 py-3 shadow-xs flex items-center gap-3 hover:border-blue-300 transition-colors"
-                                        >
-                                            <div className="w-9 h-9 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center font-bold">
-                                                <StatIcon size={18} />
-                                            </div>
-                                            <div>
-                                                <p className="text-xl font-extrabold text-[#011146] leading-none">{stat.value}</p>
-                                                <p className="text-slate-500 text-[11px] font-semibold mt-0.5">{stat.label}</p>
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
-
                             <Link
                                 href="/contact"
                                 className="group relative inline-flex items-center gap-3 bg-[#011146] text-white px-8 py-4 rounded-xl font-bold text-[15px] transition-all duration-300 shadow-lg shadow-blue-900/15 hover:bg-[#1A5CDD] hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(26,92,221,0.35)] overflow-hidden"
@@ -530,111 +506,55 @@ export default function UIUXClient() {
                             </Link>
                         </div>
 
-                        <div className="lg:col-span-5 relative">
-                            <div className="relative w-full rounded-[28px] overflow-hidden shadow-2xl border-4 border-white bg-white">
-                                <div className="bg-slate-100 px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                                    <div className="flex gap-1.5">
-                                        <span className="w-3 h-3 rounded-full bg-red-400" />
-                                        <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                                        <span className="w-3 h-3 rounded-full bg-emerald-400" />
-                                    </div>
-                                    <div className="flex-1 bg-white rounded-md px-3 py-1 text-xs text-slate-400 font-medium ml-2 border border-slate-200 flex items-center justify-between">
-                                        <span>syscrop.in/ui-ux-design</span>
-                                        <span className="text-[10px] text-emerald-600 font-bold bg-emerald-50 px-2 py-0.5 rounded flex items-center gap-1">
-                                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping inline-block" />
-                                            Figma Canvas Active
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="relative h-[290px] w-full group">
+                        <div className="lg:col-span-5 relative flex justify-center items-center mt-12 lg:mt-0">
+                            {/* Ambient Background Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] max-w-[500px] max-h-[500px] bg-gradient-to-tr from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-[100px] pointer-events-none -z-10" />
+
+                            <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] group overflow-visible">
+                                {/* Expanding the image container so it can be huge without cropping its soft edges */}
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] lg:w-[140%] lg:h-[140%]">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
-                                        alt="Modern UI UX Dashboard Analytics and Interface Design"
+                                        src="/images/webdevelopment/ui_ux_1.svg"
+                                        alt="Professional UI/UX Design Services"
                                         fill
-                                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                        className="object-contain transform transition-transform duration-700 ease-out z-10"
                                         priority
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/50 via-transparent to-transparent" />
-
-                                    <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-white/50 shadow-md flex items-center gap-2">
-                                        <div className="w-2.5 h-2.5 rounded-full bg-[#1A5CDD] animate-ping" />
-                                        <span className="text-xs font-extrabold text-[#011146]">SaaS & Web UI Layout Design</span>
-                                    </div>
-
-                                    <div className="absolute top-3 right-3 bg-[#011146]/80 backdrop-blur-md text-white px-3 py-1 rounded-lg border border-white/20 text-[11px] font-bold flex items-center gap-1.5">
-                                        <MousePointer size={12} className="text-[#38bdf8]" />
-                                        Auto Layout v5.0
-                                    </div>
-                                </div>
-                                <div className="bg-white px-5 py-4 flex items-center justify-between">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-full bg-[#1A5CDD]/10 flex items-center justify-center text-[#1A5CDD]">
-                                            <Palette size={20} />
-                                        </div>
-                                        <div>
-                                            <p className="text-[#011146] font-extrabold text-sm">Interactive Prototypes</p>
-                                            <p className="text-slate-400 text-[11px]">Pixel-perfect & responsive</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center gap-1.5 bg-emerald-50 text-emerald-600 border border-emerald-200 text-xs font-bold px-3 py-1.5 rounded-full shadow-xs">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping inline-block" />
-                                        Figma & XD Ready
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="grid grid-cols-2 gap-4 mt-4">
-                                <div className="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white h-[155px] group">
-                                    <Image
-                                        src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=800&auto=format&fit=crop"
-                                        alt="Wireframing and UX research layout"
-                                        fill
-                                        className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/80 via-[#011146]/20 to-transparent" />
-                                    <div className="absolute bottom-3 left-3 right-3">
-                                        <div className="inline-flex items-center gap-1 bg-[#1A5CDD] text-white px-2 py-0.5 rounded text-[9px] font-extrabold uppercase mb-1">
-                                            UX Research
-                                        </div>
-                                        <p className="text-white font-bold text-xs leading-tight">Wireframes & Flow Maps</p>
-                                        <p className="text-blue-200 text-[10px] mt-0.5">High Usability Architecture</p>
-                                    </div>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-[#011146] to-[#0A2540] rounded-2xl p-4 flex flex-col justify-between shadow-lg border-4 border-white h-[155px] relative overflow-hidden">
-                                    <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A5CDD]/30 rounded-full blur-2xl pointer-events-none" />
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center gap-2">
-                                            <div className="w-7 h-7 bg-[#38bdf8]/20 rounded-lg flex items-center justify-center text-[#38bdf8]">
-                                                <Sparkles size={14} />
-                                            </div>
-                                            <p className="text-white/80 text-[10px] font-bold uppercase tracking-wider">Design Tokens</p>
-                                        </div>
-                                        <div className="flex -space-x-1.5">
-                                            <span className="w-3.5 h-3.5 rounded-full bg-[#1A5CDD] border border-white/40" />
-                                            <span className="w-3.5 h-3.5 rounded-full bg-[#38bdf8] border border-white/40" />
-                                            <span className="w-3.5 h-3.5 rounded-full bg-[#6366f1] border border-white/40" />
-                                            <span className="w-3.5 h-3.5 rounded-full bg-[#10b981] border border-white/40" />
-                                        </div>
+                                {/* Floating Badges */}
+                                {/* Left Badge */}
+                                <div className="absolute top-[12%] -left-4 md:-left-16 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl px-4 py-3 shadow-[0_15px_35px_rgba(0,0,0,0.06)] flex items-center gap-3 z-20 hover:-translate-y-1 transition-transform duration-300 hidden sm:flex">
+                                    <div className="w-9 h-9 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center font-bold">
+                                        <Users size={18} />
                                     </div>
                                     <div>
-                                        <p className="text-xl font-extrabold text-white leading-tight">Design System</p>
-                                        <p className="text-[#38bdf8] text-[10px] font-bold uppercase tracking-wider mt-0.5">Consistent Brand UI</p>
-                                    </div>
-                                    <div className="text-[10px] text-slate-300 font-semibold flex items-center justify-between pt-1 border-t border-white/10">
-                                        <span>100+ Components</span>
-                                        <span className="text-[#38bdf8]">Auto-Tokens</span>
+                                        <p className="text-xl font-extrabold text-[#011146] leading-none">100%</p>
+                                        <p className="text-slate-500 text-[11px] font-semibold mt-0.5">User-Centered Design</p>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-slate-200/80 px-4 py-3 flex items-center gap-3 z-20">
-                                <div className="w-10 h-10 bg-[#1A5CDD]/10 text-[#1A5CDD] rounded-xl flex items-center justify-center font-bold shadow-xs">
-                                    <Paintbrush size={20} />
+                                {/* Right Badge */}
+                                <div className="absolute top-[76%] right-2 md:-right-4 lg:-right-2 xl:-right-8 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl px-4 py-3 shadow-[0_15px_35px_rgba(0,0,0,0.06)] flex items-center gap-3 z-20 hover:-translate-y-1 transition-transform duration-300 hidden sm:flex">
+                                    <div className="w-9 h-9 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center font-bold">
+                                        <Monitor size={18} />
+                                    </div>
+                                    <div>
+                                        <p className="text-xl font-extrabold text-[#011146] leading-none">Scalable</p>
+                                        <p className="text-slate-500 text-[11px] font-semibold mt-0.5">Cross-Platform UI</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p className="text-[#011146] font-extrabold text-xs">Top Rated UI/UX</p>
-                                    <p className="text-slate-500 text-[10px] font-semibold">Design Agency in Pondicherry</p>
+
+                                {/* Bottom Badge */}
+                                <div className="absolute -bottom-4 -left-4 md:left-0 lg:left-4 bg-white/95 backdrop-blur-md border border-white/50 rounded-2xl px-4 py-3 shadow-[0_15px_35px_rgba(0,0,0,0.06)] flex items-center gap-3 z-20 hover:-translate-y-1 transition-transform duration-300 hidden sm:flex">
+                                    <div className="w-9 h-9 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center font-bold">
+                                        <Award size={18} />
+                                    </div>
+                                    <div>
+                                        <p className="text-xl font-extrabold text-[#011146] leading-none">20+ Yrs</p>
+                                        <p className="text-slate-500 text-[11px] font-semibold mt-0.5">Combined Experience</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -649,7 +569,7 @@ export default function UIUXClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div>
+                        <div className="order-1 lg:order-2">
                             <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 shadow-sm border border-[#1A5CDD]/10">
                                 <Palette size={14} /> Understanding UI/UX Design
                             </span>
@@ -669,17 +589,16 @@ export default function UIUXClient() {
                             </p>
                         </div>
 
-                        <div className="relative w-full h-[500px] lg:h-[580px] flex justify-center items-center">
+                        <div className="order-2 lg:order-1 relative w-full h-[500px] lg:h-[580px] flex justify-center items-center">
                             <div className="absolute inset-0 bg-gradient-to-br from-[#1A5CDD]/5 to-transparent rounded-[40px] transform rotate-3" />
 
-                            <div className="relative w-[90%] h-[90%] rounded-[32px] overflow-hidden shadow-2xl border-8 border-white z-10 group">
+                            <div className="relative w-[90%] h-[90%] rounded-[32px] overflow-hidden bg-slate-50 shadow-[0_20px_50px_rgba(0,0,0,0.06)] border border-slate-100 z-10 group transition-all duration-500 hover:shadow-[0_30px_60px_rgba(26,92,221,0.12)]">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1200&auto=format&fit=crop"
+                                    src="/images/webdevelopment/ui_ux_2.svg"  
                                     alt="User Research & UX Design Session"
                                     fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                                 />
-                                <div className="absolute inset-0 bg-[#011146]/10 mix-blend-multiply" />
                             </div>
 
                             <div className="absolute top-10 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 z-20 flex items-center gap-4">
