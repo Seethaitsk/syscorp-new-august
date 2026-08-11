@@ -136,26 +136,41 @@ export default function EmailMarketingClient() {
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                         <div className="gsap-fade-up lg:col-span-6 lg:pr-8">
-                            <h2 className="text-[32px] md:text-4xl lg:text-[46px] font-extrabold text-[#011146] tracking-tight mb-6 leading-[1.2]">
-                                Reach the Right Audience <br className="hidden lg:block" />
-                                with Strategic <br className="hidden lg:block" />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Email Marketing</span>
+                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1.5 text-[12px] font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] animate-pulse"></span>
+                                ROI-Driven Campaigns
+                            </div>
+
+                            <h2 className="text-[32px] md:text-4xl lg:text-[46px] font-extrabold text-[#011146] tracking-tight mb-6 leading-[1.15]">
+                                Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Email Marketing Services</span> in Pondicherry for Business Growth
                             </h2>
 
+                            <h3 className="text-[#011146] text-[18px] md:text-[20px] leading-[1.6] mb-8 font-bold border-l-4 border-[#38bdf8] pl-4">
+                                Reach the Right Audience with Strategic Email Marketing.
+                            </h3>
+
                             <p className="text-[#011146] text-[15px] leading-[1.8] mb-6 font-medium">
-                                At Syscorp, we provide professional Email Marketing Services in Pondicherry to help businesses connect with their target audience, generate quality leads, improve customer engagement, and increase conversions. As a trusted Email Marketing Agency in Pondicherry, we create customized email campaigns tailored to your business goals and customer journey.
+                                At SysCrop, we provide professional <strong>Email Marketing Services in Pondicherry</strong> to help businesses connect with their target audience, generate quality leads, improve customer engagement, and increase conversions. As a trusted <strong>Email Marketing Agency in Pondicherry</strong>, we create customized email campaigns tailored to your business goals and customer journey.
                             </p>
 
-                            <div className="pl-5 border-l-3 border-[#1A5CDD]/20 space-y-5 mb-10">
+                            <div className={`pl-5 border-l-3 border-[#1A5CDD]/20 space-y-5 overflow-hidden transition-all duration-500 ease-in-out ${isIntroExpanded ? 'max-h-[500px] opacity-100 mb-6' : 'max-h-0 opacity-0 mb-0 border-transparent'}`}>
                                 <p className="text-slate-600 text-[14px] leading-[1.8]">
-                                    Our Email Marketing Services include email strategy, audience segmentation, campaign creation, email automation, performance optimization, and reporting. Whether you want to promote products, nurture leads, boost online sales, or improve customer retention, we deliver personalized email marketing solutions that drive measurable results.
+                                    Our <strong>Email Marketing Services</strong> include email strategy, audience segmentation, campaign creation, email automation, performance optimization, and reporting. Whether you want to promote products, nurture leads, boost online sales, or improve customer retention, we deliver personalized email marketing solutions that drive measurable results.
                                 </p>
                                 <p className="text-slate-600 text-[14px] leading-[1.8]">
-                                    Whether you're a startup, eCommerce business, educational institution, healthcare provider, retail brand, or service-based company, our Email Marketing Services in Pondicherry help you strengthen customer relationships, build brand loyalty, and achieve long-term business growth.
+                                    Whether you're a startup, eCommerce business, educational institution, healthcare provider, retail brand, or service-based company, our <strong>Email Marketing Services in Pondicherry</strong> help you strengthen customer relationships, build brand loyalty, and achieve long-term business growth.
                                 </p>
                             </div>
 
-                            <div className="flex flex-wrap items-center gap-4 mt-8">
+                            <button 
+                                onClick={() => setIsIntroExpanded(!isIntroExpanded)}
+                                className="text-[#1A5CDD] font-bold text-[14px] flex items-center gap-1.5 hover:text-[#011146] transition-colors mb-10"
+                            >
+                                {isIntroExpanded ? "Read Less" : "Read More"} 
+                                <ChevronDown size={16} className={`transition-transform duration-300 ${isIntroExpanded ? 'rotate-180' : ''}`} />
+                            </button>
+
+                            <div className="flex flex-wrap items-center gap-4 mt-2">
                                 <Link
                                     href="/contact"
                                     className="inline-flex items-center gap-2 bg-[#011146] text-white px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#1A5CDD] transition-all shadow-lg shadow-blue-900/10 hover:-translate-y-0.5"
@@ -374,7 +389,7 @@ export default function EmailMarketingClient() {
                         </div>
 
                         {/* Right Image Section - Floating & Borderless */}
-                        <div className="lg:w-1/2 relative w-full flex items-center justify-center mt-12 lg:mt-0 lg:pl-10">
+                        <div className="lg:w-1/2 relative w-full flex items-center justify-center mt-12 lg:mt-0">
                             
                             {/* Static Ambient Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] max-w-[400px] max-h-[400px] bg-gradient-to-tr from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-[80px] pointer-events-none -z-10" />
@@ -388,7 +403,7 @@ export default function EmailMarketingClient() {
                                 {/* The Illustration with gentle floating animation */}
                                 <div className="absolute inset-0">
                                     <Image 
-                                        src="/images/seo/our_email_marketing.svg"
+                                        src="/images/seo/email_marketing_1.svg"
                                         alt="Email Marketing Dashboard Illustration"
                                         fill
                                         className="object-contain transition-transform duration-700 ease-out z-10 mix-blend-multiply"

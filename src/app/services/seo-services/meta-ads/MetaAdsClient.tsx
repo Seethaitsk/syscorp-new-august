@@ -583,28 +583,20 @@ export default function MetaAdsClient() {
                         </div>
 
                         {/* Left Side: Graphic */}
-                        <div className="lg:w-1/2 relative">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
-                            <div className="relative group">
-                                <div className="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
-                                    <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden bg-slate-900">
+                        <div className="lg:w-1/2 relative w-full flex items-center justify-center mt-12 lg:mt-0">
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] max-w-[400px] max-h-[400px] bg-gradient-to-tr from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-[80px] pointer-events-none -z-10" />
+                            
+                            <div className="relative w-full group">
+                                <div className="rounded-[40px] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.06)] border border-slate-100 transition-all duration-500 group-hover:shadow-[0_30px_60px_rgba(26,92,221,0.1)]">
+                                    <div className="w-full h-[280px] md:h-[340px] lg:h-[380px] relative flex items-center justify-center p-8">
                                         <Image
-                                            src="/images/seo/metaadd.png"
+                                            src="/images/seo/meta_add.svg"
                                             alt="Meta Ads Expertise"
                                             fill
-                                            className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                            className="object-contain p-4 transform group-hover:scale-[1.03] transition-transform duration-700 ease-out mix-blend-multiply"
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                         />
                                     </div>
-                                </div>
-                                <div className="absolute -bottom-8 -left-8 bg-white/90 backdrop-blur-md p-6 rounded-[24px] shadow-xl border border-white max-w-[220px] transform group-hover:-translate-y-2 transition-transform duration-500 hidden md:block">
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <div className="w-10 h-10 bg-blue-100 text-[#1A5CDD] rounded-full flex items-center justify-center">
-                                            <TrendingUp size={20} strokeWidth={2.5} />
-                                        </div>
-                                        <span className="font-extrabold text-2xl text-[#011146]">ROI</span>
-                                    </div>
-                                    <p className="text-sm font-semibold text-slate-600 leading-snug">Focused on Maximum Returns</p>
                                 </div>
                             </div>
                         </div>
