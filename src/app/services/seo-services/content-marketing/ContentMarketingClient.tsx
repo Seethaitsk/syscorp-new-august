@@ -8,7 +8,7 @@ import {
     ArrowRight, ArrowUpRight, ShieldCheck, Rocket, Smartphone, Heart, Image as ImageIcon, Video,
     FileText, LayoutDashboard, LinkIcon, Settings, Code2, Globe, Bookmark,
     ChevronDown, Palmtree, Flower2, GraduationCap, Utensils, Home, ShoppingCart, Scale, Stethoscope, Truck, Dumbbell, Palette, Wrench, Search, Zap, Activity, UserCircle, Calendar, LineChart, Building2,
-    MousePointerClick, DollarSign, Megaphone, MonitorPlay, MapPin, Key, Facebook, Instagram, Grid, Play, Edit, Sparkles
+    MousePointerClick, DollarSign, Megaphone, MonitorPlay, MapPin, Key, Facebook, Instagram, Grid, Play, Edit, Sparkles, Award
 } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -96,77 +96,77 @@ export default function ContentMarketingClient() {
             title: "SEO Content Writing",
             desc: "Our SEO Content Writing Services focus on creating keyword-rich, informative, and engaging content that improves your website's visibility on search engines. We perform detailed keyword research, competitor analysis, and search intent optimization to produce content that ranks for relevant keywords while providing real value to your audience. Our SEO content helps increase organic traffic, improve search engine rankings, reduce bounce rates, and establish your business as an industry authority. Every article is optimized with proper headings, meta optimization, internal linking, readability improvements, and user-focused content to maximize SEO performance.",
             icon: Search,
-            image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/seo_content.svg",
             tag: "Organic Search Optimization"
         },
         {
             title: "Blog & Article Writing",
             desc: "Our Blog Writing Services help businesses consistently publish informative and engaging articles that answer customer questions, solve problems, and build trust with potential customers. We create industry-specific blogs that improve website authority, target high-value keywords, and support your overall content marketing strategy. Regular blogging helps improve search engine rankings, generate organic traffic, increase user engagement, earn backlinks, and establish your brand as a reliable source of information within your industry.",
             icon: FileText,
-            image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/blog_writing.png",
             tag: "Industry Authority & Engagement"
         },
         {
             title: "Website Content Creation",
             desc: "Your website content represents your business online. Our Website Content Writing Services focus on creating professional, informative, and conversion-driven website copy that clearly communicates your products, services, and unique value proposition. We develop optimized content for Home Pages, About Us Pages, Service Pages, Industry Pages, Category Pages, and Contact Pages while ensuring consistency, readability, SEO optimization, and strong calls-to-action that encourage visitors to become customers.",
             icon: Globe,
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/website_content.svg",
             tag: "Conversion-Driven Copy"
         },
         {
             title: "Landing Page Content",
             desc: "Our Landing Page Content Writing Services are designed to maximize conversions by combining persuasive messaging with SEO best practices. Every landing page is carefully structured to capture visitor attention, communicate benefits clearly, build trust, and encourage enquiries, purchases, or registrations. We create optimized landing pages for lead generation campaigns, paid advertising, product launches, service promotions, and local SEO campaigns that improve conversion rates and business performance.",
             icon: MousePointerClick,
-            image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/landing_page.svg",
             tag: "High Conversion Copywriting"
         },
         {
             title: "SEO Copywriting",
             desc: "Our SEO Copywriting Services combine compelling marketing messages with advanced search engine optimization techniques. We create website copy that attracts both search engines and potential customers while encouraging meaningful actions such as enquiries, purchases, or bookings. Our SEO copywriting includes keyword optimization, persuasive headlines, optimized page structure, engaging call-to-actions, and user-focused messaging that supports both SEO rankings and conversion goals.",
             icon: Edit,
-            image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/seo_copywriting.svg",
             tag: "Search & Audience Focused"
         },
         {
             title: "Social Media Content",
             desc: "Our Social Media Content Marketing Services help businesses build stronger relationships with their audience across Facebook, Instagram, LinkedIn, X (Twitter), and other social platforms. We create engaging social media posts, promotional content, educational posts, campaign content, reels scripts, carousel content, and branded messaging that improve audience engagement, increase brand awareness, generate website traffic, and support your digital marketing campaigns.",
             icon: Share2,
-            image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/social_media.svg",
             tag: "Social Engagement & Reach"
         },
         {
             title: "Infographics & Visual Content",
             desc: "Visual content plays an important role in modern digital marketing. We create professional infographics, branded graphics, data visualization, educational visuals, and visual storytelling content that simplify complex information and increase audience engagement. Our visual content improves content shareability, enhances user experience, strengthens brand recognition, and supports your overall content marketing strategy.",
             icon: ImageIcon,
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/infogragphic.png",
             tag: "Visual Storytelling"
         },
         {
             title: "Email Marketing Content",
             desc: "Our Email Content Marketing Services help businesses communicate effectively with existing customers and potential leads through personalized email campaigns. We create newsletters, promotional emails, welcome emails, abandoned cart emails, product launch campaigns, seasonal campaigns, and lead nurturing sequences that improve customer engagement, increase conversions, and strengthen customer loyalty.",
             icon: MessageCircle,
-            image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/email_content.png",
             tag: "Lead Nurturing & Sales"
         },
         {
             title: "Press Releases & Digital PR Content",
             desc: "Our Press Release Writing Services help businesses announce product launches, company updates, business achievements, partnerships, events, and important news professionally. We create SEO-friendly press releases and digital PR content that improve online visibility, build brand credibility, attract media attention, generate backlinks, and strengthen your online reputation.",
             icon: Megaphone,
-            image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/press_release.svg",
             tag: "Brand Credibility & PR"
         },
         {
             title: "Guest Posting Content",
             desc: "Our Guest Posting Content Services support your off-page SEO strategy by creating valuable, informative, and authoritative articles for publication on relevant industry websites. Guest posting helps improve domain authority, increase brand exposure, earn high-quality backlinks, drive referral traffic, and improve search engine rankings while establishing your business as an industry expert.",
             icon: Bookmark,
-            image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/guestposting.png",
             tag: "Off-Page SEO & Backlinks"
         },
         {
             title: "Video Content Marketing",
             desc: "Video has become one of the most powerful forms of digital content. Our Video Content Marketing Services help businesses create engaging video strategies that communicate brand messages effectively across websites, YouTube, Facebook, Instagram, LinkedIn, and other digital platforms. We develop video scripts, promotional video content, educational videos, explainer videos, product demonstration videos, customer testimonial videos, and social media video campaigns that increase engagement, improve audience retention, and drive higher conversions.",
             icon: Video,
-            image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=800&auto=format&fit=crop",
+            image: "/images/seo/video_content.svg",
             tag: "High-Impact Video Scripts"
         }
     ];
@@ -215,7 +215,7 @@ export default function ContentMarketingClient() {
             <HeaderBanner
                 title={
                     <>
-                        Content Marketing <span className="text-[#38bdf8] font-serif italic font-normal">(Social Media Ads)</span>
+                        Content Marketing <span className="text-[#38bdf8] font-serif italic font-normal">(SEO & Strategy)</span>
                     </>
                 }
                 description="Leading Content Marketing Services in Pondicherry"
@@ -225,8 +225,8 @@ export default function ContentMarketingClient() {
             <section className="py-20 lg:py-28 bg-[#F0F8FF]/60 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        <div className="gsap-fade-up lg:col-span-7">
+                    <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-10">
+                        <div className="gsap-fade-up lg:w-[55%] w-full">
                             <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Maximize Your ROI
@@ -268,40 +268,16 @@ export default function ContentMarketingClient() {
                         </div>
 
                         {/* Image Right Side */}
-                        <div className="gsap-fade-up lg:col-span-5 relative w-full h-[450px] md:h-[550px] flex items-center justify-center mt-12 lg:mt-0">
-
-                            <div className="relative w-[75%] h-[85%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.1)] z-10 group">
+                        <div className="gsap-fade-up lg:w-[45%] w-full relative mt-12 lg:mt-0">
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-[80px] -z-10 pointer-events-none" />
+                            <div className="relative w-full h-[420px] sm:h-[480px] lg:h-[540px] xl:h-[580px] flex items-center justify-center">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop"
-                                    alt="Content Marketing Team"
+                                    src="/images/seo/content_marketing.svg"
+                                    alt="Content Marketing Services"
                                     fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="object-center transform group-hover:scale-105 transition-transform duration-700"
+                                    priority
                                 />
-                                <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500" />
-                            </div>
-
-                            <div className="absolute -bottom-4 right-0 lg:-right-4 w-[65%] h-[45%] rounded-[16px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.2)] border-[4px] border-white z-20 group">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
-                                    alt="Content Marketing Dashboard"
-                                    fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                />
-                            </div>
-
-                            <div className="absolute top-16 -right-6 lg:-right-8 bg-white px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2.5 border border-slate-100 z-30 animate-bounce-slow">
-                                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
-                                <p className="text-[#011146] font-bold text-[13px]">Active Clients 200+</p>
-                            </div>
-
-                            <div className="absolute bottom-24 -left-6 lg:-left-8 bg-white px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-100 z-30 animate-bounce-slow" style={{ animationDelay: "1s" }}>
-                                <div className="w-10 h-10 bg-[#F0F8FF] text-[#1A5CDD] rounded-full flex items-center justify-center font-bold text-lg shadow-sm border border-[#1A5CDD]/10">
-                                    <TrendingUp size={18} strokeWidth={2.5} />
-                                </div>
-                                <div>
-                                    <p className="text-[#011146] font-extrabold text-[14px]">99.8% Success</p>
-                                    <p className="text-slate-500 text-[11px] font-medium mt-0.5">Project Delivery Rate</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -313,28 +289,51 @@ export default function ContentMarketingClient() {
                 <div className="container mx-auto max-w-7xl">
                     <div className="bg-[#011146] rounded-[40px] relative overflow-hidden shadow-2xl">
                         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-[#1A5CDD]/25 rounded-full blur-[100px] pointer-events-none" />
-                        <div className="absolute -bottom-20 left-[20%] w-64 h-64 bg-[#38bdf8]/10 rounded-full blur-[80px] pointer-events-none" />
+                        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-[#38bdf8]/20 rounded-full blur-[100px] pointer-events-none" />
 
-                        <div className="flex flex-col md:flex-row items-stretch gap-0 relative z-10">
-
-                            <div className="md:w-5/12 p-10 md:p-14 flex flex-col justify-center border-b md:border-b-0 md:border-r border-white/10">
-                                <div className="flex items-center gap-2 mb-6">
-                                    <div className="w-8 h-1 bg-[#38bdf8] rounded-full" />
-                                    <span className="text-[#38bdf8] text-xs font-bold tracking-widest uppercase">Content Marketing Fundamentals</span>
-                                </div>
-                                <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight mb-8">
-                                    What is <span className="text-[#38bdf8]">Content Marketing?</span>
-                                </h2>
+                        <div className="relative z-10 p-8 md:p-14 lg:p-20 text-white">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/15 mb-6">
+                                <Sparkles size={16} className="text-[#38bdf8]" />
+                                <span className="text-[13px] font-bold text-slate-200 tracking-wider uppercase">Strategic Growth Engine</span>
                             </div>
 
-                            <div className="md:w-7/12 p-10 md:p-14 flex flex-col justify-between">
-                                <div className="space-y-5">
-                                    <p className="text-slate-300 text-[15px] leading-relaxed">
-                                        Content Marketing is a strategic approach to creating and sharing valuable, relevant, and informative content to attract, engage, and convert your target audience. Instead of directly promoting products or services, content marketing focuses on educating users, solving their problems, and building trust with your brand.
-                                    </p>
-                                    <p className="text-slate-300 text-[15px] leading-relaxed">
-                                        At SysCrop, we create content strategies that combine SEO optimization, industry insights, and audience-focused messaging to improve your digital presence. From increasing organic visibility to supporting lead generation, effective content marketing helps businesses establish authority and create long-term relationships with customers.
-                                    </p>
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight max-w-3xl">
+                                What is Content Marketing and How Does It Drive Growth?
+                            </h2>
+
+                            <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-4xl mb-8">
+                                Content Marketing is a strategic marketing approach focused on creating and distributing valuable, relevant, and consistent content to attract and retain a clearly defined audience — and, ultimately, to drive profitable customer action. Instead of pitching your products or services, you provide truly relevant and useful content to your prospects and customers to help them solve their issues.
+                            </p>
+
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-white/10">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-[#38bdf8] shrink-0 border border-white/10">
+                                        <Target size={22} />
+                                    </div>
+                                    <div>
+                                        <h3 className="font-bold text-lg text-white mb-1">Targeted Reach</h3>
+                                        <p className="text-slate-400 text-xs leading-relaxed">Connect with high-intent decision makers actively seeking solutions.</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-[#38bdf8] shrink-0 border border-white/10">
+                                        <Award size={22} />
+                                    </div>
+                                    <div>
+                                        <h3 className="font-bold text-lg text-white mb-1">Authority Building</h3>
+                                        <p className="text-slate-400 text-xs leading-relaxed">Position your brand as an industry thought leader and trusted expert.</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-[#38bdf8] shrink-0 border border-white/10">
+                                        <TrendingUp size={22} />
+                                    </div>
+                                    <div>
+                                        <h3 className="font-bold text-lg text-white mb-1">Sustainable ROI</h3>
+                                        <p className="text-slate-400 text-xs leading-relaxed">Evergreen assets that continuously generate qualified inbound leads.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -343,61 +342,34 @@ export default function ContentMarketingClient() {
             </section>
 
             {/* Why Content Marketing is Important Section */}
-            <section className="py-20 bg-[#F8FAFF] relative overflow-hidden">
+            <section className="py-12 lg:py-16 bg-[#F8FAFF] relative overflow-hidden">
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#1A5CDD]/5 blur-3xl rounded-full pointer-events-none" />
 
                 <div className="container mx-auto px-4 relative max-w-7xl">
-                    <div className="flex flex-col lg:flex-row items-center gap-10 rounded-[40px] p-4 lg:p-6 shadow-[0_8px_30px_rgba(0,0,0,0.04)] bg-white border border-slate-100 group/hero relative overflow-hidden">
-                        <div className="lg:w-1/2 p-6 lg:p-10 relative z-10">
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 mb-8 shadow-sm">
+                    <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 rounded-[32px] p-6 lg:p-10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] bg-white border border-slate-100 group/hero relative overflow-hidden">
+                        <div className="lg:w-1/2 relative z-10">
+                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 mb-6 shadow-sm">
                                 <Target className="text-[#1A5CDD]" size={16} />
                                 <span className="text-[13px] font-bold text-[#1A5CDD] tracking-wider uppercase">Business Impact</span>
                             </div>
 
                             <h2 className="text-3xl lg:text-4xl font-extrabold text-[#011146] mb-5 leading-tight">
-                                Why Content Marketing are Important for Your Business
+                                Why Content Marketing is Important for Your Business
                             </h2>
 
-                            <p className="text-slate-600 text-[16px] leading-relaxed mb-6">
+                            <p className="text-slate-600 text-[16px] leading-relaxed mb-0">
                                 Today's customers expect valuable information before they make a purchasing decision. Creating relevant, informative, and engaging content helps your business attract potential customers, build credibility, and stay ahead of the competition. Our Content Marketing Services in Pondicherry focus on delivering high-quality content that strengthens your online presence, improves search visibility, and supports sustainable business growth.
                             </p>
                         </div>
 
-                        <div className="lg:w-1/2 relative z-10 flex items-center justify-center p-6 lg:p-12 mt-8 lg:mt-0">
-                            <div className="absolute top-4 right-4 lg:top-8 lg:right-8 w-40 h-40 bg-[radial-gradient(circle,#1A5CDD_1.5px,transparent_1.5px)] bg-[size:16px_16px] opacity-10 -z-10" />
-                            <div className="absolute bottom-4 left-4 lg:-bottom-4 lg:-left-4 w-40 h-40 bg-[radial-gradient(circle,#38bdf8_1.5px,transparent_1.5px)] bg-[size:16px_16px] opacity-20 -z-10" />
-
-                            <div className="relative overflow-hidden rounded-[24px] shadow-[0_20px_50px_rgba(1,17,70,0.1)] z-10 w-full lg:w-[90%] aspect-[4/3] bg-white">
+                        <div className="lg:w-1/2 relative z-10 flex items-center justify-center w-full">
+                            <div className="relative w-full h-[260px] sm:h-[320px] lg:h-[360px] flex items-center justify-center">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
-                                    alt="Content Marketing Strategy Dashboard"
+                                    src="/images/seo/business_impact.png"
+                                    alt="Content Marketing Business Impact"
                                     fill
-                                    className="object-cover"
+                                    className="object-contain filter drop-shadow-[0_15px_35px_rgba(1,17,70,0.10)] transform group-hover:scale-105 transition-all duration-700"
                                 />
-                            </div>
-
-                            <div className="absolute -top-4 -left-2 lg:top-4 lg:-left-6 z-20">
-                                <div className="bg-white p-4 lg:p-5 rounded-[20px] shadow-[0_15px_40px_rgba(0,0,0,0.06)] flex items-center gap-4">
-                                    <div className="w-12 h-12 rounded-full bg-[#ebfbf3] flex items-center justify-center text-[#03c04a]">
-                                        <Activity size={22} strokeWidth={2.5} />
-                                    </div>
-                                    <div>
-                                        <p className="text-[#0a1128] font-bold text-[16px] leading-tight">Live Tracking</p>
-                                        <p className="text-slate-400 text-[11px] font-bold uppercase tracking-wider mt-0.5">Active Now</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="absolute -bottom-6 -right-2 lg:-bottom-6 lg:-right-6 z-20">
-                                <div className="bg-[#0a1128] px-6 py-5 rounded-[16px] shadow-[0_20px_40px_rgba(10,17,40,0.2)] flex items-center gap-5">
-                                    <div className="w-14 h-14 rounded-full bg-[#2092fc] shadow-[0_0_20px_rgba(32,146,252,0.4)] flex items-center justify-center text-white">
-                                        <TrendingUp size={24} strokeWidth={2.5} />
-                                    </div>
-                                    <div>
-                                        <p className="text-white font-bold text-[28px] leading-none mb-1">3.4x</p>
-                                        <p className="text-[#94a3b8] text-[11px] font-bold tracking-wider uppercase">Avg. ROI Increase</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -426,11 +398,11 @@ export default function ContentMarketingClient() {
                             return (
                                 <div key={index} className="flex gap-6 group relative">
                                     <div className="absolute -left-6 top-0 bottom-0 w-1 bg-[#1A5CDD] rounded-r-full scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top" />
-                                    
+
                                     <div className="w-14 h-14 shrink-0 rounded-2xl bg-[#F8FAFC] border border-slate-100 flex items-center justify-center group-hover:bg-[#1A5CDD] group-hover:border-[#1A5CDD] group-hover:shadow-[0_10px_20px_rgba(26,92,221,0.2)] group-hover:-translate-y-1 transition-all duration-500 mt-1 shadow-sm">
                                         <Icon className="text-[#1A5CDD] group-hover:text-white transition-colors duration-500" size={24} strokeWidth={2} />
                                     </div>
-                                    
+
                                     <div className="flex-1 pr-4">
                                         <h4 className="text-[20px] font-bold text-[#011146] mb-3 leading-snug group-hover:text-[#1A5CDD] transition-colors duration-300">
                                             {benefit.title}
@@ -482,24 +454,22 @@ export default function ContentMarketingClient() {
                                     <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-[#1A5CDD]/5 blur-3xl pointer-events-none group-hover:bg-[#1A5CDD]/12 transition-all duration-700" />
                                     <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#1A5CDD] via-[#2E8BFF] to-[#38bdf8] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                                    <div className={`lg:col-span-5 w-full ${isEven ? "lg:order-1" : "lg:order-2"}`}>
-                                        <div className="relative rounded-2xl bg-slate-900 border border-slate-200/80 shadow-lg overflow-hidden group/img h-[250px] sm:h-[300px] lg:h-[340px] w-full">
+                                    <div className={`lg:col-span-6 w-full ${isEven ? "lg:order-1" : "lg:order-2"}`}>
+                                        <div className={`relative rounded-2xl ${!item.image.startsWith('http') ? 'bg-transparent' : 'bg-slate-900 border border-slate-200/80'} overflow-hidden group/img h-[280px] sm:h-[360px] lg:h-[420px] w-full flex items-center justify-center`}>
                                             <Image
                                                 src={item.image}
                                                 alt={item.title}
                                                 fill
-                                                className="object-cover group-hover/img:scale-105 transition-transform duration-700 ease-out"
-                                                sizes="(max-width: 768px) 100vw, 40vw"
+                                                className={`${!item.image.startsWith('http') ? 'object-contain' : 'object-cover'} group-hover/img:scale-105 transition-transform duration-700 ease-out`}
+                                                sizes="(max-width: 768px) 100vw, 50vw"
                                             />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/60 via-transparent to-black/10 pointer-events-none" />
-
-                                            <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md border border-white/60 text-[#1A5CDD] px-3.5 py-1.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider shadow-md flex items-center gap-1.5 z-10">
-                                                <Sparkles size={12} className="text-[#1A5CDD]" /> Service {String(index + 1).padStart(2, "0")}
-                                            </div>
+                                            {item.image.startsWith('http') && (
+                                                <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/60 via-transparent to-black/10 pointer-events-none" />
+                                            )}
                                         </div>
                                     </div>
 
-                                    <div className={`lg:col-span-7 relative z-10 ${isEven ? "lg:order-2" : "lg:order-1"}`}>
+                                    <div className={`lg:col-span-6 relative z-10 ${isEven ? "lg:order-2" : "lg:order-1"}`}>
                                         <div className="flex items-center gap-3 mb-4">
                                             <div className="w-12 h-12 rounded-2xl bg-[#EEF4FF] border border-[#1A5CDD]/15 text-[#1A5CDD] flex items-center justify-center shadow-sm">
                                                 <Icon size={22} strokeWidth={2} />
@@ -535,7 +505,7 @@ export default function ContentMarketingClient() {
             {/* Content Marketing Process Section */}
             <section className="relative bg-white py-28 overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:32px_32px] opacity-30"></div>
-                
+
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-blue-50 blur-[120px] opacity-80"></div>
                     <div className="absolute top-1/3 -right-60 w-[500px] h-[500px] rounded-full bg-cyan-50 blur-[100px] opacity-60"></div>
@@ -571,12 +541,12 @@ export default function ContentMarketingClient() {
                                     <div className="w-14 h-14 shrink-0 rounded-2xl bg-slate-50 text-slate-400 flex items-center justify-center font-black text-xl group-hover:bg-blue-600 group-hover:text-white group-hover:shadow-[0_10px_20px_rgba(37,99,235,0.2)] transition-all duration-500 relative z-10 group-hover:-translate-y-1 border border-slate-100 group-hover:border-blue-600">
                                         {String(item.step).padStart(2, '0')}
                                     </div>
-                                    
+
                                     <div className="flex-1 h-[2px] bg-slate-100 relative overflow-hidden rounded-full">
                                         <div className="absolute left-0 top-0 bottom-0 w-0 bg-gradient-to-r from-blue-600 to-cyan-400 group-hover:w-full transition-all duration-1000 ease-out"></div>
                                     </div>
                                 </div>
-                                
+
                                 <div className="pr-4">
                                     <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
                                         {item.title}
@@ -613,13 +583,13 @@ export default function ContentMarketingClient() {
                         <div className="lg:w-1/2 relative">
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
                             <div className="relative group">
-                                <div className="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
-                                    <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden bg-slate-900">
+                                <div className="rounded-[40px] overflow-hidden">
+                                    <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden bg-transparent">
                                         <Image
-                                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+                                            src="/images/seo/why_syscorp_content.png"
                                             alt="Content Marketing Expertise"
                                             fill
-                                            className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                            className="object-contain transform group-hover:scale-105 transition-transform duration-700"
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                         />
                                     </div>
@@ -734,18 +704,18 @@ export default function ContentMarketingClient() {
                                     <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
                                     Frequently Asked Questions
                                 </span>
-                                
+
                                 <h2 className="text-4xl md:text-5xl font-extrabold text-[#011146] mb-6 tracking-tight leading-tight">
-                                    Your Questions <br/>
+                                    Your Questions <br />
                                     <span className="text-blue-600">Answered</span>
                                 </h2>
-                                
+
                                 <p className="text-slate-500 text-lg leading-relaxed mb-10">
                                     Find clear, honest answers to common questions from our team of experienced professionals.
                                 </p>
-                                
+
                                 <hr className="border-slate-200 mb-8" />
-                                
+
                                 <div className="flex items-center gap-4">
                                     <div className="flex -space-x-3">
                                         <div className="w-12 h-12 rounded-full border-2 border-white bg-slate-200 overflow-hidden relative shadow-sm">

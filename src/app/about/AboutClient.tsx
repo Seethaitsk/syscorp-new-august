@@ -88,7 +88,7 @@ const AboutClient = () => {
             <MissionVisionSection />
             <CoreValues />
 
-            <OurTeam />
+
             <ProcessSection />
             <WhyChooseUs />
             <TechExpertise />
