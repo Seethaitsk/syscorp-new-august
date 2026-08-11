@@ -297,30 +297,18 @@ export default function CRMDevelopmentClient() {
                             </div>
                         </div>
 
-                        <div className="lg:col-span-6 relative group flex justify-center lg:justify-end">
-                            <div className="w-full max-w-[500px] relative">
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-[#1A5CDD]/20 via-[#38bdf8]/15 to-[#1A5CDD]/20 rounded-[40px] blur-3xl opacity-50 group-hover:opacity-80 transition-opacity duration-700 pointer-events-none scale-110" />
+                        <div className="lg:col-span-6 relative group flex justify-center mt-8 lg:mt-0">
+                            <div className="w-full max-w-[600px] relative flex justify-center">
+                                {/* Ambient Glow */}
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-to-br from-[#1A5CDD]/15 to-[#38bdf8]/10 rounded-full blur-[80px] pointer-events-none -z-10 transition-opacity duration-700 group-hover:opacity-100 opacity-70" />
 
-                                <div className="relative rounded-[32px] overflow-hidden border border-slate-200/80 shadow-[0_30px_60px_rgba(1,17,70,0.12)] bg-white ring-4 ring-white group-hover:-translate-y-2 transition-transform duration-700">
-                                    <div className="h-12 bg-slate-50 border-b border-slate-100 flex items-center px-5 gap-3 w-full">
-                                        <div className="flex gap-2">
-                                            <div className="w-3.5 h-3.5 rounded-full bg-rose-400" />
-                                            <div className="w-3.5 h-3.5 rounded-full bg-amber-400" />
-                                            <div className="w-3.5 h-3.5 rounded-full bg-emerald-400" />
-                                        </div>
-                                        <div className="mx-auto bg-white h-7 w-2/3 max-w-[200px] rounded-md border border-slate-200 flex items-center px-4 justify-center shadow-sm">
-                                            <span className="text-xs text-slate-400 font-mono flex items-center gap-2">
-                                                crm.syscorp.com
-                                            </span>
-                                        </div>
-                                    </div>
-
+                                <div className="relative w-full lg:w-[115%] z-10 group/image">
                                     <Image
-                                        src="/images/crm-dashboard-showcase.png"
+                                        src="/images/webdevelopment/crm-1.png"
                                         alt="Enterprise CRM Analytics Dashboard"
                                         width={800}
                                         height={800}
-                                        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-1000"
+                                        className="w-full h-auto object-contain transform group-hover/image:scale-[1.02] transition-transform duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,17,70,0.15)]"
                                         priority
                                     />
                                 </div>

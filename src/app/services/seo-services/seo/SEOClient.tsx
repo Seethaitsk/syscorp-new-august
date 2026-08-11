@@ -246,70 +246,72 @@ export default function SEOClient() {
             />
 
             {/* Intro Section */}
-            <section className="py-20 lg:py-28 bg-[#F0F8FF]/60 relative overflow-hidden">
+            <section className="py-20 bg-[#F0F8FF]/60 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="gsap-fade-up">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        <div className="gsap-fade-up lg:col-span-6 lg:pr-8">
+                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1.5 text-[12px] font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Drive More Organic Traffic
-                            </span>
-                            <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6">
-                                Professional <span className="text-[#1A5CDD]">SEO Services</span> in Pondicherry
+                            </div>
+                            
+                            <h2 className="text-[32px] md:text-4xl lg:text-[46px] font-extrabold text-[#011146] tracking-tight mb-6 leading-[1.15]">
+                                Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">SEO Services</span> in Pondicherry
                             </h2>
-                            <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                                At SysCrop, we deliver result-driven SEO Services in Pondicherry to help businesses improve search engine rankings, increase organic traffic, generate qualified leads, and achieve long-term growth. As a trusted SEO Company Pondicherry, we use data-driven strategies and ethical SEO practices to deliver measurable results.
-                            </p>
-                            <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                                Our professional SEO in Pondicherry helps your business improve online visibility, attract the right audience, and stay ahead of the competition. We provide customized SEO solutions for startups, local businesses, eCommerce stores, healthcare, education, real estate, and enterprises. Whether you want to rank for local keywords, boost website traffic, improve brand visibility, or increase sales, our SEO Services in Pondicherry are designed for sustainable business growth.
+
+                            <h3 className="text-[#011146] text-[18px] md:text-[20px] leading-[1.6] mb-8 font-bold border-l-4 border-[#38bdf8] pl-4">
+                                Achieve Long-Term Growth with Data-Driven Optimization.
+                            </h3>
+
+                            <p className="text-[#011146] text-[15px] leading-[1.8] mb-3 font-medium">
+                                At SysCrop, we deliver result-driven <strong>SEO Services in Pondicherry</strong> to help businesses improve search engine rankings, increase organic traffic, generate qualified leads, and achieve long-term growth. As a trusted SEO Company Pondicherry, we use data-driven strategies and ethical SEO practices to deliver measurable results.
                             </p>
 
-                            <Link
-                                href="/contact"
-                                className="inline-flex items-center gap-2 bg-[#011146] text-white px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#1A5CDD] transition-all shadow-lg shadow-blue-900/10"
-                            >
-                                Get a Free SEO Audit <ArrowRight size={16} />
-                            </Link>
+                            <p className="text-slate-600 text-[15px] leading-[1.8] mb-3">
+                                Our professional SEO in Pondicherry helps your business improve online visibility, attract the right audience, and stay ahead of the competition. We provide customized SEO solutions for startups, local businesses, eCommerce stores, healthcare, education, real estate, and enterprises. 
+                            </p>
+                            <p className="text-slate-600 text-[15px] leading-[1.8] mb-4">
+                                Whether you want to rank for local keywords, boost website traffic, improve brand visibility, or increase sales, our SEO Services in Pondicherry are designed for sustainable business growth.
+                            </p>
+
+                            <div className="flex flex-wrap items-center gap-4 mt-0">
+                                <Link
+                                    href="/contact"
+                                    className="inline-flex items-center gap-2 bg-[#011146] text-white px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#1A5CDD] transition-all shadow-lg shadow-blue-900/10 hover:-translate-y-0.5"
+                                >
+                                    Get a Free SEO Audit <ArrowRight size={16} />
+                                </Link>
+                            </div>
                         </div>
-                        <div className="gsap-fade-up relative w-full h-[500px] md:h-[600px] flex items-center justify-center lg:justify-end mt-12 lg:mt-0">
-                            {/* Main Background Element to give depth */}
-                            <div className="absolute top-1/2 right-4 -translate-y-1/2 w-[80%] h-[95%] bg-[#F0F8FF] rounded-[40px] -z-10" />
+
+                        <div className="gsap-fade-up lg:col-span-6 relative w-full h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center mt-12 lg:mt-0">
+                            {/* Ambient Background Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#1A5CDD]/5 rounded-full blur-[80px] pointer-events-none -z-10" />
 
                             {/* Primary Large Image */}
-                            <div className="relative w-[85%] h-[85%] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.1)] border-[6px] border-white z-10 group">
+                            <div className="relative w-full h-full lg:scale-110 z-10 group">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+                                    src="/images/seo/seo-1.png"
                                     alt="SEO Analytics Dashboard"
                                     fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-[#011146]/10 group-hover:bg-transparent transition-colors duration-500" />
-                            </div>
-
-                            {/* Secondary Overlapping Image (Bottom Left) */}
-                            <div className="absolute -bottom-4 -left-2 lg:-left-6 w-[60%] h-[45%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.15)] border-[6px] border-white z-20 group">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
-                                    alt="SEO Strategy Team"
-                                    fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="object-contain drop-shadow-[0_20px_40px_rgba(0,17,70,0.15)] group-hover:scale-105 transition-transform duration-700 ease-out"
                                 />
                             </div>
 
                             {/* Floating Badge (Top Right) */}
-                            <div className="absolute top-6 -right-2 lg:-right-6 bg-white px-6 py-4 rounded-2xl shadow-xl flex items-center gap-4 border border-slate-100 z-30 animate-bounce-slow">
+                            <div className="absolute top-8 right-0 lg:-right-4 bg-white/95 backdrop-blur-md px-6 py-4 rounded-2xl shadow-[0_15px_35px_rgba(0,0,0,0.06)] flex items-center gap-4 border border-slate-100 z-30 hover:-translate-y-1 transition-transform duration-300 hidden sm:flex">
                                 <div className="w-12 h-12 bg-blue-50 text-[#1A5CDD] rounded-full flex items-center justify-center font-bold text-xl">
                                     <Target size={24} />
                                 </div>
                                 <div>
-                                    <p className="text-[#011146] font-extrabold text-sm">#1 Ranked</p>
-                                    <p className="text-slate-500 text-xs font-medium mt-0.5">SEO Agency</p>
+                                    <p className="text-[#011146] font-extrabold text-[15px] leading-none">#1 Ranked</p>
+                                    <p className="text-slate-500 text-[11px] font-semibold mt-1 uppercase tracking-wider">SEO Agency</p>
                                 </div>
                             </div>
 
                             {/* Decorative Dots */}
-                            <div className="absolute -top-6 left-12 w-24 h-24 bg-[radial-gradient(#1A5CDD_2px,transparent_2px)] [background-size:12px_12px] opacity-20 z-0" />
+                            <div className="absolute top-[10%] left-[10%] w-24 h-24 bg-[radial-gradient(#1A5CDD_2px,transparent_2px)] [background-size:16px_16px] opacity-15 z-0" />
                         </div>
                     </div>
                 </div>
@@ -578,8 +580,8 @@ export default function SEOClient() {
                                 <div className="relative mt-8 hidden lg:block group">
                                     {/* Soft glow behind image */}
                                     <div className="absolute inset-0 bg-gradient-to-br from-[#1A5CDD]/20 to-[#38bdf8]/20 rounded-3xl blur-2xl transform group-hover:scale-105 transition-transform duration-700 pointer-events-none"></div>
-                                    <div className="relative overflow-hidden rounded-[24px] border-[6px] border-white shadow-[0_20px_50px_rgba(26,92,221,0.15)]">
-                                        <img src="/images/on-page-seo-illustration.png" alt="On-Page SEO Optimization Dashboard" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                    <div className="relative overflow-hidden rounded-[24px] ">
+                                        <img src="/images/seo/seo-8.png" alt="On-Page SEO Optimization Dashboard" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                     </div>
                                 </div>
                             </div>
@@ -662,18 +664,17 @@ export default function SEOClient() {
                         </div>
 
                         {/* Right Side: Image Showcase */}
-                        <div className="lg:w-1/2 relative z-10 flex items-center justify-center p-4 lg:p-6">
+                        <div className="lg:w-1/2 relative z-10 flex items-center justify-center p-4 lg:p-6 mt-8 lg:mt-0">
                             {/* Ambient Glow */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#1A5CDD]/20 via-[#38bdf8]/10 to-transparent rounded-[36px] blur-2xl pointer-events-none" />
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#1A5CDD]/5 rounded-full blur-[80px] pointer-events-none -z-10" />
 
                             {/* Image Container */}
-                            <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_50px_rgba(1,17,70,0.12)] border-[6px] border-white z-10 w-full aspect-[4/3] group/image">
+                            <div className="relative w-full z-10 group/image lg:scale-110">
                                 <img
-                                    src="/images/technical-seo-bright.png"
+                                    src="/images/seo/seo-3.png"
                                     alt="Technical SEO Performance"
-                                    className="w-full h-full object-cover transform group-hover/image:scale-105 transition-transform duration-700"
+                                    className="w-full h-auto object-contain transform group-hover/image:scale-[1.02] transition-transform duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,17,70,0.15)]"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/20 via-transparent to-transparent pointer-events-none" />
                             </div>
 
                             {/* Floating Metric Badge */}
@@ -733,31 +734,31 @@ export default function SEOClient() {
                 <div className="container mx-auto px-4 relative max-w-7xl">
 
                     {/* Hero Split for Off-Page SEO */}
-                    <div className="flex flex-col lg:flex-row-reverse gap-16 lg:gap-20 items-center mb-20">
-                        {/* Right Side: Compact Text & Features */}
-                        <div className="lg:w-1/2 relative z-10">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-10">
+                        {/* Right Side: Compact Text & Features (DOM order 1, visually right on desktop) */}
+                        <div className="gsap-fade-up lg:col-span-6 lg:col-start-7 order-1 lg:order-2 relative z-10">
+                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1.5 text-[11px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]" />
                                 Off-Page SEO Services
                             </span>
 
-                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#011146] mb-4 leading-tight">
+                            <h2 className="text-[32px] md:text-4xl lg:text-[40px] font-extrabold text-[#011146] tracking-tight mb-6 leading-[1.15]">
                                 Strengthen Your Website Authority & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Organic Growth</span>
                             </h2>
 
-                            <p className="text-slate-600 text-[15px] leading-relaxed mb-5">
+                            <p className="text-slate-600 text-[15px] leading-[1.8] mb-8">
                                 At SysCrop, our Off-Page SEO Services strengthen your website's authority, credibility, and online reputation beyond your site. We implement strategic White Hat techniques including brand outreach, local citations, Google Business Profile optimization, and high-quality link building to boost domain authority and search engine rankings.
                             </p>
 
                             {/* Feature Pills */}
-                            <div className="grid grid-cols-2 gap-3 mb-5">
-                                <div className="bg-[#F8FAFC] border border-slate-100 rounded-xl p-3 flex items-center gap-2.5 shadow-sm">
+                            <div className="grid grid-cols-2 gap-3 mb-6">
+                                <div className="bg-[#F8FAFC] border border-slate-100 rounded-xl p-3 flex items-center gap-2.5 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
                                     <div className="w-5 h-5 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center shrink-0">
                                         <CheckCircle2 size={12} strokeWidth={3} />
                                     </div>
                                     <span className="text-[#011146] font-bold text-xs sm:text-[13px]">Ethical White Hat SEO</span>
                                 </div>
-                                <div className="bg-[#F8FAFC] border border-slate-100 rounded-xl p-3 flex items-center gap-2.5 shadow-sm">
+                                <div className="bg-[#F8FAFC] border border-slate-100 rounded-xl p-3 flex items-center gap-2.5 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
                                     <div className="w-5 h-5 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center shrink-0">
                                         <CheckCircle2 size={12} strokeWidth={3} />
                                     </div>
@@ -768,71 +769,44 @@ export default function SEOClient() {
                             {/* Compact Feature Cards Grid */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div className="bg-[#F8FAFC] border border-slate-100 rounded-2xl p-4 group hover:border-[#1A5CDD]/20 hover:bg-white hover:shadow-md transition-all duration-300">
-                                    <div className="flex items-center gap-2.5 mb-1.5">
+                                    <div className="flex items-center gap-2.5 mb-2">
                                         <div className="w-7 h-7 rounded-lg bg-blue-100/50 text-[#1A5CDD] flex items-center justify-center shrink-0 group-hover:bg-[#1A5CDD] group-hover:text-white transition-colors">
                                             <TrendingUp size={15} strokeWidth={2.5} />
                                         </div>
                                         <h4 className="text-[#011146] font-extrabold text-sm">Earn Greater Trust</h4>
                                     </div>
-                                    <p className="text-slate-500 text-xs leading-relaxed">
+                                    <p className="text-slate-500 text-xs leading-[1.6]">
                                         Earn greater trust from search engines and attract sustainable qualified organic traffic.
                                     </p>
                                 </div>
 
                                 <div className="bg-[#F8FAFC] border border-slate-100 rounded-2xl p-4 group hover:border-[#1A5CDD]/20 hover:bg-white hover:shadow-md transition-all duration-300">
-                                    <div className="flex items-center gap-2.5 mb-1.5">
+                                    <div className="flex items-center gap-2.5 mb-2">
                                         <div className="w-7 h-7 rounded-lg bg-blue-100/50 text-[#1A5CDD] flex items-center justify-center shrink-0 group-hover:bg-[#1A5CDD] group-hover:text-white transition-colors">
                                             <Globe size={15} strokeWidth={2.5} />
                                         </div>
                                         <h4 className="text-[#011146] font-extrabold text-sm">Measurable Results</h4>
                                     </div>
-                                    <p className="text-slate-500 text-xs leading-relaxed">
+                                    <p className="text-slate-500 text-xs leading-[1.6]">
                                         Expand digital presence and improve search visibility with custom off-page strategies.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Left Side: Image Composition */}
-                        <div className="lg:w-1/2 relative w-full h-[550px] md:h-[650px] flex items-center justify-center lg:justify-end mt-8 lg:mt-0">
+                        {/* Left Side: Image Composition (DOM order 2, visually left on desktop) */}
+                        <div className="gsap-fade-up lg:col-span-6 lg:col-start-1 order-2 lg:order-1 relative w-full h-[550px] md:h-[650px] flex items-center justify-center mt-8 lg:mt-0">
 
-                            {/* Main Background Blob to give depth */}
-                            <div className="absolute top-1/2 right-10 -translate-y-1/2 w-[70%] h-[95%] bg-[#F8FAFF] rounded-[40px] -z-10" />
+                            {/* Ambient Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#1A5CDD]/5 rounded-full blur-[80px] pointer-events-none -z-10" />
 
                             {/* Primary Large Image */}
-                            <div className="relative w-[75%] h-[85%] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.1)] group z-10 mr-8">
+                            <div className="relative w-[110%] h-[110%] group z-10 lg:-ml-8">
                                 <img
-                                    src="/images/off-page-seo-new.png"
+                                    src="/images/seo/seo-2.png"
                                     alt="Global Network Off-Page SEO"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,17,70,0.1)]"
                                 />
-                                <div className="absolute inset-0 bg-[#011146]/10 group-hover:bg-transparent transition-colors duration-500" />
-                            </div>
-
-                            {/* Secondary Overlapping Image (Bottom Left) */}
-                            <div className="absolute -bottom-2 left-4 lg:left-0 w-[55%] h-[40%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.15)] border-[8px] border-white z-20 group">
-                                <img
-                                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
-                                    alt="SEO Outreach Team"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                />
-                            </div>
-
-                            {/* Floating Badge (Left Side) */}
-                            <div className="absolute bottom-24 -left-4 bg-white/95 backdrop-blur-md px-6 py-4 rounded-2xl shadow-xl border border-slate-100 z-30 flex items-center gap-4 transform transition-transform hover:-translate-y-1">
-                                <div className="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center">
-                                    <TrendingUp size={20} strokeWidth={2.5} />
-                                </div>
-                                <div>
-                                    <p className="text-[#011146] font-extrabold text-[15px]">85k+</p>
-                                    <p className="text-slate-500 text-xs font-semibold mt-0.5">Organic Traffic Growth</p>
-                                </div>
-                            </div>
-
-                            {/* Floating Badge (Right Side) */}
-                            <div className="absolute top-20 -right-2 bg-white/95 backdrop-blur-md px-5 py-3 rounded-full shadow-lg border border-slate-100 z-30 flex items-center gap-2.5 transform transition-transform hover:-translate-y-1">
-                                <span className="w-2.5 h-2.5 rounded-full bg-[#1A5CDD] animate-pulse" />
-                                <p className="text-[#011146] font-bold text-sm">High Domain Authority</p>
                             </div>
                         </div>
                     </div>
@@ -931,32 +905,26 @@ export default function SEOClient() {
                         </div>
 
                         {/* Right Side: Image with Floating Badge */}
-                        <div className="lg:w-1/2 relative">
-                            {/* Decorative elements behind image */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
+                        <div className="lg:w-1/2 relative flex items-center justify-center mt-8 lg:mt-0">
+                            {/* Ambient Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#1A5CDD]/5 rounded-full blur-[80px] pointer-events-none -z-10" />
 
-                            <div className="relative group">
-                                <div className="rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(26,92,221,0.12)] border-[6px] border-white bg-white">
-                                    <div className="w-full h-[380px] flex items-center justify-center relative overflow-hidden bg-slate-900">
-                                        <Image
-                                            src="/images/seo/keyword-research.png"
-                                            alt="Keyword Research Services Illustration"
-                                            fill
-                                            className="object-cover transform group-hover:scale-105 transition-transform duration-700"
-                                            sizes="(max-width: 768px) 100vw, 50vw"
-                                        />
-                                    </div>
+                            <div className="relative w-[110%] lg:w-[125%] z-10 group/image lg:-ml-6">
+                                <img
+                                    src="/images/seo/seo-4.png"
+                                    alt="Keyword Research Services Illustration"
+                                    className="w-full h-auto object-contain transform group-hover/image:scale-[1.02] transition-transform duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,17,70,0.15)]"
+                                />
+                            </div>
+
+                            {/* Floating Badge */}
+                            <div className="absolute -bottom-2 -right-2 md:-bottom-5 md:-right-5 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl shadow-xl border border-slate-100 max-w-[210px] transform group-hover/image:-translate-y-1.5 transition-transform duration-500 hidden md:flex items-center gap-3.5 z-20">
+                                <div className="w-10 h-10 bg-blue-50 text-[#1A5CDD] rounded-xl flex items-center justify-center shrink-0">
+                                    <Target size={20} strokeWidth={2.5} />
                                 </div>
-
-                                {/* Floating Badge */}
-                                <div className="absolute -bottom-5 -right-5 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl shadow-xl border border-slate-100 max-w-[210px] transform group-hover:-translate-y-1.5 transition-transform duration-500 hidden md:flex items-center gap-3.5 z-20">
-                                    <div className="w-10 h-10 bg-blue-50 text-[#1A5CDD] rounded-xl flex items-center justify-center shrink-0">
-                                        <Target size={20} strokeWidth={2.5} />
-                                    </div>
-                                    <div>
-                                        <span className="font-extrabold text-base text-[#011146] block">Targeted</span>
-                                        <p className="text-xs font-semibold text-slate-500 leading-snug">High-Intent Keywords</p>
-                                    </div>
+                                <div>
+                                    <span className="font-extrabold text-base text-[#011146] block">Targeted</span>
+                                    <p className="text-xs font-semibold text-slate-500 leading-snug">High-Intent Keywords</p>
                                 </div>
                             </div>
                         </div>
@@ -1059,12 +1027,12 @@ export default function SEOClient() {
 
                         {/* Left Side: Graphic */}
                         <div className="lg:w-1/2 relative">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] -z-10 pointer-events-none" />
                             <div className="relative group">
-                                <div className="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
-                                    <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden bg-slate-900">
+                                <div className="rounded-[40px] overflow-hidden ">
+                                    <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden ">
                                         <Image
-                                            src="/images/seo/seo-audit.png"
+                                            src="/images/seo/seo-5.png"
                                             alt="SEO Audit Services Illustration"
                                             fill
                                             className="object-cover transform group-hover:scale-110 transition-transform duration-700"
@@ -1169,15 +1137,15 @@ export default function SEOClient() {
 
                         {/* Right Side: Graphic */}
                         <div className="lg:w-1/2 relative">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full blur-3xl -z-10 pointer-events-none" />
                             <div className="relative group">
-                                <div className="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
-                                    <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden bg-slate-900">
+                                <div className="rounded-[40px] overflow-hidden ">
+                                    <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden ">
                                         <Image
-                                            src="/images/seo/seo-reporting.png"
+                                            src="/images/seo/seo-6.png"
                                             alt="SEO Reporting Services Illustration"
                                             fill
-                                            className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                            className="object-cover transform transition-transform duration-700"
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                         />
                                     </div>
@@ -1299,15 +1267,15 @@ export default function SEOClient() {
 
                         {/* Left Side: Graphic */}
                         <div className="lg:w-1/2 relative">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full blur-3xl -z-10 pointer-events-none" />
                             <div className="relative group">
-                                <div className="rounded-[40px] overflow-hidden shadow-2xl border-8 border-white bg-white">
-                                    <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden bg-slate-900">
+                                <div className="rounded-[40px] overflow-hidden ">
+                                    <div className="w-full h-[400px] flex items-center justify-center relative overflow-hidden ">
                                         <Image
-                                            src="/images/seo/content-optimization.png"
+                                            src="/images/seo/seo-7.png"
                                             alt="Content Optimization Services Illustration"
                                             fill
-                                            className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                            className="object-cover transform transition-transform duration-700"
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                         />
                                     </div>

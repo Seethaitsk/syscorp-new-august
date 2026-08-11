@@ -23,6 +23,7 @@ if (typeof window !== "undefined") {
 export default function ERPDevelopmentClient() {
     const mainRef = useRef<HTMLDivElement>(null);
     const processSliderRef = useRef<HTMLDivElement>(null);
+    const [showMoreERPDesc, setShowMoreERPDesc] = useState(false);
     
     // Auto-slide effect for ERP Process Slider
     useEffect(() => {
@@ -366,7 +367,7 @@ export default function ERPDevelopmentClient() {
             />
 
             {/* SECTION 1: Intro Hero Section */}
-            <section className="py-20 bg-[#F8FAFC] relative overflow-hidden">
+            <section className="pt-20 pb-8 lg:pb-0 bg-[#F8FAFC] relative overflow-hidden">
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -382,21 +383,33 @@ export default function ERPDevelopmentClient() {
                                 Transform Your Business with  <br className="hidden lg:block" /> <span className="text-[#1A5CDD]">Custom ERP Development Services</span>
                             </h2>
 
-                            <div className="hero-animate space-y-6 text-slate-600 text-lg md:text-xl md:leading-relaxed font-medium">
+                            <div className="hero-animate space-y-6 text-slate-600 text-base lg:text-[17px] md:leading-relaxed font-medium">
                                 <p>
                                     Modern businesses need integrated ERP solutions to streamline operations, improve productivity, and support data-driven decision-making. Our intelligent ERP systems simplify complex workflows, automate business processes, and drive long-term growth.
                                 </p>
                                 <p>
                                     As a trusted provider of <strong className="text-[#011146] font-extrabold">ERP Development in Pondicherry</strong>, we design and develop customized ERP software for startups, SMEs, and enterprises. Our solutions automate daily operations, improve collaboration, and provide real-time business insights across all industries.
                                 </p>
-                                <p>
-                                    If you're looking for a reliable ERP Development Company in Pondicherry, we deliver secure, scalable, and cloud-enabled ERP solutions with end-to-end development, implementation, integration, and ongoing support.
-                                </p>
+                                {showMoreERPDesc && (
+                                    <p className="animate-in fade-in slide-in-from-top-2 duration-500">
+                                        If you're looking for a reliable ERP Development Company in Pondicherry, we deliver secure, scalable, and cloud-enabled ERP solutions with end-to-end development, implementation, integration, and ongoing support.
+                                    </p>
+                                )}
+                                <button 
+                                    onClick={() => setShowMoreERPDesc(!showMoreERPDesc)}
+                                    className="group inline-flex items-center gap-2 px-5 py-2.5 text-[15px] font-bold text-[#1A5CDD] bg-blue-50/80 hover:bg-blue-100/80 border border-blue-100/50 hover:border-blue-200/60 rounded-full transition-all duration-300 focus:outline-none shadow-sm"
+                                >
+                                    {showMoreERPDesc ? "Read Less" : "Read More"}
+                                    <ChevronDown 
+                                        size={18} 
+                                        className={`transition-transform duration-300 ${showMoreERPDesc ? 'rotate-180' : 'group-hover:translate-y-0.5'}`} 
+                                    />
+                                </button>
                             </div>
 
                             <Link
                                 href="/contact"
-                                className="hero-animate group relative inline-flex items-center gap-3 bg-[#011146] text-white px-8 py-4 rounded-xl font-bold text-[15px] transition-all duration-300 shadow-lg shadow-blue-950/20 hover:bg-[#1A5CDD] hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(26,92,221,0.3)] mt-6 overflow-hidden"
+                                className="group relative inline-flex items-center gap-3 bg-[#011146] text-white px-8 py-4 rounded-xl font-bold text-[15px] transition-all duration-300 shadow-lg shadow-blue-950/20 hover:bg-[#1A5CDD] hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(26,92,221,0.3)] mt-6 overflow-hidden"
                             >
                                 <span className="relative z-10">Discuss Your ERP Project</span>
                                 <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1.5 transition-transform duration-300" />
@@ -404,30 +417,18 @@ export default function ERPDevelopmentClient() {
                         </div>
 
                         {/* Right Side Image / Browser Frame */}
-                        <div className="lg:col-span-6 relative group flex justify-center lg:justify-end hero-animate">
-                            <div className="w-full max-w-[500px] relative">
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-[#1A5CDD]/20 via-[#38bdf8]/15 to-[#1A5CDD]/20 rounded-[40px] blur-3xl opacity-50 group-hover:opacity-80 transition-opacity duration-700 pointer-events-none scale-110" />
+                        <div className="lg:col-span-6 relative group flex justify-center mt-8 lg:mt-0 hero-animate">
+                            <div className="w-full max-w-[600px] relative flex justify-center">
+                                {/* Ambient Glow */}
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-to-br from-[#1A5CDD]/15 to-[#38bdf8]/10 rounded-full blur-[80px] pointer-events-none -z-10 transition-opacity duration-700 group-hover:opacity-100 opacity-70" />
 
-                                <div className="relative rounded-[32px] overflow-hidden border border-slate-200/80 shadow-[0_30px_60px_rgba(1,17,70,0.12)] bg-white ring-4 ring-white group-hover:-translate-y-2 transition-transform duration-700">
-                                    <div className="h-12 bg-slate-50 border-b border-slate-100 flex items-center px-5 gap-3 w-full">
-                                        <div className="flex gap-2">
-                                            <div className="w-3.5 h-3.5 rounded-full bg-rose-400" />
-                                            <div className="w-3.5 h-3.5 rounded-full bg-amber-400" />
-                                            <div className="w-3.5 h-3.5 rounded-full bg-emerald-400" />
-                                        </div>
-                                        <div className="mx-auto bg-white h-7 w-2/3 max-w-[200px] rounded-md border border-slate-200 flex items-center px-4 justify-center shadow-sm">
-                                            <span className="text-xs text-slate-400 font-mono flex items-center gap-2">
-                                                erp.syscorp.com
-                                            </span>
-                                        </div>
-                                    </div>
-
+                                <div className="relative w-full z-10 group/image">
                                     <Image
-                                        src="/images/erp_software_dashboard_hero.png"
+                                        src="/images/webdevelopment/erp-1.png"
                                         alt="ERP Development in Pondicherry"
                                         width={800}
                                         height={800}
-                                        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-1000"
+                                        className="w-full h-auto object-contain transform group-hover/image:scale-[1.02] transition-transform duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,17,70,0.15)]"
                                         priority
                                     />
                                 </div>
@@ -464,7 +465,7 @@ export default function ERPDevelopmentClient() {
 
                                     <div className="relative w-full aspect-[4/3] overflow-hidden bg-slate-950">
                                         <Image
-                                            src="/images/erp_software_dashboard_hero.png"
+                                            src="/images/webdevelopment/erp-2.png"
                                             alt="Custom ERP Software Dashboard in Pondicherry"
                                             width={600}
                                             height={450}
