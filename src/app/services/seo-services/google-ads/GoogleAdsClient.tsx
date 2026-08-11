@@ -245,71 +245,15 @@ export default function GoogleAdsClient() {
 
                         {/* Image Right Side */}
                         <div className="gsap-fade-up lg:w-1/2 w-full relative mt-16 lg:mt-0">
-                            <div className="absolute -inset-4 bg-gradient-to-tr from-[#1A5CDD]/20 to-[#38bdf8]/20 rounded-[40px] blur-xl opacity-50 -z-10" />
-                            <div className="absolute -top-8 -right-8 w-64 h-64 bg-[radial-gradient(#1A5CDD_2px,transparent_2px)] [background-size:24px_24px] opacity-20 -z-10 animate-[spin_60s_linear_infinite]" />
-
-                            <div className="absolute -bottom-8 -left-8 w-2/3 h-1/2 border-b-4 border-l-4 border-[#1A5CDD] rounded-bl-[80px] -z-10">
-                                <div className="absolute bottom-[-10px] right-0 w-4 h-4 rounded-full bg-[#1A5CDD] shadow-[0_0_15px_rgba(26,92,221,0.6)]" />
-                            </div>
-
-                            <div className="relative w-full aspect-[4/3] rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)] border-[8px] border-white group bg-white">
-                                <div className="absolute inset-0 bg-[#011146]/10 z-10 group-hover:bg-transparent transition-colors duration-700" />
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-[80px] -z-10 pointer-events-none" />
+                            <div className="relative w-full h-[420px] sm:h-[480px] lg:h-[540px] xl:h-[580px] flex items-center justify-center">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
+                                    src="/images/seo/leading_googleads.svg"
                                     alt="Google Ads Team"
                                     fill
-                                    className="object-cover transform group-hover:scale-110 transition-transform duration-1000"
+                                    className="object-contain transform group-hover:scale-105 transition-transform duration-700"
+                                    priority
                                 />
-                            </div>
-
-                            <div className="absolute -bottom-10 -right-10 bg-white/90 backdrop-blur-md rounded-2xl p-5 shadow-[0_20px_40px_rgba(0,0,0,0.12)] border border-white z-20 flex flex-col gap-3 min-w-[220px] transform hover:-translate-y-2 transition-transform duration-500">
-                                <div className="flex items-center justify-between">
-                                    <div className="flex items-center gap-2">
-                                        <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
-                                            <TrendingUp size={16} strokeWidth={3} />
-                                        </div>
-                                        <span className="font-bold text-[#011146] text-[15px]">Conversion Rate</span>
-                                    </div>
-                                </div>
-                                <div className="flex items-end gap-3">
-                                    <span className="text-3xl font-black text-[#1A5CDD]">+45%</span>
-                                    <span className="text-[12px] font-bold text-emerald-500 mb-1 flex items-center"><ChevronDown size={14} className="rotate-180" /> 12% vs last month</span>
-                                </div>
-                                <div className="w-full h-8 flex items-end gap-1 mt-2">
-                                    {[30, 45, 25, 60, 40, 75, 55, 90].map((height, idx) => (
-                                        <div key={idx} className="flex-1 bg-gradient-to-t from-[#1A5CDD]/20 to-[#1A5CDD]/80 rounded-t-sm" style={{ height: `${height}%` }}></div>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="absolute top-10 -left-12 bg-white rounded-2xl px-5 py-3 shadow-[0_15px_30px_rgba(0,0,0,0.1)] border border-slate-50 z-20 flex items-center gap-3 animate-[bounce_4s_infinite]">
-                                <div className="w-10 h-10 bg-[#EEF4FF] rounded-full flex items-center justify-center">
-                                    <Target className="text-[#3B82F6]" size={20} />
-                                </div>
-                                <div>
-                                    <p className="text-[11px] uppercase tracking-wider text-slate-400 font-bold">Targeting</p>
-                                    <p className="text-[14px] font-extrabold text-[#011146]">Precision Reach</p>
-                                </div>
-                            </div>
-
-                            <div className="absolute -top-4 -right-4 bg-white px-5 py-3 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex items-center gap-3 border border-slate-50 z-30 min-w-[200px]">
-                                <div className="w-10 h-10 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
-                                    <ShieldCheck size={20} className="text-emerald-500" />
-                                </div>
-                                <div>
-                                    <p className="text-[#011146] font-extrabold text-[15px] mb-0.5">Google Partner</p>
-                                    <p className="text-slate-500 text-[12px] font-medium leading-[1.3]">Certified Experts</p>
-                                </div>
-                            </div>
-
-                            <div className="absolute -bottom-6 -left-6 bg-white px-6 py-4 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.08)] flex items-center gap-4 border border-slate-50 z-30 min-w-[210px]">
-                                <div className="w-12 h-12 bg-[#EEF4FF] text-[#3B82F6] rounded-full flex items-center justify-center shrink-0">
-                                    <Activity size={24} strokeWidth={2.5} />
-                                </div>
-                                <div>
-                                    <h4 className="text-[#011146] font-extrabold text-[20px] mb-0.5">200+</h4>
-                                    <p className="text-slate-500 text-[12px] font-medium leading-[1.3]">Active Campaigns</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -386,26 +330,17 @@ export default function GoogleAdsClient() {
                             </div>
                         </div>
 
-                        <div className="lg:w-[45%] w-full relative min-h-[480px]">
-                            <div className="absolute -top-4 right-0 w-[82%] h-[68%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.12)] border-[6px] border-white z-10 group/main bg-white">
+                        <div className="lg:w-[45%] w-full relative">
+                            <div className="relative w-full h-[400px] lg:h-[440px] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.12)] border-[8px] border-white z-10 group/main bg-white">
                                 <img
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+                                    src="/images/seo/why_googleads_imp.svg"
                                     alt="Google Ads Performance Impact"
                                     className="w-full h-full object-cover transform group-hover/main:scale-105 transition-transform duration-700"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/15 to-transparent pointer-events-none" />
                             </div>
 
-                            <div className="absolute -bottom-4 left-0 w-[58%] h-[50%] rounded-[20px] overflow-hidden shadow-[0_25px_60px_rgba(1,17,70,0.15)] border-[6px] border-white z-20 group/secondary bg-white">
-                                <img
-                                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
-                                    alt="Google Ads Campaign Dashboard"
-                                    className="w-full h-full object-cover transform group-hover/secondary:scale-105 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/10 to-transparent pointer-events-none" />
-                            </div>
-
-                            <div className="absolute top-8 left-0 bg-white/95 backdrop-blur-xl px-5 py-4 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-slate-100 z-30 flex items-center gap-3.5 transform transition-transform hover:-translate-y-1 hidden md:flex">
+                            <div className="absolute -top-6 -left-4 bg-white/95 backdrop-blur-xl px-5 py-4 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-slate-100 z-30 flex items-center gap-3.5 transform transition-transform hover:-translate-y-1 hidden md:flex">
                                 <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] flex items-center justify-center shadow-sm">
                                     <TrendingUp className="text-white" size={20} strokeWidth={2.5} />
                                 </div>
@@ -415,7 +350,7 @@ export default function GoogleAdsClient() {
                                 </div>
                             </div>
 
-                            <div className="absolute bottom-12 right-0 bg-white/95 backdrop-blur-xl px-5 py-4 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-slate-100 z-30 flex items-center gap-3.5 transform transition-transform hover:-translate-y-1 hidden md:flex">
+                            <div className="absolute -bottom-6 -right-4 bg-white/95 backdrop-blur-xl px-5 py-4 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-slate-100 z-30 flex items-center gap-3.5 transform transition-transform hover:-translate-y-1 hidden md:flex">
                                 <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#10B981] to-[#059669] flex items-center justify-center shadow-sm">
                                     <BarChart className="text-white" size={20} strokeWidth={2.5} />
                                 </div>
@@ -457,9 +392,9 @@ export default function GoogleAdsClient() {
 
                                 <div className="relative mt-12 hidden lg:block">
                                     <div className="absolute -top-4 -left-4 w-32 h-32 bg-[radial-gradient(#1A5CDD_1.5px,transparent_1.5px)] [background-size:24px_24px] opacity-20 -z-10" />
-                                    <div className="w-full aspect-[4/3] rounded-tl-[60px] rounded-br-[60px] rounded-tr-[24px] rounded-bl-[24px] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.08)] border-4 border-white bg-white">
+                                    <div className="w-full aspect-[4/3] rounded-tl-[60px] rounded-br-[60px] rounded-tr-[24px] rounded-bl-[24px] overflow-hidden border-4 border-white bg-white">
                                         <Image
-                                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
+                                            src="/images/seo/benefits_googleads.svg"
                                             alt="Google Ads Data"
                                             fill
                                             className="object-cover"
@@ -524,7 +459,7 @@ export default function GoogleAdsClient() {
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#38bdf8]/60 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_2s_infinite]" />
 
                                     <div className="relative h-full bg-[#031B66]/90 backdrop-blur-xl rounded-[27px] p-8 overflow-hidden z-10 border border-white/10 group-hover:border-transparent transition-colors duration-500 flex flex-col">
-                                        
+
                                         <div className="absolute -top-24 -left-24 w-64 h-64 bg-gradient-to-br from-[#38bdf8]/40 to-[#1A5CDD]/10 blur-[60px] rounded-full transition-opacity duration-700 opacity-0 group-hover:opacity-100 pointer-events-none" />
 
                                         <div className="mb-8 relative z-10">
@@ -610,44 +545,17 @@ export default function GoogleAdsClient() {
                     <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 mb-16">
                         <div className="lg:w-1/2 w-full relative mb-12 lg:mb-0">
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-[80px] -z-10 pointer-events-none" />
-                            
+
                             <div className="relative group">
-                                <div className="rounded-[40px] overflow-hidden shadow-[0_20px_60px_rgba(1,17,70,0.1)] border-[8px] border-white bg-white relative">
-                                    <div className="w-full h-[400px] lg:h-[480px] relative overflow-hidden bg-slate-100">
-                                        <Image
-                                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
-                                            alt="Google Ads Expertise"
-                                            fill
-                                            className="object-cover transform group-hover:scale-105 transition-transform duration-1000"
-                                            sizes="(max-width: 768px) 100vw, 50vw"
-                                        />
-                                        <div className="absolute inset-0 bg-[#011146]/5 group-hover:bg-transparent transition-colors duration-700 pointer-events-none" />
-                                    </div>
-                                </div>
-
-                                <div className="absolute -top-6 -right-6 bg-white/95 backdrop-blur-md px-6 py-4 rounded-[20px] shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-slate-100 z-30 flex items-center gap-4 transform transition-transform hover:-translate-y-1 hidden md:flex animate-[bounce_4s_infinite]">
-                                    <div className="w-12 h-12 rounded-full bg-[#EEF4FF] flex items-center justify-center text-[#1A5CDD] shrink-0">
-                                        <BarChart size={22} strokeWidth={2.5} />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-extrabold text-[#011146] text-[18px] leading-tight">+270%</h4>
-                                        <p className="text-slate-500 text-[12px] font-semibold mt-0.5">ROI Growth</p>
-                                    </div>
-                                </div>
-
-                                <div className="absolute -bottom-8 -left-8 bg-white/95 backdrop-blur-md p-6 rounded-[24px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-100 max-w-[240px] transform group-hover:-translate-y-2 transition-transform duration-500 hidden md:block z-30">
-                                    <div className="flex items-center gap-3 mb-3">
-                                        <div className="w-12 h-12 bg-gradient-to-br from-[#1A5CDD] to-[#38bdf8] text-white rounded-[14px] flex items-center justify-center shadow-md">
-                                            <TrendingUp size={24} strokeWidth={2.5} />
-                                        </div>
-                                        <div>
-                                            <span className="font-black text-2xl text-[#011146]">Top Tier</span>
-                                            <p className="text-[11px] font-bold text-[#1A5CDD] uppercase tracking-wider">Performance</p>
-                                        </div>
-                                    </div>
-                                    <p className="text-[13px] font-medium text-slate-500 leading-relaxed border-t border-slate-100 pt-3">
-                                        Data-driven Google Ads strategies for maximum returns.
-                                    </p>
+                                <div className="w-full h-[440px] lg:h-[520px] relative flex items-center justify-center">
+                                    <Image
+                                        src="/images/seo/why_choose_googleads.svg"
+                                        alt="Google Ads Expertise"
+                                        fill
+                                        className="object-contain filter drop-shadow-[0_15px_35px_rgba(1,17,70,0.12)] transform group-hover:scale-105 transition-all duration-700"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        priority
+                                    />
                                 </div>
                             </div>
                         </div>

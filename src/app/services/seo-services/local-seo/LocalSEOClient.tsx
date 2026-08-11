@@ -194,28 +194,21 @@ export default function LocalSEOClient() {
                                 >
                                     Get a Free Local SEO Audit <ArrowRight size={16} />
                                 </Link>
-                               
+
                             </div>
                         </div>
                         <div className="gsap-fade-up relative w-full h-[500px] md:h-[600px] flex items-center justify-center lg:justify-end mt-12 lg:mt-0">
                             <div className="absolute top-1/2 right-4 -translate-y-1/2 w-[80%] h-[95%] bg-[#F0F8FF] rounded-[40px] -z-10" />
                             <div className="relative w-[85%] h-[85%] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.1)] border-[6px] border-white z-10 group">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop"
+                                    src="/images/seo/connect_with_customers.svg"
                                     alt="Local Search Map Visualization"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
                                 <div className="absolute inset-0 bg-[#011146]/10 group-hover:bg-transparent transition-colors duration-500" />
                             </div>
-                            <div className="absolute -bottom-4 -left-2 lg:-left-6 w-[60%] h-[45%] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.15)] border-[6px] border-white z-20 group">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop"
-                                    alt="Customer Using Local Search"
-                                    fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                                />
-                            </div>
+
                             <div className="absolute top-6 -right-2 lg:-right-6 bg-white px-6 py-4 rounded-2xl shadow-xl flex items-center gap-4 border border-slate-100 z-30 animate-bounce-slow">
                                 <div className="w-12 h-12 bg-blue-50 text-[#1A5CDD] rounded-full flex items-center justify-center font-bold text-xl">
                                     <MapPin size={24} />
@@ -315,7 +308,7 @@ export default function LocalSEOClient() {
                             <div className="absolute inset-4 bg-[#1A5CDD]/5 rounded-[32px] transform rotate-3 pointer-events-none" />
                             <div className="absolute inset-4 bg-[#38bdf8]/10 rounded-[32px] transform -rotate-2 pointer-events-none" />
                             <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-[8px] border-white z-10 w-full aspect-[4/3] group/image">
-                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop" alt="Local SEO Analytics" className="w-full h-full object-cover transform group-hover/image:scale-110 transition-transform duration-700" />
+                                <img src="/images/seo/why_local_seo.svg" alt="Local SEO Analytics" className="w-full h-full object-cover transform group-hover/image:scale-110 transition-transform duration-700" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/20 to-transparent pointer-events-none" />
                             </div>
                         </div>
@@ -341,7 +334,7 @@ export default function LocalSEOClient() {
                             </p>
 
                             <div className="relative w-full h-[320px] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(26,92,221,0.1)] border-[8px] border-white group hidden sm:block">
-                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Local SEO Growth" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <img src="/images/seo/benefits_seo.svg" alt="Local SEO Growth" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/60 to-transparent pointer-events-none" />
                                 <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 flex items-center gap-4">
                                     <div className="w-12 h-12 rounded-full bg-[#1A5CDD] text-white flex items-center justify-center shrink-0 shadow-lg">
@@ -381,7 +374,7 @@ export default function LocalSEOClient() {
             <section className="py-20 bg-[#011146] relative overflow-hidden rounded-[40px] mx-4 lg:mx-auto max-w-[96%] mt-12 mb-32">
                 {/* Blueprint Grid Background Pattern */}
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
-                
+
                 {/* Subtle Radial Glow in Center */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#1A5CDD]/20 blur-[120px] rounded-full pointer-events-none" />
 
@@ -486,7 +479,7 @@ export default function LocalSEOClient() {
                             Why Choose SysCrop for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Local SEO</span>?
                         </h2>
                         <p className="text-slate-600 text-[16px] md:text-[17px] leading-relaxed max-w-3xl mx-auto">
-                            We help businesses improve their local search presence by creating SEO strategies based on their industry, audience, service areas, and goals. Our Local SEO approach focuses on improving rankings, increasing online visibility, managing reputation, and helping businesses connect with customers who are actively searching for their services.  
+                            We help businesses improve their local search presence by creating SEO strategies based on their industry, audience, service areas, and goals. Our Local SEO approach focuses on improving rankings, increasing online visibility, managing reputation, and helping businesses connect with customers who are actively searching for their services.
                         </p>
                     </div>
 
@@ -559,7 +552,7 @@ export default function LocalSEOClient() {
                     }
                 `}} />
 
-                <div 
+                <div
                     className="relative z-10 flex flex-col gap-6 overflow-hidden py-4"
                     style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)', WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}
                 >
@@ -595,23 +588,23 @@ export default function LocalSEOClient() {
             <section className="py-20 bg-[#F8FAFC]">
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
-                        
+
                         {/* Left Column - Content */}
                         <div className="lg:w-1/3 flex flex-col justify-start top-32">
                             <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
                                 FREQUENTLY ASKED QUESTIONS
                             </div>
-                            
+
                             <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
                                 Your Questions <br />
                                 <span className="text-[#1A5CDD]">Answered</span>
                             </h2>
-                            
+
                             <p className="text-slate-500 text-[15.5px] leading-relaxed mb-10 max-w-sm">
                                 Find clear, honest answers to common questions from our team of experienced professionals.
                             </p>
-                            
+
 
                             {/* Avatars */}
                             <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
@@ -635,9 +628,9 @@ export default function LocalSEOClient() {
                                 {faqs.map((faq, index) => (
                                     <div
                                         key={index}
-                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index 
-                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]" 
-                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
+                                        className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${activeFaq === index
+                                            ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]"
+                                            : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
                                             }`}
                                     >
                                         <button
