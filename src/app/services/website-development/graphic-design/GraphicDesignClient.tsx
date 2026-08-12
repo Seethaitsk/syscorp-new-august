@@ -465,7 +465,7 @@ export default function GraphicDesignClient() {
                                 {/* Expanding the image container */}
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] lg:w-[140%] lg:h-[140%]">
                                     <Image
-                                        src="/images/webdevelopment/graphic_design.svg"
+                                        src="/images/webdevelopment/graphic_design.png"
                                         alt="Graphic Design Services in Pondicherry"
                                         fill
                                         className="object-contain transform transition-transform duration-700 ease-out z-10"
@@ -530,7 +530,7 @@ export default function GraphicDesignClient() {
                             <div className="relative w-full h-[350px] sm:h-[450px] lg:h-[550px] group overflow-visible">
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] lg:w-[130%] lg:h-[130%]">
                                     <Image
-                                        src="/images/webdevelopment/graphic_design_1.svg"
+                                        src="/images/webdevelopment/graphic_design_1.png"
                                         alt="Graphic Design Studio Work"
                                         fill
                                         className="object-contain transform transition-transform duration-700 ease-out z-10"

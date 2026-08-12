@@ -590,7 +590,7 @@ export default function MetaAdsClient() {
                                 <div className="rounded-[40px] overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.06)] border border-slate-100 transition-all duration-500 group-hover:shadow-[0_30px_60px_rgba(26,92,221,0.1)]">
                                     <div className="w-full h-[280px] md:h-[340px] lg:h-[380px] relative flex items-center justify-center p-8">
                                         <Image
-                                            src="/images/seo/meta_add.svg"
+                                            src="/images/seo/meta_add.png"
                                             alt="Meta Ads Expertise"
                                             fill
                                             className="object-contain p-4 transform group-hover:scale-[1.03] transition-transform duration-700 ease-out mix-blend-multiply"
