@@ -185,7 +185,7 @@ export default function EmailMarketingClient() {
                             {/* Primary Large Image */}
                             <div className="relative w-full h-full lg:scale-110 z-10">
                                 <Image
-                                    src="/images/seo/email_marketing.svg"
+                                    src="/images/seo/email_marketing.png"
                                     alt="Email Marketing Campaigns"
                                     fill
                                     className="object-contain drop-shadow-2xl"

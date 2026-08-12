@@ -201,7 +201,7 @@ export default function LocalSEOClient() {
                             <div className="absolute top-1/2 right-4 -translate-y-1/2 w-[80%] h-[95%] bg-[#F0F8FF] rounded-[40px] -z-10" />
                             <div className="relative w-[85%] h-[85%] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.1)] border-[6px] border-white z-10 group">
                                 <Image
-                                    src="/images/seo/connect_with_customers.svg"
+                                    src="/images/seo/connect_with_customers.png"
                                     alt="Local Search Map Visualization"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -308,7 +308,7 @@ export default function LocalSEOClient() {
                             <div className="absolute inset-4 bg-[#1A5CDD]/5 rounded-[32px] transform rotate-3 pointer-events-none" />
                             <div className="absolute inset-4 bg-[#38bdf8]/10 rounded-[32px] transform -rotate-2 pointer-events-none" />
                             <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-[8px] border-white z-10 w-full aspect-[4/3] group/image">
-                                <img src="/images/seo/why_local_seo.svg" alt="Local SEO Analytics" className="w-full h-full object-cover transform group-hover/image:scale-110 transition-transform duration-700" />
+                                <img src="/images/seo/why_local_seo.png" alt="Local SEO Analytics" className="w-full h-full object-cover transform group-hover/image:scale-110 transition-transform duration-700" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/20 to-transparent pointer-events-none" />
                             </div>
                         </div>
@@ -334,7 +334,7 @@ export default function LocalSEOClient() {
                             </p>
 
                             <div className="relative w-full h-[320px] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(26,92,221,0.1)] border-[8px] border-white group hidden sm:block">
-                                <img src="/images/seo/benefits_seo.svg" alt="Local SEO Growth" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <img src="/images/seo/benefits_seo.png" alt="Local SEO Growth" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/60 to-transparent pointer-events-none" />
                                 <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 flex items-center gap-4">
                                     <div className="w-12 h-12 rounded-full bg-[#1A5CDD] text-white flex items-center justify-center shrink-0 shadow-lg">

@@ -248,10 +248,10 @@ export default function GoogleAdsClient() {
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-[80px] -z-10 pointer-events-none" />
                             <div className="relative w-full h-[420px] sm:h-[480px] lg:h-[540px] xl:h-[580px] flex items-center justify-center">
                                 <Image
-                                    src="/images/seo/leading_googleads.svg"
+                                    src="/images/seo/leading_googleads.png"
                                     alt="Google Ads Team"
                                     fill
-                                    className="object-contain transform group-hover:scale-105 transition-transform duration-700"
+                                    className="object-contain transform group-hover:scale-105 transition-transform duration-700 w-full h-auto"
                                     priority
                                 />
                             </div>
@@ -333,7 +333,7 @@ export default function GoogleAdsClient() {
                         <div className="lg:w-[45%] w-full relative">
                             <div className="relative w-full h-[400px] lg:h-[440px] rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.12)] border-[8px] border-white z-10 group/main bg-white">
                                 <img
-                                    src="/images/seo/why_googleads_imp.svg"
+                                    src="/images/seo/why_googleads_imp.png"
                                     alt="Google Ads Performance Impact"
                                     className="w-full h-full object-cover transform group-hover/main:scale-105 transition-transform duration-700"
                                 />
@@ -394,7 +394,7 @@ export default function GoogleAdsClient() {
                                     <div className="absolute -top-4 -left-4 w-32 h-32 bg-[radial-gradient(#1A5CDD_1.5px,transparent_1.5px)] [background-size:24px_24px] opacity-20 -z-10" />
                                     <div className="w-full aspect-[4/3] rounded-tl-[60px] rounded-br-[60px] rounded-tr-[24px] rounded-bl-[24px] overflow-hidden border-4 border-white bg-white">
                                         <Image
-                                            src="/images/seo/benefits_googleads.svg"
+                                            src="/images/seo/benefits_googleads.png"
                                             alt="Google Ads Data"
                                             fill
                                             className="object-cover"
@@ -549,7 +549,7 @@ export default function GoogleAdsClient() {
                             <div className="relative group">
                                 <div className="w-full h-[440px] lg:h-[520px] relative flex items-center justify-center">
                                     <Image
-                                        src="/images/seo/why_choose_googleads.svg"
+                                        src="/images/seo/why_choose_googleads.png"
                                         alt="Google Ads Expertise"
                                         fill
                                         className="object-contain filter drop-shadow-[0_15px_35px_rgba(1,17,70,0.12)] transform group-hover:scale-105 transition-all duration-700"

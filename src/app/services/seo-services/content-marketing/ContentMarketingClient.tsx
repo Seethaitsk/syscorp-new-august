@@ -96,7 +96,7 @@ export default function ContentMarketingClient() {
             title: "SEO Content Writing",
             desc: "Our SEO Content Writing Services focus on creating keyword-rich, informative, and engaging content that improves your website's visibility on search engines. We perform detailed keyword research, competitor analysis, and search intent optimization to produce content that ranks for relevant keywords while providing real value to your audience. Our SEO content helps increase organic traffic, improve search engine rankings, reduce bounce rates, and establish your business as an industry authority. Every article is optimized with proper headings, meta optimization, internal linking, readability improvements, and user-focused content to maximize SEO performance.",
             icon: Search,
-            image: "/images/seo/seo_content.svg",
+            image: "/images/seo/seo_content.png",
             tag: "Organic Search Optimization"
         },
         {
@@ -110,28 +110,28 @@ export default function ContentMarketingClient() {
             title: "Website Content Creation",
             desc: "Your website content represents your business online. Our Website Content Writing Services focus on creating professional, informative, and conversion-driven website copy that clearly communicates your products, services, and unique value proposition. We develop optimized content for Home Pages, About Us Pages, Service Pages, Industry Pages, Category Pages, and Contact Pages while ensuring consistency, readability, SEO optimization, and strong calls-to-action that encourage visitors to become customers.",
             icon: Globe,
-            image: "/images/seo/website_content.svg",
+            image: "/images/seo/website_content.png",
             tag: "Conversion-Driven Copy"
         },
         {
             title: "Landing Page Content",
             desc: "Our Landing Page Content Writing Services are designed to maximize conversions by combining persuasive messaging with SEO best practices. Every landing page is carefully structured to capture visitor attention, communicate benefits clearly, build trust, and encourage enquiries, purchases, or registrations. We create optimized landing pages for lead generation campaigns, paid advertising, product launches, service promotions, and local SEO campaigns that improve conversion rates and business performance.",
             icon: MousePointerClick,
-            image: "/images/seo/landing_page.svg",
+            image: "/images/seo/landing_page.png",
             tag: "High Conversion Copywriting"
         },
         {
             title: "SEO Copywriting",
             desc: "Our SEO Copywriting Services combine compelling marketing messages with advanced search engine optimization techniques. We create website copy that attracts both search engines and potential customers while encouraging meaningful actions such as enquiries, purchases, or bookings. Our SEO copywriting includes keyword optimization, persuasive headlines, optimized page structure, engaging call-to-actions, and user-focused messaging that supports both SEO rankings and conversion goals.",
             icon: Edit,
-            image: "/images/seo/seo_copywriting.svg",
+            image: "/images/seo/seo_copywriting.png",
             tag: "Search & Audience Focused"
         },
         {
             title: "Social Media Content",
             desc: "Our Social Media Content Marketing Services help businesses build stronger relationships with their audience across Facebook, Instagram, LinkedIn, X (Twitter), and other social platforms. We create engaging social media posts, promotional content, educational posts, campaign content, reels scripts, carousel content, and branded messaging that improve audience engagement, increase brand awareness, generate website traffic, and support your digital marketing campaigns.",
             icon: Share2,
-            image: "/images/seo/social_media.svg",
+            image: "/images/seo/social_media1.png",
             tag: "Social Engagement & Reach"
         },
         {
@@ -152,7 +152,7 @@ export default function ContentMarketingClient() {
             title: "Press Releases & Digital PR Content",
             desc: "Our Press Release Writing Services help businesses announce product launches, company updates, business achievements, partnerships, events, and important news professionally. We create SEO-friendly press releases and digital PR content that improve online visibility, build brand credibility, attract media attention, generate backlinks, and strengthen your online reputation.",
             icon: Megaphone,
-            image: "/images/seo/press_release.svg",
+            image: "/images/seo/press_release.png",
             tag: "Brand Credibility & PR"
         },
         {
@@ -166,7 +166,7 @@ export default function ContentMarketingClient() {
             title: "Video Content Marketing",
             desc: "Video has become one of the most powerful forms of digital content. Our Video Content Marketing Services help businesses create engaging video strategies that communicate brand messages effectively across websites, YouTube, Facebook, Instagram, LinkedIn, and other digital platforms. We develop video scripts, promotional video content, educational videos, explainer videos, product demonstration videos, customer testimonial videos, and social media video campaigns that increase engagement, improve audience retention, and drive higher conversions.",
             icon: Video,
-            image: "/images/seo/video_content.svg",
+            image: "/images/seo/video_content.png",
             tag: "High-Impact Video Scripts"
         }
     ];
@@ -272,7 +272,7 @@ export default function ContentMarketingClient() {
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-br from-[#1A5CDD]/10 to-[#38bdf8]/10 rounded-full blur-[80px] -z-10 pointer-events-none" />
                             <div className="relative w-full h-[420px] sm:h-[480px] lg:h-[540px] xl:h-[580px] flex items-center justify-center">
                                 <Image
-                                    src="/images/seo/content_marketing.svg"
+                                    src="/images/seo/content_marketing.png"
                                     alt="Content Marketing Services"
                                     fill
                                     className="object-center transform group-hover:scale-105 transition-transform duration-700"
