@@ -118,7 +118,7 @@ export default function CompanyStory() {
                             <div className="hidden md:flex justify-start pl-4">
                                 <div className="relative w-full max-w-[340px] aspect-[16/10] rounded-2xl overflow-hidden border-4 border-white dark:border-slate-850 shadow-md hover:scale-103 hover:shadow-xl transition-all duration-500">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=600"
+                                        src="/images/about/2.png"
                                         alt="Creative vision brainstorming"
                                         fill
                                         className="object-cover"
@@ -134,7 +134,7 @@ export default function CompanyStory() {
                             <div className="hidden md:flex justify-end pr-4">
                                 <div className="relative w-full max-w-[340px] aspect-[16/10] rounded-2xl overflow-hidden border-4 border-white dark:border-slate-850 shadow-md hover:scale-103 hover:shadow-xl transition-all duration-500">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
+                                        src="/images/about/3.png"
                                         alt="Corporate analytics growth"
                                         fill
                                         className="object-cover"
@@ -188,7 +188,7 @@ export default function CompanyStory() {
                             <div className="hidden md:flex justify-start pl-4">
                                 <div className="relative w-full max-w-[340px] aspect-[16/10] rounded-2xl overflow-hidden border-4 border-white dark:border-slate-850 shadow-md hover:scale-103 hover:shadow-xl transition-all duration-500">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600"
+                                        src="/images/about/4.png"
                                         alt="Software team collaboration"
                                         fill
                                         className="object-cover"
@@ -204,7 +204,7 @@ export default function CompanyStory() {
                             <div className="hidden md:flex justify-end pr-4">
                                 <div className="relative w-full max-w-[340px] aspect-[16/10] rounded-2xl overflow-hidden border-4 border-white dark:border-slate-850 shadow-md hover:scale-103 hover:shadow-xl transition-all duration-500">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=600"
+                                        src="/images/about/5.png"
                                         alt="Digital interface engineering"
                                         fill
                                         className="object-cover"
@@ -260,7 +260,7 @@ export default function CompanyStory() {
                             <div className="hidden md:flex justify-start pl-4">
                                 <div className="relative w-full max-w-[340px] aspect-[16/10] rounded-2xl overflow-hidden border-4 border-white dark:border-slate-850 shadow-md hover:scale-103 hover:shadow-xl transition-all duration-500">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600"
+                                        src="/images/about/6.png"
                                         alt="Sleek future tech facility"
                                         fill
                                         className="object-cover"

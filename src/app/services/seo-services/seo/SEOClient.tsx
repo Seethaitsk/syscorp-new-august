@@ -251,7 +251,7 @@ export default function SEOClient() {
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                         <div className="gsap-fade-up lg:col-span-6 lg:pr-8">
-                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1.5 text-[12px] font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Drive More Organic Traffic
                             </div>
@@ -380,7 +380,7 @@ export default function SEOClient() {
             <section className="py-20 bg-[#F8FAFF] relative">
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                             Why SysCrop
                         </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
@@ -408,11 +408,9 @@ export default function SEOClient() {
                         <div className="relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                             {/* Left Side: Content (Title, Badge, and Description) */}
                             <div className="lg:w-1/2 w-full relative z-20">
-                                <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8 shadow-xl">
-                                    <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-                                        <FileText className="text-white" size={16} />
-                                    </div>
-                                    <span className="text-[14px] font-bold text-white tracking-wide uppercase">On-Page SEO</span>
+                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8 shadow-sm">
+                                    <FileText className="text-white" size={14} />
+                                    <span className="text-[12px] font-bold text-white tracking-widest uppercase">On-Page SEO</span>
                                 </div>
 
                                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-8">
@@ -522,7 +520,7 @@ export default function SEOClient() {
                                         <div>
                                             {/* Top Row: Step Tag + Icon Badge */}
                                             <div className="flex items-center justify-between mb-6">
-                                                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] text-xs font-extrabold tracking-wider uppercase">
+                                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                                                     <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]" />
                                                     Step {String(index + 1).padStart(2, "0")}
                                                 </span>
@@ -560,7 +558,7 @@ export default function SEOClient() {
                         {/* Left: Sticky Sidebar */}
                         <div className="lg:w-1/3 w-full">
                             <div className="sticky top-32">
-                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1A5CDD]/10 border border-[#1A5CDD]/10 text-[#1A5CDD] text-[13px] font-bold tracking-wide uppercase mb-6 shadow-sm">
+                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                     <LayoutDashboard size={14} />
                                     <span>On-Page Services</span>
                                 </div>
@@ -645,9 +643,8 @@ export default function SEOClient() {
                     <div className="flex flex-col lg:flex-row items-center gap-10 rounded-[40px] p-4 lg:p-6 shadow-[0_8px_30px_rgba(0,0,0,0.04)] mb-20 bg-white border border-slate-100 group/hero relative overflow-hidden">
                         {/* Left Side: Text Content */}
                         <div className="lg:w-1/2 p-6 lg:p-10 relative z-10">
-                            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 mb-8 shadow-sm">
-                                <Settings className="text-[#1A5CDD]" size={16} />
-                                <span className="text-[13px] font-bold text-[#1A5CDD] tracking-wider uppercase">Technical Optimization</span>
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-8">
+                                <Settings size={14} /> Technical Optimization
                             </div>
 
                             <h2 className="text-3xl lg:text-4xl font-extrabold text-[#011146] mb-5 leading-tight">Technical SEO Services</h2>
@@ -700,7 +697,7 @@ export default function SEOClient() {
                         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#38bdf8]/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/3 pointer-events-none" />
 
                         <div className="text-center mb-16 relative z-10">
-                            <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[#38bdf8] text-xs font-bold tracking-wider uppercase mb-4 border border-white/10 backdrop-blur-sm">Technical SEO Solutions</span>
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-4">Technical SEO Solutions</span>
                             <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-4">What Our Technical SEO Services Cover</h3>
                             <p className="text-slate-300 text-[16px] max-w-2xl mx-auto">Our experts optimize every technical layer of your website for better crawlability, speed, and indexing.</p>
                         </div>
@@ -737,7 +734,7 @@ export default function SEOClient() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-10">
                         {/* Right Side: Compact Text & Features (DOM order 1, visually right on desktop) */}
                         <div className="gsap-fade-up lg:col-span-6 lg:col-start-7 order-1 lg:order-2 relative z-10">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1.5 text-[11px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]" />
                                 Off-Page SEO Services
                             </span>
@@ -795,17 +792,17 @@ export default function SEOClient() {
                         </div>
 
                         {/* Left Side: Image Composition (DOM order 2, visually left on desktop) */}
-                        <div className="gsap-fade-up lg:col-span-6 lg:col-start-1 order-2 lg:order-1 relative w-full h-[550px] md:h-[650px] flex items-center justify-center mt-8 lg:mt-0">
+                        <div className="gsap-fade-up lg:col-span-6 lg:col-start-1 order-2 lg:order-1 relative flex items-center justify-center mt-8 lg:mt-0">
 
                             {/* Ambient Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#1A5CDD]/5 rounded-full blur-[80px] pointer-events-none -z-10" />
 
                             {/* Primary Large Image */}
-                            <div className="relative w-[110%] h-[110%] group z-10 lg:-ml-8">
+                            <div className="relative w-full group z-10 lg:-ml-8">
                                 <img
                                     src="/images/seo/seo-2.png"
                                     alt="Global Network Off-Page SEO"
-                                    className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,17,70,0.1)]"
+                                    className="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,17,70,0.1)]"
                                 />
                             </div>
                         </div>
@@ -817,7 +814,7 @@ export default function SEOClient() {
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-[800px] bg-gradient-to-br from-[#1A5CDD]/5 to-[#38bdf8]/5 blur-[100px] rounded-full pointer-events-none -z-10" />
 
                         <div className="text-center mb-16">
-                            <span className="inline-block px-4 py-1.5 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] text-xs font-bold tracking-wider uppercase mb-4 border border-[#1A5CDD]/10">Network & Authority</span>
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">Network & Authority</span>
                             <h3 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#011146] mb-4">What Our Off-Page SEO Covers</h3>
                             <p className="text-slate-600 text-[17px] max-w-2xl mx-auto">Build authority and rank higher with our comprehensive, white-hat link-building and outreach solutions.</p>
                         </div>
@@ -887,12 +884,9 @@ export default function SEOClient() {
 
                         {/* Left Side: Text */}
                         <div className="lg:w-1/2 relative z-10">
-                            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white border border-[#1A5CDD]/10 mb-8 shadow-sm">
-                                <div className="w-10 h-10 bg-[#EEF4FF] rounded-full flex items-center justify-center">
-                                    <Search className="text-[#1A5CDD]" size={20} />
-                                </div>
-                                <h3 className="text-xl font-bold text-[#011146]">Keyword Research Services</h3>
-                            </div>
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                <Search size={14} /> Keyword Research Services
+                            </span>
                             <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] mb-6 leading-tight">
                                 Discover the Right Keywords That Drive <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Qualified Traffic</span>
                             </h2>
@@ -1008,12 +1002,9 @@ export default function SEOClient() {
                     <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-20">
                         {/* Right Side: Text */}
                         <div className="lg:w-1/2">
-                            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-[#1A5CDD]/5 border border-[#1A5CDD]/10 mb-8">
-                                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
-                                    <Activity className="text-[#1A5CDD]" size={20} />
-                                </div>
-                                <h3 className="text-xl font-bold text-[#011146]">SEO Audit Services in Pondicherry</h3>
-                            </div>
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                <Activity size={14} /> SEO Audit Services in Pondicherry
+                            </span>
                             <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] mb-6 leading-tight">
                                 Identify SEO Issues and Build a Strong Foundation for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Higher Search Rankings</span>
                             </h2>
@@ -1118,12 +1109,9 @@ export default function SEOClient() {
                     <div className="flex flex-col lg:flex-row items-center gap-16 mb-20">
                         {/* Left Side: Text */}
                         <div className="lg:w-1/2">
-                            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-[#1A5CDD]/5 border border-[#1A5CDD]/10 mb-8">
-                                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
-                                    <LineChart className="text-[#1A5CDD]" size={20} />
-                                </div>
-                                <h3 className="text-xl font-bold text-[#011146]">SEO Reporting & Analytics</h3>
-                            </div>
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                <LineChart size={14} /> SEO Reporting & Analytics
+                            </span>
                             <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] mb-6 leading-tight">
                                 Measure, Analyze, and Improve Your SEO Performance with <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Data-Driven Insights</span>
                             </h2>
@@ -1248,12 +1236,9 @@ export default function SEOClient() {
                     <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-20">
                         {/* Right Side: Text */}
                         <div className="lg:w-1/2">
-                            <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-[#1A5CDD]/5 border border-[#1A5CDD]/10 mb-8">
-                                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
-                                    <FileText className="text-[#1A5CDD]" size={20} />
-                                </div>
-                                <h3 className="text-xl font-bold text-[#011146]">Content Optimization Services in Pondicherry</h3>
-                            </div>
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                <FileText size={14} /> Content Optimization Services in Pondicherry
+                            </span>
                             <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] mb-6 leading-tight">
                                 Enhance Your Website Content to Improve <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Search Rankings</span>
                             </h2>
@@ -1381,7 +1366,7 @@ export default function SEOClient() {
                         {/* Left Side: Sticky Title */}
                         <div className="lg:w-5/12 relative z-10">
                             <div className="sticky top-32">
-                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                     How We Work
                                 </span>
                                 <h2 className="text-4xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-8 leading-tight">
@@ -1440,63 +1425,100 @@ export default function SEOClient() {
             </section>
 
             {/* FAQs */}
-            <section className="py-20 lg:py-28 bg-[#F0F8FF]/50 border-t border-[#1A5CDD]/10">
-                <div className="container mx-auto px-6 max-w-4xl">
-                    <div className="text-center mb-16">
-                        <span className="text-xs uppercase font-extrabold tracking-wider text-[#1A5CDD] px-3.5 py-1.5 bg-[#1A5CDD]/10 rounded-full">
-                            Have Questions?
-                        </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] mt-4 tracking-tight">
-                            Frequently Asked Questions (FAQs)
-                        </h2>
-                    </div>
+            <section className="py-20 lg:py-28 bg-[#F8FAFC]">
+                <div className="container mx-auto px-6 max-w-7xl">
+                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+                        <div className="lg:w-5/12">
+                            <div className="sticky top-32">
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></div>
+                                    Frequently Asked Questions
+                                </span>
 
-                    <div className="space-y-4">
-                        {faqs.map((item, index) => {
-                            const isOpen = activeFaq === index;
-                            return (
-                                <div
-                                    key={index}
-                                    className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen ? "border-[#1A5CDD] shadow-lg shadow-blue-900/5" : "border-slate-200 hover:border-slate-300"
-                                        }`}
-                                >
-                                    <button
-                                        onClick={() => setActiveFaq(isOpen ? null : index)}
-                                        className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
-                                    >
-                                        <h3 className="text-[17px] font-bold text-[#011146] pr-8">
-                                            {index + 1}. {item.q}
-                                        </h3>
-                                        <ChevronDown
-                                            className={`text-[#1A5CDD] transition-transform duration-300 flex-shrink-0 ${isOpen ? "rotate-180" : "rotate-0"
-                                                }`}
-                                            size={20}
-                                        />
-                                    </button>
-                                    <div
-                                        className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-                                    >
-                                        <div className="overflow-hidden">
-                                            <div className="px-6 pb-6 text-slate-600 text-[15px] leading-relaxed">
-                                                {item.a}
-                                            </div>
+                                <h2 className="text-4xl md:text-5xl font-extrabold text-[#011146] mb-6 tracking-tight leading-tight">
+                                    Your Questions <br />
+                                    <span className="text-blue-600">Answered</span>
+                                </h2>
+
+                                <p className="text-slate-500 text-lg leading-relaxed mb-10">
+                                    Find clear, honest answers to common questions from our team of experienced professionals.
+                                </p>
+
+                                <hr className="border-slate-200 mb-8" />
+
+                                <div className="flex items-center gap-4">
+                                    <div className="flex -space-x-3">
+                                        <div className="w-12 h-12 rounded-full border-2 border-white bg-slate-200 overflow-hidden relative shadow-sm">
+                                            <Image src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop" alt="Expert" fill className="object-cover" />
+                                        </div>
+                                        <div className="w-12 h-12 rounded-full border-2 border-white bg-slate-200 overflow-hidden relative shadow-sm">
+                                            <Image src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=100&auto=format&fit=crop" alt="Expert" fill className="object-cover" />
+                                        </div>
+                                        <div className="w-12 h-12 rounded-full border-2 border-white bg-slate-200 overflow-hidden relative shadow-sm">
+                                            <Image src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=100&auto=format&fit=crop" alt="Expert" fill className="object-cover" />
+                                        </div>
+                                        <div className="w-12 h-12 rounded-full border-2 border-white bg-[#011146] flex items-center justify-center text-white text-xs font-bold relative z-10 shadow-sm">
+                                            +10
                                         </div>
                                     </div>
+                                    <p className="text-sm text-slate-500 font-medium leading-tight max-w-[150px]">
+                                        Answers curated directly from our consulting experts.
+                                    </p>
                                 </div>
-                            );
-                        })}
+                            </div>
+                        </div>
+
+                        <div className="lg:w-7/12">
+                            <div className="space-y-4">
+                                {faqs.map((item, index) => {
+                                    const isOpen = activeFaq === index;
+                                    return (
+                                        <div
+                                            key={index}
+                                            className={`rounded-[20px] border transition-all duration-300 overflow-hidden bg-white ${isOpen ? "border-blue-600 shadow-md shadow-blue-900/5" : "border-slate-200 hover:border-slate-300"}`}
+                                        >
+                                            <button
+                                                onClick={() => setActiveFaq(isOpen ? null : index)}
+                                                className="w-full flex items-center justify-between p-6 text-left focus:outline-none group"
+                                            >
+                                                <h3 className="text-[16px] font-bold text-[#011146] pr-8 group-hover:text-blue-600 transition-colors duration-300">
+                                                    {index + 1}. {item.q}
+                                                </h3>
+                                                <div className="flex-shrink-0 ml-4">
+                                                    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-blue-600 rotate-180" : "text-slate-400 group-hover:text-blue-600 rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                            <div
+                                                className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+                                            >
+                                                <div className="overflow-hidden">
+                                                    <div className="px-6 pb-6 pt-2 text-slate-600 text-[15px] leading-relaxed">
+                                                        {item.a}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* Industries Section */}
-            <section className="py-20 lg:py-28 bg-white border-t border-slate-100">
+            <section className="py-20 lg:py-28 bg-white border-t border-slate-100 overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="text-center mb-16 relative">
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-[#011146] tracking-tight mb-4">
+                        <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                            <Building2 size={14} /> Industries We Serve
+                        </div>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6">
                             Industries We Serve in Puducherry
                         </h2>
-                        <p className="text-slate-500 text-[15px] md:text-base max-w-2xl mx-auto">
+                        <p className="text-slate-500 text-lg max-w-2xl mx-auto">
                             From Puducherry's key industries to retail, healthcare, and professional services — we've done SEO for them all.
                         </p>
                     </div>
@@ -1506,22 +1528,33 @@ export default function SEOClient() {
                             0% { transform: translateX(0); }
                             100% { transform: translateX(-50%); }
                         }
+                        @keyframes scroll-marquee-reverse {
+                            0% { transform: translateX(-50%); }
+                            100% { transform: translateX(0); }
+                        }
                         .animate-marquee {
-                            animation: scroll-marquee 35s linear infinite;
+                            animation: scroll-marquee 40s linear infinite;
                             display: flex;
                             width: max-content;
                         }
-                        .marquee-container:hover .animate-marquee {
+                        .animate-marquee-reverse {
+                            animation: scroll-marquee-reverse 45s linear infinite;
+                            display: flex;
+                            width: max-content;
+                        }
+                        .marquee-container:hover .animate-marquee,
+                        .marquee-container:hover .animate-marquee-reverse {
                             animation-play-state: paused;
                         }
                     `}</style>
 
-                    <div className="relative w-full overflow-hidden marquee-container py-4 -mx-6 px-6 lg:mx-0 lg:px-0">
+                    <div className="relative w-full overflow-hidden marquee-container py-2 flex flex-col gap-6">
                         {/* Gradient masks for smooth fade in/out on edges */}
-                        <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-                        <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+                        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+                        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
-                        <div className="animate-marquee gap-4 md:gap-6">
+                        {/* First Row (Scrolling Left) */}
+                        <div className="animate-marquee gap-5 md:gap-6">
                             {[
                                 { title: "Tourism & Hospitality", icon: Palmtree, color: "text-emerald-600 bg-emerald-50 border-emerald-100 group-hover:bg-emerald-500" },
                                 { title: "Wellness & Yoga Retreats", icon: Flower2, color: "text-pink-600 bg-pink-50 border-pink-100 group-hover:bg-pink-500" },
@@ -1529,19 +1562,35 @@ export default function SEOClient() {
                                 { title: "Restaurants & Cafes", icon: Utensils, color: "text-orange-600 bg-orange-50 border-orange-100 group-hover:bg-orange-500" },
                                 { title: "Real Estate", icon: Home, color: "text-indigo-600 bg-indigo-50 border-indigo-100 group-hover:bg-indigo-500" },
                                 { title: "Retail & Boutiques", icon: ShoppingCart, color: "text-purple-600 bg-purple-50 border-purple-100 group-hover:bg-purple-500" },
-                                { title: "Legal & Finance", icon: Scale, color: "text-slate-700 bg-slate-100 border-slate-200 group-hover:bg-slate-600" },
-                                { title: "Healthcare & Clinics", icon: Stethoscope, color: "text-rose-600 bg-rose-50 border-rose-100 group-hover:bg-rose-500" },
-                                { title: "Logistics & Transport", icon: Truck, color: "text-amber-600 bg-amber-50 border-amber-100 group-hover:bg-amber-500" },
-                                { title: "Fitness & Wellness", icon: Dumbbell, color: "text-cyan-600 bg-cyan-50 border-cyan-100 group-hover:bg-cyan-500" },
-                                { title: "Art & Culture", icon: Palette, color: "text-fuchsia-600 bg-fuchsia-50 border-fuchsia-100 group-hover:bg-fuchsia-500" },
-                                { title: "Engineering Services", icon: Wrench, color: "text-sky-600 bg-sky-50 border-sky-100 group-hover:bg-sky-500" },
-                                // Duplicate array for seamless infinite scrolling
+                                // Duplicates for infinite scroll
                                 { title: "Tourism & Hospitality", icon: Palmtree, color: "text-emerald-600 bg-emerald-50 border-emerald-100 group-hover:bg-emerald-500" },
                                 { title: "Wellness & Yoga Retreats", icon: Flower2, color: "text-pink-600 bg-pink-50 border-pink-100 group-hover:bg-pink-500" },
                                 { title: "Education & Institutions", icon: GraduationCap, color: "text-blue-600 bg-blue-50 border-blue-100 group-hover:bg-blue-500" },
                                 { title: "Restaurants & Cafes", icon: Utensils, color: "text-orange-600 bg-orange-50 border-orange-100 group-hover:bg-orange-500" },
                                 { title: "Real Estate", icon: Home, color: "text-indigo-600 bg-indigo-50 border-indigo-100 group-hover:bg-indigo-500" },
                                 { title: "Retail & Boutiques", icon: ShoppingCart, color: "text-purple-600 bg-purple-50 border-purple-100 group-hover:bg-purple-500" },
+                            ].map((item, index) => (
+                                <div key={`row1-${index}`} className="flex-shrink-0 group flex items-center gap-4 px-4 py-3 pr-7 rounded-full bg-white border border-slate-200/80 shadow-[0_4px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_30px_rgba(26,92,221,0.12)] transition-all duration-400 cursor-pointer w-max hover:border-[#1A5CDD]/30 hover:-translate-y-1">
+                                    <div className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 group-hover:text-white group-hover:scale-110 transition-all duration-400 shadow-sm border ${item.color}`}>
+                                        <item.icon size={22} strokeWidth={2.2} />
+                                    </div>
+                                    <span className="text-[15px] font-extrabold text-[#011146] group-hover:text-[#1A5CDD] transition-colors duration-400 whitespace-nowrap">
+                                        {item.title}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Second Row (Scrolling Right) */}
+                        <div className="animate-marquee-reverse gap-5 md:gap-6">
+                            {[
+                                { title: "Legal & Finance", icon: Scale, color: "text-slate-700 bg-slate-100 border-slate-200 group-hover:bg-slate-600" },
+                                { title: "Healthcare & Clinics", icon: Stethoscope, color: "text-rose-600 bg-rose-50 border-rose-100 group-hover:bg-rose-500" },
+                                { title: "Logistics & Transport", icon: Truck, color: "text-amber-600 bg-amber-50 border-amber-100 group-hover:bg-amber-500" },
+                                { title: "Fitness & Wellness", icon: Dumbbell, color: "text-cyan-600 bg-cyan-50 border-cyan-100 group-hover:bg-cyan-500" },
+                                { title: "Art & Culture", icon: Palette, color: "text-fuchsia-600 bg-fuchsia-50 border-fuchsia-100 group-hover:bg-fuchsia-500" },
+                                { title: "Engineering Services", icon: Wrench, color: "text-sky-600 bg-sky-50 border-sky-100 group-hover:bg-sky-500" },
+                                // Duplicates for infinite scroll
                                 { title: "Legal & Finance", icon: Scale, color: "text-slate-700 bg-slate-100 border-slate-200 group-hover:bg-slate-600" },
                                 { title: "Healthcare & Clinics", icon: Stethoscope, color: "text-rose-600 bg-rose-50 border-rose-100 group-hover:bg-rose-500" },
                                 { title: "Logistics & Transport", icon: Truck, color: "text-amber-600 bg-amber-50 border-amber-100 group-hover:bg-amber-500" },
@@ -1549,11 +1598,11 @@ export default function SEOClient() {
                                 { title: "Art & Culture", icon: Palette, color: "text-fuchsia-600 bg-fuchsia-50 border-fuchsia-100 group-hover:bg-fuchsia-500" },
                                 { title: "Engineering Services", icon: Wrench, color: "text-sky-600 bg-sky-50 border-sky-100 group-hover:bg-sky-500" },
                             ].map((item, index) => (
-                                <div key={index} className="flex-shrink-0 group flex items-center gap-3.5 px-3 py-2.5 pr-6 rounded-full bg-white border border-slate-200/90 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_25px_rgba(26,92,221,0.1)] transition-all duration-300 cursor-pointer w-max hover:border-[#1A5CDD]/40 hover:-translate-y-0.5">
-                                    <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 group-hover:text-white group-hover:scale-105 transition-all duration-300 shadow-sm border ${item.color}`}>
-                                        <item.icon size={20} strokeWidth={2.2} />
+                                <div key={`row2-${index}`} className="flex-shrink-0 group flex items-center gap-4 px-4 py-3 pr-7 rounded-full bg-white border border-slate-200/80 shadow-[0_4px_15px_rgba(0,0,0,0.03)] hover:shadow-[0_10px_30px_rgba(26,92,221,0.12)] transition-all duration-400 cursor-pointer w-max hover:border-[#1A5CDD]/30 hover:-translate-y-1">
+                                    <div className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 group-hover:text-white group-hover:scale-110 transition-all duration-400 shadow-sm border ${item.color}`}>
+                                        <item.icon size={22} strokeWidth={2.2} />
                                     </div>
-                                    <span className="text-[14px] font-extrabold text-[#011146] group-hover:text-[#1A5CDD] transition-colors duration-300 whitespace-nowrap">
+                                    <span className="text-[15px] font-extrabold text-[#011146] group-hover:text-[#1A5CDD] transition-colors duration-400 whitespace-nowrap">
                                         {item.title}
                                     </span>
                                 </div>

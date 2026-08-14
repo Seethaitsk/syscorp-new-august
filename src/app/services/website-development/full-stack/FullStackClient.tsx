@@ -322,7 +322,7 @@ export default function FullStackClient() {
             <HeaderBanner
                 title={
                     <>
-                     <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Full-Stack Development Service</span> in Pondicherry
+                        <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Full-Stack Development Service</span> in Pondicherry
                     </>
                 }
                 description="Complete Frontend & Backend Development Solutions for Modern Businesses"
@@ -339,13 +339,13 @@ export default function FullStackClient() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                         <div className="lg:col-span-7 gsap-fade-up">
-                            <div className="inline-flex items-center gap-2.5 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[12px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-5 shadow-sm">
-                                <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] animate-pulse"></span>
                                 End-to-End Engineering
                             </div>
 
-                            <h2 className="text-3xl md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.12] mb-6">
-                                Best Full-Stack Development<br className="hidden xl:block" /> Company in Pondicherry
+                            <h2 className="text-[32px] md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.12] mb-6">
+                                Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Full-Stack Development</span> in Pondicherry
                             </h2>
 
                             <div className="space-y-5 mb-10">
@@ -366,17 +366,17 @@ export default function FullStackClient() {
                             </Link>
                         </div>
 
-                        {/* Right Side Image Card */}
-                        <div className="lg:col-span-5 relative flex justify-center">
-                            <div className="relative w-full max-w-[460px] aspect-[4/3] sm:aspect-square rounded-[28px] border-[10px] border-white bg-white shadow-2xl shadow-blue-950/15 overflow-hidden group cursor-pointer z-10">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+                        {/* Right Side Image Showcase */}
+                        <div className="lg:col-span-5 relative flex justify-center mt-12 lg:mt-0">
+                            {/* Ambient Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-[#1A5CDD]/15 rounded-full blur-[90px] pointer-events-none -z-10" />
+
+                            <div className="relative w-full max-w-[550px] z-10 group/hero cursor-pointer">
+                                <img
+                                    src="/images/webdevelopment/fullstack-1.png"
                                     alt="Best Full-Stack Development Company in Pondicherry"
-                                    fill
-                                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="w-full h-auto object-contain transform group-hover/hero:scale-[1.03] group-hover/hero:-translate-y-2 transition-all duration-700 ease-out drop-shadow-[0_25px_50px_rgba(0,17,70,0.12)]"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/50 via-transparent to-transparent opacity-60" />
                             </div>
                         </div>
                     </div>
@@ -392,59 +392,57 @@ export default function FullStackClient() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
 
                         {/* Left Column: Image Visual */}
-                        <div className="lg:col-span-5 relative flex flex-col">
-                            <div className="relative w-full h-full min-h-[440px] rounded-[28px] overflow-hidden bg-[#010925] shadow-xl border border-slate-200 group">
-                                <div className="absolute top-5 left-5 z-20 flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/10 px-3.5 py-1.5 rounded-full">
-                                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-                                    <span className="text-[11px] font-mono text-white font-bold tracking-wider uppercase">System Architecture</span>
-                                </div>
-                                <Image
-                                    src="/images/full_stack_architecture_dashboard.png"
+                        <div className="lg:col-span-6 relative flex justify-center mt-8 lg:mt-0">
+                            {/* Ambient Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#1A5CDD]/10 rounded-full blur-[80px] pointer-events-none -z-10" />
+
+                            <div className="relative w-full max-w-[550px] z-10 group cursor-pointer flex items-center justify-center">
+                                <img
+                                    src="/images/webdevelopment/fullstack-2.png"
                                     alt="Full Stack Development Architecture Dashboard"
-                                    fill
-                                    className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+                                    className="w-full h-auto object-contain transform group-hover:scale-[1.03] group-hover:-translate-y-2 transition-all duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,17,70,0.1)]"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#010925]/70 via-transparent to-transparent pointer-events-none" />
                             </div>
                         </div>
 
                         {/* Right Column: Text Content & 3x3 Grid */}
-                        <div className="lg:col-span-7 space-y-7 relative z-20">
-                            <div className="inline-flex items-center gap-2 bg-[#F0F6FF] text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-[#1A5CDD]/10">
+                        <div className="lg:col-span-6 relative z-20">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                                 <Layers size={14} />
                                 Core Concept
                             </div>
 
-                            <h2 className="text-3xl md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.12]">
+                            <h2 className="text-3xl md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.12] mb-5">
                                 What is Full Stack Development?
                             </h2>
 
-                            <p className="text-slate-600 text-[17px] leading-[1.8] font-normal">
+                            <p className="text-slate-600 text-[16px] leading-[1.7] font-normal mb-4">
                                 Full Stack Development is the process of creating complete web applications by managing both frontend and backend development. It includes designing user interfaces, developing server-side functionality, managing databases, integrating APIs, implementing security, and deploying applications on reliable platforms.
                             </p>
 
-                            <p className="text-slate-600 text-[16px] leading-[1.8] font-medium text-[#011146]">
+                            <p className="text-slate-600 text-[15px] leading-[1.7] font-medium text-[#011146] mb-5">
                                 A professional Full Stack Development Company in Pondicherry handles every stage of application development, including:
                             </p>
 
-                            <div className="bg-[#F8FAFC] rounded-[24px] p-6 border border-slate-100 shadow-sm">
-                                <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 rounded-xl bg-white shadow-sm border border-slate-100 flex items-center justify-center shrink-0 text-[#1A5CDD]">
-                                        <Cpu size={22} />
-                                    </div>
-                                    <div>
-                                        <h4 className="text-[#011146] font-bold text-[16px] mb-1.5">The SysCrop Advantage</h4>
-                                        <p className="text-slate-500 text-[14px] leading-[1.7]">
-                                            At SysCrop, our full stack developers use modern technologies and industry best practices to build customized solutions that meet specific business requirements.
-                                        </p>
-                                    </div>
+                            <div className="bg-slate-50 border border-slate-100 rounded-2xl p-3 md:p-4 flex gap-3 sm:gap-4 items-start sm:items-center mb-3">
+                                <div className="w-10 h-10 shrink-0 bg-white rounded-xl flex items-center justify-center shadow-sm border border-slate-100 hidden sm:flex">
+                                    <Cpu size={20} className="text-[#1A5CDD]" />
+                                </div>
+                                <div>
+                                    <h3 className="text-[15px] font-bold text-[#011146] mb-0.5 flex items-center gap-2">
+                                        <Cpu size={16} className="text-[#1A5CDD] sm:hidden" />
+                                        The SysCrop Advantage
+                                    </h3>
+                                    <p className="text-slate-500 text-[12.5px] leading-relaxed">
+                                        At SysCrop, our full stack developers use modern technologies and industry best practices to build customized solutions that meet specific business requirements.
+                                    </p>
                                 </div>
                             </div>
 
                             {/* 9 Stages Grid */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5 pt-2">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 pt-1">
                                 {[
-                                    { text: "Requirement Analysis", icon: FileCode, num: "01" },
+                                    { text: "Requirement Analysis", icon: FileText, num: "01" },
                                     { text: "UI/UX Design", icon: Layout, num: "02" },
                                     { text: "Frontend Development", icon: Code, num: "03" },
                                     { text: "Backend Development", icon: Server, num: "04" },
@@ -456,18 +454,15 @@ export default function FullStackClient() {
                                 ].map((stage, idx) => {
                                     const StageIcon = stage.icon;
                                     return (
-                                        <div key={idx} className="bg-white rounded-[20px] p-4 shadow-[0_4px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_24px_rgba(26,92,221,0.06)] transition-all duration-300 group/stage flex flex-col border border-slate-200/80 hover:border-[#1A5CDD]/20">
-                                            <div className="flex items-start justify-between mb-4">
-                                                <div className="w-9 h-9 rounded-[10px] bg-[#F0F6FF] text-[#1A5CDD] flex items-center justify-center group-hover/stage:bg-[#1A5CDD] group-hover/stage:text-white transition-colors duration-300">
-                                                    <StageIcon size={16} strokeWidth={2.5} />
+                                        <div key={idx} className="bg-white border border-slate-100 rounded-[14px] p-2 hover:border-[#1A5CDD]/30 hover:shadow-sm transition-all duration-300 relative group cursor-pointer flex items-center justify-start gap-2 min-h-[56px]">
+                                            <div className="flex items-center gap-2.5 w-full">
+                                                <div className="w-8 h-8 shrink-0 rounded-lg bg-[#F0F6FF] flex items-center justify-center text-[#1A5CDD] group-hover:bg-[#1A5CDD] group-hover:text-white transition-colors duration-300">
+                                                    <StageIcon size={14} strokeWidth={2.5} />
                                                 </div>
-                                                <span className="text-[10px] font-bold text-slate-300 pt-1 group-hover/stage:text-[#1A5CDD] transition-colors">
-                                                    {stage.num}
-                                                </span>
+                                                <h4 className="font-bold text-[#011146] text-[12px] xl:text-[12.5px] tracking-tight group-hover:text-[#1A5CDD] transition-colors duration-300 leading-tight">
+                                                    {stage.text}
+                                                </h4>
                                             </div>
-                                            <h4 className="text-[13px] font-bold text-[#011146] leading-tight group-hover/stage:text-[#1A5CDD] transition-colors mt-auto">
-                                                {stage.text}
-                                            </h4>
                                         </div>
                                     );
                                 })}
@@ -489,7 +484,7 @@ export default function FullStackClient() {
                             {/* Left Column: Content */}
                             <div className="lg:col-span-7 space-y-6">
                                 <div className="flex items-center gap-3">
-                                    <span className="inline-flex items-center gap-2 bg-[#38bdf8]/15 text-[#011146] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#38bdf8]/30">
+                                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                                         <Zap size={14} className="text-[#1A5CDD]" />
                                         Strategic Value
                                     </span>
@@ -600,7 +595,7 @@ export default function FullStackClient() {
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#1A5CDD]/20 shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                             <Sparkles size={14} />
                             Full-Spectrum Capabilities
                         </span>
@@ -608,7 +603,7 @@ export default function FullStackClient() {
                             What Our Full-Stack Development Services Cover
                         </h2>
                         <p className="text-slate-600 text-base md:text-[17px] leading-[1.8]">
-                            We offer complete Full Stack Development Services covering planning, UI design, development, deployment, and ongoing support. As a trusted Full Stack Development Company in Pondicherry and Software Company in Pondicherry, we build secure, scalable, and high performance web applications using modern technologies and industry best practices.  
+                            We offer complete Full Stack Development Services covering planning, UI design, development, deployment, and ongoing support. As a trusted Full Stack Development Company in Pondicherry and Software Company in Pondicherry, we build secure, scalable, and high performance web applications using modern technologies and industry best practices.
                         </p>
                     </div>
 
@@ -826,7 +821,7 @@ export default function FullStackClient() {
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-12">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#1A5CDD]/20 shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                             <Sparkles size={14} />
                             Agile Execution Roadmap
                         </span>
@@ -851,67 +846,67 @@ export default function FullStackClient() {
                         <div className="overflow-hidden rounded-[40px] py-4 -my-4">
                             <div
                                 className="flex transition-transform duration-500 ease-out gap-6 process-slider-track"
-                            style={{
-                                '--active-idx': activeProcessIndex
-                            } as React.CSSProperties}
-                        >
-                            {fullStackSteps.map((step, idx) => {
-                                const StepIcon = step.icon || Code;
+                                style={{
+                                    '--active-idx': activeProcessIndex
+                                } as React.CSSProperties}
+                            >
+                                {fullStackSteps.map((step, idx) => {
+                                    const StepIcon = step.icon || Code;
 
-                                return (
-                                    <div
-                                        key={idx}
-                                        className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] shrink-0 border rounded-[32px] p-6 md:p-8 transition-all duration-300 relative overflow-hidden group flex flex-col justify-between min-h-[350px] bg-white/95 backdrop-blur-xl border-slate-200/90 hover:border-[#1A5CDD]/40 text-[#011146]"
-                                    >
-                                        <div className="absolute top-0 right-0 w-36 h-36 rounded-bl-[100px] pointer-events-none group-hover:scale-125 transition-transform duration-500 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent" />
+                                    return (
+                                        <div
+                                            key={idx}
+                                            className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] shrink-0 border rounded-[32px] p-6 md:p-8 transition-all duration-300 relative overflow-hidden group flex flex-col justify-between min-h-[350px] bg-white/95 backdrop-blur-xl border-slate-200/90 hover:border-[#1A5CDD]/40 text-[#011146]"
+                                        >
+                                            <div className="absolute top-0 right-0 w-36 h-36 rounded-bl-[100px] pointer-events-none group-hover:scale-125 transition-transform duration-500 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent" />
 
-                                        {/* Watermark Step Number */}
-                                        <div className="font-black text-6xl md:text-7xl absolute right-5 bottom-3 select-none pointer-events-none transition-colors text-slate-100 group-hover:text-[#1A5CDD]/10">
-                                            0{step.step}
-                                        </div>
-
-                                        <div>
-                                            <div className="flex items-center justify-between mb-6 relative z-10">
-                                                <div className="w-13 h-13 rounded-2xl flex items-center justify-center shadow-lg shrink-0 bg-gradient-to-br from-[#011146] via-[#0A1E5C] to-[#1A5CDD] text-white shadow-blue-950/20">
-                                                    <StepIcon size={24} />
-                                                </div>
+                                            {/* Watermark Step Number */}
+                                            <div className="font-black text-6xl md:text-7xl absolute right-5 bottom-3 select-none pointer-events-none transition-colors text-slate-100 group-hover:text-[#1A5CDD]/10">
+                                                0{step.step}
                                             </div>
 
-                                            <h3 className="text-xl font-extrabold mb-3 leading-snug relative z-10 transition-colors text-[#011146] group-hover:text-[#1A5CDD]">
-                                                {step.title}
-                                            </h3>
-                                            <p className="text-sm leading-relaxed relative z-10 text-slate-600">
-                                                {step.desc}
-                                            </p>
-                                        </div>
+                                            <div>
+                                                <div className="flex items-center justify-between mb-6 relative z-10">
+                                                    <div className="w-13 h-13 rounded-2xl flex items-center justify-center shadow-lg shrink-0 bg-gradient-to-br from-[#011146] via-[#0A1E5C] to-[#1A5CDD] text-white shadow-blue-950/20">
+                                                        <StepIcon size={24} />
+                                                    </div>
+                                                </div>
 
-                                        <div className="pt-4 mt-4 border-t flex items-center justify-between relative z-10 text-xs font-bold border-slate-100 text-slate-500">
-                                            <span className="flex items-center gap-1.5 uppercase tracking-wider text-[11px]">
-                                                <Sparkles size={13} className="text-[#1A5CDD]" />
-                                                Deliverable Phase
-                                            </span>
-                                            <button
-                                                onClick={() => setActiveProcessIndex((prev) => (prev === fullStackSteps.length - 1 ? 0 : prev + 1))}
-                                                className="flex items-center gap-1 transition-colors text-[#1A5CDD] hover:text-[#011146]"
-                                            >
-                                                Next <ArrowRight size={13} />
-                                            </button>
+                                                <h3 className="text-xl font-extrabold mb-3 leading-snug relative z-10 transition-colors text-[#011146] group-hover:text-[#1A5CDD]">
+                                                    {step.title}
+                                                </h3>
+                                                <p className="text-sm leading-relaxed relative z-10 text-slate-600">
+                                                    {step.desc}
+                                                </p>
+                                            </div>
+
+                                            <div className="pt-4 mt-4 border-t flex items-center justify-between relative z-10 text-xs font-bold border-slate-100 text-slate-500">
+                                                <span className="flex items-center gap-1.5 uppercase tracking-wider text-[11px]">
+                                                    <Sparkles size={13} className="text-[#1A5CDD]" />
+                                                    Deliverable Phase
+                                                </span>
+                                                <button
+                                                    onClick={() => setActiveProcessIndex((prev) => (prev === fullStackSteps.length - 1 ? 0 : prev + 1))}
+                                                    className="flex items-center gap-1 transition-colors text-[#1A5CDD] hover:text-[#011146]"
+                                                >
+                                                    Next <ArrowRight size={13} />
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
-                                );
-                            })}
+                                    );
+                                })}
+                            </div>
                         </div>
-                    </div>
 
-                    {/* Next Arrow */}
-                    <button
-                        onClick={() => setActiveProcessIndex((prev) => (prev === fullStackSteps.length - 1 ? 0 : prev + 1))}
-                        className="absolute right-0 lg:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#011146] text-white flex items-center justify-center hover:bg-[#1A5CDD] transition-all shadow-xl active:scale-95 opacity-0 group-hover/slider:opacity-100 disabled:opacity-0"
-                        title="Next Step"
-                    >
-                        <ChevronRight size={24} />
-                    </button>
-                </div>
+                        {/* Next Arrow */}
+                        <button
+                            onClick={() => setActiveProcessIndex((prev) => (prev === fullStackSteps.length - 1 ? 0 : prev + 1))}
+                            className="absolute right-0 lg:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#011146] text-white flex items-center justify-center hover:bg-[#1A5CDD] transition-all shadow-xl active:scale-95 opacity-0 group-hover/slider:opacity-100 disabled:opacity-0"
+                            title="Next Step"
+                        >
+                            <ChevronRight size={24} />
+                        </button>
+                    </div>
 
                     <style jsx>{`
                         .process-slider-track {
@@ -953,7 +948,7 @@ export default function FullStackClient() {
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#1A5CDD]/20 shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                             <Shield size={14} />
                             Trusted Engineering Partner
                         </span>
@@ -1015,7 +1010,7 @@ export default function FullStackClient() {
                         <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-br from-[#1A5CDD]/20 via-[#38bdf8]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#1A5CDD]/15 rounded-full blur-2xl pointer-events-none" />
 
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/20 text-[#38bdf8] px-4 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider mb-4 border border-[#1A5CDD]/30">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-4">
                             <Sparkles size={14} />
                             ENGINEERING VALUE COMMITMENT
                         </span>
@@ -1037,7 +1032,7 @@ export default function FullStackClient() {
 
                         {/* Left Column - Content */}
                         <div className="lg:w-1/3 flex flex-col justify-start lg:sticky">
-                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6 w-fit">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
                                 FREQUENTLY ASKED QUESTIONS
                             </div>
@@ -1094,13 +1089,11 @@ export default function FullStackClient() {
                                                 <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${isOpen ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
                                                     {index + 1}. {faq.q}
                                                 </span>
-                                                <span className={`w-[34px] h-[34px] rounded-full flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm ${isOpen ? "bg-[#1A5CDD] text-white" : "bg-slate-100 text-slate-400 group-hover:bg-slate-200 group-hover:text-slate-600"}`}>
-                                                    {isOpen ? (
-                                                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-                                                    ) : (
-                                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
-                                                    )}
-                                                </span>
+                                                <div className="flex-shrink-0 ml-4">
+                                                    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                                    </svg>
+                                                </div>
                                             </button>
                                             <div
                                                 className={`transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 opacity-100 pb-7 px-6" : "max-h-0 opacity-0 overflow-hidden px-6"

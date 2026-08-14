@@ -736,7 +736,7 @@ export default function CloudServerClient() {
                     <div className="grid lg:grid-cols-12 gap-12 items-center">
                         {/* Left Side (7 cols) */}
                         <div className="lg:col-span-7 space-y-6">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Enterprise Cloud Infrastructure
                             </span>
@@ -817,7 +817,7 @@ export default function CloudServerClient() {
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                         {/* Left Side Heading (5 cols) */}
-                        <div className="lg:col-span-5 border-b lg:border-b-0 lg:border-r border-white/15 pb-8 lg:pb-0 lg:pr-10">
+                        <div className="lg:col-span-5 pb-8 lg:pb-0 lg:pr-10">
                             <div className="flex items-center gap-2 mb-4">
                                 <div className="w-8 h-1 bg-[#38bdf8] rounded-full" />
                                 <span className="text-[#38bdf8] text-xs font-black uppercase tracking-widest">
@@ -870,7 +870,7 @@ export default function CloudServerClient() {
                     <div className="grid lg:grid-cols-12 gap-12 items-center">
                         {/* Left Side (7 cols) */}
                         <div className="lg:col-span-6 space-y-6">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Technology Overview
                             </span>
@@ -902,7 +902,7 @@ export default function CloudServerClient() {
                             {/* Ambient Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-gradient-to-br from-[#1A5CDD]/15 to-[#38bdf8]/10 rounded-full blur-3xl -z-10 pointer-events-none" />
 
-                            <div className="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white bg-white group">
+                            <div className="relative rounded-[32px] overflow-hidden ">
                                 <div className="relative w-full h-[360px] sm:h-[400px]">
                                     <Image
                                         src="/images/webdevelopment/cloud_1.svg"
@@ -961,17 +961,16 @@ export default function CloudServerClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10 space-y-12">
                     {/* Header Row (1 row, 2 columns layout) */}
-                    <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center border-b border-white/10 pb-10">
+                    <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center pb-10">
                         {/* Left Side Column */}
                         <div className="lg:col-span-6 space-y-4">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
                                 Proven Excellence
                             </span>
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.18]">
-                                Why Choose Syscorp as Your <br className="hidden sm:inline" />
-                                <span className="text-[#38bdf8]">Cloud Service Company</span> <br className="hidden sm:inline" />
-                                in Pondicherry?
+                                Why Choose Syscorp as Your 
+                                <span className="text-[#38bdf8]"> Cloud Service Company</span> in Pondicherry?
                             </h2>
                         </div>
 
@@ -1043,7 +1042,7 @@ export default function CloudServerClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10 mb-12">
                     <div className="text-center max-w-3xl mx-auto">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Complete Package
                             </span>
@@ -1102,7 +1101,7 @@ export default function CloudServerClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-14">
-                        <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[#38bdf8] text-xs font-bold tracking-wider uppercase mb-4 border border-white/10 backdrop-blur-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-4">
                             Multi-Cloud Expertise
                         </span>
                         <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mb-5">
@@ -1253,7 +1252,7 @@ export default function CloudServerClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="max-w-3xl mx-auto text-center mb-14">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Proven Methodology
                             </span>
@@ -1325,7 +1324,7 @@ export default function CloudServerClient() {
                                                     <div className="w-10 h-10 rounded-xl bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] flex items-center justify-center">
                                                         <StepIcon size={19} strokeWidth={2.2} />
                                                     </div>
-                                                    <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
+                                                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Phase {stepItem.step}
                             </span>
@@ -1381,7 +1380,7 @@ export default function CloudServerClient() {
                         {/* Left Column: Heading & Sticky Context */}
                         <div className="lg:w-5/12">
                             <div className="lg:sticky">
-                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Got Questions?
                             </span>
@@ -1426,8 +1425,8 @@ export default function CloudServerClient() {
                                             className="w-full flex items-center justify-between p-6 text-left focus:outline-none group"
                                         >
                                             <h3 className="text-[17px] font-extrabold text-[#011146] pr-6 group-hover:text-[#1A5CDD] transition-colors leading-snug">
-                                                <span className="text-[#1A5CDD] font-black mr-2">{index + 1}.</span>
-                                                {faq.q.replace(/^\d+\.\s*/, "")}
+                                                
+                                                {index + 1}. {faq.q}
                                             </h3>
                                             <div
                                                 className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#1A5CDD] text-white rotate-180" : "bg-slate-100 text-slate-600 group-hover:bg-slate-200"

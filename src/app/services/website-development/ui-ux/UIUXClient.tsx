@@ -414,27 +414,27 @@ export default function UIUXClient() {
     // FAQs Data
     const faqs = [
         {
-            q: "1. What are UI/UX design services, and why are they important?",
+            q: "What are UI/UX design services, and why are they important?",
             a: "UI/UX design services focus on creating digital products that are visually appealing, easy to use, and user-friendly. A well-designed website or application improves customer satisfaction, increases engagement, reduces bounce rates, and helps businesses achieve better conversion rates.",
         },
         {
-            q: "2. How much do UI/UX design services cost in Pondicherry?",
+            q: "How much do UI/UX design services cost in Pondicherry?",
             a: "The cost of UI/UX Design Services in Pondicherry depends on factors such as project size, number of screens, complexity, features, and business requirements. Whether you need a website, mobile app, or enterprise application, the pricing is customized based on your specific needs.",
         },
         {
-            q: "3. How long does a UI/UX design project take?",
+            q: "How long does a UI/UX design project take?",
             a: "The timeline varies depending on the scope of the project. A simple website design may take a few weeks, while complex web applications or mobile apps require more time for research, wireframing, prototyping, testing, and final design delivery.",
         },
         {
-            q: "4. Why choose SysCrop for UI/UX Design Services in Pondicherry?",
+            q: "Why choose SysCrop for UI/UX Design Services in Pondicherry?",
             a: "SysCrop combines industry expertise, user-centered design practices, and modern design tools to create intuitive and engaging digital experiences. Our team works closely with clients to deliver customized UI/UX solutions that align with their business goals and user expectations.",
         },
         {
-            q: "5. Does SysCrop provide UI/UX design for both websites and mobile applications?",
+            q: "Does SysCrop provide UI/UX design for both websites and mobile applications?",
             a: "Yes. Our UI/UX Design Services in Pondicherry include website UI/UX design, mobile app design, SaaS platforms, CRM and ERP interfaces, dashboards, eCommerce websites, and enterprise applications. Every design is responsive, scalable, and optimized for a seamless user experience.",
         },
         {
-            q: "6. Does SysCrop redesign existing websites and applications?",
+            q: "Does SysCrop redesign existing websites and applications?",
             a: "Yes. If your current website or application has usability issues, outdated visuals, or poor user engagement, our team can redesign the interface, improve the user experience, optimize navigation, and create a modern design that better supports your business objectives.",
         },
     ];
@@ -466,7 +466,7 @@ export default function UIUXClient() {
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                         <div className="lg:col-span-7">
-                            <div className="inline-flex items-center gap-2.5 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[13px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
                                 UI/UX Design Excellence
                             </div>
@@ -570,7 +570,7 @@ export default function UIUXClient() {
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="order-1 lg:order-2">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 shadow-sm border border-[#1A5CDD]/10">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <Palette size={14} /> Understanding UI/UX Design
                             </span>
 
@@ -633,7 +633,7 @@ export default function UIUXClient() {
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 xl:grid-cols-12 gap-16 items-center">
                         <div className="xl:col-span-5">
-                            <span className="inline-flex items-center gap-2 bg-white/10 text-[#38bdf8] border border-white/10 px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 backdrop-blur-md">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-6">
                                 <TrendingUp size={14} /> Essential Business Impact
                             </span>
 
@@ -695,7 +695,7 @@ export default function UIUXClient() {
 
                 <div className="container mx-auto max-w-7xl px-6 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-16">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-blue-100/80 text-[#1A5CDD] border border-blue-200/60 px-5 py-2 text-xs font-extrabold uppercase tracking-widest shadow-2xs backdrop-blur-md">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Sparkles size={14} /> Comprehensive UI/UX Offerings
                         </span>
 
@@ -801,7 +801,7 @@ export default function UIUXClient() {
 
                 <div className="container mx-auto max-w-7xl px-6 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-8">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-[#1A5CDD]/10 text-[#1A5CDD] border border-[#1A5CDD]/20 px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest shadow-xs backdrop-blur-md">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Sliders size={13} /> Modern Technology Stack
                         </span>
 
@@ -864,7 +864,7 @@ export default function UIUXClient() {
                             <div className="relative z-10 space-y-4">
                                 <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-3">
                                     <div className="flex items-center gap-2.5">
-                                        <span className="inline-flex items-center gap-1.5 bg-white/10 text-[#38bdf8] border border-white/20 px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider backdrop-blur-md">
+                                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md">
                                             <Sparkles size={12} /> Spotlight Category
                                         </span>
                                         <span className="text-[11px] font-bold text-blue-200/80">
@@ -947,7 +947,7 @@ export default function UIUXClient() {
             <section className="py-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto max-w-7xl px-6 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-20">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-blue-100/80 text-[#1A5CDD] border border-blue-200/60 px-5 py-2 text-xs font-extrabold uppercase tracking-widest shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Workflow size={14} /> Proven Methodology
                         </span>
 
@@ -1067,7 +1067,7 @@ export default function UIUXClient() {
 
                 <div className="container mx-auto max-w-7xl px-6 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 rounded-full bg-white/10 text-[#38bdf8] border border-white/15 px-5 py-2 text-xs font-extrabold uppercase tracking-widest backdrop-blur-md shadow-inner">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md">
                             <Award size={14} /> Why Choose Us
                         </span>
 
@@ -1120,7 +1120,7 @@ export default function UIUXClient() {
                 <div className="container mx-auto max-w-7xl px-6 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                         <div className="lg:col-span-5 lg:sticky">
-                            <span className="inline-flex items-center gap-2 rounded-full bg-blue-100/80 text-[#1A5CDD] border border-blue-200/60 px-5 py-2 text-xs font-extrabold uppercase tracking-widest shadow-sm mb-6">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <HelpCircle size={14} /> Clear Answers
                             </span>
 
@@ -1164,20 +1164,13 @@ export default function UIUXClient() {
                                             className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-[17px] transition-colors group"
                                         >
                                             <span className={isOpen ? "text-[#1A5CDD] font-extrabold" : "text-[#011146] group-hover:text-[#1A5CDD]"}>
-                                                {faq.q}
+                                                {idx + 1}. {faq.q}
                                             </span>
-                                            <div
-                                                className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen
-                                                    ? "bg-[#1A5CDD] text-white shadow-sm"
-                                                    : "bg-slate-100 text-slate-400 group-hover:bg-blue-50 group-hover:text-[#1A5CDD]"
-                                                    }`}
-                                            >
-                                                {isOpen ? (
-                                                    <Minus size={18} strokeWidth={2.5} />
-                                                ) : (
-                                                    <Plus size={18} strokeWidth={2.5} />
-                                                )}
-                                            </div>
+                                            <div className="flex-shrink-0 ml-4">
+    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+</div>
                                         </button>
 
                                         {isOpen && (

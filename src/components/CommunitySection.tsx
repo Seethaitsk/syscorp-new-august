@@ -145,7 +145,7 @@ const tabs = [
       },
     ],
     images: [
-      "https://images.unsplash.com/photo-1581291518655-9523c932ded7?auto=format&fit=crop&q=75&w=400&h=533",
+      "/images/about/sass.png",
       "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&q=75&w=400&h=333",
     ],
   },
@@ -660,13 +660,14 @@ export default function CommunitySection() {
             {/* RIGHT IMAGE BENTO COLUMN */}
             <div className="sky-bento-grid">
               {/* Tall Image */}
-              <div className="sky-bento-img-container" style={{ height: "420px" }}>
+              <div className={`sky-bento-img-container ${tab.images[0].includes('sass.png') ? 'bg-white dark:bg-white/[0.02]' : ''}`} style={{ height: "420px" }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={tab.images[0]}
                   alt="Professional developers working"
                   loading="lazy"
                   className="sky-bento-img"
+                  style={tab.images[0].includes('sass.png') ? { objectFit: 'contain', padding: '1.5rem' } : {}}
                 />
               </div>
 

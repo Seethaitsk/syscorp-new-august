@@ -22,10 +22,10 @@ const megaMenuData = [
       { label: "Web Development", desc: "Next.js 15 & React enterprise web platforms", href: "/services/website-development/web-development", icon: "Code" },
       { label: "Cloud & Server Solutions", desc: "Scalable cloud infrastructure and managed server services for modern businesses.", href: "/services/website-development/cloud-server", icon: "Server" },
       { label: "UI/UX Design", desc: "Strategic User Interface / User Experience Design to enhance user engagement and satisfaction", href: "/services/website-development/ui-ux", icon: "Palette" },
-      { label: "Full Stack Development", desc: "Custom-built web applications using the latest technologies.", href: "/services/website-development/full-stack", icon: "Palette" },
-      { label: "CRM Development", desc: "Custom Customer Relationship Management (CRM) software tailored to your business needs.", href: "/services/website-development/crm-development", icon: "Palette" },
-      { label: "ERP Development", desc: "Enterprise Resource Planning (ERP) systems that streamline your business operations and improve efficiency.", href: "/services/website-development/erp-development", icon: "Palette" },
-      { label: "Grapic Designing", desc: "Strategic User Interface / User Experience Design to enhance user engagement and satisfaction", href: "/services/website-development/graphic-design", icon: "Palette" },
+      { label: "Full Stack Development", desc: "Custom-built web applications using the latest technologies.", href: "/services/website-development/full-stack", icon: "Terminal" },
+      { label: "CRM Development", desc: "Custom Customer Relationship Management (CRM) software tailored to your business needs.", href: "/services/website-development/crm-development", icon: "Briefcase" },
+      { label: "ERP Development", desc: "Enterprise Resource Planning (ERP) systems that streamline your business operations and improve efficiency.", href: "/services/website-development/erp-development", icon: "Building" },
+      { label: "Graphic Design", desc: "Creative visual solutions to build brand identity and effectively communicate your message.", href: "/services/website-development/graphic-design", icon: "Layout" },
 
 
     ]
@@ -40,7 +40,6 @@ const megaMenuData = [
       { label: "Meta Ads", desc: "Grow Your Business with Results-Focused Meta Advertising.", href: "/services/seo-services/meta-ads", icon: "Facebook" },
       { label: "Content Marketing", desc: "Engaging Content Strategies to Attract and Retain Customers.", href: "/services/seo-services/content-marketing", icon: "Edit" },
       { label: "Email Marketing", desc: "Reach your audience with personalized, high-converting email campaigns.", href: "/services/seo-services/email-marketing", icon: "Mail" },
-
 
     ]
   }
