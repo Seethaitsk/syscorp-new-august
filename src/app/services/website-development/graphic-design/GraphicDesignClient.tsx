@@ -328,43 +328,43 @@ export default function GraphicDesignClient() {
     // 10 FAQs
     const faqs = [
         {
-            q: "1. What Graphic Design Services do you offer?",
+            q: "What Graphic Design Services do you offer?",
             a: "We offer a wide range of Graphic Design Services in Pondicherry, including logo design, brand identity, social media creatives, brochures, flyers, banners, website banners, company profiles, packaging design, video editing, motion graphics, and animation."
         },
         {
-            q: "2. Why choose your Graphic Design Company in Pondicherry?",
+            q: "Why choose your Graphic Design Company in Pondicherry?",
             a: "As a trusted Graphic Design Company in Pondicherry, we create custom, high-quality designs that align with your brand identity, marketing goals, and business objectives while ensuring creativity and consistency across every project."
         },
         {
-            q: "3. Do you provide custom graphic design solutions?",
+            q: "Do you provide custom graphic design solutions?",
             a: "Yes. Every design is created based on your business requirements, target audience, and brand guidelines to ensure a unique and professional visual identity."
         },
         {
-            q: "4. Can you design graphics for social media and digital marketing?",
+            q: "Can you design graphics for social media and digital marketing?",
             a: "Yes. We create social media posts, promotional banners, website graphics, advertisements, and other digital creatives that help improve brand visibility and audience engagement."
         },
         {
-            q: "5. Do you provide print design services?",
+            q: "Do you provide print design services?",
             a: "Yes. We design brochures, flyers, business cards, posters, catalogs, company profiles, packaging, and other print materials that are ready for professional printing."
         },
         {
-            q: "6. Can you redesign an existing logo or brand identity?",
+            q: "Can you redesign an existing logo or brand identity?",
             a: "Yes. We can refresh or completely redesign existing logos and branding materials to give your business a modern and consistent visual identity."
         },
         {
-            q: "7. What file formats will I receive?",
+            q: "What file formats will I receive?",
             a: "Final designs are delivered in industry-standard formats such as AI, EPS, PSD, PDF, PNG, JPG, and SVG, depending on your project requirements."
         },
         {
-            q: "8. How long does a graphic design project take?",
+            q: "How long does a graphic design project take?",
             a: "Project timelines vary based on the scope and complexity. Simple designs may take a few days, while complete branding or larger creative projects require additional time."
         },
         {
-            q: "9. Do you offer video editing and motion graphics?",
+            q: "Do you offer video editing and motion graphics?",
             a: "Yes. Our Graphic Design Services in Pondicherry include professional video editing, motion graphics, and animation for marketing campaigns, social media, and business presentations."
         },
         {
-            q: "10. How do I get started with your Graphic Design Services?",
+            q: "How do I get started with your Graphic Design Services?",
             a: "Simply contact our team with your design requirements. We'll understand your objectives, discuss the project scope, and provide the right creative solution for your business."
         }
     ];
@@ -422,7 +422,7 @@ export default function GraphicDesignClient() {
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                         <div className="lg:col-span-7 gsap-fade-up">
-                            <div className="inline-flex items-center gap-2.5 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-4 py-1.5 text-[13px] font-extrabold text-[#1A5CDD] uppercase tracking-wider mb-6 shadow-sm">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[#1A5CDD] inline-block animate-ping" />
                                 Creative Visual Solutions
                             </div>
@@ -542,7 +542,7 @@ export default function GraphicDesignClient() {
 
                         {/* Right Side: Content (55%) */}
                         <div className="lg:w-[55%] w-full relative order-1 lg:order-2">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider mb-6 shadow-sm border border-[#1A5CDD]/10">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <Palette size={14} /> Understanding Graphic Design
                             </span>
 
@@ -634,7 +634,7 @@ export default function GraphicDesignClient() {
                     
                     {/* Section Header */}
                     <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Sparkles size={14} />
                             Full-Spectrum Design Studio
                         </span>
@@ -751,7 +751,7 @@ export default function GraphicDesignClient() {
             <section className="py-20 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Settings size={14} />
                             Creative Workflow
                         </span>
@@ -802,7 +802,7 @@ export default function GraphicDesignClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-white/10 text-[#38bdf8] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-white/15 backdrop-blur-md shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md">
                             <Cpu size={14} />
                             Creative Stack
                         </span>
@@ -849,7 +849,7 @@ export default function GraphicDesignClient() {
             <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Shield size={14} />
                             Proven Excellence
                         </span>
@@ -896,7 +896,7 @@ export default function GraphicDesignClient() {
                     
                     {/* Header Section (Centered) */}
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <HelpCircle size={14} />
                             FAQ
                         </span>
@@ -911,33 +911,27 @@ export default function GraphicDesignClient() {
                     </div>
 
                     {/* FAQ 2-Column Elegant Accordion List */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-0 max-w-6xl mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-0 max-w-7xl mx-auto">
                         {/* Left Column */}
                         <div>
                             {faqs.slice(0, Math.ceil(faqs.length / 2)).map((item, i) => {
                                 const index = i;
                                 const isOpen = activeAccordion === index;
                                 return (
-                                    <div key={index} className="border-b border-slate-200 last:border-b-0 lg:last:border-b lg:border-b-slate-200">
+                                    <div key={index} className="mb-4">
                                         <button
                                             onClick={() => setActiveAccordion(isOpen ? null : index)}
-                                            className="w-full flex items-start justify-between py-6 text-left group cursor-pointer"
+                                            className={`w-full text-left p-6 rounded-2xl border transition-all duration-300 flex items-center justify-between gap-4 ${isOpen ? "bg-[#F4F7FE] border-[#1A5CDD] shadow-sm" : "bg-white border-slate-200 hover:border-slate-300"}`}
                                         >
-                                            <h3 className={`text-[17px] font-bold pr-8 transition-colors duration-300 ${isOpen ? 'text-[#1A5CDD]' : 'text-[#011146] group-hover:text-[#1A5CDD]'}`}>
-                                                {item.q}
-                                            </h3>
-                                            <div className={`mt-0.5 shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 shadow-sm ${isOpen ? 'bg-[#1A5CDD] border-[#1A5CDD] text-white rotate-180' : 'bg-slate-50 border-slate-200 text-slate-400 group-hover:border-[#1A5CDD] group-hover:text-[#1A5CDD] group-hover:bg-[#F0F6FF]'}`}>
-                                                {isOpen ? <Minus size={16} strokeWidth={2.5} /> : <Plus size={16} strokeWidth={2.5} />}
-                                            </div>
+                                            <span className="font-bold text-[#011146] text-[16px]">{index + 1}. {item.q}</span>
+                                            <div className="flex-shrink-0 ml-4">
+    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+</div>
                                         </button>
-                                        <div
-                                            className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100 pb-6" : "grid-rows-[0fr] opacity-0 pb-0"}`}
-                                        >
-                                            <div className="overflow-hidden">
-                                                <p className="text-slate-600 text-[15px] leading-relaxed pr-12 font-medium">
-                                                    {item.a}
-                                                </p>
-                                            </div>
+                                        <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px] mt-2 p-6 bg-slate-50 rounded-2xl border border-slate-100" : "max-h-0"}`}>
+                                            <p className="text-slate-600 text-[14.5px] leading-relaxed">{item.a}</p>
                                         </div>
                                     </div>
                                 );
@@ -950,26 +944,20 @@ export default function GraphicDesignClient() {
                                 const index = i + Math.ceil(faqs.length / 2);
                                 const isOpen = activeAccordion === index;
                                 return (
-                                    <div key={index} className="border-b border-slate-200 last:border-b-0">
+                                    <div key={index} className="mb-4">
                                         <button
                                             onClick={() => setActiveAccordion(isOpen ? null : index)}
-                                            className="w-full flex items-start justify-between py-6 text-left group cursor-pointer"
+                                            className={`w-full text-left p-6 rounded-2xl border transition-all duration-300 flex items-center justify-between gap-4 ${isOpen ? "bg-[#F4F7FE] border-[#1A5CDD] shadow-sm" : "bg-white border-slate-200 hover:border-slate-300"}`}
                                         >
-                                            <h3 className={`text-[17px] font-bold pr-8 transition-colors duration-300 ${isOpen ? 'text-[#1A5CDD]' : 'text-[#011146] group-hover:text-[#1A5CDD]'}`}>
-                                                {item.q}
-                                            </h3>
-                                            <div className={`mt-0.5 shrink-0 w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 shadow-sm ${isOpen ? 'bg-[#1A5CDD] border-[#1A5CDD] text-white rotate-180' : 'bg-slate-50 border-slate-200 text-slate-400 group-hover:border-[#1A5CDD] group-hover:text-[#1A5CDD] group-hover:bg-[#F0F6FF]'}`}>
-                                                {isOpen ? <Minus size={16} strokeWidth={2.5} /> : <Plus size={16} strokeWidth={2.5} />}
-                                            </div>
+                                            <span className="font-bold text-[#011146] text-[16px]">{index + 1}. {item.q}</span>
+                                            <div className="flex-shrink-0 ml-4">
+    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+</div>
                                         </button>
-                                        <div
-                                            className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100 pb-6" : "grid-rows-[0fr] opacity-0 pb-0"}`}
-                                        >
-                                            <div className="overflow-hidden">
-                                                <p className="text-slate-600 text-[15px] leading-relaxed pr-12 font-medium">
-                                                    {item.a}
-                                                </p>
-                                            </div>
+                                        <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px] mt-2 p-6 bg-slate-50 rounded-2xl border border-slate-100" : "max-h-0"}`}>
+                                            <p className="text-slate-600 text-[14.5px] leading-relaxed">{item.a}</p>
                                         </div>
                                     </div>
                                 );

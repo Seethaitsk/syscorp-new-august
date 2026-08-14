@@ -661,10 +661,12 @@ export default function GoogleAdsClient() {
                                             onClick={() => setActiveFaq(isOpen ? null : index)}
                                             className={`w-full text-left p-6 rounded-2xl border transition-all duration-300 flex items-center justify-between gap-4 ${isOpen ? "bg-[#F4F7FE] border-[#1A5CDD] shadow-sm" : "bg-white border-slate-200 hover:border-slate-300"}`}
                                         >
-                                            <span className="font-bold text-[#011146] text-[16px]">{item.q}</span>
-                                            <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${isOpen ? "bg-[#1A5CDD] text-white" : "bg-slate-100 text-slate-500"}`}>
-                                                {isOpen ? <Minus size={16} /> : <Plus size={16} />}
-                                            </div>
+                                            <span className="font-bold text-[#011146] text-[16px]">{index + 1}. {item.q}</span>
+                                            <div className="flex-shrink-0 ml-4">
+    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+</div>
                                         </button>
                                         <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px] mt-2 p-6 bg-slate-50 rounded-2xl border border-slate-100" : "max-h-0"}`}>
                                             <p className="text-slate-600 text-[14.5px] leading-relaxed">{item.a}</p>
@@ -683,10 +685,12 @@ export default function GoogleAdsClient() {
                                             onClick={() => setActiveFaq(isOpen ? null : index)}
                                             className={`w-full text-left p-6 rounded-2xl border transition-all duration-300 flex items-center justify-between gap-4 ${isOpen ? "bg-[#F4F7FE] border-[#1A5CDD] shadow-sm" : "bg-white border-slate-200 hover:border-slate-300"}`}
                                         >
-                                            <span className="font-bold text-[#011146] text-[16px]">{item.q}</span>
-                                            <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${isOpen ? "bg-[#1A5CDD] text-white" : "bg-slate-100 text-slate-500"}`}>
-                                                {isOpen ? <Minus size={16} /> : <Plus size={16} />}
-                                            </div>
+                                            <span className="font-bold text-[#011146] text-[16px]">{index + 1}. {item.q}</span>
+                                            <div className="flex-shrink-0 ml-4">
+    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+</div>
                                         </button>
                                         <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px] mt-2 p-6 bg-slate-50 rounded-2xl border border-slate-100" : "max-h-0"}`}>
                                             <p className="text-slate-600 text-[14.5px] leading-relaxed">{item.a}</p>

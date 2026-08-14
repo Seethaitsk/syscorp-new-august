@@ -98,8 +98,8 @@ export default function MissionVisionSection() {
                         <div className="mv-image-main absolute top-0 left-4 right-10 bottom-12 rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-500">
                             <Image 
                                 src={activeTab === "mission" 
-                                    ? "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
-                                    : "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"} 
+                                    ? "/images/about/mission.png"
+                                    : "/images/about/vision.png"} 
                                 alt={activeTab === "mission" ? "Team collaborating" : "Business strategy"}
                                 fill
                                 className="object-cover transition-all duration-700 hover:scale-105"
@@ -120,8 +120,8 @@ export default function MissionVisionSection() {
                         <div className="mv-image-overlap absolute bottom-0 right-0 w-[50%] h-[45%] rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] border-4 sm:border-8 border-white dark:border-[#080f25] z-10 transition-all duration-500">
                             <Image 
                                 src={activeTab === "mission"
-                                    ? "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=400"
-                                    : "https://images.unsplash.com/photo-1519389953887-29504d1528c3?auto=format&fit=crop&q=80&w=400"} 
+                                    ? "/images/about/mission-1.png"
+                                    : "/images/about/vision-1.png"} 
                                 alt={activeTab === "mission" ? "Advanced technology" : "Digital future"}
                                 fill
                                 className="object-cover transition-all duration-700 hover:scale-105"

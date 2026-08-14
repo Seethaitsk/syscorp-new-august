@@ -1,0 +1,56 @@
+
+> it-company-website@0.1.0 build
+> next build
+
+▲ Next.js 16.1.1 (Turbopack)
+- Experiments (use with caution):
+  · optimizePackageImports
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 33.9s
+  Running TypeScript ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/32) ...
+  Generating static pages using 7 workers (8/32) 
+  Generating static pages using 7 workers (16/32) 
+  Generating static pages using 7 workers (24/32) 
+✓ Generating static pages using 7 workers (32/32) in 4.1s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /ai-service
+├ ○ /blog
+├ ƒ /blog/[slug]
+├ ○ /career
+├ ○ /contact
+├ ○ /disclaimer
+├ ○ /hero-demo
+├ ○ /privacy-policy
+├ ○ /services
+├ ○ /services-1
+├ ○ /services-1/seo-services
+├ ○ /services-1/seo-services/local-seo
+├ ○ /services-1/website-development
+├ ○ /services/seo-services/content-marketing
+├ ○ /services/seo-services/email-marketing
+├ ○ /services/seo-services/google-ads
+├ ○ /services/seo-services/local-seo
+├ ○ /services/seo-services/meta-ads
+├ ○ /services/seo-services/seo
+├ ○ /services/seo-services/Social-Media
+├ ○ /services/website-development/cloud-server
+├ ○ /services/website-development/crm-development
+├ ○ /services/website-development/erp-development
+├ ○ /services/website-development/full-stack
+├ ○ /services/website-development/graphic-design
+├ ○ /services/website-development/ui-ux
+├ ○ /services/website-development/web-development
+└ ○ /terms-and-conditions
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

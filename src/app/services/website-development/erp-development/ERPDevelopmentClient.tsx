@@ -488,7 +488,7 @@ export default function ERPDevelopmentClient() {
                         {/* Right Column: Content */}
                         <div className="lg:col-span-7 space-y-6 order-1 lg:order-2">
                             <div className="flex items-center gap-3">
-                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                                     <Cpu size={14} />
                                     Core Architecture
                                 </span>
@@ -528,7 +528,7 @@ export default function ERPDevelopmentClient() {
                             {/* Left Column (55%): Content & Value Points */}
                             <div className="lg:col-span-7 space-y-6">
                                 <div className="flex items-center gap-3">
-                                    <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
+                                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                                         <Zap size={14} />
                                         Strategic Advantage
                                     </span>
@@ -689,7 +689,7 @@ export default function ERPDevelopmentClient() {
             <section className="py-20 bg-white relative overflow-hidden">
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-6xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Sparkles size={14} />
                             End-to-End Solutions
                         </span>
@@ -757,7 +757,7 @@ export default function ERPDevelopmentClient() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     {/* Header */}
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-white border border-slate-200 text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Sparkles size={14} className="text-[#38bdf8]" />
                             Enterprise Architecture
                         </span>
@@ -877,7 +877,7 @@ export default function ERPDevelopmentClient() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
                         <div className="space-y-4 max-w-4xl">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                                 <Workflow size={14} />
                                 Agile Roadmap
                             </span>
@@ -1046,7 +1046,7 @@ export default function ERPDevelopmentClient() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="bg-white/95 backdrop-blur-xl rounded-[36px] p-8 md:p-12 lg:p-14 border border-slate-200/90 shadow-[0_10px_40px_rgba(1,17,70,0.06)] relative overflow-hidden">
                         <div className="max-w-4xl mx-auto text-center space-y-4 mb-14">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-[#1A5CDD]/20 shadow-sm">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                                 <Shield size={14} />
                                 Proven Expertise
                             </span>
@@ -1102,7 +1102,7 @@ export default function ERPDevelopmentClient() {
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 bg-white/10 text-[#38bdf8] px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider border border-white/15 backdrop-blur-md shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md">
                             <TrendingUp size={14} />
                             Why Syscorp
                         </span>
@@ -1235,7 +1235,7 @@ export default function ERPDevelopmentClient() {
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
                         {/* Left Column Header */}
                         <div className="lg:w-1/3 flex flex-col justify-start lg:sticky">
-                            <div className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-[11px] font-black text-[#1A5CDD] uppercase tracking-widest mb-6 w-fit shadow-sm">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6 w-fit">
                                 <HelpCircle size={13} />
                                 FREQUENTLY ASKED QUESTIONS
                             </div>
@@ -1275,7 +1275,7 @@ export default function ERPDevelopmentClient() {
                                                 className="w-full p-6 text-left flex items-center justify-between gap-4 cursor-pointer"
                                             >
                                                 <span className="font-extrabold text-[17px] text-[#011146] leading-snug">
-                                                    {faq.q}
+                                                    {index + 1}. {faq.q}
                                                 </span>
                                                 <div className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${isOpen ? "bg-[#1A5CDD] text-white rotate-180" : "bg-slate-100 text-slate-500"
                                                     }`}>

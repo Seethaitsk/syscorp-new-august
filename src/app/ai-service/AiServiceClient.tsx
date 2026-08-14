@@ -8,56 +8,56 @@ const services = [
     {
         key: 'genai',
         icon: 'bi-magic',
-        img: '/aiservice/images/genai.jpeg',
+        img: '/images/ai/1.png',
         title: 'Generative AI Solutions',
         tagline: 'Develop intelligent AI applications powered by advanced language models for content generation, automation, and business workflows.'
     },
     {
         key: 'chatbot',
         icon: 'bi-chat-dots',
-        img: '/aiservice/images/Chatbot.jpeg',
+        img: '/images/ai/2.png',
         title: 'AI Chatbot Development',
         tagline: 'Build AI-powered chatbots that provide instant customer support, answer queries, and improve engagement across websites and applications.'
     },
     {
         key: 'agents',
         icon: 'bi-robot',
-        img: '/aiservice/images/customai.jpeg',
+        img: '/images/ai/3.png',
         title: 'AI Agents',
         tagline: 'Create autonomous AI agents capable of handling business tasks, customer interactions, scheduling, research, and workflow execution.'
     },
     {
         key: 'automation',
         icon: 'bi-gear-wide-connected',
-        img: '/aiservice/images/ai_assistant.png',
+        img: '/images/ai/4.png',
         title: 'AI Automation',
         tagline: 'Automate repetitive business processes using intelligent AI workflows that improve efficiency and reduce manual effort.'
     },
     {
         key: 'software',
         icon: 'bi-code-square',
-        img: '/aiservice/images/laptop_code.png',
+        img: '/images/ai/5.png',
         title: 'AI Software Development',
         tagline: 'Design and develop custom AI-powered software tailored to your business requirements and industry needs.'
     },
     {
         key: 'integration',
         icon: 'bi-box-seam',
-        img: '/aiservice/images/people_working.png',
+        img: '/images/ai/6.png',
         title: 'AI API Integration',
         tagline: 'Integrate OpenAI, Gemini, Claude, Llama, and other AI APIs into your existing applications and business systems.'
     },
     {
         key: 'analytics',
         icon: 'bi-graph-up-arrow',
-        img: '/aiservice/images/ai_brain.png',
+        img: '/images/ai/7.png',
         title: 'AI Analytics',
         tagline: 'Transform complex business data into meaningful insights using AI-powered dashboards and predictive analytics.'
     },
     {
         key: 'cloud',
         icon: 'bi-cloud-arrow-up',
-        img: '/aiservice/images/ai_assistant.png',
+        img: '/images/ai/8.png',
         title: 'AI Cloud Solutions',
         tagline: 'Deploy scalable AI applications securely on AWS, Microsoft Azure, and Google Cloud Platform.'
     }
@@ -181,14 +181,14 @@ export default function AiServiceClient() {
             {/* 1. HERO SECTION */}
             <header id="top" className="hero flex items-center relative min-h-[100vh] overflow-hidden bg-[#011146]">
                 <video className="hero-video absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
-                    <source src="/aiservice/images/banner4.mp4" type="video/mp4" />
+                    <source src="/images/ai-video.mp4" type="video/mp4" />
                 </video>
                 <div className="hero-overlay absolute inset-0 z-0 bg-gradient-to-b from-[#011146]/90 via-[#011146]/80 to-[#011146]"></div>
 
                 <div className="container mx-auto px-4 relative z-10 hero-content text-center pt-28 pb-20">
                     <div className="flex flex-wrap justify-center items-center">
                         <div className="w-full lg:w-10/12 px-4">
-                            <span className="badge-eyebrow inline-flex items-center text-[13px] font-semibold text-sky-300 bg-sky-500/10 border border-sky-400/30 px-4 py-1.5 rounded-full mb-[22px]">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-[22px]">
                                 <i className="bi bi-stars mr-1.5 text-sky-400"></i> Build Smarter. Automate Faster. Grow with AI.
                             </span>
                             <h1 className="hero-title text-4xl md:text-[58px] leading-[1.1] font-extrabold !text-white mb-[22px]" style={{ color: '#ffffff' }}>
@@ -215,40 +215,27 @@ export default function AiServiceClient() {
             </header>
 
             {/* 2. WHY CHOOSE AI SOLUTIONS */}
-            <section className="section-digital-experiences bg-slate-50 py-[90px] overflow-hidden border-b border-slate-200">
+            <section className="section-digital-experiences bg-slate-50 py-16 md:py-20 overflow-hidden border-b border-slate-200">
                 <div className="container mx-auto px-4">
-                    <div className="grid lg:grid-cols-12 gap-12 items-center">
+                    <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
                         {/* Left Column: Graphics & Image */}
-                        <div className="lg:col-span-5 relative">
-                            <div className="experience-img-wrap relative">
-                                <img src="/aiservice/images/people_working.png" alt="Team working with AI" className="main-exp-img w-full h-auto rounded-2xl shadow-xl" />
+                        <div className="lg:col-span-5 relative flex justify-center mt-8 lg:mt-0">
+                            {/* Ambient Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-blue-500/10 rounded-full blur-[80px] pointer-events-none -z-10" />
 
-                                <div className="floating-badge shadow-lg absolute -top-4 -right-4 bg-white px-4 py-3 rounded-xl flex items-center gap-2.5 font-bold text-[14px]">
-                                    <div className="badge-dot w-3 h-3 rounded-full bg-emerald-500 animate-ping"></div>
-                                    <span className="text-[#011146]">Active AI Clients 320+</span>
-                                </div>
-
-                                <div className="floating-badge shadow-lg absolute -bottom-8 -left-4 bg-white p-5 rounded-2xl w-48 border border-slate-200">
-                                    <i className="bi bi-graph-up-arrow text-blue-600 text-2xl mb-1 block"></i>
-                                    <div>
-                                        <strong className="block text-[#011146] font-bold text-lg">98.4% Efficiency</strong>
-                                        <div className="mini-chart flex gap-1 mt-2">
-                                            <span className="h-1.5 w-full bg-blue-600 rounded-full"></span>
-                                            <span className="h-1.5 w-full bg-sky-400 rounded-full"></span>
-                                            <span className="h-1.5 w-full bg-blue-300 rounded-full"></span>
-                                            <span className="h-1.5 w-full bg-slate-200 rounded-full"></span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <img src="/aiservice/images/laptop_code.png" alt="AI Code Development" className="overlap-exp-img shadow-2xl absolute -bottom-12 -right-6 w-2/3 rounded-2xl hidden md:block border-2 border-white" />
+                            <div className="relative w-full max-w-[550px] z-10 group cursor-pointer flex items-center justify-center">
+                                <img
+                                    src="/images/ai/ai-1.png"
+                                    alt="AI Solutions Architecture"
+                                    className="w-full h-auto object-contain transform transition-all duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,17,70,0.08)]"
+                                />
                             </div>
                         </div>
 
                         {/* Right Column: Title, Subtitle, 5 Features */}
                         <div className="lg:col-span-7 pt-8 lg:pt-0">
                             <div className="mb-8">
-                                <span className="inline-flex items-center gap-1.5 bg-blue-50 px-3.5 py-1.5 rounded-full text-xs font-bold text-blue-700 uppercase tracking-widest mb-3 border border-blue-200">
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-3">
                                     <i className="bi bi-lightbulb-fill"></i> Why Choose AI Solutions?
                                 </span>
                                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold !text-[#011146] mt-2 mb-4 leading-tight" style={{ color: '#011146' }}>
@@ -262,51 +249,57 @@ export default function AiServiceClient() {
                             <div className="grid sm:grid-cols-2 gap-4 mt-6">
                                 {/* 1. Business Automation */}
                                 <div className="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-sky-300 transition-all">
-                                    <div className="w-10 h-10 bg-sky-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-3">
-                                        <i className="bi bi-diagram-3"></i>
+                                    <div className="flex items-center gap-3.5 mb-3">
+                                        <div className="w-10 h-10 shrink-0 bg-sky-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg">
+                                            <i className="bi bi-diagram-3"></i>
+                                        </div>
+                                        <h4 className="font-bold !text-[#011146] text-[16.5px] leading-tight" style={{ color: '#011146' }}>Business Automation</h4>
                                     </div>
-                                    <h4 className="font-bold !text-[#011146] text-[16.5px] mb-1" style={{ color: '#011146' }}>Business Automation</h4>
                                     <p className="!text-slate-600 text-[14px] leading-snug" style={{ color: '#475569' }}>Automate repetitive tasks, reduce manual effort, and improve operational efficiency across departments.</p>
                                 </div>
 
                                 {/* 2. Reduce Operational Costs */}
                                 <div className="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-sky-300 transition-all">
-                                    <div className="w-10 h-10 bg-sky-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-3">
-                                        <i className="bi bi-piggy-bank"></i>
+                                    <div className="flex items-center gap-3.5 mb-3">
+                                        <div className="w-10 h-10 shrink-0 bg-sky-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg">
+                                            <i className="bi bi-piggy-bank"></i>
+                                        </div>
+                                        <h4 className="font-bold !text-[#011146] text-[16.5px] leading-tight" style={{ color: '#011146' }}>Reduce Operational Costs</h4>
                                     </div>
-                                    <h4 className="font-bold !text-[#011146] text-[16.5px] mb-1" style={{ color: '#011146' }}>Reduce Operational Costs</h4>
                                     <p className="!text-slate-600 text-[14px] leading-snug" style={{ color: '#475569' }}>Minimize human intervention, optimize processes, and lower long-term business expenses.</p>
                                 </div>
 
                                 {/* 3. Increase Productivity */}
                                 <div className="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-sky-300 transition-all">
-                                    <div className="w-10 h-10 bg-sky-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-3">
-                                        <i className="bi bi-lightning-charge"></i>
+                                    <div className="flex items-center gap-3.5 mb-3">
+                                        <div className="w-10 h-10 shrink-0 bg-sky-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg">
+                                            <i className="bi bi-lightning-charge"></i>
+                                        </div>
+                                        <h4 className="font-bold !text-[#011146] text-[16.5px] leading-tight" style={{ color: '#011146' }}>Increase Productivity</h4>
                                     </div>
-                                    <h4 className="font-bold !text-[#011146] text-[16.5px] mb-1" style={{ color: '#011146' }}>Increase Productivity</h4>
                                     <p className="!text-slate-600 text-[14px] leading-snug" style={{ color: '#475569' }}>Allow your teams to focus on strategic work while AI handles repetitive operations.</p>
                                 </div>
 
                                 {/* 4. Enhance Customer Experience */}
                                 <div className="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-sky-300 transition-all">
-                                    <div className="w-10 h-10 bg-sky-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-3">
-                                        <i className="bi bi-heart-pulse"></i>
+                                    <div className="flex items-center gap-3.5 mb-3">
+                                        <div className="w-10 h-10 shrink-0 bg-sky-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg">
+                                            <i className="bi bi-heart-pulse"></i>
+                                        </div>
+                                        <h4 className="font-bold !text-[#011146] text-[16.5px] leading-tight" style={{ color: '#011146' }}>Enhance Customer Experience</h4>
                                     </div>
-                                    <h4 className="font-bold !text-[#011146] text-[16.5px] mb-1" style={{ color: '#011146' }}>Enhance Customer Experience</h4>
                                     <p className="!text-slate-600 text-[14px] leading-snug" style={{ color: '#475569' }}>Deliver instant, personalized, and 24/7 customer support through AI-powered solutions.</p>
                                 </div>
 
                                 {/* 5. Data-Driven Decision Making */}
                                 <div className="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-sky-300 transition-all sm:col-span-2">
-                                    <div className="flex items-start gap-3.5">
+                                    <div className="flex items-center gap-3.5 mb-3">
                                         <div className="w-10 h-10 shrink-0 bg-sky-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg">
                                             <i className="bi bi-bar-chart-line"></i>
                                         </div>
-                                        <div>
-                                            <h4 className="font-bold !text-[#011146] text-[16.5px] mb-1" style={{ color: '#011146' }}>Data-Driven Decision Making</h4>
-                                            <p className="!text-slate-600 text-[14px] leading-snug" style={{ color: '#475569' }}>Analyze business data in real time and gain actionable insights for smarter decisions.</p>
-                                        </div>
+                                        <h4 className="font-bold !text-[#011146] text-[16.5px] leading-tight" style={{ color: '#011146' }}>Data-Driven Decision Making</h4>
                                     </div>
+                                    <p className="!text-slate-600 text-[14px] leading-snug" style={{ color: '#475569' }}>Analyze business data in real time and gain actionable insights for smarter decisions.</p>
                                 </div>
                             </div>
                         </div>
@@ -341,28 +334,25 @@ export default function AiServiceClient() {
                                         <div
                                             key={s.key}
                                             onClick={() => setActiveServiceKey(s.key)}
-                                            className={`p-4 rounded-2xl cursor-pointer transition-all duration-300 flex flex-col justify-between ${
-                                                isOpen
+                                            className={`p-4 rounded-2xl cursor-pointer transition-all duration-300 flex flex-col justify-between ${isOpen
                                                     ? "bg-gradient-to-br from-[#0c226b] via-[#09184d] to-[#06123d] border-2 border-sky-400 shadow-[0_0_25px_rgba(56,189,248,0.3)] scale-[1.02]"
                                                     : "bg-[#07133c]/90 border border-slate-700/60 hover:border-sky-400/50 hover:bg-[#0c1e56]"
-                                            }`}
+                                                }`}
                                         >
                                             <div className="flex items-start gap-3 mb-2">
                                                 <span
-                                                    className={`w-10 h-10 shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-300 ${
-                                                        isOpen
+                                                    className={`w-10 h-10 shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-300 ${isOpen
                                                             ? "bg-blue-600 text-white shadow-md shadow-blue-600/50"
                                                             : "bg-blue-500/10 text-sky-400 border border-sky-400/20"
-                                                    }`}
+                                                        }`}
                                                 >
                                                     <i className={`bi ${s.icon}`}></i>
                                                 </span>
                                                 <div className="min-w-0 flex-1">
                                                     <span className="text-[11px] font-bold text-sky-400/80 uppercase tracking-wider block">Service 0{i + 1}</span>
                                                     <h3
-                                                        className={`font-bold text-[15.5px] leading-snug transition-colors truncate ${
-                                                            isOpen ? "text-sky-300" : "text-white"
-                                                        }`}
+                                                        className={`font-bold text-[15.5px] leading-snug transition-colors truncate ${isOpen ? "text-sky-300" : "text-white"
+                                                            }`}
                                                         style={{ color: isOpen ? '#7dd3fc' : '#ffffff' }}
                                                     >
                                                         {s.title}
@@ -384,24 +374,24 @@ export default function AiServiceClient() {
                             <div className="services-visual relative rounded-3xl overflow-hidden border-2 border-blue-500/40 shadow-[0_0_40px_rgba(37,99,235,0.25)] group flex-1 min-h-[300px] flex flex-col justify-end">
                                 <img
                                     src={activeService?.img || "/aiservice/images/Chatbot.jpeg"}
-                                    className="w-full h-full object-cover absolute inset-0 transition-all duration-500 group-hover:scale-105"
+                                    className="w-full h-full object-cover absolute inset-0 transition-all duration-500"
                                     alt="AI Service Visual"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#011146] via-[#011146]/50 to-transparent"></div>
 
                                 <div className="absolute top-4 right-4 z-10">
-                                    <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#011146]/80 backdrop-blur-md border border-sky-400/40 text-sky-300 text-xs font-bold uppercase tracking-wider shadow-lg">
+                                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md">
                                         <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                                         Active Capability
                                     </span>
                                 </div>
 
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/90 via-[#011146]/10 to-transparent h-full w-full pointer-events-none"></div>
+
                                 <div className="relative z-10 p-6">
-                                    <span className="text-sky-400 text-xs font-bold uppercase tracking-widest block mb-1">FEATURED SOLUTION</span>
-                                    <h3 className="text-2xl font-bold !text-white mb-2" style={{ color: '#ffffff' }}>{activeService?.title}</h3>
-                                    <p className="text-xs text-slate-200 mb-4 line-clamp-2">{activeService?.tagline}</p>
-                                    
-                                    <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs transition-all shadow-md">
+                                    <h3 className="text-2xl font-bold !text-white mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style={{ color: '#ffffff', textShadow: '0 2px 10px rgba(0,0,0,0.8)' }}>{activeService?.title}</h3>
+                                    <p className="text-xs text-slate-200 mb-4 line-clamp-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}>{activeService?.tagline}</p>
+
+                                    <Link href="/contact" className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md">
                                         Explore Solution <i className="bi bi-arrow-right"></i>
                                     </Link>
                                 </div>
@@ -444,10 +434,10 @@ export default function AiServiceClient() {
             <section className="py-[90px] bg-slate-50/80 border-b border-slate-200 relative overflow-hidden">
                 {/* Subtle background ambient dot grid */}
                 <div className="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none"></div>
-                
+
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="section-heading text-center max-w-[700px] mx-auto mb-14">
-                        <span className="inline-flex items-center gap-2 bg-blue-50 px-4 py-1.5 rounded-full text-xs font-extrabold text-blue-700 uppercase tracking-widest mb-3 border border-blue-200/80 shadow-2xs">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-3">
                             <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
                             How We Deliver
                         </span>
@@ -576,7 +566,7 @@ export default function AiServiceClient() {
             <section id="industries" className="py-[90px] bg-slate-50 border-b border-slate-200">
                 <div className="container mx-auto px-4">
                     <div className="section-heading text-center max-w-[700px] mx-auto mb-14">
-                        <span className="inline-flex items-center gap-1 bg-blue-50 px-3.5 py-1.5 rounded-full text-xs font-bold text-blue-700 uppercase tracking-widest mb-3 border border-blue-200">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-3">
                             Tailored Sector Solutions
                         </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold !text-[#011146] mb-4" style={{ color: '#011146' }}>
@@ -672,7 +662,7 @@ export default function AiServiceClient() {
 
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="section-heading text-center max-w-[760px] mx-auto mb-12">
-                        <span className="inline-flex items-center gap-2 bg-blue-500/10 text-sky-300 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest mb-4 border border-sky-400/30 shadow-[0_0_15px_rgba(56,189,248,0.2)]">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-4">
                             <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
                             <i className="bi bi-cpu-fill text-sky-400"></i> Enterprise Tech Stack
                         </span>
@@ -689,11 +679,10 @@ export default function AiServiceClient() {
                         <div className="inline-flex flex-wrap justify-center items-center gap-1.5 p-1.5 rounded-full bg-[#07133c]/90 backdrop-blur-xl border border-blue-500/30 shadow-[0_10px_30px_rgba(0,0,0,0.4)]">
                             <button
                                 onClick={() => setActiveTechFilter('all')}
-                                className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all duration-300 flex items-center gap-2 ${
-                                    activeTechFilter === 'all'
+                                className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all duration-300 flex items-center gap-2 ${activeTechFilter === 'all'
                                         ? "bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-[0_0_20px_rgba(56,189,248,0.35)] scale-[1.03]"
                                         : "text-slate-300 hover:text-white hover:bg-white/10"
-                                }`}
+                                    }`}
                             >
                                 <i className="bi bi-grid-fill"></i> All Technologies
                             </button>
@@ -701,11 +690,10 @@ export default function AiServiceClient() {
                                 <button
                                     key={cat.id}
                                     onClick={() => setActiveTechFilter(cat.id)}
-                                    className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all duration-300 flex items-center gap-2 ${
-                                        activeTechFilter === cat.id
+                                    className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all duration-300 flex items-center gap-2 ${activeTechFilter === cat.id
                                             ? "bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-[0_0_20px_rgba(56,189,248,0.35)] scale-[1.03]"
                                             : "text-slate-300 hover:text-white hover:bg-white/10"
-                                    }`}
+                                        }`}
                                 >
                                     <i className={`bi ${cat.icon}`}></i> {cat.title}
                                 </button>
@@ -749,11 +737,11 @@ export default function AiServiceClient() {
                                                     <div className="w-9 h-9 rounded-xl bg-blue-500/15 border border-blue-400/30 text-sky-300 text-base flex items-center justify-center shrink-0 mt-0.5 transition-all duration-300 group-hover/tech:scale-110 group-hover/tech:bg-blue-600 group-hover/tech:text-white">
                                                         {tech.name === "React" ? (
                                                             <svg className="w-5 h-5" viewBox="-11.5 -10.23174 23 20.46348" fill="none">
-                                                                <circle cx="0" cy="0" r="2.05" fill="currentColor"/>
+                                                                <circle cx="0" cy="0" r="2.05" fill="currentColor" />
                                                                 <g stroke="currentColor" strokeWidth="1" fill="none">
-                                                                    <ellipse rx="11" ry="4.2"/>
-                                                                    <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
-                                                                    <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
+                                                                    <ellipse rx="11" ry="4.2" />
+                                                                    <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                                                                    <ellipse rx="11" ry="4.2" transform="rotate(120)" />
                                                                 </g>
                                                             </svg>
                                                         ) : (
@@ -783,7 +771,7 @@ export default function AiServiceClient() {
             <section className="py-[90px] bg-slate-50 border-b border-slate-200">
                 <div className="container mx-auto px-4">
                     <div className="section-heading text-center max-w-[720px] mx-auto mb-14">
-                        <span className="inline-flex items-center gap-1 bg-blue-50 px-3.5 py-1.5 rounded-full text-xs font-bold text-blue-700 uppercase tracking-widest mb-3 border border-blue-200">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-3">
                             Case Studies
                         </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold !text-[#011146] mb-4" style={{ color: '#011146' }}>
@@ -859,7 +847,7 @@ export default function AiServiceClient() {
                 <div className="container mx-auto px-4">
                     <div className="grid lg:grid-cols-12 gap-10 items-center">
                         <div className="lg:col-span-5">
-                            <span className="inline-flex items-center gap-1 bg-blue-50 px-3.5 py-1.5 rounded-full text-xs font-bold text-blue-700 uppercase tracking-widest mb-3 border border-blue-200">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-3">
                                 Why Choose Us
                             </span>
                             <h2 className="text-3xl md:text-5xl font-extrabold !text-[#011146] mb-4 leading-tight" style={{ color: '#011146' }}>
@@ -906,22 +894,22 @@ export default function AiServiceClient() {
                         {/* Left Info Column */}
                         <div className="lg:w-5/12">
                             <div className="sticky top-28">
-                                <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-600 border border-blue-100 text-xs font-bold uppercase tracking-wider mb-6">
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                     <span className="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
                                     Frequently Asked Questions
                                 </span>
-                                
+
                                 <h2 className="text-3xl md:text-5xl font-extrabold !text-[#011146] mb-6 leading-tight" style={{ color: '#011146' }}>
                                     Your Questions <br />
                                     <span className="text-blue-600">Answered</span>
                                 </h2>
-                                
+
                                 <p className="!text-slate-500 text-lg leading-relaxed mb-10" style={{ color: '#64748b' }}>
                                     Find clear, honest answers to common questions from our team of experienced professionals.
                                 </p>
-                                
+
                                 <hr className="border-slate-200 mb-8" />
-                                
+
                                 <div className="flex items-center gap-4">
                                     <div className="flex -space-x-3">
                                         <div className="w-12 h-12 rounded-full border-2 border-white bg-slate-200 overflow-hidden relative shadow-sm">
@@ -962,7 +950,7 @@ export default function AiServiceClient() {
                                                     {index + 1}. {faq.q}
                                                 </h3>
                                                 <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300 ${isOpen ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-500 group-hover:bg-slate-200'}`}>
-                                                    <span className="text-xl font-light leading-none relative -top-[1px]">{isOpen ? '-' : '+'}</span>
+                                                    {isOpen ? <i className="bi bi-chevron-up text-[15px]"></i> : <i className="bi bi-chevron-down text-[15px]"></i>}
                                                 </div>
                                             </button>
                                             <div
@@ -988,7 +976,7 @@ export default function AiServiceClient() {
                 <video className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-screen" autoPlay muted loop playsInline>
                     <source src="https://videos.pexels.com/video-files/3129957/3129957-uhd_3840_2160_25fps.mp4" type="video/mp4" />
                 </video>
-                
+
                 <div className="absolute inset-0 bg-gradient-to-b from-[#011146] via-transparent to-[#011146]"></div>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#011146] via-transparent to-[#011146]"></div>
 
@@ -996,21 +984,21 @@ export default function AiServiceClient() {
                     <div className="max-w-4xl mx-auto relative">
                         <div className="relative bg-[#0a1229]/95 backdrop-blur-3xl border border-sky-400/30 rounded-[2.5rem] p-10 md:p-16 overflow-hidden shadow-[0_0_80px_rgba(14,165,233,0.2)]">
                             <div className="relative z-10">
-                                <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-sky-500/10 border border-sky-400/30 text-sky-400 text-[13px] font-bold tracking-[0.2em] uppercase mb-6">
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-6">
                                     <i className="bi bi-stars"></i> AI Consultation CTA
                                 </span>
-                                
+
                                 <h2 className="text-4xl md:text-5xl lg:text-[54px] font-extrabold !text-white mb-6 tracking-tight leading-[1.15]" style={{ color: '#ffffff' }}>
                                     Ready to Transform Your Business with AI?
                                 </h2>
-                                
+
                                 <p className="text-[17px] !text-slate-200 max-w-2xl mx-auto mb-4 leading-relaxed font-normal" style={{ color: '#e2e8f0' }}>
                                     Whether you're looking to automate workflows, build AI-powered applications, integrate intelligent chatbots, or implement advanced analytics, our AI experts are ready to help you achieve your business goals.
                                 </p>
                                 <p className="text-[17px] text-sky-400 font-bold mb-10">
                                     Let's build intelligent solutions that drive innovation and long-term growth.
                                 </p>
-                                
+
                                 <div className="flex flex-wrap justify-center gap-4">
                                     <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-[0_10px_30px_rgba(37,99,235,0.4)]">
                                         Get Free Consultation <i className="bi bi-arrow-right text-lg"></i>

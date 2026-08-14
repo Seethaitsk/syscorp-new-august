@@ -227,55 +227,63 @@ export default function AboutSection() {
       <div className="max-w-[1280px] mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 gap-12 items-center lg:grid-cols-[1.05fr_1.15fr] lg:gap-14">
 
-          {/* LEFT COLUMN: Overlapping Rounded Images + Vertical Outlined Text */}
-          <div className="sky-about-left-col relative w-full pb-[40px] sm:pb-[60px]">
-            <div className="sky-about-bg-text absolute right-[-10px] top-[5%] hidden sm:block text-[clamp(80px,8vw,110px)] font-black text-transparent [WebkitTextStroke:1.5px_rgba(26,92,221,0.08)] dark:[WebkitTextStroke:1.5px_rgba(255,255,255,0.04)] [writingMode:vertical-rl] uppercase tracking-[0.15em] z-0 select-none pointer-events-none">
+          {/* LEFT COLUMN: 3D Image Showcase + Floating Widgets */}
+          <div className="sky-about-left-col relative w-full pb-[40px] sm:pb-[60px] flex items-center justify-center lg:justify-start mt-8 lg:mt-0">
+            {/* Ambient Glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] bg-[#1A5CDD]/10 dark:bg-blue-500/15 rounded-full blur-[70px] pointer-events-none -z-10" />
+
+            <div className="sky-about-bg-text absolute left-[-20px] top-[0%] hidden sm:block text-[clamp(70px,7vw,90px)] font-black text-transparent [WebkitTextStroke:1.5px_rgba(26,92,221,0.06)] dark:[WebkitTextStroke:1.5px_rgba(255,255,255,0.03)] [writingMode:vertical-rl] uppercase tracking-[0.15em] z-0 select-none pointer-events-none">
               Syscorp
             </div>
 
-            <div>
-              <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=35&w=280"
-                alt="Software engineering team collaborating"
-                width={350}
-                height={440}
-                priority
-                className="sky-about-img-top w-[80%] sm:w-[75%] h-auto aspect-[4/5] rounded-[24px] object-cover block relative z-10 shadow-[0_15px_40px_rgba(1,17,70,0.04)] border border-black/5 dark:border-white/5 [transformStyle:preserve-3d] [willChange:transform]"
-              />
-            </div>
-
-            <div>
-              <Image
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=35&w=240"
-                alt="Clean IDE code workspace editor"
-                width={320}
-                height={240}
-                priority
-                className="sky-about-img-bottom absolute bottom-[-30px] sm:bottom-[-40px] right-0 w-[70%] sm:w-[62%] h-auto aspect-[4/3] rounded-[24px] object-cover block border-[6px] border-white dark:border-[#081129] shadow-[0_25px_50px_rgba(1,17,70,0.12)] dark:shadow-[0_25px_50px_rgba(0,0,0,0.4)] z-20 [transformStyle:preserve-3d] [willChange:transform]"
-              />
-            </div>
-
-            {/* Floating Glassmorphic Stats Widget */}
-            <div 
-              className="sky-about-floating-stats absolute left-[-20px] bottom-[20%] backdrop-blur-md p-3.5 rounded-2xl z-30 flex items-center gap-3 border border-black/80 dark:border-white/8 shadow-[0_15px_30px_rgba(0,0,0,0.08)] dark:shadow-[0_15px_30px_rgba(0,0,0,0.35)] bg-white/90 dark:bg-slate-900/85"
-              style={{ animation: "skyAboutBounce 4.5s ease-in-out infinite" }}
-            >
-              <div className="w-9 h-9 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center text-base font-bold">
-                📈
+            <div className="sky-about-img-wrapper relative w-full max-w-[580px] h-[500px] sm:h-[600px] mx-auto lg:ml-0 z-10 [transformStyle:preserve-3d] group">
+              {/* Main Image (Hand holding building) */}
+              <div className="absolute top-0 right-0 w-[88%] h-[88%] rounded-[2.5rem] overflow-hidden shadow-[0_30px_60px_rgba(26,92,221,0.15)] dark:shadow-[0_30px_60px_rgba(0,0,0,0.5)] border-[8px] border-white dark:border-[#0f172a] z-10 [willChange:transform] group-hover:-translate-y-2 transition-transform duration-700 ease-out">
+                <Image
+                  src="/images/about/about-hero-main.jpg"
+                  alt="Digital Solutions Infrastructure"
+                  fill
+                  priority
+                  className="object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-[#011146]/5 mix-blend-overlay" />
               </div>
-              <div className="flex flex-col">
-                <span className="text-[12px] font-extrabold text-slate-900 dark:text-white leading-none">99.8% Success</span>
-                <span className="text-[9px] text-slate-500 mt-1.5 font-semibold">Project Delivery Rate</span>
-              </div>
-            </div>
 
-            {/* Floating Experience Widget */}
-            <div 
-              className="sky-about-floating-stats absolute right-[-15px] top-[15%] backdrop-blur-md py-2.5 px-3.5 rounded-full z-30 flex items-center gap-2 border border-black/80 dark:border-white/8 shadow-[0_15px_30px_rgba(0,0,0,0.08)] dark:shadow-[0_15px_30px_rgba(0,0,0,0.35)] bg-white/90 dark:bg-slate-900/85"
-              style={{ animation: "skyAboutBounce 4.5s ease-in-out infinite", animationDelay: "1s" }}
-            >
-              <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-[10px] font-extrabold text-slate-900 dark:text-white">Active Clients: 250+</span>
+              {/* Secondary Overlapping Image (UI Mockup) */}
+              <div className="absolute -bottom-10 left-0 w-[55%] h-[55%] rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(1,17,70,0.25)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.6)] border-[6px] border-white dark:border-[#0f172a] z-20 [willChange:transform] group-hover:translate-y-2 group-hover:translate-x-2 transition-transform duration-700 ease-out">
+                <Image
+                  src="/images/about/about-hero-secondary.jpg"
+                  alt="Software Solutions Interfaces"
+                  fill
+                  className="object-cover object-left-top"
+                />
+              </div>
+
+              {/* Floating Glassmorphic Stats Widget (99.8% Success) */}
+              <div 
+                className="sky-about-floating-stats absolute left-[-5%] md:left-[-15px] bottom-[0%] bg-white p-4 sm:px-[22px] sm:py-[18px] rounded-[24px] z-30 flex items-center gap-4 shadow-[0_20px_50px_rgba(1,17,70,0.1)] dark:bg-slate-900 border border-slate-100 dark:border-slate-800"
+                style={{ animation: "skyAboutBounce 4.5s ease-in-out infinite" }}
+              >
+                <div className="w-12 h-12 sm:w-[50px] sm:h-[50px] rounded-[16px] bg-gradient-to-br from-[#EEF4FF] to-[#E3EDFF] dark:from-blue-900/40 dark:to-blue-800/20 shadow-inner flex items-center justify-center text-[#1A5CDD] dark:text-blue-400 text-xl sm:text-2xl">
+                  <i className="bi bi-graph-up-arrow"></i>
+                </div>
+                <div className="flex flex-col justify-center">
+                  <span className="text-[15px] sm:text-[17px] font-extrabold text-[#011146] dark:text-white leading-tight">99.8% Success</span>
+                  <span className="text-[12px] sm:text-[13.5px] text-slate-500 dark:text-slate-400 font-semibold mt-0.5">Project Delivery Rate</span>
+                </div>
+              </div>
+
+              {/* Floating Experience Widget (Active Clients: 250+) */}
+              <div 
+                className="sky-about-floating-stats absolute right-[0%] md:right-[-10px] top-[10%] backdrop-blur-xl py-2 px-3 sm:py-2.5 sm:px-4 rounded-full z-30 flex items-center gap-2.5 border border-[#1A5CDD]/10 dark:border-white/10 shadow-[0_20px_40px_rgba(1,17,70,0.12)] dark:shadow-[0_20px_40px_rgba(0,0,0,0.4)] bg-white/90 dark:bg-slate-900/90"
+                style={{ animation: "skyAboutBounce 4.5s ease-in-out 1s infinite" }}
+              >
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                </span>
+                <span className="text-[11px] sm:text-[12px] font-extrabold text-[#011146] dark:text-white tracking-wide">Active Clients: 250+</span>
+              </div>
             </div>
           </div>
 
@@ -293,8 +301,6 @@ export default function AboutSection() {
                
               </h2>
             </div>
-
-          
 
             {/* Sub-description paragraph with Read More toggle */}
             <div className="sky-about-desc-anim flex flex-col gap-4">
@@ -338,11 +344,11 @@ export default function AboutSection() {
             </div>
 
             {/* Bento Carousel Slider */}
-            <div className="sky-about-carousel-viewport overflow-hidden w-full cursor-grab active:cursor-grabbing sky-about-card-anim" ref={emblaRef}>
-              <div className="sky-about-carousel-container flex gap-5">
+            <div className="sky-about-carousel-viewport overflow-hidden w-full cursor-grab active:cursor-grabbing sky-about-card-anim py-4 -my-4" ref={emblaRef}>
+              <div className="sky-about-carousel-container flex -ml-5">
 
                 {/* Card 1: Custom Software Development */}
-                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_48%] min-w-0 h-auto flex flex-col">
+                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_50%] min-w-0 pl-5 h-auto flex flex-col">
                   <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
                     <div>
                       <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
@@ -360,7 +366,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* Card 2: Website Development */}
-                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_48%] min-w-0 h-auto flex flex-col">
+                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_50%] min-w-0 pl-5 h-auto flex flex-col">
                   <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
                     <div>
                       <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
@@ -382,7 +388,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* Card 3: UI/UX Design */}
-                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_48%] min-w-0 h-auto flex flex-col">
+                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_50%] min-w-0 pl-5 h-auto flex flex-col">
                   <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
                     <div>
                       <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
@@ -400,7 +406,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* Card 4: Cloud & Digital Solutions */}
-                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_48%] min-w-0 h-auto flex flex-col">
+                <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_50%] min-w-0 pl-5 h-auto flex flex-col">
                   <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
                     <div>
                       <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />

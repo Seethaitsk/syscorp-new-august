@@ -29,11 +29,11 @@ export default function WebDevelopmentClient() {
     const [activeAccordion, setActiveAccordion] = useState<number | null>(0);
 
 
-     const services = [
+    const services = [
         {
             id: "custom-website",
             title: "Custom Website Development",
-            image: "/images/webdevelopment/1.svg",
+            image: "/images/webdevelopment/1.png",
             tag: "Custom Architecture",
             icon: Code,
             desc: "Every business has unique goals, and your website should represent your brand, services, and vision effectively. Our Custom Website Development Services focus on creating personalized websites that match your business objectives and customer expectations.\n\nAs a leading Web Development Company in Pondicherry, we develop scalable, secure, and SEO-optimized websites that provide seamless performance across all devices. From planning and design to development and deployment, we ensure every website delivers a smooth user experience and supports business growth.",
@@ -49,7 +49,7 @@ export default function WebDevelopmentClient() {
         {
             id: "business-website",
             title: "Business Website Development",
-            image: "/images/webdevelopment/2.svg",
+            image: "/images/webdevelopment/2.png",
             tag: "Corporate & Brand",
             icon: Building2,
             desc: "Your website is often the first interaction customers have with your business. A professionally designed business website helps you create a strong first impression and build trust with your audience.\n\nOur Business Website Development Services help companies showcase their products, services, expertise, and brand values through modern and engaging websites.",
@@ -64,7 +64,7 @@ export default function WebDevelopmentClient() {
         {
             id: "ecommerce-website",
             title: "Ecommerce Website Development",
-            image: "/images/webdevelopment/3.svg",
+            image: "/images/webdevelopment/3.png",
             tag: "High Conversion Store",
             icon: ShoppingCart,
             desc: "Our Ecommerce Website Development Services help businesses launch powerful online stores that increase sales and improve customer satisfaction.",
@@ -81,7 +81,7 @@ export default function WebDevelopmentClient() {
         {
             id: "web-application",
             title: "Web Application Development",
-            image: "/images/webdevelopment/4.svg",
+            image: "/images/webdevelopment/4.png",
             tag: "SaaS & Cloud Software",
             icon: Cpu,
             desc: "Businesses today need powerful digital solutions to automate processes, improve productivity, and deliver better services. Our Web Application Development Services provide customized applications designed around your business needs.",
@@ -97,7 +97,7 @@ export default function WebDevelopmentClient() {
         {
             id: "responsive-website",
             title: "Responsive Website Development",
-            image: "/images/webdevelopment/5.svg",
+            image: "/images/webdevelopment/5.png",
             tag: "Cross-Device Fluidity",
             icon: Smartphone,
             desc: "With users accessing websites from multiple devices, responsive design is essential for online success. Our Responsive Website Development Services ensure your website delivers an excellent experience on desktops, tablets, and smartphones.",
@@ -112,7 +112,7 @@ export default function WebDevelopmentClient() {
         {
             id: "cms-website",
             title: "CMS Website Development",
-            image: "/images/webdevelopment/6.svg",
+            image: "/images/webdevelopment/6.png",
             tag: "Easy Content Control",
             icon: LayoutDashboard,
             desc: "Managing website content should be simple and efficient. Our CMS development solutions allow businesses to easily update website pages, images, blogs, and other content without technical expertise.",
@@ -127,7 +127,7 @@ export default function WebDevelopmentClient() {
         {
             id: "website-maintenance",
             title: "Website Maintenance & Support",
-            image: "/images/webdevelopment/7.svg",
+            image: "/images/webdevelopment/7.png",
             tag: "24/7 Technical Support",
             icon: Settings,
             desc: "A website requires regular updates and maintenance to maintain security, performance, and reliability. Our website maintenance services help businesses keep their websites running smoothly.",
@@ -343,31 +343,31 @@ export default function WebDevelopmentClient() {
 
     const faqs = [
         {
-            q: "1. Why should I choose SysCrop as my Web Development Company in Pondicherry?",
+            q: "Why should I choose SysCrop as my Web Development Company in Pondicherry?",
             a: "SysCrop is a trusted Web Development Company in Pondicherry that delivers responsive, secure, and SEO-friendly websites tailored to your business needs. From business websites and eCommerce platforms to custom web applications, our experienced team provides end-to-end web development solutions that help businesses build a strong online presence and achieve long-term growth."
         },
         {
-            q: "2. How long does it take to develop a website?",
+            q: "How long does it take to develop a website?",
             a: "The development timeline depends on project complexity, features, and customization requirements. Most business websites are completed within a few weeks, while larger web applications may require additional development time."
         },
         {
-            q: "3. Will my website be mobile-friendly?",
+            q: "Will my website be mobile-friendly?",
             a: "Yes. Every website developed by our Web Development Company in Pondicherry is fully responsive and optimized for desktops, tablets, and mobile devices."
         },
         {
-            q: "4. Do you provide website maintenance services?",
+            q: "Do you provide website maintenance services?",
             a: "Yes. We offer website maintenance, performance optimization, security updates, backups, bug fixing, and technical support after launch."
         },
         {
-            q: "5. Can you redesign my existing website?",
+            q: "Can you redesign my existing website?",
             a: "Absolutely. We redesign existing websites with modern UI/UX, improved functionality, faster performance, better SEO, and enhanced user experience."
         },
         {
-            q: "6. Why should I choose a Software Company in Pondicherry for web development?",
+            q: "Why should I choose a Software Company in Pondicherry for web development?",
             a: "Working with an experienced Software Company in Pondicherry like SysCrop gives you access to expert developers, customized solutions, ongoing support, scalable technologies, and websites built to support long-term business growth."
         },
         {
-            q: "7. How much does website development cost in Pondicherry?",
+            q: "How much does website development cost in Pondicherry?",
             a: "The cost depends on factors such as website type, number of pages, design complexity, features, integrations, and customization requirements. As a reliable Web Development Company in Pondicherry, we offer flexible pricing and customized solutions to match your business needs and budget. Contact our team for a free consultation and project estimate."
         }
     ];
@@ -407,7 +407,7 @@ export default function WebDevelopmentClient() {
 "
             />
 
-             {/* SECTION 1: Intro Hero Section */}
+            {/* SECTION 1: Intro Hero Section */}
             <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
                 {/* Background Decorators */}
                 <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[700px] h-[700px] bg-[#1A5CDD]/8 rounded-full blur-3xl pointer-events-none" />
@@ -419,7 +419,7 @@ export default function WebDevelopmentClient() {
 
                         {/* Left: Text Content */}
                         <div className="lg:col-span-7 gsap-fade-up">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Next-Gen Web Development
                             </span>
@@ -455,7 +455,7 @@ export default function WebDevelopmentClient() {
                                 ))}
                             </div>
 
-                           
+
                         </div>
 
                         {/* Right: Premium Visual Panel */}
@@ -463,7 +463,7 @@ export default function WebDevelopmentClient() {
 
                             {/* Main card — browser mockup style */}
                             <div className="relative w-full rounded-[28px] overflow-hidden shadow-2xl border-4 border-white bg-white">
-                                
+
                                 {/* Main image */}
                                 <div className="relative h-[420px] w-full">
                                     <Image
@@ -474,10 +474,10 @@ export default function WebDevelopmentClient() {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/30 to-transparent" />
                                 </div>
-                                
+
                             </div>
 
-                            
+
 
                             {/* Floating badge — top right */}
                             <div className="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl border border-slate-100 px-4 py-3 flex items-center gap-3 z-20 animate-bounce" style={{ animationDuration: '3s' }}>
@@ -516,7 +516,7 @@ export default function WebDevelopmentClient() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Text Content */}
                         <div className="gsap-fade-up">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Understanding Web Development
                             </span>
@@ -556,33 +556,23 @@ export default function WebDevelopmentClient() {
 
                         {/* Visual Right Side */}
                         <div className="relative w-full h-[500px] lg:h-[600px] gsap-fade-up mt-12 lg:mt-0">
-                            
-                            {/* Decorative background shape */}
-                            <div className="absolute top-4 right-0 w-[80%] h-[85%] bg-[#F0F6FF] rounded-[32px] transform translate-x-4 -translate-y-4" />
 
-                            {/* Main Image (Right aligned, tall) */}
-                            <div className="absolute top-8 right-4 w-[75%] h-[80%] rounded-[32px] overflow-hidden shadow-2xl z-10 border-4 border-white">
+                            {/* Soft glowing background orb instead of hard square */}
+                            <div className="absolute top-10 left-0 right-0 mx-auto w-[80%] h-[80%] bg-[#1A5CDD]/5 rounded-full blur-[60px] pointer-events-none" />
+
+                            {/* Main Image (Centered, Floating) */}
+                            <div className="absolute inset-0 w-[95%] h-[95%] mx-auto z-10 flex items-center justify-center">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop"
+                                    src="/images/webdevelopment/web-development-1.png"
                                     alt="Web Development Process"
                                     fill
-                                    className="object-cover hover:scale-105 transition-transform duration-700"
+                                    className="object-contain hover:scale-105 transition-transform duration-700 drop-shadow-2xl"
                                 />
-                                <div className="absolute inset-0 bg-[#011146]/10 mix-blend-multiply" />
                             </div>
 
-                            {/* Secondary Image (Left aligned, bottom, overlapping) */}
-                            <div className="absolute bottom-6 left-0 w-[55%] h-[45%] rounded-[32px] overflow-hidden shadow-2xl border-[6px] border-white z-20">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=400&auto=format&fit=crop"
-                                    alt="Web Development Team"
-                                    fill
-                                    className="object-cover hover:scale-105 transition-transform duration-700"
-                                />
-                            </div>
 
                             {/* Top Left Floating Card (10/10 Overall rating) */}
-                            <div className="absolute top-16 -left-4 bg-white p-4 pr-6 rounded-2xl shadow-xl z-30 flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
+                            <div className="absolute top-12 left-0 lg:-left-6 bg-white/90 backdrop-blur-md p-4 pr-6 rounded-2xl shadow-xl z-30 flex items-center gap-4 animate-bounce" style={{ animationDuration: '3.5s' }}>
                                 <div className="w-12 h-12 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center shrink-0">
                                     <Star size={24} fill="currentColor" className="text-orange-500" />
                                 </div>
@@ -593,7 +583,7 @@ export default function WebDevelopmentClient() {
                             </div>
 
                             {/* Top Right Circular Badge (Since 2012) */}
-                            <div className="absolute -top-4 right-0 w-32 h-32 bg-[#011146] rounded-full text-white flex items-center justify-center shadow-2xl z-30">
+                            <div className="absolute top-0 right-0 lg:-right-4 w-28 h-28 bg-[#011146] rounded-full text-white flex items-center justify-center shadow-[0_15px_30px_rgba(1,17,70,0.3)] z-30">
                                 {/* Center Text */}
                                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                                     <span className="font-black text-2xl leading-none text-white">10+</span>
@@ -609,7 +599,7 @@ export default function WebDevelopmentClient() {
                             </div>
 
                             {/* Bottom Left Floating Card (+5k Projects Delivered) */}
-                            <div className="absolute bottom-2 left-8 bg-white p-4 px-5 rounded-2xl shadow-xl z-30 animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '3s' }}>
+                            <div className="absolute bottom-16 left-4 lg:left-0 bg-white/90 backdrop-blur-md p-4 px-5 rounded-2xl shadow-xl z-30 animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '3.5s' }}>
                                 <div className="flex items-center gap-3 mb-2">
                                     <div className="flex -space-x-2">
                                         {[
@@ -645,7 +635,7 @@ export default function WebDevelopmentClient() {
 
                         {/* Text Content */}
                         <div className="xl:col-span-5 gsap-fade-up">
-                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider mb-6">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
                                 Business Growth Impact
                             </span>
@@ -705,10 +695,10 @@ export default function WebDevelopmentClient() {
 
                     {/* Heading */}
                     <div className="text-center max-w-3xl mx-auto mb-24">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
-                                Comprehensive Solutions
-                            </span>
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                            Comprehensive Solutions
+                        </span>
 
                         <h2 className="mt-6 text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
                             Our Professional <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">Web Development Services</span>
@@ -751,10 +741,10 @@ export default function WebDevelopmentClient() {
                                             <div className="absolute inset-0 bg-gradient-to-t from-[#011146]/60 via-transparent to-black/10 pointer-events-none" />
 
                                             {/* Floating Category Tag */}
-                                            <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
-                                {service.tag}
-                            </span>
+                                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                                {service.tag}
+                                            </span>
 
                                             {/* Floating Quality Badge */}
                                             <div className="absolute bottom-3.5 left-3.5 bg-[#011146]/85 backdrop-blur-md text-white border border-white/10 px-3 py-1 rounded-xl text-[11px] font-bold shadow-md flex items-center gap-1.5 z-10">
@@ -832,10 +822,10 @@ export default function WebDevelopmentClient() {
             <section className="py-24 bg-[#F0F6FF] relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-5">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
-                                Proven Methodology
-                            </span>
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-5">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                            Proven Methodology
+                        </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">
                             Our Website <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">Development Process</span>
                         </h2>
@@ -925,10 +915,10 @@ export default function WebDevelopmentClient() {
             <section className="py-24 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-4">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
-                                Technology Stack
-                            </span>
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                            Technology Stack
+                        </span>
                         <h2 className="text-3xl md:text-5xl font-bold text-[#011146] tracking-tight mb-6">
                             Technologies & Frameworks We Use
                         </h2>
@@ -973,10 +963,10 @@ export default function WebDevelopmentClient() {
                                                         {tech.category}
                                                     </h3>
 
-                                                    <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
-                                Latest Stack
-                            </span>
+                                                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
+                                                        <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                                        Latest Stack
+                                                    </span>
 
                                                 </div>
 
@@ -1058,10 +1048,10 @@ export default function WebDevelopmentClient() {
                         {/* Left Side: Text Content */}
                         <div className="lg:col-span-6 space-y-6 lg:sticky">
                             <div>
-                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 rounded-full px-3.5 py-1 text-xs font-bold text-[#38bdf8] uppercase tracking-wider mb-6">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
-                                Why Choose Us
-                            </span>
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-6">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                    Why Choose Us
+                                </span>
                                 <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-[42px] font-extrabold text-white mb-6 leading-[1.2] tracking-tight">
                                     Why Choose <span className="bg-gradient-to-r from-[#38bdf8] via-blue-300 to-indigo-300 bg-clip-text text-transparent">Syscorp</span> as Your Web Development Company in Pondicherry?
                                 </h2>
@@ -1152,7 +1142,7 @@ export default function WebDevelopmentClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center mb-16">
-                        <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[#38bdf8] text-xs font-bold tracking-wider uppercase mb-5 border border-white/10 backdrop-blur-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-5">
                             Tailored Solutions
                         </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-5">
@@ -1227,10 +1217,10 @@ export default function WebDevelopmentClient() {
                         {/* Left Column: Heading & Sticky Context */}
                         <div className="lg:w-5/12">
                             <div className="lg:sticky">
-                                <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] uppercase tracking-wider mb-6">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
-                                Got Questions?
-                            </span>
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                    Got Questions?
+                                </span>
 
                                 <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-[1.15] mb-6">
                                     Frequently Asked <br />
@@ -1263,8 +1253,8 @@ export default function WebDevelopmentClient() {
                                     <div
                                         key={index}
                                         className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen
-                                                ? "border-[#1A5CDD] shadow-xl shadow-blue-900/5 ring-1 ring-[#1A5CDD]/30"
-                                                : "border-slate-200/80 hover:border-slate-300"
+                                            ? "border-[#1A5CDD] shadow-xl shadow-blue-900/5 ring-1 ring-[#1A5CDD]/30"
+                                            : "border-slate-200/80 hover:border-slate-300"
                                             }`}
                                     >
                                         <button
@@ -1272,8 +1262,8 @@ export default function WebDevelopmentClient() {
                                             className="w-full flex items-center justify-between p-6 text-left focus:outline-none group"
                                         >
                                             <h3 className="text-[17px] font-extrabold text-[#011146] pr-6 group-hover:text-[#1A5CDD] transition-colors leading-snug">
-                                                <span className="text-[#1A5CDD] font-black mr-2">{index + 1}.</span>
-                                                {faq.q.replace(/^\d+\.\s*/, '')}
+                                                
+                                                {index + 1}. {faq.q}
                                             </h3>
                                             <div
                                                 className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#1A5CDD] text-white rotate-180" : "bg-slate-100 text-slate-600 group-hover:bg-slate-200"
@@ -1283,9 +1273,8 @@ export default function WebDevelopmentClient() {
                                             </div>
                                         </button>
                                         <div
-                                            className={`grid transition-all duration-300 ease-in-out ${
-                                                isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                                            }`}
+                                            className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                                                }`}
                                         >
                                             <div className="overflow-hidden">
                                                 <div className="px-6 pb-6 text-slate-600 text-[15.5px] leading-relaxed border-t border-slate-100 pt-4">

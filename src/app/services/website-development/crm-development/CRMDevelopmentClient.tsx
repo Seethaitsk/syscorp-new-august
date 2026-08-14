@@ -278,7 +278,7 @@ export default function CRMDevelopmentClient() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center gsap-fade-up">
                         <div className="lg:col-span-6 space-y-6">
-                            <span className="inline-flex items-center gap-2 bg-white border border-slate-200 text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                                 <Briefcase size={14} />
                                 Scalable Business Growth
                             </span>
@@ -326,7 +326,7 @@ export default function CRMDevelopmentClient() {
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="max-w-4xl mx-auto text-center space-y-8">
                         <div>
-                            <span className="inline-flex items-center gap-2 bg-[#38bdf8]/10 text-[#38bdf8] px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-[#38bdf8]/20 shadow-sm mb-6">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-6">
                                 <Users size={14} />
                                 Centralized Business Intelligence
                             </span>
@@ -354,7 +354,7 @@ export default function CRMDevelopmentClient() {
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-5">
-                        <span className="inline-flex items-center gap-2 bg-white text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-slate-200 shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Zap size={14} />
                             End-To-End CRM Capabilities
                         </span>
@@ -457,7 +457,7 @@ export default function CRMDevelopmentClient() {
             <section className="py-20  bg-white relative overflow-hidden">
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-5">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest border border-[#1A5CDD]/20 shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Layers size={14} />
                             Modular CRM Studio
                         </span>
@@ -521,7 +521,7 @@ export default function CRMDevelopmentClient() {
             <section className="py-20  bg-[#F8FAFC] relative overflow-hidden">
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-16 space-y-5">
-                        <span className="inline-flex items-center gap-2 bg-white border border-slate-200 text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <Code size={14} />
                             Modern Tech Stack
                         </span>
@@ -562,7 +562,7 @@ export default function CRMDevelopmentClient() {
                 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-20 space-y-6">
-                        <span className="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <RefreshCw size={14} />
                             Seamless Connectivity
                         </span>
@@ -602,7 +602,7 @@ export default function CRMDevelopmentClient() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="space-y-8">
                             <div>
-                                <span className="inline-flex items-center gap-2 bg-[#F0F6FF] text-[#1A5CDD] px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-[#1A5CDD]/10 mb-6">
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                     <Shield size={14} />
                                     Trusted Partner
                                 </span>
@@ -637,7 +637,7 @@ export default function CRMDevelopmentClient() {
             <section className="py-20  bg-[#F8FAFC] relative overflow-hidden">
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-16 space-y-5">
-                        <span className="inline-flex items-center gap-2 bg-white border border-slate-200 text-[#1A5CDD] px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                             <HelpCircle size={14} />
                             Knowledge Base
                         </span>
@@ -659,11 +659,13 @@ export default function CRMDevelopmentClient() {
                                         className="w-full flex items-center justify-between p-6 text-left"
                                     >
                                         <span className={`font-extrabold text-base md:text-lg pr-4 ${isActive ? "text-[#1A5CDD]" : "text-[#011146]"}`}>
-                                            {faq.q}
+                                            {idx + 1}. {faq.q}
                                         </span>
-                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${isActive ? "bg-[#1A5CDD] text-white" : "bg-slate-100 text-slate-500"}`}>
-                                            {isActive ? <Minus size={16} /> : <Plus size={16} />}
-                                        </div>
+                                        <div className="flex-shrink-0 ml-4">
+    <svg className={`w-5 h-5 transition-transform duration-300 ${isActive ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+</div>
                                     </button>
                                     <div
                                         className={`transition-all duration-300 ease-in-out ${isActive ? "max-h-[500px] opacity-100 pb-6 px-6" : "max-h-0 opacity-0 px-6"}`}
