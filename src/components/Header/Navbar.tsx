@@ -242,8 +242,20 @@ function getMenuIcon(iconName: string) {
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileServicesExpanded, setMobileServicesExpanded] = useState(false);
   const [serviceOpen, setServiceOpen] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [mobileOpen]);
 
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -753,109 +765,169 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Off-Canvas Mobile Drawer & Backdrop */}
       {mobileOpen && (
-        <div id="mobile-nav" className="sky-mobile-menu dark:bg-[#0b0f19]" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-          {/* Close */}
-          <button
+        <div className="fixed inset-0 z-[2000] lg:hidden">
+          {/* Backdrop Overlay */}
+          <div
+            className="fixed inset-0 bg-slate-950/60 backdrop-blur-sm transition-opacity duration-300 animate-in fade-in"
             onClick={() => setMobileOpen(false)}
-            className="absolute top-5 right-6 w-10 h-10 rounded-full flex items-center justify-center cursor-pointer border-none bg-black/5 dark:bg-white/10 text-gray-700 dark:text-gray-300 hover:text-[#1A5CDD] dark:hover:text-[#60A5FA] transition"
-            aria-label="Close menu"
+            aria-hidden="true"
+          />
+
+          {/* Off-Canvas Side Panel */}
+          <div
+            id="mobile-nav"
+            className="fixed top-0 right-0 bottom-0 w-[88%] max-w-[360px] bg-white dark:bg-[#061138] shadow-2xl flex flex-col z-[2001] transform transition-transform duration-300 ease-out"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile Navigation Drawer"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-
-          <Image src="/images/logo/logo.svg" alt="Syscorp" width={120} height={36} style={{ height: "34px", width: "auto", objectFit: "contain", marginBottom: "16px" }} />
-
-          {navLinks.map((link) => (
-            <React.Fragment key={link.href}>
-              <Link
-                href={link.href}
-                className={`sky-mobile-link dark:text-white dark:hover:text-[#60A5FA]${pathname === link.href ? " active" : ""}`}
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.label}
+            {/* Drawer Header */}
+            <div className="p-5 flex items-center justify-between border-b border-slate-100 dark:border-white/10 shrink-0">
+              <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center">
+                <Image
+                  src="/images/logo/logo.svg"
+                  alt="Syscorp"
+                  width={120}
+                  height={36}
+                  style={{ height: "32px", width: "auto", objectFit: "contain" }}
+                />
               </Link>
-              {link.hasDropdown && (
-                <div className="pl-4 grid grid-cols-1 md:grid-cols-3 gap-6 mt-3 mb-4">
-                  {megaMenuData.map((category) => (
-                    <div key={category.title} className="flex flex-col gap-2">
-                      <div className="text-[11px] font-extrabold text-[#6B7280] dark:text-gray-400 tracking-wider px-3 py-1 uppercase border-b border-gray-100 dark:border-gray-800/60 pb-1">
-                        {category.title}
-                      </div>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-1">
-                        {category.items.map((s) => (
-                          <Link
-                            key={s.label}
-                            href={s.href}
-                            onClick={() => {
-                              setMobileOpen(false);
-                            }}
-                            className="flex items-center gap-2.5 text-[13px] font-semibold text-gray-600 dark:text-gray-400 hover:text-[#1A5CDD] dark:hover:text-[#60A5FA] px-3 py-2 rounded-xl transition-all duration-200 hover:bg-gray-100/50 dark:hover:bg-gray-800/30 no-underline"
-                          >
-                            <div className="w-6 h-6 rounded-md bg-[#1A5CDD]/5 dark:bg-[#3B82F6]/10 text-[#1A5CDD] dark:text-[#60A5FA] flex items-center justify-center flex-shrink-0">
-                              {getMenuIcon(s.icon)}
-                            </div>
-                            {s.label}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                  <div className="col-span-1 md:col-span-3 mt-2">
-                    <Link
-                      href="/services"
-                      onClick={() => setMobileOpen(false)}
-                      className="inline-flex items-center gap-1.5 text-[13px] font-extrabold text-[#1A5CDD] dark:text-[#60A5FA] px-3 py-2 no-underline"
-                    >
-                      View All Services →
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </React.Fragment>
-          ))}
+              <button
+                onClick={() => setMobileOpen(false)}
+                className="w-9 h-9 rounded-full bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-[#1A5CDD] hover:text-white dark:hover:bg-[#38bdf8] dark:hover:text-[#011146] transition-colors"
+                aria-label="Close menu"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
 
-          {/* Promo Card inside Mobile Menu */}
-          <div className="sky-mobile-menu-promo mt-8 mb-6 relative overflow-hidden rounded-2xl h-44 flex flex-col justify-end p-5 text-white border border-white/10 shadow-lg">
-            <Image
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=75&w=350&auto=format&fit=crop"
-              alt="Promo Banner"
-              fill
-              className="object-cover absolute inset-0 z-0"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent z-10" />
-            <div className="relative z-20">
-              <span className="text-[10px] font-extrabold tracking-wider uppercase bg-[#1A5CDD] px-2 py-0.5 rounded-full w-fit mb-1.5 inline-block">
-                COLLABORATE WITH US
-              </span>
-              <h4 className="text-base font-extrabold leading-tight mb-1">
-                Ready to scale your business?
-              </h4>
-              <p className="text-xs text-gray-200 mb-3">
-                Let's co-create industry-leading digital products together.
-              </p>
+            {/* Scrollable Body */}
+            <div className="flex-1 overflow-y-auto p-5 space-y-3">
+              {navLinks.map((link) => {
+                if (link.hasDropdown) {
+                  return (
+                    <div key={link.href} className="border-b border-slate-100 dark:border-white/5 pb-2">
+                      <button
+                        onClick={() => setMobileServicesExpanded((v) => !v)}
+                        className={`w-full flex items-center justify-between py-2.5 px-3 rounded-xl text-[15px] font-extrabold transition-colors ${
+                          pathname.startsWith("/services")
+                            ? "text-[#1A5CDD] dark:text-[#38bdf8] bg-[#1A5CDD]/5 dark:bg-white/5"
+                            : "text-slate-800 dark:text-white hover:text-[#1A5CDD] hover:bg-slate-50 dark:hover:bg-white/5"
+                        }`}
+                      >
+                        <span>{link.label}</span>
+                        <svg
+                          className={`w-4 h-4 transition-transform duration-300 ${
+                            mobileServicesExpanded ? "rotate-180 text-[#1A5CDD] dark:text-[#38bdf8]" : "text-slate-400"
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="m6 9 6 6 6-6" />
+                        </svg>
+                      </button>
+
+                      {/* Expandable Services Accordion */}
+                      {mobileServicesExpanded && (
+                        <div className="mt-2 pl-2 space-y-4">
+                          {megaMenuData.map((category) => (
+                            <div key={category.title} className="space-y-1.5">
+                              <div className="text-[11px] font-black text-[#1A5CDD] dark:text-[#38bdf8] tracking-widest px-3 py-1 uppercase flex items-center gap-2">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] dark:bg-[#38bdf8]" />
+                                {category.title}
+                              </div>
+                              <div className="space-y-1 pl-2">
+                                {category.items.map((s) => (
+                                  <Link
+                                    key={s.label}
+                                    href={s.href}
+                                    onClick={() => setMobileOpen(false)}
+                                    className="flex items-center gap-2.5 text-[13px] font-semibold text-slate-600 dark:text-slate-300 hover:text-[#1A5CDD] dark:hover:text-[#38bdf8] px-3 py-2 rounded-xl hover:bg-slate-100 dark:hover:bg-white/5 transition-all"
+                                  >
+                                    <div className="w-6 h-6 rounded-md bg-[#1A5CDD]/10 dark:bg-[#38bdf8]/10 text-[#1A5CDD] dark:text-[#38bdf8] flex items-center justify-center flex-shrink-0">
+                                      {getMenuIcon(s.icon)}
+                                    </div>
+                                    <span className="line-clamp-1">{s.label}</span>
+                                  </Link>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                          <div className="pt-1 pl-2">
+                            <Link
+                              href="/services"
+                              onClick={() => setMobileOpen(false)}
+                              className="inline-flex items-center gap-1.5 text-[13px] font-extrabold text-[#1A5CDD] dark:text-[#38bdf8]"
+                            >
+                              Explore All Services →
+                            </Link>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className={`block py-2.5 px-3 rounded-xl text-[15px] font-extrabold transition-all border-b border-slate-100 dark:border-white/5 ${
+                      pathname === link.href
+                        ? "text-[#1A5CDD] dark:text-[#38bdf8] bg-[#1A5CDD]/5 dark:bg-white/5"
+                        : "text-slate-800 dark:text-white hover:text-[#1A5CDD] dark:hover:text-[#38bdf8] hover:bg-slate-50 dark:hover:bg-white/5"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+
+              {/* Promo Card */}
+              <div className="mt-6 relative overflow-hidden rounded-2xl p-5 text-white bg-gradient-to-br from-[#011146] via-[#031B66] to-[#1A5CDD] border border-white/10 shadow-lg">
+                <span className="text-[10px] font-extrabold tracking-wider uppercase bg-[#38bdf8]/20 text-[#38bdf8] px-2.5 py-1 rounded-full w-fit mb-2 inline-block border border-[#38bdf8]/30">
+                  COLLABORATE WITH US
+                </span>
+                <h4 className="text-sm font-extrabold leading-tight mb-1">
+                  Ready to scale your business?
+                </h4>
+                <p className="text-[11px] text-slate-300 mb-3 leading-relaxed">
+                  Let&apos;s co-create industry-leading digital products together.
+                </p>
+                <Link
+                  href="/contact"
+                  onClick={() => setMobileOpen(false)}
+                  className="inline-flex items-center gap-1.5 bg-white text-[#011146] font-extrabold text-[12px] px-3.5 py-1.5 rounded-lg transition-transform hover:scale-105 shadow-sm"
+                >
+                  Let&apos;s Talk
+                  <svg className="w-3.5 h-3.5 text-[#1A5CDD]" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Drawer Footer CTA */}
+            <div className="p-5 border-t border-slate-100 dark:border-white/10 bg-slate-50/50 dark:bg-slate-900/50 shrink-0">
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="inline-flex items-center gap-1 bg-white text-slate-900 font-extrabold text-[11px] px-3.5 py-1.5 rounded-lg transition-transform hover:scale-105"
+                className="w-full flex items-center justify-center gap-2 bg-[#1A5CDD] hover:bg-[#154ebc] text-white font-extrabold text-sm py-3 rounded-xl shadow-md transition-all active:scale-[0.98]"
               >
-                Let's Talk
-                <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
+                Get a Demo
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </Link>
             </div>
           </div>
-
-          <a href="/contact" className="sky-cta-btn" style={{ marginTop: "16px", justifyContent: "center" }}>
-            Get a Demo
-            <svg style={{ width: "14px", height: "14px" }} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg>
-          </a>
         </div>
       )}
     </>

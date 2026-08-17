@@ -225,7 +225,7 @@ export default function ContentMarketingClient() {
             <section className="py-20 bg-[#F0F8FF]/60 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-10">
+                    <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-10">
                         <div className="gsap-fade-up lg:w-[55%] w-full">
                             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
@@ -419,7 +419,7 @@ export default function ContentMarketingClient() {
             </section>
 
             {/* What Our Content Marketing Services Cover */}
-            <section className="bg-white py-20 lg:py-28 relative overflow-hidden">
+            <section className="bg-white pt-16 pb-6 lg:pt-20 lg:pb-8 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: `radial-gradient(#1A5CDD 1.5px, transparent 1.5px)`, backgroundSize: `32px 32px` }} />
 
                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#1A5CDD]/5 rounded-full blur-[120px] pointer-events-none" />
@@ -503,7 +503,7 @@ export default function ContentMarketingClient() {
             </section>
 
             {/* Content Marketing Process Section */}
-            <section className="relative bg-white py-28 overflow-hidden">
+            <section className="relative bg-white pt-8 pb-20 lg:pt-12 lg:pb-28 overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:32px_32px] opacity-30"></div>
 
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
-    Settings, Users, Layout, Zap, Cloud, RefreshCw, Wrench, Smartphone, Rocket, Code, Target, Database, Layers, Activity, FileText, Clock, CheckCircle2, HelpCircle, Headphones, Mail, MessageCircle, Megaphone, BarChart3, Server, DollarSign, CreditCard, ShoppingCart, Share2, ArrowRight, Check, Plus, Minus, ChevronRight, Briefcase, Shield
+    Settings, Users, Layout, Zap, Cloud, RefreshCw, Wrench, Smartphone, Rocket, Code, Target, Database, Layers, Activity, FileText, Clock, CheckCircle, CheckCircle2, HelpCircle, Headphones, Mail, MessageCircle, Megaphone, BarChart3, Server, DollarSign, CreditCard, ShoppingCart, Share2, ArrowRight, Check, Plus, Minus, ChevronRight, ChevronDown, Briefcase, Shield
 } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -257,7 +257,7 @@ export default function CRMDevelopmentClient() {
     }, []);
 
     return (
-        <div ref={mainRef} className="w-full min-h-screen bg-slate-50 text-slate-800 overflow-x-hidden font-sans">
+        <main ref={mainRef} className="w-full min-h-screen bg-slate-50 text-slate-800 overflow-x-clip font-sans">
             {/* HERO BANNER */}
             <HeaderBanner
                 title={
@@ -495,12 +495,12 @@ export default function CRMDevelopmentClient() {
                                     <div className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity" style={{ backgroundImage: `radial-gradient(#38bdf8 1px, transparent 1px)`, backgroundSize: `16px 16px` }} />
                                     <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-[#1A5CDD]/40 rounded-full blur-2xl pointer-events-none group-hover:bg-[#38bdf8]/50 transition-colors duration-500" />
 
-                                    <div className="relative z-10 flex flex-col h-full justify-between">
-                                        <div>
+                                    <div className="relative z-10 flex flex-col h-full justify-between items-center text-center">
+                                        <div className="flex flex-col items-center">
                                             <div className="w-10 h-10 rounded-lg bg-white/10 text-[#38bdf8] flex items-center justify-center mb-3 shadow-sm border border-white/10 group-hover:bg-[#38bdf8] group-hover:text-[#011146] transition-colors">
                                                 <ModIcon size={20} />
                                             </div>
-                                            <h4 className="font-extrabold text-white text-base leading-snug mb-1">
+                                            <h4 className="font-extrabold text-white text-base leading-snug mb-1 text-center">
                                                 {mod.title}
                                             </h4>
                                         </div>
@@ -534,16 +534,16 @@ export default function CRMDevelopmentClient() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="flex flex-wrap justify-center gap-8">
                         {Object.entries(technologies).map(([category, techs], idx) => (
-                            <div key={idx} className="group flex flex-col p-8 rounded-[28px] bg-white border border-slate-200 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 hover:border-[#1A5CDD]/20 transition-all duration-300 relative overflow-hidden">
-                                <h4 className="text-xl font-extrabold text-[#011146] mb-6 flex items-center gap-3 relative z-10">
+                            <div key={idx} className="w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-[420px] group flex flex-col items-center text-center p-6 sm:p-8 rounded-[28px] bg-white border border-slate-200 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:shadow-blue-900/5 hover:-translate-y-1 hover:border-[#1A5CDD]/20 transition-all duration-300 relative overflow-hidden">
+                                <h4 className="text-xl font-extrabold text-[#011146] mb-6 flex items-center justify-center gap-3 relative z-10 text-center">
                                     <div className="w-10 h-10 rounded-xl bg-slate-50 text-[#1A5CDD] border border-slate-100 flex items-center justify-center shrink-0 group-hover:bg-[#1A5CDD] group-hover:text-white transition-colors duration-300">
                                         <Code size={18} />
                                     </div>
                                     {category}
                                 </h4>
-                                <div className="flex flex-wrap gap-2.5 relative z-10">
+                                <div className="flex flex-wrap justify-center gap-2.5 relative z-10">
                                     {techs.map((tech, tIdx) => (
                                         <span key={tIdx} className="bg-white text-slate-700 font-semibold px-4 py-2 rounded-lg border border-slate-200 text-sm hover:border-[#1A5CDD] hover:text-[#1A5CDD] hover:bg-[#F8FAFF] hover:shadow-sm transition-all duration-300">
                                             {tech}
@@ -579,14 +579,14 @@ export default function CRMDevelopmentClient() {
                         {crmIntegrations.map((integ, iIdx) => {
                             const Icon = integ.icon;
                             return (
-                                <div key={iIdx} className="bg-white p-8 md:p-10 rounded-[32px] border border-slate-200 shadow-[0_15px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_50px_rgba(26,92,221,0.25)] hover:-translate-y-2 transition-all duration-500 group flex flex-col h-full">
+                                <div key={iIdx} className="bg-white p-8 md:p-10 rounded-[32px] border border-slate-200 shadow-[0_15px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_50px_rgba(26,92,221,0.25)] hover:-translate-y-2 transition-all duration-500 group flex flex-col items-center text-center h-full">
                                     <div className="w-16 h-16 rounded-2xl bg-[#F0F6FF] text-[#1A5CDD] flex items-center justify-center mb-8 border border-[#1A5CDD]/10 group-hover:bg-[#1A5CDD] group-hover:text-white transition-all duration-500 shadow-sm">
                                         <Icon size={28} strokeWidth={2} />
                                     </div>
-                                    <h4 className="font-extrabold text-[#011146] text-xl md:text-2xl mb-4 group-hover:text-[#1A5CDD] transition-colors leading-tight">
+                                    <h4 className="font-extrabold text-[#011146] text-xl md:text-2xl mb-4 group-hover:text-[#1A5CDD] transition-colors leading-tight text-center">
                                         {integ.title}
                                     </h4>
-                                    <p className="text-slate-600 text-sm md:text-base leading-relaxed mt-auto">
+                                    <p className="text-slate-600 text-sm md:text-base leading-relaxed mt-auto text-center">
                                         {integ.desc}
                                     </p>
                                 </div>
@@ -634,52 +634,83 @@ export default function CRMDevelopmentClient() {
             </section>
 
             {/* FAQS SECTION */}
-            <section className="py-20  bg-[#F8FAFC] relative overflow-hidden">
-                <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="text-center max-w-3xl mx-auto mb-16 space-y-5">
-                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
-                            <HelpCircle size={14} />
-                            Knowledge Base
-                        </span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
-                            Frequently Asked <span className="text-[#1A5CDD]">Questions</span>
-                        </h2>
-                    </div>
+            <section className="py-24 bg-[#F8FAFC] relative">
+                <div className="container mx-auto px-6 max-w-7xl relative z-10">
+                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+                        {/* Left Column: Heading & Sticky Context */}
+                        <div className="lg:w-5/12 lg:sticky lg:top-28">
+                            <div>
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                    Got Questions?
+                                </span>
 
-                    <div className="max-w-4xl mx-auto space-y-4">
-                        {faqs.map((faq, idx) => {
-                            const isActive = activeAccordion === idx;
-                            return (
-                                <div
-                                    key={idx}
-                                    className={`bg-white rounded-2xl border transition-all duration-300 overflow-hidden shadow-sm ${isActive ? "border-[#1A5CDD] shadow-[0_10px_30px_rgba(26,92,221,0.08)]" : "border-slate-200 hover:border-slate-300"}`}
-                                >
-                                    <button
-                                        onClick={() => setActiveAccordion(isActive ? null : idx)}
-                                        className="w-full flex items-center justify-between p-6 text-left"
-                                    >
-                                        <span className={`font-extrabold text-base md:text-lg pr-4 ${isActive ? "text-[#1A5CDD]" : "text-[#011146]"}`}>
-                                            {idx + 1}. {faq.q}
-                                        </span>
-                                        <div className="flex-shrink-0 ml-4">
-    <svg className={`w-5 h-5 transition-transform duration-300 ${isActive ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    </svg>
-</div>
-                                    </button>
-                                    <div
-                                        className={`transition-all duration-300 ease-in-out ${isActive ? "max-h-[500px] opacity-100 pb-6 px-6" : "max-h-0 opacity-0 px-6"}`}
-                                    >
-                                        <p className="text-slate-600 text-base leading-relaxed">
-                                            {faq.a}
-                                        </p>
+                                <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-[1.15] mb-6">
+                                    Frequently Asked <br />
+                                    <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">
+                                        Questions (FAQs)
+                                    </span>
+                                </h2>
+
+                                <p className="text-slate-600 text-[16.5px] leading-relaxed mb-8">
+                                    Find clear, transparent answers to common questions about our custom CRM development, integrations, data migration, and ongoing maintenance in Pondicherry.
+                                </p>
+
+                                <div className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-md flex items-center gap-4">
+                                    <div className="w-12 h-12 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center shrink-0">
+                                        <CheckCircle size={24} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-extrabold text-[#011146] text-sm">Need More Clarity?</h4>
+                                        <p className="text-xs text-slate-500 font-medium mt-0.5">Our CRM consulting team is ready to analyze your business workflows.</p>
                                     </div>
                                 </div>
-                            );
-                        })}
+                            </div>
+                        </div>
+
+                        {/* Right Column: FAQ Accordion Points */}
+                        <div className="lg:w-7/12 space-y-4">
+                            {faqs.map((faq, idx) => {
+                                const isOpen = activeAccordion === idx;
+                                return (
+                                    <div
+                                        key={idx}
+                                        className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen
+                                            ? "border-[#1A5CDD] shadow-xl shadow-blue-900/5 ring-1 ring-[#1A5CDD]/30"
+                                            : "border-slate-200/80 hover:border-slate-300"
+                                            }`}
+                                    >
+                                        <button
+                                            onClick={() => setActiveAccordion(isOpen ? null : idx)}
+                                            className="w-full flex items-center justify-between p-6 text-left focus:outline-none group cursor-pointer"
+                                        >
+                                            <h3 className="text-[17px] font-extrabold text-[#011146] pr-6 group-hover:text-[#1A5CDD] transition-colors leading-snug">
+                                                {idx + 1}. {faq.q}
+                                            </h3>
+                                            <div
+                                                className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#1A5CDD] text-white rotate-180" : "bg-slate-100 text-slate-600 group-hover:bg-slate-200"
+                                                    }`}
+                                            >
+                                                <ChevronDown size={18} />
+                                            </div>
+                                        </button>
+                                        <div
+                                            className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                                                }`}
+                                        >
+                                            <div className="overflow-hidden">
+                                                <div className="px-6 pb-6 text-slate-600 text-[15.5px] leading-relaxed border-t border-slate-100 pt-4">
+                                                    {faq.a}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
     );
 }

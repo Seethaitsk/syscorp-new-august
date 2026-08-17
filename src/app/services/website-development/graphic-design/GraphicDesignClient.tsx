@@ -657,9 +657,9 @@ export default function GraphicDesignClient() {
                                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-[#F0F6FF] via-[#F8FAFF] to-transparent rounded-bl-full pointer-events-none" />
                                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-[#F0F6FF] via-[#F8FAFF] to-transparent rounded-tr-full pointer-events-none" />
                                 
-                                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
+                                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-stretch relative z-10">
                                     {/* Left Content Column */}
-                                    <div className="lg:col-span-7 flex flex-col h-full justify-between">
+                                    <div className="lg:col-span-7 flex flex-col justify-between h-full">
                                         <div>
                                             {/* Service Tag */}
                                             <div className="inline-flex items-center gap-3 mb-8 bg-slate-50 border border-slate-200 px-4 py-2 rounded-full">
@@ -671,20 +671,20 @@ export default function GraphicDesignClient() {
                                                 </span>
                                             </div>
 
-                                            <h3 className="text-3xl md:text-5xl font-black text-[#011146] mb-6 leading-[1.1] tracking-tight">
+                                            <h3 className="text-3xl md:text-5xl font-black text-[#011146] mb-4 leading-[1.1] tracking-tight min-h-[3rem] md:min-h-[3.5rem] flex items-center">
                                                 {currentService.title}
                                             </h3>
 
-                                            <p className="text-slate-600 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl font-medium">
+                                            <p className="text-slate-600 text-lg md:text-xl leading-relaxed mb-6 max-w-2xl font-medium min-h-[5rem] lg:min-h-[5.5rem]">
                                                 {currentService.desc}
                                             </p>
                                         </div>
 
                                         {/* Actions */}
-                                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-4">
+                                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-auto pt-4">
                                             <Link
                                                 href="/contact"
-                                                className="inline-flex items-center gap-3 bg-[#1A5CDD] text-white px-8 py-4 rounded-2xl font-bold text-[15px] hover:bg-[#011146] shadow-lg hover:shadow-[#1A5CDD]/20 hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                                                className="inline-flex items-center gap-3 bg-[#1A5CDD] text-white px-8 py-4 rounded-2xl font-bold text-[15px] hover:bg-[#011146] shadow-lg hover:shadow-[#1A5CDD]/20 hover:-translate-y-1 transition-all duration-300 cursor-pointer shrink-0"
                                             >
                                                 Inquire About {currentService.title} <ArrowRight size={18} />
                                             </Link>
@@ -692,29 +692,31 @@ export default function GraphicDesignClient() {
                                     </div>
 
                                     {/* Right Features Column & Navigation */}
-                                    <div className="lg:col-span-5 flex flex-col h-full justify-between">
-                                        <div className="bg-[#F8FAFC] rounded-3xl p-8 md:p-10 border border-slate-200/60 shadow-sm mb-12 relative overflow-hidden group-hover:border-slate-300 transition-colors duration-500">
-                                            {/* Subtle corner accent */}
-                                            <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A5CDD]/5 rounded-bl-full pointer-events-none" />
-                                            
-                                            <h4 className="font-extrabold text-[#011146] text-xl mb-8 flex items-center gap-3">
-                                                <Sparkles size={20} className="text-[#1A5CDD]" /> Key Deliverables
-                                            </h4>
-                                            
-                                            <ul className="space-y-5">
-                                                {currentService.features.map((feat, fIdx) => (
-                                                    <li key={fIdx} className="flex items-start gap-4 text-slate-700 text-base font-semibold">
-                                                        <div className="w-6 h-6 rounded-full bg-white border border-slate-200 text-[#1A5CDD] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
-                                                            <Check size={14} strokeWidth={3} />
-                                                        </div>
-                                                        <span className="leading-snug">{feat}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
+                                    <div className="lg:col-span-5 flex flex-col justify-between h-full">
+                                        <div className="bg-[#F8FAFC] rounded-3xl p-8 md:p-10 border border-slate-200/60 shadow-sm mb-6 flex-1 flex flex-col justify-between relative overflow-hidden group-hover:border-slate-300 transition-colors duration-500">
+                                            <div>
+                                                {/* Subtle corner accent */}
+                                                <div className="absolute top-0 right-0 w-24 h-24 bg-[#1A5CDD]/5 rounded-bl-full pointer-events-none" />
+                                                
+                                                <h4 className="font-extrabold text-[#011146] text-xl mb-6 flex items-center gap-3">
+                                                    <Sparkles size={20} className="text-[#1A5CDD]" /> Key Deliverables
+                                                </h4>
+                                                
+                                                <ul className="space-y-4">
+                                                    {currentService.features.map((feat, fIdx) => (
+                                                        <li key={fIdx} className="flex items-start gap-4 text-slate-700 text-base font-semibold">
+                                                            <div className="w-6 h-6 rounded-full bg-white border border-slate-200 text-[#1A5CDD] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                                                                <Check size={14} strokeWidth={3} />
+                                                            </div>
+                                                            <span className="leading-snug">{feat}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
                                         </div>
 
                                         {/* Minimalist Navigation */}
-                                        <div className="flex justify-start lg:justify-end">
+                                        <div className="flex justify-start lg:justify-end mt-auto pt-2">
                                             <div className="flex items-center gap-2 bg-white border border-slate-200/80 p-2 rounded-2xl shadow-sm">
                                                 <button
                                                     onClick={() => setCurrentServiceSlide((prev) => (prev - 1 + services.length) % services.length)}
@@ -888,76 +890,76 @@ export default function GraphicDesignClient() {
                 </div>
             </section>
 
-            {/* SECTION 7: FREQUENTLY ASKED QUESTIONS (Centered 2-Column Layout) */}
-            <section className="py-24 bg-white border-t border-slate-100 relative overflow-hidden">
-                {/* Decorative background element */}
-
+            {/* SECTION 7: Frequently Asked Questions (FAQs) */}
+            <section className="py-24 bg-[#F8FAFC] relative">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    
-                    {/* Header Section (Centered) */}
-                    <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
-                            <HelpCircle size={14} />
-                            FAQ
-                        </span>
-                        
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
-                            Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Questions</span>
-                        </h2>
-                        
-                        <p className="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto font-medium">
-                            Find answers to common questions about our Graphic Design Services in Pondicherry, design strategies, and creation processes.
-                        </p>
-                    </div>
+                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+                        {/* Left Column: Heading & Sticky Context */}
+                        <div className="lg:w-5/12 lg:sticky lg:top-28">
+                            <div>
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                    Got Questions?
+                                </span>
 
-                    {/* FAQ 2-Column Elegant Accordion List */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-0 max-w-7xl mx-auto">
-                        {/* Left Column */}
-                        <div>
-                            {faqs.slice(0, Math.ceil(faqs.length / 2)).map((item, i) => {
-                                const index = i;
-                                const isOpen = activeAccordion === index;
-                                return (
-                                    <div key={index} className="mb-4">
-                                        <button
-                                            onClick={() => setActiveAccordion(isOpen ? null : index)}
-                                            className={`w-full text-left p-6 rounded-2xl border transition-all duration-300 flex items-center justify-between gap-4 ${isOpen ? "bg-[#F4F7FE] border-[#1A5CDD] shadow-sm" : "bg-white border-slate-200 hover:border-slate-300"}`}
-                                        >
-                                            <span className="font-bold text-[#011146] text-[16px]">{index + 1}. {item.q}</span>
-                                            <div className="flex-shrink-0 ml-4">
-    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    </svg>
-</div>
-                                        </button>
-                                        <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px] mt-2 p-6 bg-slate-50 rounded-2xl border border-slate-100" : "max-h-0"}`}>
-                                            <p className="text-slate-600 text-[14.5px] leading-relaxed">{item.a}</p>
-                                        </div>
+                                <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-[1.15] mb-6">
+                                    Frequently Asked <br />
+                                    <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">
+                                        Questions (FAQs)
+                                    </span>
+                                </h2>
+
+                                <p className="text-slate-600 text-[16.5px] leading-relaxed mb-8">
+                                    Find clear, transparent answers to common questions about our Graphic Design Services in Pondicherry, design strategies, deliverable formats, and creative processes.
+                                </p>
+
+                                <div className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-md flex items-center gap-4">
+                                    <div className="w-12 h-12 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center shrink-0">
+                                        <CheckCircle size={24} />
                                     </div>
-                                );
-                            })}
+                                    <div>
+                                        <h4 className="font-extrabold text-[#011146] text-sm">Need Creative Guidance?</h4>
+                                        <p className="text-xs text-slate-500 font-medium mt-0.5">Our design specialists are ready to discuss your brand requirements.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        {/* Right Column */}
-                        <div>
-                            {faqs.slice(Math.ceil(faqs.length / 2)).map((item, i) => {
-                                const index = i + Math.ceil(faqs.length / 2);
+                        {/* Right Column: FAQ Accordion Points */}
+                        <div className="lg:w-7/12 space-y-4">
+                            {faqs.map((item, index) => {
                                 const isOpen = activeAccordion === index;
                                 return (
-                                    <div key={index} className="mb-4">
+                                    <div
+                                        key={index}
+                                        className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen
+                                            ? "border-[#1A5CDD] shadow-xl shadow-blue-900/5 ring-1 ring-[#1A5CDD]/30"
+                                            : "border-slate-200/80 hover:border-slate-300"
+                                            }`}
+                                    >
                                         <button
                                             onClick={() => setActiveAccordion(isOpen ? null : index)}
-                                            className={`w-full text-left p-6 rounded-2xl border transition-all duration-300 flex items-center justify-between gap-4 ${isOpen ? "bg-[#F4F7FE] border-[#1A5CDD] shadow-sm" : "bg-white border-slate-200 hover:border-slate-300"}`}
+                                            className="w-full flex items-center justify-between p-6 text-left focus:outline-none group cursor-pointer"
                                         >
-                                            <span className="font-bold text-[#011146] text-[16px]">{index + 1}. {item.q}</span>
-                                            <div className="flex-shrink-0 ml-4">
-    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    </svg>
-</div>
+                                            <h3 className="text-[17px] font-extrabold text-[#011146] pr-6 group-hover:text-[#1A5CDD] transition-colors leading-snug">
+                                                {index + 1}. {item.q}
+                                            </h3>
+                                            <div
+                                                className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#1A5CDD] text-white rotate-180" : "bg-slate-100 text-slate-600 group-hover:bg-slate-200"
+                                                    }`}
+                                            >
+                                                <ChevronDown size={18} />
+                                            </div>
                                         </button>
-                                        <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px] mt-2 p-6 bg-slate-50 rounded-2xl border border-slate-100" : "max-h-0"}`}>
-                                            <p className="text-slate-600 text-[14.5px] leading-relaxed">{item.a}</p>
+                                        <div
+                                            className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                                                }`}
+                                        >
+                                            <div className="overflow-hidden">
+                                                <div className="px-6 pb-6 text-slate-600 text-[15.5px] leading-relaxed border-t border-slate-100 pt-4">
+                                                    {item.a}
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 );

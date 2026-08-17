@@ -63,7 +63,7 @@ export default function ServiceCompany() {
   return (
     <section
       aria-labelledby="commitment-heading"
-      className="bg-grid-pattern bg-white dark:bg-slate-950 py-[100px] overflow-hidden relative transition-colors duration-500"
+      className="bg-grid-pattern bg-white dark:bg-slate-950 py-10 md:py-14 lg:py-16 overflow-hidden relative transition-colors duration-500"
     >
       {/* Background radial glow */}
       <div className="sky-glow-orb" />

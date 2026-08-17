@@ -1036,7 +1036,7 @@ export default function WebDevelopmentClient() {
             </section>
 
             {/* SECTION 6: Why Choose Syscorp as Your Web Development Company in Pondicherry? */}
-            <section className="py-24 bg-[#030C2A] relative overflow-hidden">
+            <section className="py-24 bg-[#030C2A] relative">
                 {/* Background Ambient Glows */}
                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#1A5CDD]/20 rounded-full blur-[140px] pointer-events-none" />
                 <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#38bdf8]/10 rounded-full blur-[140px] pointer-events-none" />
@@ -1046,7 +1046,7 @@ export default function WebDevelopmentClient() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                         {/* Left Side: Text Content */}
-                        <div className="lg:col-span-6 space-y-6 lg:sticky">
+                        <div className="lg:col-span-6 space-y-6 lg:sticky lg:top-28">
                             <div>
                                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-6">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
@@ -1211,12 +1211,12 @@ export default function WebDevelopmentClient() {
             </section>
 
             {/* SECTION 8: Frequently Asked Questions (FAQs) - Split Layout */}
-            <section className="py-24 bg-[#F8FAFC] relative overflow-hidden">
+            <section className="py-24 bg-[#F8FAFC] relative">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
                         {/* Left Column: Heading & Sticky Context */}
-                        <div className="lg:w-5/12">
-                            <div className="lg:sticky">
+                        <div className="lg:w-5/12 lg:sticky lg:top-28">
+                            <div>
                                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                     Got Questions?

@@ -713,7 +713,7 @@ export default function UIUXClient() {
 
                         <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
                             <span className="inline-flex items-center gap-2 bg-white border border-slate-200/80 px-4 py-1.5 rounded-full text-xs font-extrabold text-[#011146] shadow-2xs">
-                                <CheckCircle size={14} className="text-[#1A5CDD]" /> 9 Core Service Modules
+                                <CheckCircle size={14} className="text-[#1A5CDD]" /> {services.length} Core Service Modules
                             </span>
                             <span className="inline-flex items-center gap-2 bg-white border border-slate-200/80 px-4 py-1.5 rounded-full text-xs font-extrabold text-[#011146] shadow-2xs">
                                 <CheckCircle size={14} className="text-[#1A5CDD]" /> Pixel-Perfect Standards
@@ -739,11 +739,11 @@ export default function UIUXClient() {
 
                                     <div>
                                         <div className="flex items-center justify-between mb-4">
-                                            <div className="w-12 h-12 rounded-xl bg-[#011146] text-[#38bdf8] flex items-center justify-center shadow-md group-hover:bg-[#1A5CDD] group-hover:text-white transition-colors duration-300">
+                                            <div className="w-12 h-12 rounded-xl bg-[#011146] text-[#38bdf8] flex items-center justify-center shadow-md group-hover:bg-[#1A5CDD] group-hover:text-[#fff] transition-colors duration-300">
                                                 <Icon size={22} />
                                             </div>
                                             <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 bg-slate-100 px-3.5 py-1 rounded-full group-hover:bg-blue-50 group-hover:text-[#1A5CDD] transition-colors">
-                                                0{index + 1} / 09
+                                                {String(index + 1).padStart(2, "0")} / {String(services.length).padStart(2, "0")}
                                             </span>
                                         </div>
 
@@ -1116,68 +1116,76 @@ export default function UIUXClient() {
             </section>
 
             {/* SECTION 8: Frequently Asked Questions (FAQs) */}
-            <section className="py-20 bg-white relative overflow-hidden">
-                <div className="container mx-auto max-w-7xl px-6 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-                        <div className="lg:col-span-5 lg:sticky">
-                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
-                                <HelpCircle size={14} /> Clear Answers
-                            </span>
+            <section className="py-24 bg-[#F8FAFC] relative">
+                <div className="container mx-auto px-6 max-w-7xl relative z-10">
+                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+                        {/* Left Column: Heading & Sticky Context */}
+                        <div className="lg:w-5/12 lg:sticky lg:top-28">
+                            <div>
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                    Got Questions?
+                                </span>
 
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">
-                                Frequently Asked <span className="text-[#1A5CDD]">Questions (FAQs)</span>
-                            </h2>
-                            <p className="text-slate-600 text-[16.5px] leading-relaxed mb-8">
-                                Got questions about our UI/UX Design Services in Pondicherry? Find all key answers right here to help guide your project decisions.
-                            </p>
+                                <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-[1.15] mb-6">
+                                    Frequently Asked <br />
+                                    <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">
+                                        Questions (FAQs)
+                                    </span>
+                                </h2>
 
-                            <div className="bg-[#F0F6FF] rounded-2xl p-6 border border-blue-100/80 shadow-xs">
-                                <h4 className="text-[#011146] font-bold text-lg mb-2 flex items-center gap-2">
-                                    <Sparkles size={18} className="text-[#1A5CDD]" /> Still Have Questions?
-                                </h4>
-                                <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                                    Can&apos;t find the answer you&apos;re looking for? Reach out to our design team for a free consultation.
+                                <p className="text-slate-600 text-[16.5px] leading-relaxed mb-8">
+                                    Got questions about our UI/UX Design Services in Pondicherry? Find clear, transparent answers to common questions about timelines, design process, tools, and deliverables.
                                 </p>
-                                <Link
-                                    href="/contact"
-                                    className="inline-flex items-center gap-2 text-sm font-bold text-[#1A5CDD] hover:text-[#011146] transition-colors"
-                                >
-                                    <span>Get in Touch With Our Team</span>
-                                    <ArrowRight size={16} />
-                                </Link>
+
+                                <div className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-md flex items-center gap-4">
+                                    <div className="w-12 h-12 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center shrink-0">
+                                        <CheckCircle size={24} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-extrabold text-[#011146] text-sm">Need More Clarity?</h4>
+                                        <p className="text-xs text-slate-500 font-medium mt-0.5">Our UI/UX design team is ready to consult on your interface project.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div className="lg:col-span-7 space-y-4">
+                        {/* Right Column: FAQ Accordion Points */}
+                        <div className="lg:w-7/12 space-y-4">
                             {faqs.map((faq, idx) => {
                                 const isOpen = activeAccordion === idx;
                                 return (
                                     <div
                                         key={idx}
-                                        className={`rounded-2xl transition-all duration-300 overflow-hidden ${isOpen
-                                            ? "bg-white border-2 border-[#1A5CDD] shadow-md shadow-blue-500/10"
-                                            : "bg-white border border-slate-200/80 hover:border-blue-300 shadow-xs"
+                                        className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen
+                                            ? "border-[#1A5CDD] shadow-xl shadow-blue-900/5 ring-1 ring-[#1A5CDD]/30"
+                                            : "border-slate-200/80 hover:border-slate-300"
                                             }`}
                                     >
                                         <button
                                             onClick={() => setActiveAccordion(isOpen ? null : idx)}
-                                            className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-[17px] transition-colors group"
+                                            className="w-full flex items-center justify-between p-6 text-left focus:outline-none group cursor-pointer"
                                         >
-                                            <span className={isOpen ? "text-[#1A5CDD] font-extrabold" : "text-[#011146] group-hover:text-[#1A5CDD]"}>
+                                            <h3 className="text-[17px] font-extrabold text-[#011146] pr-6 group-hover:text-[#1A5CDD] transition-colors leading-snug">
                                                 {idx + 1}. {faq.q}
-                                            </span>
-                                            <div className="flex-shrink-0 ml-4">
-    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    </svg>
-</div>
-                                        </button>
-
-                                        {isOpen && (
-                                            <div className="px-6 pb-6 pt-1 text-slate-600 text-[15.5px] leading-relaxed font-normal">
-                                                {faq.a}
+                                            </h3>
+                                            <div
+                                                className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#1A5CDD] text-white rotate-180" : "bg-slate-100 text-slate-600 group-hover:bg-slate-200"
+                                                    }`}
+                                            >
+                                                <ChevronDown size={18} />
                                             </div>
-                                        )}
+                                        </button>
+                                        <div
+                                            className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                                                }`}
+                                        >
+                                            <div className="overflow-hidden">
+                                                <div className="px-6 pb-6 text-slate-600 text-[15.5px] leading-relaxed border-t border-slate-100 pt-4">
+                                                    {faq.a}
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 );
                             })}

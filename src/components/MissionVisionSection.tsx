@@ -67,7 +67,7 @@ export default function MissionVisionSection() {
     }, [activeTab]);
 
     return (
-        <section ref={sectionRef} className="py-16 md:py-24 lg:py-32 bg-[#F0F8FF] dark:bg-[#080f25] relative overflow-hidden">
+        <section ref={sectionRef} className="py-8 md:py-10 lg:py-12 bg-[#F0F8FF] dark:bg-[#080f25] relative overflow-hidden">
             {/* Soft background glows to match other home page sections */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-blue-100/40 dark:bg-blue-900/10 blur-[120px] rounded-full" />
@@ -204,27 +204,27 @@ export default function MissionVisionSection() {
                         </div>
 
                         {/* Circular Stats remaining underneath */}
-                        <div className="mv-content-reveal flex flex-wrap items-center gap-6 sm:gap-10 mt-10 pt-8 border-t border-slate-200 dark:border-white/10">
-                            <div className="flex items-center gap-4">
-                                <div className="relative w-14 h-14 flex items-center justify-center rounded-full border-4 border-blue-100 dark:border-blue-900/30">
+                        <div className="mv-content-reveal grid grid-cols-2 gap-3 sm:gap-10 mt-6 sm:mt-10 pt-6 sm:pt-8 border-t border-slate-200 dark:border-white/10">
+                            <div className="flex items-center gap-2.5 sm:gap-4">
+                                <div className="relative w-11 h-11 sm:w-14 sm:h-14 flex items-center justify-center rounded-full border-4 border-blue-100 dark:border-blue-900/30 shrink-0">
                                     <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 36 36">
                                         <path className="text-blue-600 dark:text-blue-400" strokeDasharray="99, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3"/>
                                     </svg>
-                                    <span className="text-xs font-bold text-slate-800 dark:text-white">99%</span>
+                                    <span className="text-[11px] sm:text-xs font-bold text-slate-800 dark:text-white">99%</span>
                                 </div>
                                 <div>
-                                    <p className="text-[13px] font-bold text-slate-900 dark:text-white leading-tight">Client<br/>Satisfaction</p>
+                                    <p className="text-[12px] sm:text-[13px] font-bold text-slate-900 dark:text-white leading-snug">Client<br/>Satisfaction</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-4">
-                                <div className="relative w-14 h-14 flex items-center justify-center rounded-full border-4 border-cyan-100 dark:border-cyan-900/30">
+                            <div className="flex items-center gap-2.5 sm:gap-4">
+                                <div className="relative w-11 h-11 sm:w-14 sm:h-14 flex items-center justify-center rounded-full border-4 border-cyan-100 dark:border-cyan-900/30 shrink-0">
                                     <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 36 36">
                                         <path className="text-cyan-500 dark:text-cyan-400" strokeDasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" strokeWidth="3"/>
                                     </svg>
-                                    <span className="text-xs font-bold text-slate-800 dark:text-white">100%</span>
+                                    <span className="text-[11px] sm:text-xs font-bold text-slate-800 dark:text-white">100%</span>
                                 </div>
                                 <div>
-                                    <p className="text-[13px] font-bold text-slate-900 dark:text-white leading-tight">Reliable<br/>Support</p>
+                                    <p className="text-[12px] sm:text-[13px] font-bold text-slate-900 dark:text-white leading-snug">Reliable<br/>Support</p>
                                 </div>
                             </div>
                         </div>

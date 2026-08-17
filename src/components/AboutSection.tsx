@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import useEmblaCarousel from "embla-carousel-react";
@@ -150,7 +151,7 @@ export default function AboutSection() {
     <section
       ref={sectionRef}
       aria-labelledby="about-heading"
-      className="sky-about-section bg-grid-pattern py-[75px] overflow-hidden relative bg-white dark:bg-slate-950 transition-colors duration-500"
+      className="sky-about-section bg-grid-pattern py-10 md:py-14 lg:py-16 overflow-hidden relative bg-white dark:bg-slate-950 transition-colors duration-500"
     >
       {/* ── Animated overlay orbs ── */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
@@ -225,10 +226,10 @@ export default function AboutSection() {
       `}</style>
 
       <div className="max-w-[1280px] mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 gap-12 items-center lg:grid-cols-[1.05fr_1.15fr] lg:gap-14">
+        <div className="grid grid-cols-1 gap-12 items-start lg:grid-cols-[1.05fr_1.15fr] lg:gap-14">
 
           {/* LEFT COLUMN: 3D Image Showcase + Floating Widgets */}
-          <div className="sky-about-left-col relative w-full pb-[40px] sm:pb-[60px] flex items-center justify-center lg:justify-start mt-8 lg:mt-0">
+          <div className="sky-about-left-col relative w-full pb-[40px] sm:pb-[60px] flex items-center justify-center lg:justify-start mt-8 lg:mt-0 lg:sticky lg:top-28">
             {/* Ambient Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] bg-[#1A5CDD]/10 dark:bg-blue-500/15 rounded-full blur-[70px] pointer-events-none -z-10" />
 
@@ -349,7 +350,7 @@ export default function AboutSection() {
 
                 {/* Card 1: Custom Software Development */}
                 <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_50%] min-w-0 pl-5 h-auto flex flex-col">
-                  <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
+                  <Link href="/services/website-development/web-development" className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between block no-underline">
                     <div>
                       <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
                       <div className="w-10 h-10 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
@@ -362,12 +363,12 @@ export default function AboutSection() {
                         Develop intelligent, scalable, and secure software solutions tailored to your business needs. We build applications that automate workflows, improve operational efficiency, and support long-term business growth.
                       </p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Card 2: Website Development */}
                 <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_50%] min-w-0 pl-5 h-auto flex flex-col">
-                  <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
+                  <Link href="/services/website-development/web-development" className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between block no-underline">
                     <div>
                       <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
                       <div className="w-10 h-10 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
@@ -384,12 +385,12 @@ export default function AboutSection() {
                         Create modern, responsive, and SEO-friendly websites that deliver exceptional user experiences, strengthen your online presence, and convert visitors into loyal customers.
                       </p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Card 3: UI/UX Design */}
                 <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_50%] min-w-0 pl-5 h-auto flex flex-col">
-                  <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
+                  <Link href="/services/website-development/ui-ux" className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between block no-underline">
                     <div>
                       <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
                       <div className="w-10 h-10 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
@@ -402,12 +403,12 @@ export default function AboutSection() {
                         Design intuitive, visually engaging, and user-focused digital experiences that enhance usability, improve customer satisfaction, and create seamless interactions across web and mobile platforms.
                       </p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Card 4: Cloud & Digital Solutions */}
                 <div className="sky-about-carousel-slide flex-[0_0_85%] sm:flex-[0_0_50%] min-w-0 pl-5 h-auto flex flex-col">
-                  <div className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between">
+                  <Link href="/services/website-development/cloud-server" className="sky-about-card group bg-[#1A5CDD]/[0.03] dark:bg-white/[0.02] border border-[#1A5CDD]/[0.06] dark:border-white/[0.05] rounded-[20px] p-6 relative transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white/[0.95] dark:hover:bg-slate-900/50 hover:border-[#1A5CDD]/15 dark:hover:border-blue-500/20 hover:shadow-[0_12px_30px_rgba(26,92,221,0.04)] dark:hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] h-full flex flex-col justify-between block no-underline">
                     <div>
                       <div className="absolute inset-0 pointer-events-none opacity-5 bg-grid-pattern rounded-2xl" />
                       <div className="w-10 h-10 rounded-xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110">
@@ -420,7 +421,7 @@ export default function AboutSection() {
                         Accelerate digital transformation with secure cloud services, business automation, and scalable infrastructure that improves collaboration, protects data, and supports future business expansion.
                       </p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
               </div>

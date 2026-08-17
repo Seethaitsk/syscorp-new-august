@@ -190,7 +190,7 @@ export default function WhyChooseUs() {
     };
 
     return (
-        <section ref={sectionRef} className="py-24 bg-[#F0F8FF] dark:bg-[#080f25] relative overflow-hidden font-sans">
+        <section ref={sectionRef} className="py-8 md:py-10 lg:py-12 bg-[#F0F8FF] dark:bg-[#080f25] relative overflow-hidden font-sans">
             <style>{`
                 @keyframes float {
                     0%, 100% { transform: translateY(0px); }
@@ -208,19 +208,26 @@ export default function WhyChooseUs() {
             <div className="absolute inset-0 bg-[radial-gradient(#94a3b8_1px,transparent_1px)] dark:bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.15] dark:opacity-50 pointer-events-none" />
 
             <div className="container mx-auto px-4 sm:px-6 max-w-[1280px] relative z-10">
-                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-14 gap-6">
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-10 md:mb-12 gap-8">
                     <div className="max-w-2xl">
-                        <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 dark:bg-blue-500/10 dark:border-blue-500/20 rounded-full px-3 py-1 text-[11px] font-bold text-[#1A5CDD] dark:text-blue-400 w-fit uppercase tracking-wider mb-4">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] dark:bg-blue-400 inline-block animate-pulse" />
+                        <span className="inline-flex items-center gap-2.5 bg-blue-500/10 border border-blue-500/20 dark:bg-blue-500/15 dark:border-blue-400/30 rounded-full px-4 py-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 w-fit uppercase tracking-widest mb-4 shadow-sm">
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600 dark:bg-blue-400"></span>
+                            </span>
                             Syscorp Advantage
                         </span>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white leading-tight">
-                            Deliver a Better User Experience with Powerful Features
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white leading-[1.18] tracking-tight">
+                            Deliver a Better <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 dark:from-blue-400 dark:via-cyan-300 dark:to-teal-300">User Experience</span> with Powerful Features
                         </h2>
                     </div>
-                    <p className="text-[15px] text-slate-600 dark:text-slate-400 max-w-sm leading-relaxed">
-                        Businesses choose Syscorp because we deliver more than software. we deliver value that boosts workflows and scales across all devices.
-                    </p>
+                    
+                    {/* Right side glass container filling space properly */}
+                    <div className="lg:max-w-md w-full bg-white/80 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200/80 dark:border-white/10 p-5 sm:p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                        <p className="text-[14.5px] text-slate-600 dark:text-slate-300 leading-relaxed font-medium m-0">
+                            Businesses choose Syscorp because we deliver more than software — we engineer high-impact digital products designed to streamline operations and scale seamlessly across all devices.
+                        </p>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5 grid-flow-dense">
