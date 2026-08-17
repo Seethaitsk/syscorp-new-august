@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { Phone, Mail, MessageSquare, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Phone, Mail, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export default function ContactMap() {
     const [showMap, setShowMap] = useState(false);
@@ -43,14 +43,14 @@ export default function ContactMap() {
             </div>
 
             {/* Overlaid contact detail box (Theme-Aligned Deep Navy Sidebar) */}
-            <div className="relative lg:absolute lg:right-8 lg:top-8 lg:bottom-8 lg:w-[350px] bg-gradient-to-br from-[#010925] via-[#011146] to-[#0a2373] border border-blue-900/40 text-white p-8 rounded-b-[28px] lg:rounded-3xl shadow-[0_20px_60px_rgba(1,17,70,0.3)] flex flex-col justify-between z-20 space-y-6 lg:space-y-0">
-                <div className="space-y-6">
+            <div className="relative lg:absolute lg:right-8 lg:top-8 lg:w-[350px] bg-gradient-to-br from-[#010925] via-[#011146] to-[#0a2373] border border-blue-900/40 text-white p-6 md:p-7 rounded-b-[28px] lg:rounded-3xl shadow-[0_20px_60px_rgba(1,17,70,0.3)] flex flex-col z-20 space-y-5">
+                <div className="space-y-5">
                     <h3 className="text-2xl md:text-3xl font-black tracking-tight text-white font-sans">
                         Get <br />In Touch!
                     </h3>
 
                     {/* Contacts list */}
-                    <div className="space-y-5">
+                    <div className="space-y-4">
                         {/* Call Directly */}
                         <div className="flex items-start gap-4">
                             <div className="w-10 h-10 rounded-full bg-cyan-500/10 flex items-center justify-center text-[#fff] flex-shrink-0">
@@ -77,23 +77,11 @@ export default function ContactMap() {
                             </div>
                         </div>
 
-                        {/* Start Chat */}
-                        <div className="flex items-start gap-4">
-                            <div className="w-10 h-10 rounded-full bg-cyan-500/10 flex items-center justify-center  text-[#fff]  flex-shrink-0">
-                                <MessageSquare className="w-4.5 h-4.5" />
-                            </div>
-                            <div>
-                                <span className="text-[10px] font-extrabold tracking-wider uppercase text-blue-300 block font-sans">Start Chat</span>
-                                <a href="mailto:syscorptechno@gmail.com?subject=Inquiry" className="text-sm font-bold text-white hover:text-cyan-400 transition-colors">
-                                    Send message on Chat
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
                 {/* Footer of the sidebar box */}
-                <div className="space-y-4 pt-6 border-t border-blue-900/40">
+                <div className="space-y-3.5 pt-4 border-t border-blue-900/40">
                     <a href="/faq" className="text-[11px] font-semibold text-blue-300 hover:text-cyan-400 transition-colors block text-center font-sans">
                         See our Refund Policies or FAQ
                     </a>

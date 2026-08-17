@@ -73,7 +73,7 @@ export default function AchievementsSection() {
   return (
     <section 
       aria-labelledby="achievements-heading"
-      className="py-24 lg:py-32 bg-white dark:bg-slate-950 text-slate-900 dark:text-white relative overflow-hidden transition-colors duration-500"
+      className="py-10 md:py-14 lg:py-16 bg-white dark:bg-slate-950 text-slate-900 dark:text-white relative overflow-hidden transition-colors duration-500"
     >
       {/* Background ambient lighting effects */}
       <div className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-[#1A5CDD]/10 dark:bg-[#1A5CDD]/20 rounded-full blur-[120px] pointer-events-none" />
@@ -212,7 +212,7 @@ export default function AchievementsSection() {
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         
         {/* TOP SECTION: Interactive Console + Main Headers */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center mb-12 md:mb-16">
           
           {/* LEFT COLUMN: Interactive Achievements Console */}
           <div className="lg:col-span-5 relative w-full flex items-stretch">

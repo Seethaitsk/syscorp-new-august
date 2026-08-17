@@ -189,15 +189,14 @@ export default function GoogleAdsClient() {
                 <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-gradient-to-tr from-[#3B82F6]/10 to-transparent rounded-full blur-[120px] pointer-events-none" />
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                    <div className="flex flex-col lg:flex-row items-start gap-16 lg:gap-24">
                         <div className="gsap-fade-up lg:w-1/2 relative">
                             <div className="absolute -left-10 top-10 w-32 h-32 bg-[#1A5CDD]/5 rounded-full blur-2xl -z-10" />
 
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3B82F6]/20 shadow-sm mb-6 relative overflow-hidden group">
-                                <div className="absolute inset-0 bg-gradient-to-r from-[#1A5CDD]/0 via-[#1A5CDD]/10 to-[#1A5CDD]/0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
-                                <span className="w-2 h-2 rounded-full bg-[#3B82F6] animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
-                                <span className="text-[13px] font-bold text-[#011146] uppercase tracking-wider">Maximize Your ROI</span>
-                            </div>
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Maximize Your ROI
+                            </span>
 
                             <h1 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">
                                 Leading <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8] relative inline-block">Google Ads (PPC)
@@ -270,10 +269,10 @@ export default function GoogleAdsClient() {
                         <div className="relative z-10 flex flex-col md:flex-row items-stretch">
                             <div className="md:w-5/12 p-12 md:p-16 flex flex-col justify-center border-b md:border-b-0 md:border-r border-white/10 relative">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-[radial-gradient(#3B82F6_2px,transparent_2px)] [background-size:16px_16px] opacity-20" />
-                                <div className="inline-flex items-center gap-2 mb-8">
-                                    <div className="w-8 h-1 bg-[#3B82F6] rounded-full" />
-                                    <span className="text-[#3B82F6] text-[13px] font-bold tracking-widest uppercase">PPC Fundamentals</span>
-                                </div>
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-[#38bdf8] mb-8">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8] inline-block animate-pulse" />
+                                    PPC Fundamentals
+                                </span>
                                 <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-[1.15] mb-6">
                                     What is <br className="hidden md:block" />
                                     <span className="text-[#3B82F6] relative inline-block mt-2">Google Ads?
@@ -307,12 +306,10 @@ export default function GoogleAdsClient() {
                     <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
                         <div className="lg:w-[55%] w-full relative">
-                            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/70 backdrop-blur-xl border border-[#3B82F6]/15 shadow-[0_4px_20px_rgba(59,130,246,0.08)] mb-10">
-                                <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#3B82F6] to-[#1D4ED8] flex items-center justify-center shadow-sm">
-                                    <Target className="text-white" size={14} strokeWidth={2.5} />
-                                </div>
-                                <span className="text-[13px] font-bold text-[#011146] tracking-wide">Business Impact</span>
-                            </div>
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Business Impact
+                            </span>
 
                             <div className="mb-10">
                                 <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
@@ -374,10 +371,10 @@ export default function GoogleAdsClient() {
 
                         <div className="lg:w-1/3 w-full">
                             <div className="sticky top-32">
-                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3B82F6]/20 shadow-sm mb-6">
-                                    <TrendingUp className="text-[#3B82F6]" size={14} />
-                                    <span className="text-[13px] font-bold text-[#011146]">Google Ads Benefits</span>
-                                </div>
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                    Google Ads Benefits
+                                </span>
 
                                 <h3 className="text-3xl md:text-4xl lg:text-[44px] font-extrabold text-[#011146] mb-8 leading-[1.15]">
                                     Benefits of <br className="hidden lg:block" />
@@ -436,10 +433,8 @@ export default function GoogleAdsClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-4xl mx-auto mb-20">
-                        <div className="inline-flex items-center justify-center mb-8 relative group">
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#38bdf8] to-[#1A5CDD] blur-md opacity-40 group-hover:opacity-80 transition-opacity duration-500 rounded-full" />
-                            <span className="relative px-5 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/20 text-[#38bdf8] text-[13px] font-extrabold tracking-widest uppercase shadow-sm flex items-center gap-2">
-                                <Zap size={14} className="fill-[#38bdf8]" />
+                        <div className="inline-flex items-center justify-center mb-6">
+                            <span className="px-5 py-1.5 rounded-full bg-[#1A5CDD]/10 border border-[#1A5CDD]/30 text-[#38bdf8] text-[12px] font-bold tracking-wider uppercase backdrop-blur-sm">
                                 Complete PPC Solutions
                             </span>
                         </div>
@@ -490,10 +485,10 @@ export default function GoogleAdsClient() {
 
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-20">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3B82F6]/20 shadow-sm mb-6">
-                            <Activity className="text-[#3B82F6]" size={14} />
-                            <span className="text-[13px] font-bold text-[#011146]">Campaign Management</span>
-                        </div>
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                            Campaign Management
+                        </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6 leading-tight">
                             Our Google Ads (PPC) <br className="hidden sm:block" />Management Process
                         </h2>
@@ -561,10 +556,10 @@ export default function GoogleAdsClient() {
                         </div>
 
                         <div className="lg:w-1/2 w-full mt-10 lg:mt-0">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#3B82F6]/20 shadow-sm mb-5">
-                                <Zap className="text-[#3B82F6] fill-[#3B82F6]" size={14} />
-                                <span className="text-[13px] font-bold text-[#011146]">Why SysCrop</span>
-                            </div>
+                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                Why SysCrop
+                            </span>
 
                             <h2 className="text-3xl md:text-4xl lg:text-[42px] font-extrabold text-[#011146] mb-5 tracking-tight leading-[1.15]">
                                 Why Choose SysCrop for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8] relative inline-block mt-1">
@@ -638,10 +633,10 @@ export default function GoogleAdsClient() {
             <section className="py-20 bg-white border-t border-slate-100 overflow-hidden">
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F4F7FE] border border-[#1A5CDD]/10 mb-6">
-                            <HelpCircle className="text-[#1A5CDD]" size={14} />
-                            <span className="text-[13px] font-bold text-[#011146]">Got Questions?</span>
-                        </div>
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                            Frequently Asked Questions
+                        </span>
                         <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight mb-6">
                             Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Questions</span>
                         </h2>

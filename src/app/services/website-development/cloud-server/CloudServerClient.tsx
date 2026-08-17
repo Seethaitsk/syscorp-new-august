@@ -1000,7 +1000,7 @@ export default function CloudServerClient() {
                                                 <IconComponent size={20} strokeWidth={2} />
                                             </div>
                                             <span className="w-8 h-8 rounded-full bg-[#0B1A46] border border-[#1D3A80] text-[#38bdf8] text-xs font-extrabold flex items-center justify-center group-hover:border-[#38bdf8]">
-                                                0{idx + 1}
+                                                {String(idx + 1).padStart(2, "0")}
                                             </span>
                                         </div>
                                         <h3 className="text-xl font-extrabold text-white mb-3 group-hover:text-[#38bdf8] transition-colors leading-snug">
@@ -1277,7 +1277,7 @@ export default function CloudServerClient() {
                         <div className="flex items-center gap-3">
                             <span className="w-3 h-3 rounded-full bg-[#1A5CDD] animate-pulse" />
                             <span className="text-xs sm:text-sm font-extrabold text-[#011146] uppercase tracking-wider">
-                                Implementation Roadmap (Phase 01 - 0{implementationSteps.length})
+                                Implementation Roadmap (Phase 01 - {String(implementationSteps.length).padStart(2, "0")})
                             </span>
                         </div>
 
@@ -1374,12 +1374,12 @@ export default function CloudServerClient() {
             </section>
 
             {/* SECTION 8: FREQUENTLY ASKED QUESTIONS (FAQS - 2-COLUMN SPLIT) */}
-            <section className="py-20 bg-[#F8FAFC] relative overflow-hidden">
+            <section className="py-20 bg-[#F8FAFC] relative">
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
+                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
                         {/* Left Column: Heading & Sticky Context */}
-                        <div className="lg:w-5/12">
-                            <div className="lg:sticky">
+                        <div className="lg:w-5/12 lg:sticky lg:top-28">
+                            <div>
                                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
                                 Got Questions?
@@ -1435,11 +1435,16 @@ export default function CloudServerClient() {
                                                 <ChevronDown size={18} />
                                             </div>
                                         </button>
-                                        {isOpen && (
-                                            <div className="px-6 pb-6 text-slate-600 text-[15.5px] leading-relaxed border-t border-slate-100 pt-4">
-                                                {faq.a}
+                                        <div
+                                            className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                                                }`}
+                                        >
+                                            <div className="overflow-hidden">
+                                                <div className="px-6 pb-6 text-slate-600 text-[15.5px] leading-relaxed border-t border-slate-100 pt-4">
+                                                    {faq.a}
+                                                </div>
                                             </div>
-                                        )}
+                                        </div>
                                     </div>
                                 );
                             })}

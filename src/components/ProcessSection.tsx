@@ -119,7 +119,7 @@ export default function ProcessSection() {
     };
 
     return (
-        <section ref={sectionRef} className="py-24 bg-white dark:bg-[#040814] relative overflow-hidden font-sans">
+        <section ref={sectionRef} className="py-8 md:py-10 lg:py-12 bg-white dark:bg-[#040814] relative overflow-hidden font-sans">
             <style>{`
                 @keyframes flowRight {
                     0% { transform: translateX(-100%); }
@@ -142,7 +142,7 @@ export default function ProcessSection() {
             <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
             <div className="container mx-auto px-6 max-w-[1280px] relative z-10">
-                <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-24">
+                <div className="text-center max-w-3xl mx-auto mb-6 lg:mb-8">
                     <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 dark:bg-blue-500/10 dark:border-blue-500/20 rounded-full px-3 py-1.5 text-[11px] font-bold text-[#1A5CDD] dark:text-blue-400 w-fit uppercase tracking-wider mb-4">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] dark:bg-blue-400 animate-pulse" />
                         Our Methodology

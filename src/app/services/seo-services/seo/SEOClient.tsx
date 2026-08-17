@@ -246,7 +246,7 @@ export default function SEOClient() {
             />
 
             {/* Intro Section */}
-            <section className="py-20 bg-[#F0F8FF]/60 relative overflow-hidden">
+            <section className="pt-16 pb-6 lg:pt-20 lg:pb-8 bg-[#F0F8FF]/60 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="container mx-auto px-6 max-w-7xl relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -318,7 +318,7 @@ export default function SEOClient() {
             </section>
 
             {/* What is SEO Section */}
-            <section className="py-20 bg-white">
+            <section className="pt-4 pb-16 lg:pt-6 lg:pb-20 bg-white">
                 <div className="container mx-auto px-6 max-w-7xl">
                     <div className="bg-[#011146] rounded-[40px] relative overflow-hidden shadow-2xl">
                         {/* Decorative glows */}

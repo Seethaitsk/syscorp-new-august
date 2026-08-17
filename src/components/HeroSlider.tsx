@@ -356,16 +356,32 @@ export default function HeroSlider() {
           display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
           height: 100vh;
           width: 100%;
           background: #02071f;
+          box-sizing: border-box;
         }
+
+        .sky-hero-text-aligner {
+          position: relative;
+          z-index: 10;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 115px 24px 0;
+          width: 100%;
+          margin: 0 auto;
+        }
+
         @media (max-width: 767px) {
           .sky-banner-sec {
             height: auto;
-            min-height: 100vh;
-            padding: 100px 0 60px;
+            min-height: auto;
+            padding: 110px 0 30px;
+          }
+          .sky-hero-text-aligner {
+            padding: 0 24px;
           }
         }
 
@@ -951,8 +967,8 @@ export default function HeroSlider() {
             <div className="hero-video-kill" aria-hidden="true" />
           </div>
 
-          {/* Content — centered vertically, pushed slightly below midpoint */}
-          <div className="sky-hero-text-aligner" style={{ position: "relative", zIndex: 10, display: "flex", flexDirection: "column", alignItems: "center", padding: "0 24px", width: "100%", paddingTop: "22vh", paddingBottom: "4vh" }}>
+          {/* Content — structured for responsive alignment across all viewports */}
+          <div className="sky-hero-text-aligner">
             {/* Dynamic Ambient Glowing Orbs */}
             <div className="absolute w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(56,189,248,0.14)_0%,transparent_70%)] blur-[80px] pointer-events-none z-[-1] animate-pulse" style={{ top: "35%", left: "50%", transform: "translate(-50%, -50%)" }} />
             <div className="absolute w-[450px] h-[450px] rounded-full bg-[radial-gradient(circle,rgba(168,85,247,0.12)_0%,transparent_70%)] blur-[90px] pointer-events-none z-[-1]" style={{ top: "45%", left: "45%", transform: "translate(-50%, -50%)", animation: "pulse 12s ease-in-out infinite alternate" }} />

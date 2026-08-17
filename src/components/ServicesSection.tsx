@@ -8,6 +8,7 @@ import Autoplay from "embla-carousel-autoplay";
 const services = [
   {
     title: "Custom Software Development",
+    href: "/services/website-development/web-development",
     description: "Build scalable and secure software solutions tailored to your business needs, helping you automate processes, improve efficiency, and accelerate growth.",
     bgImage: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
@@ -19,6 +20,7 @@ const services = [
   },
   {
     title: "Website Development",
+    href: "/services/website-development/web-development",
     description: "Create modern, responsive, and SEO-friendly websites designed to enhance your online presence and deliver seamless digital experiences.",
     bgImage: "https://images.unsplash.com/photo-1547658719-da2b81169b42?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
@@ -31,6 +33,7 @@ const services = [
   },
   {
     title: "Mobile App Development",
+    href: "/services/website-development/full-stack",
     description: "Develop high-performance Android and iOS applications with intuitive designs, smooth functionality, and business-focused features.",
     bgImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
@@ -43,6 +46,7 @@ const services = [
   },
   {
     title: "UI/UX Design",
+    href: "/services/website-development/ui-ux",
     description: "Design engaging and user-friendly digital experiences that improve usability, customer satisfaction, and brand interaction.",
     bgImage: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
@@ -57,6 +61,7 @@ const services = [
   },
   {
     title: "Cloud Solutions",
+    href: "/services/website-development/cloud-server",
     description: "Transform your business infrastructure with secure and scalable cloud solutions that improve flexibility, performance, and reliability.",
     bgImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
@@ -68,6 +73,7 @@ const services = [
   },
   {
     title: "Digital Marketing",
+    href: "/services/seo-services/seo",
     description: "Grow your online visibility with data-driven marketing strategies focused on increasing traffic, engagement, and business conversions.",
     bgImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
@@ -79,6 +85,7 @@ const services = [
   },
   {
     title: "AI & Machine Learning",
+    href: "/services/website-development/full-stack",
     description: "Implement intelligent AI solutions that automate decision-making, analyze data, and create smarter business experiences.",
     bgImage: "https://images.unsplash.com/photo-1677442136019-21780efad99a?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
@@ -91,6 +98,7 @@ const services = [
   },
   {
     title: "Cloud & Infrastructure",
+    href: "/services/website-development/cloud-server",
     description: "Build reliable digital infrastructure with secure cloud environments, automation, and modern deployment practices.",
     bgImage: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
@@ -105,6 +113,7 @@ const services = [
   },
   {
     title: "CRM Development",
+    href: "/services/website-development/crm-development",
     description: "Develop customized CRM platforms that streamline customer management, improve collaboration, and increase business productivity.",
     bgImage: "https://images.unsplash.com/photo-1552581230-c01bc9148c00?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
@@ -116,6 +125,7 @@ const services = [
   },
   {
     title: "Software Testing & Quality Assurance",
+    href: "/services/website-development/full-stack",
     description: "Ensure reliable software performance with comprehensive testing solutions that improve quality, security, and user experience.",
     bgImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?fm=jpg&q=75&w=600&auto=format&fit=crop",
     icon: (
@@ -369,7 +379,7 @@ export default function ServicesSection() {
   return (
     <section
       aria-labelledby="services-heading"
-      className="sky-services-section bg-[#F0F8FF] dark:bg-[#080f25] py-[100px] relative overflow-hidden transition-colors duration-500"
+      className="sky-services-section bg-[#F0F8FF] dark:bg-[#080f25] py-10 md:py-14 lg:py-16 relative overflow-hidden transition-colors duration-500"
     >
       {/* Background radial decorations */}
       <div className="sky-services-bg-glow-1" />
@@ -418,7 +428,7 @@ export default function ServicesSection() {
           display: flex;
           flex-direction: column;
           gap: 28px;
-          margin-bottom: 64px;
+          margin-bottom: 40px;
         }
         @media (min-width: 1024px) {
           .sky-services-header {
@@ -892,7 +902,7 @@ export default function ServicesSection() {
             {services.map((s, i) => (
               <div key={i} className="sky-embla-slide">
                 <Link
-                  href="/services"
+                  href={s.href || "/services"}
                   ref={(el) => {
                     if (el) cardsRef.current[i] = el;
                   }}

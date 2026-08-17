@@ -285,7 +285,7 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
     <section
       ref={sectionRef}
       aria-labelledby="testimonials-heading"
-      className={`sky-testi-section ${bgClass || "bg-white dark:bg-slate-950"} py-[100px] overflow-hidden relative transition-colors duration-500`}
+      className={`sky-testi-section ${bgClass || "bg-white dark:bg-slate-950"} py-10 md:py-14 lg:py-16 overflow-hidden relative transition-colors duration-500`}
     >
       <style>{`
         .sky-services-container {
@@ -300,7 +300,7 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
           grid-template-columns: 1fr;
           gap: 32px;
           align-items: flex-start;
-          margin-bottom: 56px;
+          margin-bottom: 36px;
         }
         @media (min-width: 1024px) {
           .sky-testi-header-grid {
@@ -572,7 +572,7 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
           justify-content: center;
           align-items: center;
           gap: 8px;
-          margin-top: 36px;
+          margin-top: 24px;
         }
         .sky-carousel-dot {
           width: 10px;
@@ -788,7 +788,7 @@ export default function TestimonialSection({ bgClass }: { bgClass?: string } = {
         </div>
 
         {/* ─── CLIENT LOGOS SECTION ─── */}
-        <div style={{ marginTop: "56px", display: "flex", flexDirection: "column", gap: "36px" }}>
+        <div style={{ marginTop: "36px", display: "flex", flexDirection: "column", gap: "36px" }}>
           {/* Divider line with center text */}
           <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
             <div className="sky-testi-divider-line" />

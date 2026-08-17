@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {
     Code, Server, Database, Zap, Layout, Lock, Cloud, Gauge,
-    Shield, Wrench, CheckCircle2, ChevronDown, Check, ArrowRight,
+    Shield, Wrench, CheckCircle, CheckCircle2, ChevronDown, Check, ArrowRight,
     Cpu, Layers, Sparkles, Activity, KeyRound, Monitor, Settings,
     FileCode, Terminal, Globe, Smartphone, RefreshCw, Users, HelpCircle,
     TrendingUp, Rocket, FileText, ChevronRight, ChevronLeft, Building2,
@@ -352,7 +352,7 @@ export default function ERPDevelopmentClient() {
     ];
 
     return (
-        <main ref={mainRef} className="min-h-screen bg-[#F8FAFC] text-[#011146] selection:bg-[#1A5CDD] selection:text-white font-sans overflow-x-hidden">
+        <main ref={mainRef} className="min-h-screen bg-[#F8FAFC] text-[#011146] selection:bg-[#1A5CDD] selection:text-white font-sans overflow-x-clip">
 
             {/* HERO BANNER */}
             <HeaderBanner
@@ -370,7 +370,7 @@ export default function ERPDevelopmentClient() {
             <section className="pt-20 pb-8 lg:pb-0 bg-[#F8FAFC] relative overflow-hidden">
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
                         {/* Left Side: Content */}
                         <div className="lg:col-span-6 space-y-6">
@@ -395,9 +395,12 @@ export default function ERPDevelopmentClient() {
                                         If you're looking for a reliable ERP Development Company in Pondicherry, we deliver secure, scalable, and cloud-enabled ERP solutions with end-to-end development, implementation, integration, and ongoing support.
                                     </p>
                                 )}
+                            </div>
+
+                            <div className="flex flex-wrap items-center gap-4 pt-2 sm:pt-4">
                                 <button 
                                     onClick={() => setShowMoreERPDesc(!showMoreERPDesc)}
-                                    className="group inline-flex items-center gap-2 px-5 py-2.5 text-[15px] font-bold text-[#1A5CDD] bg-blue-50/80 hover:bg-blue-100/80 border border-blue-100/50 hover:border-blue-200/60 rounded-full transition-all duration-300 focus:outline-none shadow-sm"
+                                    className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 text-[15px] font-bold text-[#1A5CDD] bg-blue-50/80 hover:bg-blue-100/80 border border-blue-100/50 hover:border-blue-200/60 rounded-xl transition-all duration-300 focus:outline-none shadow-sm cursor-pointer"
                                 >
                                     {showMoreERPDesc ? "Read Less" : "Read More"}
                                     <ChevronDown 
@@ -405,19 +408,19 @@ export default function ERPDevelopmentClient() {
                                         className={`transition-transform duration-300 ${showMoreERPDesc ? 'rotate-180' : 'group-hover:translate-y-0.5'}`} 
                                     />
                                 </button>
-                            </div>
 
-                            <Link
-                                href="/contact"
-                                className="group relative inline-flex items-center gap-3 bg-[#011146] text-white px-8 py-4 rounded-xl font-bold text-[15px] transition-all duration-300 shadow-lg shadow-blue-950/20 hover:bg-[#1A5CDD] hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(26,92,221,0.3)] mt-6 overflow-hidden"
-                            >
-                                <span className="relative z-10">Discuss Your ERP Project</span>
-                                <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1.5 transition-transform duration-300" />
-                            </Link>
+                                <Link
+                                    href="/contact"
+                                    className="group relative inline-flex items-center justify-center gap-3 bg-[#011146] text-white px-8 py-3.5 rounded-xl font-bold text-[15px] transition-all duration-300 shadow-lg shadow-blue-950/20 hover:bg-[#1A5CDD] hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(26,92,221,0.3)] overflow-hidden"
+                                >
+                                    <span className="relative z-10">Discuss Your ERP Project</span>
+                                    <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1.5 transition-transform duration-300" />
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Right Side Image / Browser Frame */}
-                        <div className="lg:col-span-6 relative group flex justify-center mt-8 lg:mt-0 hero-animate">
+                        <div className="lg:col-span-6 relative group flex justify-center mt-8 lg:mt-0 hero-animate lg:sticky lg:top-28">
                             <div className="w-full max-w-[600px] relative flex justify-center">
                                 {/* Ambient Glow */}
                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-to-br from-[#1A5CDD]/15 to-[#38bdf8]/10 rounded-full blur-[80px] pointer-events-none -z-10 transition-opacity duration-700 group-hover:opacity-100 opacity-70" />
@@ -761,8 +764,8 @@ export default function ERPDevelopmentClient() {
                             <Sparkles size={14} className="text-[#38bdf8]" />
                             Enterprise Architecture
                         </span>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#011146] tracking-tight leading-tight">
-                            ERP Modules We <span className="text-[#1A5CDD] bg-clip-text text-transparent bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Develop</span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
+                            ERP Modules We <span className="text-[#1A5CDD]">Develop</span>
                         </h2>
                         <div className="space-y-4 text-slate-600 text-lg leading-relaxed font-medium max-w-3xl mx-auto pt-2">
                             <p>
@@ -875,30 +878,28 @@ export default function ERPDevelopmentClient() {
                 <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#38bdf8]/5 rounded-full blur-3xl pointer-events-none" />
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
-                        <div className="space-y-4 max-w-4xl">
-                            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
-                                <Workflow size={14} />
-                                Agile Roadmap
-                            </span>
-                            <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight">
-                                Our ERP Development Process
-                            </h2>
-                            <h3 className="text-xl md:text-2xl font-bold text-[#1A5CDD]">
-                                A Structured 8-Step Approach to Successful ERP Implementation
-                            </h3>
-                            <div className="space-y-4 text-slate-600 text-base md:text-[17px] leading-[1.85] text-left max-w-4xl pt-2">
-                                <p>
-                                    At Syscorp, we follow a well-defined ERP development process that ensures every solution is delivered with quality, efficiency, and long-term scalability. Our ERP Development in Pondicherry follows industry best practices to reduce implementation risks, improve project transparency, and ensure successful deployment.
-                                </p>
-                                <p>
-                                    Every ERP project begins with understanding your business objectives and ends with continuous support that helps your organization maximize the value of its ERP investment.
-                                </p>
-                            </div>
+                    <div className="text-center max-w-4xl mx-auto mb-14 space-y-4">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
+                            <Workflow size={14} />
+                            Agile Roadmap
+                        </span>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-tight">
+                            Our ERP Development <span className="text-[#1A5CDD]">Process</span>
+                        </h2>
+                        <h3 className="text-xl md:text-2xl font-bold text-[#1A5CDD]">
+                            A Structured 8-Step Approach to Successful ERP Implementation
+                        </h3>
+                        <div className="space-y-4 text-slate-600 text-base md:text-[17px] leading-[1.85] text-center max-w-3xl mx-auto pt-2">
+                            <p>
+                                At Syscorp, we follow a well-defined ERP development process that ensures every solution is delivered with quality, efficiency, and long-term scalability. Our ERP Development in Pondicherry follows industry best practices to reduce implementation risks, improve project transparency, and ensure successful deployment.
+                            </p>
+                            <p>
+                                Every ERP project begins with understanding your business objectives and ends with continuous support that helps your organization maximize the value of its ERP investment.
+                            </p>
                         </div>
 
                         {/* Slider Navigation Controls */}
-                        <div className="flex items-center gap-3 shrink-0 self-start md:self-end">
+                        <div className="flex items-center justify-center gap-3 pt-6">
                             <button 
                                 onClick={() => {
                                     if(processSliderRef.current) {
@@ -906,7 +907,7 @@ export default function ERPDevelopmentClient() {
                                         processSliderRef.current.scrollBy({ left: -scrollAmt, behavior: 'smooth' });
                                     }
                                 }}
-                                className="w-12 h-12 rounded-full bg-white border border-slate-200 text-[#011146] flex items-center justify-center hover:bg-[#1A5CDD] hover:text-white hover:border-[#1A5CDD] transition-all shadow-sm"
+                                className="w-12 h-12 rounded-full bg-white border border-slate-200 text-[#011146] flex items-center justify-center hover:bg-[#1A5CDD] hover:text-white hover:border-[#1A5CDD] transition-all shadow-sm cursor-pointer"
                                 aria-label="Previous Step"
                             >
                                 <ChevronLeft size={20} />
@@ -918,7 +919,7 @@ export default function ERPDevelopmentClient() {
                                         processSliderRef.current.scrollBy({ left: scrollAmt, behavior: 'smooth' });
                                     }
                                 }}
-                                className="w-12 h-12 rounded-full bg-white border border-slate-200 text-[#011146] flex items-center justify-center hover:bg-[#1A5CDD] hover:text-white hover:border-[#1A5CDD] transition-all shadow-sm"
+                                className="w-12 h-12 rounded-full bg-white border border-slate-200 text-[#011146] flex items-center justify-center hover:bg-[#1A5CDD] hover:text-white hover:border-[#1A5CDD] transition-all shadow-sm cursor-pointer"
                                 aria-label="Next Step"
                             >
                                 <ChevronRight size={20} />
@@ -1230,68 +1231,79 @@ export default function ERPDevelopmentClient() {
             </section>
 
             {/* SECTION 9: Frequently Asked Questions (FAQs) */}
-            <section className="py-20 bg-[#F8FAFC] relative overflow-hidden">
-                <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
-                        {/* Left Column Header */}
-                        <div className="lg:w-1/3 flex flex-col justify-start lg:sticky">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6 w-fit">
-                                <HelpCircle size={13} />
-                                FREQUENTLY ASKED QUESTIONS
+            <section className="py-24 bg-[#F8FAFC] relative">
+                <div className="container mx-auto px-6 max-w-7xl relative z-10">
+                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+                        {/* Left Column: Heading & Sticky Context */}
+                        <div className="lg:w-5/12 lg:sticky lg:top-28">
+                            <div>
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                    Got Questions?
+                                </span>
+
+                                <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-[1.15] mb-6">
+                                    Frequently Asked <br />
+                                    <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">
+                                        Questions (FAQs)
+                                    </span>
+                                </h2>
+
+                                <p className="text-slate-600 text-[16.5px] leading-relaxed mb-8">
+                                    Find clear, transparent answers to common questions about our ERP development services, implementation timelines, custom module integration, and ongoing support in Pondicherry.
+                                </p>
+
+                                <div className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-md flex items-center gap-4">
+                                    <div className="w-12 h-12 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center shrink-0">
+                                        <CheckCircle size={24} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-extrabold text-[#011146] text-sm">Need More Clarity?</h4>
+                                        <p className="text-xs text-slate-500 font-medium mt-0.5">Our ERP strategy team is ready to consult on your enterprise project.</p>
+                                    </div>
+                                </div>
                             </div>
-
-                            <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
-                                Your Questions <br />
-                                <span className="text-[#1A5CDD]">Answered</span>
-                            </h2>
-
-                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-8 max-w-sm">
-                                Find clear, honest answers to common questions from our team of experienced ERP professionals.
-                            </p>
-
-                            <Link
-                                href="/contact"
-                                className="bg-[#1A5CDD] hover:bg-[#011146] text-white px-6 py-3 rounded-full text-[14px] font-bold transition-colors shadow-lg shadow-blue-900/20 w-fit flex items-center gap-2 mb-10"
-                            >
-                                Have More Questions? <ArrowRight size={15} />
-                            </Link>
                         </div>
 
-                        {/* Right Column FAQ Accordion */}
-                        <div className="lg:w-2/3 w-full">
-                            <div className="space-y-4">
-                                {faqs.map((faq, index) => {
-                                    const isOpen = activeAccordion === index;
-                                    return (
+                        {/* Right Column: FAQ Accordion Points */}
+                        <div className="lg:w-7/12 space-y-4">
+                            {faqs.map((faq, index) => {
+                                const isOpen = activeAccordion === index;
+                                return (
+                                    <div
+                                        key={index}
+                                        className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen
+                                            ? "border-[#1A5CDD] shadow-xl shadow-blue-900/5 ring-1 ring-[#1A5CDD]/30"
+                                            : "border-slate-200/80 hover:border-slate-300"
+                                            }`}
+                                    >
+                                        <button
+                                            onClick={() => setActiveAccordion(isOpen ? null : index)}
+                                            className="w-full flex items-center justify-between p-6 text-left focus:outline-none group cursor-pointer"
+                                        >
+                                            <h3 className="text-[17px] font-extrabold text-[#011146] pr-6 group-hover:text-[#1A5CDD] transition-colors leading-snug">
+                                                {index + 1}. {faq.q}
+                                            </h3>
+                                            <div
+                                                className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#1A5CDD] text-white rotate-180" : "bg-slate-100 text-slate-600 group-hover:bg-slate-200"
+                                                    }`}
+                                            >
+                                                <ChevronDown size={18} />
+                                            </div>
+                                        </button>
                                         <div
-                                            key={index}
-                                            className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${isOpen
-                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]"
-                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
+                                            className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                                                 }`}
                                         >
-                                            <button
-                                                onClick={() => setActiveAccordion(isOpen ? null : index)}
-                                                className="w-full p-6 text-left flex items-center justify-between gap-4 cursor-pointer"
-                                            >
-                                                <span className="font-extrabold text-[17px] text-[#011146] leading-snug">
-                                                    {index + 1}. {faq.q}
-                                                </span>
-                                                <div className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${isOpen ? "bg-[#1A5CDD] text-white rotate-180" : "bg-slate-100 text-slate-500"
-                                                    }`}>
-                                                    <ChevronDown size={18} />
-                                                </div>
-                                            </button>
-
-                                            {isOpen && (
-                                                <div className="px-6 pb-6 pt-2 text-slate-600 text-[15px] leading-relaxed border-t border-slate-100">
+                                            <div className="overflow-hidden">
+                                                <div className="px-6 pb-6 text-slate-600 text-[15.5px] leading-relaxed border-t border-slate-100 pt-4">
                                                     {faq.a}
                                                 </div>
-                                            )}
+                                            </div>
                                         </div>
-                                    );
-                                })}
-                            </div>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

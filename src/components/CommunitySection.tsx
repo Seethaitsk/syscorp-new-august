@@ -158,7 +158,7 @@ export default function CommunitySection() {
   return (
     <section
       aria-labelledby="community-heading"
-      className="sky-community-section bg-[#F0F8FF] dark:bg-[#080f25] py-[100px] overflow-hidden relative transition-colors duration-500"
+      className="sky-community-section bg-[#F0F8FF] dark:bg-[#080f25] py-8 md:py-10 lg:py-12 overflow-hidden relative transition-colors duration-500"
     >
       {/* Background Glows */}
       <div className="sky-comm-bg-glow-1" />
@@ -199,7 +199,7 @@ export default function CommunitySection() {
           display: flex;
           justify-content: center;
           width: 100%;
-          margin-bottom: 56px;
+          margin-bottom: 32px;
         }
 
         .sky-tabs-row {
@@ -572,7 +572,7 @@ export default function CommunitySection() {
       <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 24px", position: "relative", zIndex: 1 }}>
 
         {/* Header centered */}
-        <div className="sky-about-badge-anim flex flex-col gap-[18px] items-center text-center mb-[56px]">
+        <div className="sky-about-badge-anim flex flex-col gap-[18px] items-center text-center mb-8 md:mb-12">
           <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 dark:bg-blue-500/10 dark:border-blue-500/20 rounded-full px-3.5 py-1 text-xs font-bold text-[#1A5CDD] dark:text-blue-400 w-fit uppercase tracking-wider">
             <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] dark:bg-blue-400 inline-block animate-pulse" />
             Who We Are

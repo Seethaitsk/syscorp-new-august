@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {
     Code, Server, Database, Zap, Layout, Lock, Cloud, Gauge,
-    Shield, Wrench, CheckCircle2, ChevronDown, Check, ArrowRight,
+    Shield, Wrench, CheckCircle, CheckCircle2, ChevronDown, Check, ArrowRight,
     Cpu, Layers, Sparkles, Activity, KeyRound, Monitor, Settings,
     FileCode, Terminal, Globe, Smartphone, RefreshCw, Users, HelpCircle,
     TrendingUp, Rocket, FileText, ChevronRight, ChevronLeft
@@ -329,7 +329,7 @@ export default function FullStackClient() {
             />
 
             {/* SECTION 1: Intro Hero Section */}
-            <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
+            <section className="py-12 sm:py-16 lg:py-20 bg-[#F0F6FF] relative overflow-hidden">
                 <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[700px] h-[700px] bg-[#1A5CDD]/10 rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute top-10 left-10 w-[400px] h-[400px] bg-[#1A5CDD]/8 rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute bottom-0 right-10 w-[450px] h-[450px] bg-[#38bdf8]/12 rounded-full blur-3xl pointer-events-none" />
@@ -337,29 +337,29 @@ export default function FullStackClient() {
                 <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: `radial-gradient(#1A5CDD 1.5px, transparent 1.5px)`, backgroundSize: `24px 24px` }} />
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-center">
                         <div className="lg:col-span-7 gsap-fade-up">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4 sm:mb-6">
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] animate-pulse"></span>
                                 End-to-End Engineering
                             </div>
 
-                            <h2 className="text-[32px] md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.12] mb-6">
+                            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.15] mb-4 sm:mb-6">
                                 Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A5CDD] to-[#38bdf8]">Full-Stack Development</span> in Pondicherry
                             </h2>
 
-                            <div className="space-y-5 mb-10">
-                                <p className="text-slate-600 text-[17px] leading-[1.8] font-normal">
+                            <div className="space-y-4 sm:space-y-5 mb-8 sm:mb-10">
+                                <p className="text-slate-600 text-base sm:text-[17px] leading-[1.8] font-normal">
                                     As a trusted Full-Stack Development Company in Pondicherry, we provide secure, scalable, and high-performance web application solutions for startups, SMEs, and enterprises. As a leading Software Company in Pondicherry, we combine modern frontend and backend technologies to build applications tailored to your business needs.
                                 </p>
-                                <p className="text-slate-600 text-[17px] leading-[1.8] font-normal">
+                                <p className="text-slate-600 text-base sm:text-[17px] leading-[1.8] font-normal">
                                     Our Full-Stack Development Company in Pondicherry offers end-to-end services, including UI/UX design, frontend and backend development, database management, API integration, cloud deployment, testing, and ongoing support. As an experienced Software Company in Pondicherry, we develop custom web applications, CRM, ERP, SaaS platforms, and eCommerce solutions that improve efficiency, enhance user experience, and support long-term business growth.
                                 </p>
                             </div>
 
                             <Link
                                 href="/contact"
-                                className="group relative inline-flex items-center gap-3 bg-[#011146] text-white px-8 py-4 rounded-xl font-bold text-[15px] transition-all duration-300 shadow-lg shadow-blue-900/15 hover:bg-[#1A5CDD] hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(26,92,221,0.35)] overflow-hidden"
+                                className="group relative inline-flex items-center justify-center gap-3 bg-[#011146] text-white px-7 py-3.5 sm:px-8 sm:py-4 rounded-xl font-bold text-sm sm:text-[15px] transition-all duration-300 shadow-lg shadow-blue-900/15 hover:bg-[#1A5CDD] hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(26,92,221,0.35)] overflow-hidden w-full sm:w-auto"
                             >
                                 <span className="relative z-10">Start Your Full-Stack Project</span>
                                 <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1.5 transition-transform duration-300" />
@@ -367,7 +367,7 @@ export default function FullStackClient() {
                         </div>
 
                         {/* Right Side Image Showcase */}
-                        <div className="lg:col-span-5 relative flex justify-center mt-12 lg:mt-0">
+                        <div className="lg:col-span-5 relative flex justify-center mt-6 lg:mt-0">
                             {/* Ambient Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-[#1A5CDD]/15 rounded-full blur-[90px] pointer-events-none -z-10" />
 
@@ -383,58 +383,58 @@ export default function FullStackClient() {
                 </div>
             </section>
 
-            {/* SECTION 2: What is Full Stack Development? */}
-            <section className="py-20 bg-white relative overflow-hidden">
+            {/* SECTION 2: What is Full-Stack Development? */}
+            <section className="py-12 sm:py-16 lg:py-20 bg-white relative overflow-hidden">
                 {/* Subtle Background Elements */}
                 <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: `radial-gradient(#1A5CDD 2px, transparent 2px)`, backgroundSize: `32px 32px` }} />
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-14 items-stretch">
 
                         {/* Left Column: Image Visual */}
-                        <div className="lg:col-span-6 relative flex justify-center mt-8 lg:mt-0">
+                        <div className="lg:col-span-6 relative flex justify-center order-2 lg:order-1 mt-6 lg:mt-0">
                             {/* Ambient Glow */}
                             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#1A5CDD]/10 rounded-full blur-[80px] pointer-events-none -z-10" />
 
                             <div className="relative w-full max-w-[550px] z-10 group cursor-pointer flex items-center justify-center">
                                 <img
                                     src="/images/webdevelopment/fullstack-2.png"
-                                    alt="Full Stack Development Architecture Dashboard"
+                                    alt="Full-Stack Development Architecture Dashboard"
                                     className="w-full h-auto object-contain transform group-hover:scale-[1.03] group-hover:-translate-y-2 transition-all duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,17,70,0.1)]"
                                 />
                             </div>
                         </div>
 
                         {/* Right Column: Text Content & 3x3 Grid */}
-                        <div className="lg:col-span-6 relative z-20">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
+                        <div className="lg:col-span-6 relative z-20 order-1 lg:order-2">
+                            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                                 <Layers size={14} />
                                 Core Concept
                             </div>
 
-                            <h2 className="text-3xl md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.12] mb-5">
-                                What is Full Stack Development?
+                            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-[48px] font-extrabold text-[#011146] tracking-tight leading-[1.12] mb-4 sm:mb-5">
+                                What is Full-Stack Development?
                             </h2>
 
-                            <p className="text-slate-600 text-[16px] leading-[1.7] font-normal mb-4">
-                                Full Stack Development is the process of creating complete web applications by managing both frontend and backend development. It includes designing user interfaces, developing server-side functionality, managing databases, integrating APIs, implementing security, and deploying applications on reliable platforms.
+                            <p className="text-slate-600 text-sm sm:text-[16px] leading-[1.7] font-normal mb-4">
+                                Full-Stack Development is the process of creating complete web applications by managing both frontend and backend development. It includes designing user interfaces, developing server-side functionality, managing databases, integrating APIs, implementing security, and deploying applications on reliable platforms.
                             </p>
 
-                            <p className="text-slate-600 text-[15px] leading-[1.7] font-medium text-[#011146] mb-5">
-                                A professional Full Stack Development Company in Pondicherry handles every stage of application development, including:
+                            <p className="text-slate-600 text-xs sm:text-[15px] leading-[1.7] font-medium text-[#011146] mb-4 sm:mb-5">
+                                A professional Full-Stack Development Company in Pondicherry handles every stage of application development, including:
                             </p>
 
-                            <div className="bg-slate-50 border border-slate-100 rounded-2xl p-3 md:p-4 flex gap-3 sm:gap-4 items-start sm:items-center mb-3">
+                            <div className="bg-slate-50 border border-slate-100 rounded-2xl p-3 sm:p-4 flex gap-3 sm:gap-4 items-start sm:items-center mb-3">
                                 <div className="w-10 h-10 shrink-0 bg-white rounded-xl flex items-center justify-center shadow-sm border border-slate-100 hidden sm:flex">
                                     <Cpu size={20} className="text-[#1A5CDD]" />
                                 </div>
                                 <div>
-                                    <h3 className="text-[15px] font-bold text-[#011146] mb-0.5 flex items-center gap-2">
+                                    <h3 className="text-[14px] sm:text-[15px] font-bold text-[#011146] mb-0.5 flex items-center gap-2">
                                         <Cpu size={16} className="text-[#1A5CDD] sm:hidden" />
                                         The SysCrop Advantage
                                     </h3>
-                                    <p className="text-slate-500 text-[12.5px] leading-relaxed">
-                                        At SysCrop, our full stack developers use modern technologies and industry best practices to build customized solutions that meet specific business requirements.
+                                    <p className="text-slate-500 text-[12px] sm:text-[12.5px] leading-relaxed">
+                                        At SysCrop, our full-stack developers use modern technologies and industry best practices to build customized solutions that meet specific business requirements.
                                     </p>
                                 </div>
                             </div>
@@ -454,7 +454,7 @@ export default function FullStackClient() {
                                 ].map((stage, idx) => {
                                     const StageIcon = stage.icon;
                                     return (
-                                        <div key={idx} className="bg-white border border-slate-100 rounded-[14px] p-2 hover:border-[#1A5CDD]/30 hover:shadow-sm transition-all duration-300 relative group cursor-pointer flex items-center justify-start gap-2 min-h-[56px]">
+                                        <div key={idx} className="bg-white border border-slate-100 rounded-[14px] p-2.5 sm:p-2 hover:border-[#1A5CDD]/30 hover:shadow-sm transition-all duration-300 relative group cursor-pointer flex items-center justify-start gap-2 min-h-[52px] sm:min-h-[56px]">
                                             <div className="flex items-center gap-2.5 w-full">
                                                 <div className="w-8 h-8 shrink-0 rounded-lg bg-[#F0F6FF] flex items-center justify-center text-[#1A5CDD] group-hover:bg-[#1A5CDD] group-hover:text-white transition-colors duration-300">
                                                     <StageIcon size={14} strokeWidth={2.5} />
@@ -474,51 +474,51 @@ export default function FullStackClient() {
             </section>
 
             {/* SECTION 3: Why Choose Full-Stack Development? */}
-            <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
+            <section className="py-12 sm:py-16 lg:py-20 bg-[#F0F6FF] relative overflow-hidden">
                 <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-to-r from-[#1A5CDD]/8 via-[#38bdf8]/8 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: `radial-gradient(#1A5CDD 1.5px, transparent 1.5px)`, backgroundSize: `28px 28px` }} />
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="bg-white/95 backdrop-blur-xl rounded-[36px] p-8 md:p-12 lg:p-14 border border-slate-200/90 shadow-[0_10px_40px_rgba(1,17,70,0.06)] relative overflow-hidden">
-                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                    <div className="bg-white/95 backdrop-blur-xl rounded-[24px] sm:rounded-[36px] p-5 sm:p-8 md:p-12 lg:p-14 border border-slate-200/90 shadow-[0_10px_40px_rgba(1,17,70,0.06)] relative overflow-hidden">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
                             {/* Left Column: Content */}
-                            <div className="lg:col-span-7 space-y-6">
+                            <div className="lg:col-span-7 space-y-5 sm:space-y-6">
                                 <div className="flex items-center gap-3">
-                                    <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
+                                    <span className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD]">
                                         <Zap size={14} className="text-[#1A5CDD]" />
                                         Strategic Value
                                     </span>
                                 </div>
 
-                                <h2 className="text-3xl md:text-4xl lg:text-[42px] font-extrabold text-[#011146] tracking-tight leading-tight">
+                                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold text-[#011146] tracking-tight leading-tight">
                                     Why Choose Full-Stack Development?
                                 </h2>
 
-                                <div className="bg-gradient-to-r from-[#011146] via-[#1A5CDD] to-[#011146] text-white p-5 rounded-2xl shadow-md border border-blue-400/20">
-                                    <p className="font-bold text-sm md:text-base leading-snug tracking-wide">
+                                <div className="bg-gradient-to-r from-[#011146] via-[#1A5CDD] to-[#011146] text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-md border border-blue-400/20">
+                                    <p className="font-bold text-xs sm:text-sm md:text-base leading-snug tracking-wide">
                                         Build Smarter Applications with One Complete Technology Solution
                                     </p>
                                 </div>
 
                                 <div className="space-y-3">
-                                    <p className="text-slate-600 text-base md:text-[16.5px] leading-[1.8]">
+                                    <p className="text-slate-600 text-sm sm:text-base md:text-[16.5px] leading-[1.8]">
                                         Modern businesses require flexible applications that can adapt to changing customer demands and business growth. Full-stack development simplifies the development process by integrating frontend, backend, databases, and APIs into one streamlined solution.
                                     </p>
-                                    <p className="text-slate-600 text-base md:text-[16.5px] leading-[1.8]">
+                                    <p className="text-slate-600 text-sm sm:text-base md:text-[16.5px] leading-[1.8]">
                                         Our Full-Stack Development Company in Pondicherry helps businesses build applications that are easier to maintain, more secure, highly scalable, and capable of supporting future expansion.
                                     </p>
                                 </div>
 
-                                <div className="bg-[#F0F6FF]/90 rounded-[20px] p-5 border border-slate-200/80 shadow-sm">
-                                    <h3 className="text-[#011146] font-extrabold text-[15px] md:text-[17px] mb-3.5 flex items-center gap-2.5">
+                                <div className="bg-[#F0F6FF]/90 rounded-[16px] sm:rounded-[20px] p-4 sm:p-5 border border-slate-200/80 shadow-sm">
+                                    <h3 className="text-[#011146] font-extrabold text-[14px] sm:text-[15px] md:text-[17px] mb-3.5 flex items-center gap-2.5">
                                         <TrendingUp size={18} className="text-[#1A5CDD]" />
                                         Benefits of Full-Stack Development
                                     </h3>
 
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                                         {fullStackBenefits.map((benefit, idx) => (
-                                            <div key={idx} className="flex items-center gap-2.5 bg-white py-2 px-3 rounded-xl border border-slate-200/80 text-slate-700 font-semibold text-[13px] hover:border-[#1A5CDD]/40 transition-all hover:shadow-sm group/benefit">
-                                                <div className="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-sm group-hover/benefit:scale-110 transition-transform">
+                                            <div key={idx} className="flex items-start gap-2.5 bg-white py-2.5 px-3 rounded-xl border border-slate-200/80 text-slate-700 font-semibold text-[13px] hover:border-[#1A5CDD]/40 transition-all hover:shadow-sm group/benefit">
+                                                <div className="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5 group-hover/benefit:scale-110 transition-transform">
                                                     <Check size={12} strokeWidth={3} />
                                                 </div>
                                                 <span className="leading-tight">{benefit}</span>
@@ -529,57 +529,57 @@ export default function FullStackClient() {
                             </div>
 
                             {/* Right Column: Strategic Metrics & Benefits Dashboard Widget */}
-                            <div className="lg:col-span-5 relative flex justify-center">
-                                <div className="w-full max-w-[480px] bg-gradient-to-br from-[#011146] via-[#0A1E5C] to-[#011146] rounded-[32px] p-6 border border-[#1A5CDD]/30 shadow-[0_20px_50px_rgba(1,17,70,0.25)] text-white relative overflow-hidden">
-                                    <div className="flex items-center justify-between pb-4 mb-5 border-b border-white/10">
-                                        <span className="text-xs font-extrabold uppercase tracking-wider text-[#38bdf8] flex items-center gap-2">
+                            <div className="lg:col-span-5 relative flex justify-center mt-6 lg:mt-0">
+                                <div className="w-full max-w-[480px] bg-gradient-to-br from-[#011146] via-[#0A1E5C] to-[#011146] rounded-[24px] sm:rounded-[32px] p-4 sm:p-6 border border-[#1A5CDD]/30 shadow-[0_20px_50px_rgba(1,17,70,0.25)] text-white relative overflow-hidden">
+                                    <div className="flex items-center justify-between pb-3 sm:pb-4 mb-4 sm:mb-5 border-b border-white/10">
+                                        <span className="text-[11px] sm:text-xs font-extrabold uppercase tracking-wider text-[#38bdf8] flex items-center gap-2">
                                             <Zap size={14} /> Strategic Impact
                                         </span>
-                                        <span className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
+                                        <span className="text-[10px] sm:text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-emerald-500/20">
                                             High Efficiency
                                         </span>
                                     </div>
 
-                                    <div className="grid grid-cols-2 gap-3.5 mb-5">
-                                        <div className="bg-white/5 border border-white/10 p-4 rounded-2xl hover:bg-white/10 transition-colors">
-                                            <div className="w-8 h-8 rounded-lg bg-[#1A5CDD]/40 text-[#38bdf8] flex items-center justify-center mb-2">
+                                    <div className="grid grid-cols-2 gap-2.5 sm:gap-3.5 mb-4 sm:mb-5">
+                                        <div className="bg-white/5 border border-white/10 p-3 sm:p-4 rounded-xl sm:rounded-2xl hover:bg-white/10 transition-colors">
+                                            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#1A5CDD]/40 text-[#38bdf8] flex items-center justify-center mb-2">
                                                 <Zap size={16} />
                                             </div>
-                                            <p className="text-2xl font-extrabold text-white">40%</p>
-                                            <p className="text-xs text-slate-300 font-medium">Faster Deployment</p>
+                                            <p className="text-xl sm:text-2xl font-extrabold text-white">40%</p>
+                                            <p className="text-[11px] sm:text-xs text-slate-300 font-medium">Faster Deployment</p>
                                         </div>
 
-                                        <div className="bg-white/5 border border-white/10 p-4 rounded-2xl hover:bg-white/10 transition-colors">
-                                            <div className="w-8 h-8 rounded-lg bg-emerald-500/30 text-emerald-400 flex items-center justify-center mb-2">
+                                        <div className="bg-white/5 border border-white/10 p-3 sm:p-4 rounded-xl sm:rounded-2xl hover:bg-white/10 transition-colors">
+                                            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-emerald-500/30 text-emerald-400 flex items-center justify-center mb-2">
                                                 <TrendingUp size={16} />
                                             </div>
-                                            <p className="text-2xl font-extrabold text-white">100%</p>
-                                            <p className="text-xs text-slate-300 font-medium">Unified Codebase</p>
+                                            <p className="text-xl sm:text-2xl font-extrabold text-white">100%</p>
+                                            <p className="text-[11px] sm:text-xs text-slate-300 font-medium">Unified Codebase</p>
                                         </div>
 
-                                        <div className="bg-white/5 border border-white/10 p-4 rounded-2xl hover:bg-white/10 transition-colors">
-                                            <div className="w-8 h-8 rounded-lg bg-amber-500/30 text-amber-300 flex items-center justify-center mb-2">
+                                        <div className="bg-white/5 border border-white/10 p-3 sm:p-4 rounded-xl sm:rounded-2xl hover:bg-white/10 transition-colors">
+                                            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-amber-500/30 text-amber-300 flex items-center justify-center mb-2">
                                                 <Gauge size={16} />
                                             </div>
-                                            <p className="text-2xl font-extrabold text-white">Optimal</p>
-                                            <p className="text-xs text-slate-300 font-medium">Performance</p>
+                                            <p className="text-xl sm:text-2xl font-extrabold text-white">Optimal</p>
+                                            <p className="text-[11px] sm:text-xs text-slate-300 font-medium">Performance</p>
                                         </div>
 
-                                        <div className="bg-white/5 border border-white/10 p-4 rounded-2xl hover:bg-white/10 transition-colors">
-                                            <div className="w-8 h-8 rounded-lg bg-purple-500/30 text-purple-300 flex items-center justify-center mb-2">
+                                        <div className="bg-white/5 border border-white/10 p-3 sm:p-4 rounded-xl sm:rounded-2xl hover:bg-white/10 transition-colors">
+                                            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-500/30 text-purple-300 flex items-center justify-center mb-2">
                                                 <Shield size={16} />
                                             </div>
-                                            <p className="text-2xl font-extrabold text-white">Zero</p>
-                                            <p className="text-xs text-slate-300 font-medium">Security Gaps</p>
+                                            <p className="text-xl sm:text-2xl font-extrabold text-white">Zero</p>
+                                            <p className="text-[11px] sm:text-xs text-slate-300 font-medium">Security Gaps</p>
                                         </div>
                                     </div>
 
-                                    <div className="bg-white/10 border border-white/15 p-4 rounded-2xl flex items-center justify-between">
-                                        <div className="flex items-center gap-3">
-                                            <div className="w-3 h-3 rounded-full bg-emerald-400 animate-ping" />
-                                            <span className="text-xs font-semibold text-slate-200">End-to-End Synergy</span>
+                                    <div className="bg-white/10 border border-white/15 p-3 sm:p-4 rounded-xl sm:rounded-2xl flex items-center justify-between">
+                                        <div className="flex items-center gap-2.5">
+                                            <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-400 animate-ping" />
+                                            <span className="text-[11px] sm:text-xs font-semibold text-slate-200">End-to-End Synergy</span>
                                         </div>
-                                        <span className="text-xs font-mono text-[#38bdf8]">SysCrop Powered</span>
+                                        <span className="text-[11px] sm:text-xs font-mono text-[#38bdf8]">SysCrop Powered</span>
                                     </div>
                                 </div>
                             </div>
@@ -588,26 +588,26 @@ export default function FullStackClient() {
                 </div>
             </section>
 
-            {/* SECTION 3: What Our Full-Stack Development Services Cover */}
-            <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
+            {/* SECTION 4: What Our Full-Stack Development Services Cover */}
+            <section className="py-12 sm:py-16 lg:py-20 bg-[#F0F6FF] relative overflow-hidden">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-gradient-to-r from-[#1A5CDD]/8 via-[#38bdf8]/6 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute inset-0 opacity-[0.035] pointer-events-none" style={{ backgroundImage: `radial-gradient(#1A5CDD 1.5px, transparent 1.5px)`, backgroundSize: `32px 32px` }} />
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
+                    <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-16">
+                        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                             <Sparkles size={14} />
                             Full-Spectrum Capabilities
                         </span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-4 sm:mb-6">
                             What Our Full-Stack Development Services Cover
                         </h2>
-                        <p className="text-slate-600 text-base md:text-[17px] leading-[1.8]">
-                            We offer complete Full Stack Development Services covering planning, UI design, development, deployment, and ongoing support. As a trusted Full Stack Development Company in Pondicherry and Software Company in Pondicherry, we build secure, scalable, and high performance web applications using modern technologies and industry best practices.
+                        <p className="text-slate-600 text-sm sm:text-base md:text-[17px] leading-[1.8]">
+                            We offer complete Full-Stack Development Services covering planning, UI design, development, deployment, and ongoing support. As a trusted Full-Stack Development Company in Pondicherry and Software Company in Pondicherry, we build secure, scalable, and high-performance web applications using modern technologies and industry best practices.
                         </p>
                     </div>
 
-                    <div className="space-y-10">
+                    <div className="space-y-6 sm:space-y-10">
                         {services.map((service, index) => {
                             const Icon = service.icon;
                             const isEven = index % 2 === 0;
@@ -616,36 +616,36 @@ export default function FullStackClient() {
                             return (
                                 <div
                                     key={service.id}
-                                    className="bg-white/90 backdrop-blur-xl rounded-[36px] p-7 md:p-10 lg:p-12 border border-slate-200/90 shadow-[0_10px_35px_rgba(1,17,70,0.05)] hover:shadow-[0_20px_50px_rgba(26,92,221,0.12)] hover:border-[#1A5CDD]/40 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative overflow-hidden group"
+                                    className="bg-white/90 backdrop-blur-xl rounded-[24px] sm:rounded-[36px] p-5 sm:p-8 md:p-10 lg:p-12 border border-slate-200/90 shadow-[0_10px_35px_rgba(1,17,70,0.05)] hover:shadow-[0_20px_50px_rgba(26,92,221,0.12)] hover:border-[#1A5CDD]/40 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-center relative overflow-hidden group"
                                 >
-                                    <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-[#1A5CDD]/10 to-transparent rounded-bl-[100px] pointer-events-none group-hover:scale-110 transition-transform duration-500" />
+                                    <div className="absolute top-0 right-0 w-36 h-36 sm:w-48 sm:h-48 bg-gradient-to-bl from-[#1A5CDD]/10 to-transparent rounded-bl-[80px] sm:rounded-bl-[100px] pointer-events-none group-hover:scale-110 transition-transform duration-500" />
 
                                     {/* Left Column: Content */}
-                                    <div className={`lg:col-span-7 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
-                                        <div className="flex items-center justify-between mb-5">
-                                            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#011146] via-[#0A1E5C] to-[#1A5CDD] text-white flex items-center justify-center shadow-lg shadow-blue-950/20">
-                                                <Icon size={26} />
+                                    <div className={`lg:col-span-7 order-1 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
+                                        <div className="flex items-center justify-between mb-4 sm:mb-5">
+                                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#011146] via-[#0A1E5C] to-[#1A5CDD] text-white flex items-center justify-center shadow-lg shadow-blue-950/20">
+                                                <Icon size={22} className="sm:w-[26px] sm:h-[26px]" />
                                             </div>
-                                            <span className="text-xs font-mono font-bold text-[#1A5CDD] bg-[#1A5CDD]/10 px-3 py-1 rounded-full border border-[#1A5CDD]/20">
+                                            <span className="text-[11px] sm:text-xs font-mono font-bold text-[#1A5CDD] bg-[#1A5CDD]/10 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full border border-[#1A5CDD]/20">
                                                 CAPABILITY {serviceNum}
                                             </span>
                                         </div>
 
-                                        <h3 className="text-2xl md:text-3xl font-extrabold text-[#011146] mb-2 tracking-tight">
+                                        <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#011146] mb-2 tracking-tight">
                                             {service.title}
                                         </h3>
 
-                                        <div className="inline-block bg-slate-100 text-[#1A5CDD] px-3.5 py-1.5 rounded-xl text-xs md:text-sm font-bold tracking-wide mb-5 border border-slate-200/80">
+                                        <div className="inline-block bg-slate-100 text-[#1A5CDD] px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-lg sm:rounded-xl text-xs md:text-sm font-bold tracking-wide mb-4 sm:mb-5 border border-slate-200/80">
                                             {service.subtitle}
                                         </div>
 
-                                        <div className="text-slate-600 text-base leading-[1.8] whitespace-pre-line mb-7">
+                                        <div className="text-slate-600 text-sm sm:text-base leading-[1.8] whitespace-pre-line mb-6 sm:mb-7">
                                             {service.desc}
                                         </div>
 
                                         <Link
                                             href="/contact"
-                                            className="group/btn inline-flex items-center gap-3 bg-[#011146] text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 hover:bg-[#1A5CDD] hover:shadow-lg hover:shadow-blue-600/25"
+                                            className="group/btn inline-flex items-center justify-center gap-3 bg-[#011146] text-white px-5 py-3 sm:px-6 sm:py-3 rounded-xl font-bold text-sm transition-all duration-300 hover:bg-[#1A5CDD] hover:shadow-lg hover:shadow-blue-600/25 w-full sm:w-auto"
                                         >
                                             <span>Consult On {service.title}</span>
                                             <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
@@ -653,19 +653,19 @@ export default function FullStackClient() {
                                     </div>
 
                                     {/* Right Column: Creative Tech Console Widget */}
-                                    <div className={`lg:col-span-5 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
-                                        <div className="bg-[#03091E] rounded-[28px] p-6 border border-slate-808 text-white shadow-xl relative overflow-hidden group/console">
+                                    <div className={`lg:col-span-5 order-2 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+                                        <div className="bg-[#03091E] rounded-[20px] sm:rounded-[28px] p-4 sm:p-6 border border-slate-800 text-white shadow-xl relative overflow-hidden group/console">
                                             <div className="absolute top-0 right-0 w-32 h-32 bg-[#1A5CDD]/15 rounded-full blur-2xl pointer-events-none" />
 
                                             {/* Console Top Bar */}
-                                            <div className="flex items-center justify-between pb-4 mb-4 border-b border-slate-800/80">
+                                            <div className="flex items-center justify-between pb-3 sm:pb-4 mb-3 sm:mb-4 border-b border-slate-800/80">
                                                 <div className="flex items-center gap-2">
                                                     <div className="w-2.5 h-2.5 rounded-full bg-rose-500/90" />
                                                     <div className="w-2.5 h-2.5 rounded-full bg-amber-500/90" />
                                                     <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/90" />
-                                                    <span className="ml-1 text-[11px] font-mono text-slate-400">tech-stack.config</span>
+                                                    <span className="ml-1 text-[10px] sm:text-[11px] font-mono text-slate-400">tech-stack.config</span>
                                                 </div>
-                                                <span className="text-[10px] font-mono bg-[#1A5CDD]/20 text-[#38bdf8] px-2 py-0.5 rounded border border-[#1A5CDD]/30 font-bold uppercase">
+                                                <span className="text-[9px] sm:text-[10px] font-mono bg-[#1A5CDD]/20 text-[#38bdf8] px-2 py-0.5 rounded border border-[#1A5CDD]/30 font-bold uppercase">
                                                     Enterprise Ready
                                                 </span>
                                             </div>
@@ -673,12 +673,12 @@ export default function FullStackClient() {
                                             {/* Technologies Chips */}
                                             {service.technologies && (
                                                 <div>
-                                                    <h5 className="font-bold text-slate-200 text-sm mb-3.5 flex items-center gap-2">
+                                                    <h5 className="font-bold text-slate-200 text-xs sm:text-sm mb-3 sm:mb-3.5 flex items-center gap-2">
                                                         <Sparkles size={16} className="text-[#38bdf8]" /> Technologies We Use
                                                     </h5>
-                                                    <div className="flex flex-wrap gap-2">
+                                                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
                                                         {service.technologies.map((tech, tIdx) => (
-                                                            <span key={tIdx} className="bg-slate-900/90 text-slate-200 text-xs font-semibold px-3 py-1.5 rounded-xl border border-slate-800 hover:border-[#38bdf8]/60 hover:text-[#38bdf8] hover:bg-slate-800 transition-all cursor-default shadow-xs flex items-center gap-1.5">
+                                                            <span key={tIdx} className="bg-slate-900/90 text-slate-200 text-[11px] sm:text-xs font-semibold px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg sm:rounded-xl border border-slate-800 hover:border-[#38bdf8]/60 hover:text-[#38bdf8] hover:bg-slate-800 transition-all cursor-default shadow-xs flex items-center gap-1.5">
                                                                 <span className="w-1.5 h-1.5 rounded-full bg-[#38bdf8]" />
                                                                 {tech}
                                                             </span>
@@ -690,12 +690,12 @@ export default function FullStackClient() {
                                             {/* API Services List */}
                                             {service.apiServices && (
                                                 <div>
-                                                    <h5 className="font-bold text-slate-200 text-sm mb-3 flex items-center gap-2">
+                                                    <h5 className="font-bold text-slate-200 text-xs sm:text-sm mb-2.5 sm:mb-3 flex items-center gap-2">
                                                         <Zap size={16} className="text-[#38bdf8]" /> API Services We Provide
                                                     </h5>
-                                                    <div className="space-y-2">
+                                                    <div className="space-y-1.5 sm:space-y-2">
                                                         {service.apiServices.map((api, aIdx) => (
-                                                            <div key={aIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-3 py-2 rounded-xl border border-slate-800/80 text-xs font-medium text-slate-300">
+                                                            <div key={aIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg sm:rounded-xl border border-slate-800/80 text-[11px] sm:text-xs font-medium text-slate-300">
                                                                 <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
                                                                 <span>{api}</span>
                                                             </div>
@@ -707,12 +707,12 @@ export default function FullStackClient() {
                                             {/* Features List */}
                                             {service.features && (
                                                 <div>
-                                                    <h5 className="font-bold text-slate-200 text-sm mb-3 flex items-center gap-2">
+                                                    <h5 className="font-bold text-slate-200 text-xs sm:text-sm mb-2.5 sm:mb-3 flex items-center gap-2">
                                                         <KeyRound size={16} className="text-[#38bdf8]" /> Features Include
                                                     </h5>
-                                                    <div className="space-y-2">
+                                                    <div className="space-y-1.5 sm:space-y-2">
                                                         {service.features.map((feat, fIdx) => (
-                                                            <div key={fIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-3 py-2 rounded-xl border border-slate-800/80 text-xs font-medium text-slate-300">
+                                                            <div key={fIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg sm:rounded-xl border border-slate-800/80 text-[11px] sm:text-xs font-medium text-slate-300">
                                                                 <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
                                                                 <span>{feat}</span>
                                                             </div>
@@ -724,12 +724,12 @@ export default function FullStackClient() {
                                             {/* Platforms List */}
                                             {service.platforms && (
                                                 <div>
-                                                    <h5 className="font-bold text-slate-200 text-sm mb-3 flex items-center gap-2">
+                                                    <h5 className="font-bold text-slate-200 text-xs sm:text-sm mb-2.5 sm:mb-3 flex items-center gap-2">
                                                         <Cloud size={16} className="text-[#38bdf8]" /> Platforms We Support
                                                     </h5>
-                                                    <div className="space-y-2">
+                                                    <div className="space-y-1.5 sm:space-y-2">
                                                         {service.platforms.map((plat, pIdx) => (
-                                                            <div key={pIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-3 py-2 rounded-xl border border-slate-800/80 text-xs font-medium text-slate-300">
+                                                            <div key={pIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg sm:rounded-xl border border-slate-800/80 text-[11px] sm:text-xs font-medium text-slate-300">
                                                                 <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
                                                                 <span>{plat}</span>
                                                             </div>
@@ -741,12 +741,12 @@ export default function FullStackClient() {
                                             {/* Optimization Services */}
                                             {service.optimizationServices && (
                                                 <div>
-                                                    <h5 className="font-bold text-slate-200 text-sm mb-3 flex items-center gap-2">
+                                                    <h5 className="font-bold text-slate-200 text-xs sm:text-sm mb-2.5 sm:mb-3 flex items-center gap-2">
                                                         <Gauge size={16} className="text-[#38bdf8]" /> Optimization Services
                                                     </h5>
-                                                    <div className="space-y-2">
+                                                    <div className="space-y-1.5 sm:space-y-2">
                                                         {service.optimizationServices.map((opt, oIdx) => (
-                                                            <div key={oIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-3 py-2 rounded-xl border border-slate-800/80 text-xs font-medium text-slate-300">
+                                                            <div key={oIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg sm:rounded-xl border border-slate-800/80 text-[11px] sm:text-xs font-medium text-slate-300">
                                                                 <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
                                                                 <span>{opt}</span>
                                                             </div>
@@ -758,12 +758,12 @@ export default function FullStackClient() {
                                             {/* Security Features */}
                                             {service.securityFeatures && (
                                                 <div>
-                                                    <h5 className="font-bold text-slate-200 text-sm mb-3 flex items-center gap-2">
+                                                    <h5 className="font-bold text-slate-200 text-xs sm:text-sm mb-2.5 sm:mb-3 flex items-center gap-2">
                                                         <Shield size={16} className="text-[#38bdf8]" /> Security Features
                                                     </h5>
-                                                    <div className="space-y-2">
+                                                    <div className="space-y-1.5 sm:space-y-2">
                                                         {service.securityFeatures.map((sec, sIdx) => (
-                                                            <div key={sIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-3 py-2 rounded-xl border border-slate-800/80 text-xs font-medium text-slate-300">
+                                                            <div key={sIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg sm:rounded-xl border border-slate-800/80 text-[11px] sm:text-xs font-medium text-slate-300">
                                                                 <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
                                                                 <span>{sec}</span>
                                                             </div>
@@ -775,12 +775,12 @@ export default function FullStackClient() {
                                             {/* Testing Services */}
                                             {service.testingServices && (
                                                 <div>
-                                                    <h5 className="font-bold text-slate-200 text-sm mb-3 flex items-center gap-2">
+                                                    <h5 className="font-bold text-slate-200 text-xs sm:text-sm mb-2.5 sm:mb-3 flex items-center gap-2">
                                                         <CheckCircle2 size={16} className="text-[#38bdf8]" /> Testing Services
                                                     </h5>
-                                                    <div className="space-y-2">
+                                                    <div className="space-y-1.5 sm:space-y-2">
                                                         {service.testingServices.map((tst, tsIdx) => (
-                                                            <div key={tsIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-3 py-2 rounded-xl border border-slate-800/80 text-xs font-medium text-slate-300">
+                                                            <div key={tsIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg sm:rounded-xl border border-slate-800/80 text-[11px] sm:text-xs font-medium text-slate-300">
                                                                 <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
                                                                 <span>{tst}</span>
                                                             </div>
@@ -792,12 +792,12 @@ export default function FullStackClient() {
                                             {/* Support Services */}
                                             {service.supportServices && (
                                                 <div>
-                                                    <h5 className="font-bold text-slate-200 text-sm mb-3 flex items-center gap-2">
+                                                    <h5 className="font-bold text-slate-200 text-xs sm:text-sm mb-2.5 sm:mb-3 flex items-center gap-2">
                                                         <Wrench size={16} className="text-[#38bdf8]" /> Our Support Services
                                                     </h5>
-                                                    <div className="space-y-2">
+                                                    <div className="space-y-1.5 sm:space-y-2">
                                                         {service.supportServices.map((sup, suIdx) => (
-                                                            <div key={suIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-3 py-2 rounded-xl border border-slate-800/80 text-xs font-medium text-slate-300">
+                                                            <div key={suIdx} className="flex items-center gap-2.5 bg-slate-900/70 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-lg sm:rounded-xl border border-slate-800/80 text-[11px] sm:text-xs font-medium text-slate-300">
                                                                 <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
                                                                 <span>{sup}</span>
                                                             </div>
@@ -814,21 +814,21 @@ export default function FullStackClient() {
                 </div>
             </section>
 
-            {/* SECTION 4: Our Full-Stack Development Process */}
-            <section className="py-20 bg-white relative overflow-hidden">
+            {/* SECTION 5: Our Full-Stack Development Process */}
+            <section className="py-12 sm:py-16 lg:py-20 bg-white relative overflow-hidden">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-gradient-to-r from-[#1A5CDD]/8 via-[#38bdf8]/6 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute inset-0 opacity-[0.035] pointer-events-none" style={{ backgroundImage: `radial-gradient(#1A5CDD 1.5px, transparent 1.5px)`, backgroundSize: `32px 32px` }} />
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="text-center max-w-4xl mx-auto mb-12">
-                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
+                    <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
+                        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                             <Sparkles size={14} />
                             Agile Execution Roadmap
                         </span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-6">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-4 sm:mb-6">
                             Our Full-Stack Development Process
                         </h2>
-                        <p className="text-slate-600 text-base md:text-[17px] leading-[1.8]">
+                        <p className="text-slate-600 text-sm sm:text-base md:text-[17px] leading-[1.8]">
                             At SysCrop, we follow a structured and agile development process to build secure, scalable, and high-performance web applications. As a trusted Full-Stack Development Company in Pondicherry, we ensure every project is carefully planned, developed, tested, and deployed to meet your business goals. Our streamlined approach helps businesses receive reliable digital solutions from a leading Software Company in Pondicherry.
                         </p>
                     </div>
@@ -836,16 +836,16 @@ export default function FullStackClient() {
                         {/* Prev Arrow */}
                         <button
                             onClick={() => setActiveProcessIndex((prev) => (prev === 0 ? fullStackSteps.length - 1 : prev - 1))}
-                            className="absolute left-0 lg:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-slate-200 text-[#011146] flex items-center justify-center hover:bg-[#1A5CDD] hover:text-white hover:border-[#1A5CDD] transition-all shadow-xl active:scale-95 opacity-0 group-hover/slider:opacity-100 disabled:opacity-0"
+                            className="absolute left-1 sm:left-0 lg:-left-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white border border-slate-200 text-[#011146] flex items-center justify-center hover:bg-[#1A5CDD] hover:text-white hover:border-[#1A5CDD] transition-all shadow-xl active:scale-95 opacity-100 sm:opacity-0 sm:group-hover/slider:opacity-100"
                             title="Previous Step"
                         >
-                            <ChevronLeft size={24} />
+                            <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
                         </button>
 
                         {/* Slider Cards Track */}
-                        <div className="overflow-hidden rounded-[40px] py-4 -my-4">
+                        <div className="overflow-hidden rounded-[24px] sm:rounded-[40px] py-4 -my-4">
                             <div
-                                className="flex transition-transform duration-500 ease-out gap-6 process-slider-track"
+                                className="flex transition-transform duration-500 ease-out gap-4 sm:gap-6 process-slider-track"
                                 style={{
                                     '--active-idx': activeProcessIndex
                                 } as React.CSSProperties}
@@ -856,38 +856,38 @@ export default function FullStackClient() {
                                     return (
                                         <div
                                             key={idx}
-                                            className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] shrink-0 border rounded-[32px] p-6 md:p-8 transition-all duration-300 relative overflow-hidden group flex flex-col justify-between min-h-[350px] bg-white/95 backdrop-blur-xl border-slate-200/90 hover:border-[#1A5CDD]/40 text-[#011146]"
+                                            className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] shrink-0 border rounded-[24px] sm:rounded-[32px] p-5 sm:p-6 md:p-8 transition-all duration-300 relative overflow-hidden group flex flex-col justify-between min-h-[320px] sm:min-h-[350px] bg-white/95 backdrop-blur-xl border-slate-200/90 hover:border-[#1A5CDD]/40 text-[#011146]"
                                         >
-                                            <div className="absolute top-0 right-0 w-36 h-36 rounded-bl-[100px] pointer-events-none group-hover:scale-125 transition-transform duration-500 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent" />
+                                            <div className="absolute top-0 right-0 w-28 h-28 sm:w-36 sm:h-36 rounded-bl-[80px] sm:rounded-bl-[100px] pointer-events-none group-hover:scale-125 transition-transform duration-500 bg-gradient-to-br from-[#1A5CDD]/10 to-transparent" />
 
                                             {/* Watermark Step Number */}
-                                            <div className="font-black text-6xl md:text-7xl absolute right-5 bottom-3 select-none pointer-events-none transition-colors text-slate-100 group-hover:text-[#1A5CDD]/10">
+                                            <div className="font-black text-5xl sm:text-6xl md:text-7xl absolute right-4 sm:right-5 bottom-3 select-none pointer-events-none transition-colors text-slate-100 group-hover:text-[#1A5CDD]/10">
                                                 0{step.step}
                                             </div>
 
                                             <div>
-                                                <div className="flex items-center justify-between mb-6 relative z-10">
-                                                    <div className="w-13 h-13 rounded-2xl flex items-center justify-center shadow-lg shrink-0 bg-gradient-to-br from-[#011146] via-[#0A1E5C] to-[#1A5CDD] text-white shadow-blue-950/20">
-                                                        <StepIcon size={24} />
+                                                <div className="flex items-center justify-between mb-4 sm:mb-6 relative z-10">
+                                                    <div className="w-11 h-11 sm:w-13 sm:h-13 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg shrink-0 bg-gradient-to-br from-[#011146] via-[#0A1E5C] to-[#1A5CDD] text-white shadow-blue-950/20">
+                                                        <StepIcon size={22} className="sm:w-[24px] sm:h-[24px]" />
                                                     </div>
                                                 </div>
 
-                                                <h3 className="text-xl font-extrabold mb-3 leading-snug relative z-10 transition-colors text-[#011146] group-hover:text-[#1A5CDD]">
+                                                <h3 className="text-lg sm:text-xl font-extrabold mb-2 sm:mb-3 leading-snug relative z-10 transition-colors text-[#011146] group-hover:text-[#1A5CDD]">
                                                     {step.title}
                                                 </h3>
-                                                <p className="text-sm leading-relaxed relative z-10 text-slate-600">
+                                                <p className="text-xs sm:text-sm leading-relaxed relative z-10 text-slate-600">
                                                     {step.desc}
                                                 </p>
                                             </div>
 
-                                            <div className="pt-4 mt-4 border-t flex items-center justify-between relative z-10 text-xs font-bold border-slate-100 text-slate-500">
-                                                <span className="flex items-center gap-1.5 uppercase tracking-wider text-[11px]">
+                                            <div className="pt-3 sm:pt-4 mt-4 border-t flex items-center justify-between relative z-10 text-xs font-bold border-slate-100 text-slate-500 gap-2">
+                                                <span className="flex items-center gap-1.5 uppercase tracking-wider text-[10px] sm:text-[11px]">
                                                     <Sparkles size={13} className="text-[#1A5CDD]" />
                                                     Deliverable Phase
                                                 </span>
                                                 <button
                                                     onClick={() => setActiveProcessIndex((prev) => (prev === fullStackSteps.length - 1 ? 0 : prev + 1))}
-                                                    className="flex items-center gap-1 transition-colors text-[#1A5CDD] hover:text-[#011146]"
+                                                    className="flex items-center gap-1 transition-colors text-[#1A5CDD] hover:text-[#011146] shrink-0"
                                                 >
                                                     Next <ArrowRight size={13} />
                                                 </button>
@@ -901,16 +901,21 @@ export default function FullStackClient() {
                         {/* Next Arrow */}
                         <button
                             onClick={() => setActiveProcessIndex((prev) => (prev === fullStackSteps.length - 1 ? 0 : prev + 1))}
-                            className="absolute right-0 lg:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-[#011146] text-white flex items-center justify-center hover:bg-[#1A5CDD] transition-all shadow-xl active:scale-95 opacity-0 group-hover/slider:opacity-100 disabled:opacity-0"
+                            className="absolute right-1 sm:right-0 lg:-right-6 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#011146] text-white flex items-center justify-center hover:bg-[#1A5CDD] transition-all shadow-xl active:scale-95 opacity-100 sm:opacity-0 sm:group-hover/slider:opacity-100"
                             title="Next Step"
                         >
-                            <ChevronRight size={24} />
+                            <ChevronRight size={20} className="sm:w-6 sm:h-6" />
                         </button>
                     </div>
 
                     <style jsx>{`
                         .process-slider-track {
-                            transform: translateX(calc(-1 * var(--active-idx) * (100% + 1.5rem)));
+                            transform: translateX(calc(-1 * var(--active-idx) * (100% + 1rem)));
+                        }
+                        @media (min-width: 640px) {
+                            .process-slider-track {
+                                transform: translateX(calc(-1 * var(--active-idx) * (100% + 1.5rem)));
+                            }
                         }
                         @media (min-width: 768px) {
                             .process-slider-track {
@@ -925,14 +930,14 @@ export default function FullStackClient() {
                     `}</style>
 
                     {/* Step Pagination Dots */}
-                    <div className="flex items-center justify-center gap-2 mt-8">
+                    <div className="flex items-center justify-center gap-2 mt-6 sm:mt-8">
                         {fullStackSteps.map((_, idx) => (
                             <button
                                 key={idx}
                                 onClick={() => setActiveProcessIndex(idx)}
-                                className={`h-2.5 rounded-full transition-all duration-300 ${activeProcessIndex === idx
-                                    ? "w-8 bg-[#1A5CDD]"
-                                    : "w-2.5 bg-slate-300 hover:bg-slate-400"
+                                className={`h-2 sm:h-2.5 rounded-full transition-all duration-300 ${activeProcessIndex === idx
+                                    ? "w-6 sm:w-8 bg-[#1A5CDD]"
+                                    : "w-2 sm:w-2.5 bg-slate-300 hover:bg-slate-400"
                                     }`}
                                 title={`Go to Step ${idx + 1}`}
                             />
@@ -941,39 +946,39 @@ export default function FullStackClient() {
                 </div>
             </section>
 
-            {/* SECTION 5: Why Choose SysCrop? */}
-            <section className="py-20 bg-[#F0F6FF] relative overflow-hidden">
+            {/* SECTION 6: Why Choose SysCrop? */}
+            <section className="py-12 sm:py-16 lg:py-20 bg-[#F0F6FF] relative overflow-hidden">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-gradient-to-r from-[#1A5CDD]/8 via-[#38bdf8]/6 to-transparent rounded-full blur-3xl pointer-events-none" />
                 <div className="absolute inset-0 opacity-[0.035] pointer-events-none" style={{ backgroundImage: `radial-gradient(#1A5CDD 1.5px, transparent 1.5px)`, backgroundSize: `32px 32px` }} />
 
                 <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="text-center max-w-4xl mx-auto mb-16">
-                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
+                    <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-16">
+                        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-4">
                             <Shield size={14} />
                             Trusted Engineering Partner
                         </span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-3">
+                        <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight mb-2 sm:mb-3">
                             Why Choose SysCrop?
                         </h2>
-                        <h3 className="text-xl font-bold text-[#1A5CDD] mb-6">
+                        <h3 className="text-lg sm:text-xl font-bold text-[#1A5CDD] mb-4 sm:mb-6">
                             Your Trusted Full-Stack Development Company in Pondicherry
                         </h3>
-                        <p className="text-slate-600 text-base md:text-[17px] leading-[1.8] mb-4">
+                        <p className="text-slate-600 text-sm sm:text-base md:text-[17px] leading-[1.8] mb-4">
                             Choosing the right technology partner is essential for building successful digital products. At SysCrop, we combine technical expertise, industry experience, and innovative technologies to deliver web applications that help businesses grow faster and operate more efficiently.
                         </p>
-                        <p className="text-slate-600 text-base md:text-[17px] leading-[1.8]">
+                        <p className="text-slate-600 text-sm sm:text-base md:text-[17px] leading-[1.8]">
                             As a reliable Full-Stack Development Company in Pondicherry, we focus on delivering high-quality applications that are secure, scalable, and customized to your business needs.
                         </p>
                     </div>
 
                     {/* Why Businesses Choose SysCrop Grid */}
-                    <div className="bg-white/80 backdrop-blur-xl rounded-[36px] p-8 md:p-12 border border-slate-200/90 shadow-[0_10px_35px_rgba(1,17,70,0.05)] mb-12 relative overflow-hidden">
+                    <div className="bg-white/80 backdrop-blur-xl rounded-[24px] sm:rounded-[36px] p-5 sm:p-8 md:p-12 border border-slate-200/90 shadow-[0_10px_35px_rgba(1,17,70,0.05)] mb-8 sm:mb-12 relative overflow-hidden">
 
-                        <h4 className="text-2xl md:text-3xl font-extrabold text-[#011146] mb-10 text-center tracking-tight">
+                        <h4 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#011146] mb-6 sm:mb-10 text-center tracking-tight">
                             Why Businesses Choose SysCrop
                         </h4>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-6 relative z-10">
                             {whyChooseUsList.map((reason, idx) => {
                                 const reasonIcons = [
                                     Users, Layers, Terminal, Cpu,
@@ -986,17 +991,17 @@ export default function FullStackClient() {
                                 return (
                                     <div
                                         key={idx}
-                                        className="bg-white border border-slate-200/90 rounded-[24px] p-5 shadow-[0_4px_16px_rgba(1,17,70,0.03)] hover:shadow-[0_15px_35px_rgba(26,92,221,0.12)] hover:border-[#1A5CDD]/40 transition-all duration-300 group flex items-center justify-between gap-4 cursor-default relative overflow-hidden"
+                                        className="bg-white border border-slate-200/90 rounded-[20px] sm:rounded-[24px] p-4 sm:p-5 shadow-[0_4px_16px_rgba(1,17,70,0.03)] hover:shadow-[0_15px_35px_rgba(26,92,221,0.12)] hover:border-[#1A5CDD]/40 transition-all duration-300 group flex items-center justify-between gap-3 sm:gap-4 cursor-default relative overflow-hidden"
                                     >
-                                        <div className="flex items-center gap-4">
-                                            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#011146] via-[#0A1E5C] to-[#1A5CDD] text-white flex items-center justify-center shrink-0 shadow-md shadow-blue-950/20 group-hover:scale-110 transition-transform">
-                                                <ReasonIcon size={22} />
+                                        <div className="flex items-center gap-3 sm:gap-4">
+                                            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#011146] via-[#0A1E5C] to-[#1A5CDD] text-white flex items-center justify-center shrink-0 shadow-md shadow-blue-950/20 group-hover:scale-110 transition-transform">
+                                                <ReasonIcon size={18} className="sm:w-[22px] sm:h-[22px]" />
                                             </div>
-                                            <span className="font-bold text-[#011146] text-base group-hover:text-[#1A5CDD] transition-colors leading-snug">
+                                            <span className="font-bold text-[#011146] text-xs sm:text-base group-hover:text-[#1A5CDD] transition-colors leading-snug">
                                                 {reason}
                                             </span>
                                         </div>
-                                        <span className="text-[11px] font-mono font-bold text-[#1A5CDD] bg-[#1A5CDD]/10 px-2 py-0.5 rounded-md shrink-0">
+                                        <span className="text-[10px] sm:text-[11px] font-mono font-bold text-[#1A5CDD] bg-[#1A5CDD]/10 px-2 py-0.5 rounded-md shrink-0">
                                             #{numStr}
                                         </span>
                                     </div>
@@ -1006,108 +1011,96 @@ export default function FullStackClient() {
                     </div>
 
                     {/* Executive Commitment Callout Card */}
-                    <div className="bg-[#03091E] border border-slate-800 rounded-[32px] p-8 md:p-10 shadow-2xl relative overflow-hidden text-center text-white max-w-4xl mx-auto group">
+                    <div className="bg-[#03091E] border border-slate-800 rounded-[24px] sm:rounded-[32px] p-6 sm:p-8 md:p-10 shadow-2xl relative overflow-hidden text-center text-white max-w-4xl mx-auto group">
                         <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-br from-[#1A5CDD]/20 via-[#38bdf8]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#1A5CDD]/15 rounded-full blur-2xl pointer-events-none" />
 
-                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-4">
+                        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-[12px] font-bold tracking-widest uppercase shadow-sm bg-white/10 border border-white/20 text-white backdrop-blur-md mb-4">
                             <Sparkles size={14} />
                             ENGINEERING VALUE COMMITMENT
                         </span>
 
-                        <p className="text-slate-200 text-base md:text-lg leading-relaxed max-w-3xl mx-auto font-medium relative z-10">
+                        <p className="text-slate-200 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto font-medium relative z-10">
                             Whether you're developing a startup MVP, enterprise application, CRM, ERP, SaaS platform, or eCommerce solution, our team is committed to delivering digital products that create measurable business value.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* SECTION 6: Frequently Asked Questions (FAQs) */}
-            <section className="py-20 bg-white relative overflow-hidden">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-gradient-to-r from-[#1A5CDD]/8 via-[#38bdf8]/6 to-transparent rounded-full blur-3xl pointer-events-none" />
-                <div className="absolute inset-0 opacity-[0.035] pointer-events-none" style={{ backgroundImage: `radial-gradient(#1A5CDD 1.5px, transparent 1.5px)`, backgroundSize: `32px 32px` }} />
+            {/* SECTION 7: Frequently Asked Questions (FAQs) */}
+            <section className="py-24 bg-[#F8FAFC] relative">
+                <div className="container mx-auto px-6 max-w-7xl relative z-10">
+                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+                        {/* Left Column: Heading & Sticky Context */}
+                        <div className="lg:w-5/12 lg:sticky lg:top-28">
+                            <div>
+                                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] inline-block animate-pulse" />
+                                    Got Questions?
+                                </span>
 
-                <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
-                    <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+                                <h2 className="text-3xl md:text-5xl font-extrabold text-[#011146] tracking-tight leading-[1.15] mb-6">
+                                    Frequently Asked <br />
+                                    <span className="bg-gradient-to-r from-[#1A5CDD] to-[#2E8BFF] bg-clip-text text-transparent">
+                                        Questions (FAQs)
+                                    </span>
+                                </h2>
 
-                        {/* Left Column - Content */}
-                        <div className="lg:w-1/3 flex flex-col justify-start lg:sticky">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-sm bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 text-[#1A5CDD] mb-6 w-fit">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD]"></span>
-                                FREQUENTLY ASKED QUESTIONS
-                            </div>
+                                <p className="text-slate-600 text-[16.5px] leading-relaxed mb-8">
+                                    Find clear, transparent answers to common questions about our full-stack development services, architecture choices, deployment options, and ongoing support in Pondicherry.
+                                </p>
 
-                            <h2 className="text-4xl md:text-[44px] font-extrabold text-[#011146] tracking-tight mb-4 leading-[1.15]">
-                                Your Questions <br />
-                                <span className="text-[#1A5CDD]">Answered</span>
-                            </h2>
-
-                            <p className="text-slate-500 text-[15.5px] leading-relaxed mb-8 max-w-sm">
-                                Find clear, honest answers to common questions from our team of experienced professionals.
-                            </p>
-
-                            <Link
-                                href="/contact"
-                                className="bg-[#1A5CDD] hover:bg-[#011146] text-white px-6 py-3 rounded-full text-[14px] font-bold transition-colors shadow-lg shadow-blue-900/20 w-fit flex items-center gap-2 mb-10"
-                            >
-                                View All FAQ's <ChevronRight size={16} strokeWidth={3} />
-                            </Link>
-
-                            {/* Avatars */}
-                            <div className="flex items-center gap-5 pt-8 border-t border-slate-200/80">
-                                <div className="flex -space-x-3.5">
-                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-30" alt="Consulting Expert" />
-                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-20" alt="Consulting Expert" />
-                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop" className="w-[42px] h-[42px] rounded-full object-cover border-[2.5px] border-[#F8FAFC] shadow-sm relative z-10" alt="Consulting Expert" />
-                                    <div className="w-[42px] h-[42px] rounded-full bg-[#011146] border-[2.5px] border-[#F8FAFC] flex items-center justify-center text-white text-[11px] font-bold shadow-sm relative z-0">
-                                        +10
+                                <div className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-md flex items-center gap-4">
+                                    <div className="w-12 h-12 rounded-xl bg-[#1A5CDD]/10 text-[#1A5CDD] flex items-center justify-center shrink-0">
+                                        <CheckCircle size={24} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-extrabold text-[#011146] text-sm">Need More Clarity?</h4>
+                                        <p className="text-xs text-slate-500 font-medium mt-0.5">Our full-stack engineering team is ready to discuss your web application.</p>
                                     </div>
                                 </div>
-                                <p className="text-[12.5px] text-slate-500 font-medium leading-snug max-w-[140px]">
-                                    Answers curated directly from our consulting experts.
-                                </p>
                             </div>
                         </div>
 
-                        {/* Right Column - Accordions */}
-                        <div className="lg:w-2/3 w-full">
-                            <div className="flex flex-col gap-3.5">
-                                {faqs.map((faq, index) => {
-                                    const isOpen = activeAccordion === index;
-                                    return (
-                                        <div
-                                            key={index}
-                                            className={`transition-all duration-300 rounded-[20px] overflow-hidden border ${isOpen
-                                                ? "border-[#1A5CDD]/30 bg-white shadow-[0_15px_40px_rgba(26,92,221,0.08)]"
-                                                : "border-slate-200/80 bg-white/60 hover:bg-white hover:border-slate-300 hover:shadow-sm"
-                                                }`}
+                        {/* Right Column: FAQ Accordion Points */}
+                        <div className="lg:w-7/12 space-y-4">
+                            {faqs.map((faq, index) => {
+                                const isOpen = activeAccordion === index;
+                                return (
+                                    <div
+                                        key={index}
+                                        className={`rounded-2xl border transition-all duration-300 overflow-hidden bg-white ${isOpen
+                                            ? "border-[#1A5CDD] shadow-xl shadow-blue-900/5 ring-1 ring-[#1A5CDD]/30"
+                                            : "border-slate-200/80 hover:border-slate-300"
+                                            }`}
+                                    >
+                                        <button
+                                            onClick={() => setActiveAccordion(isOpen ? null : index)}
+                                            className="w-full flex items-center justify-between p-6 text-left focus:outline-none group cursor-pointer"
                                         >
-                                            <button
-                                                className="w-full flex items-center justify-between p-5 md:p-6 text-left cursor-pointer group"
-                                                onClick={() => setActiveAccordion(isOpen ? null : index)}
-                                            >
-                                                <span className={`font-extrabold text-[15.5px] md:text-[16px] pr-8 transition-colors duration-300 ${isOpen ? "text-[#1A5CDD]" : "text-[#011146] group-hover:text-[#1A5CDD]"}`}>
-                                                    {index + 1}. {faq.q}
-                                                </span>
-                                                <div className="flex-shrink-0 ml-4">
-                                                    <svg className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "text-[#1A5CDD] rotate-180" : "text-slate-400 group-hover:text-[#1A5CDD] rotate-0"}`} fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                                    </svg>
-                                                </div>
-                                            </button>
+                                            <h3 className="text-[17px] font-extrabold text-[#011146] pr-6 group-hover:text-[#1A5CDD] transition-colors leading-snug">
+                                                {index + 1}. {faq.q}
+                                            </h3>
                                             <div
-                                                className={`transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 opacity-100 pb-7 px-6" : "max-h-0 opacity-0 overflow-hidden px-6"
+                                                className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#1A5CDD] text-white rotate-180" : "bg-slate-100 text-slate-600 group-hover:bg-slate-200"
                                                     }`}
                                             >
-                                                <div className="w-full h-px bg-slate-100 mb-5"></div>
-                                                <p className="text-slate-500 leading-relaxed text-[14.5px] font-medium pr-4">
+                                                <ChevronDown size={18} />
+                                            </div>
+                                        </button>
+                                        <div
+                                            className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                                                }`}
+                                        >
+                                            <div className="overflow-hidden">
+                                                <div className="px-6 pb-6 text-slate-600 text-[15.5px] leading-relaxed border-t border-slate-100 pt-4">
                                                     {faq.a}
-                                                </p>
+                                                </div>
                                             </div>
                                         </div>
-                                    );
-                                })}
-                            </div>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

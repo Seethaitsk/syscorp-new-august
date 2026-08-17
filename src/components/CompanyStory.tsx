@@ -59,7 +59,7 @@ export default function CompanyStory() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-20 lg:py-24 relative overflow-hidden">
+        <section ref={sectionRef} className="py-8 md:py-10 lg:py-12 relative overflow-hidden">
             {/* Soft background glows - NO grid lines */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-blue-100/30 dark:bg-blue-900/10 blur-[130px] rounded-full" />
@@ -68,7 +68,7 @@ export default function CompanyStory() {
 
             <div className="container mx-auto px-6 max-w-[1050px] relative z-10">
                 {/* Header Section */}
-                <div className="text-center mb-16 flex flex-col items-center">
+                <div className="text-center mb-6 md:mb-8 flex flex-col items-center">
                     <span className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-500/10 border border-blue-100 dark:border-blue-500/20 rounded-full px-4 py-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 w-fit uppercase tracking-wider mb-4 shadow-[0_4px_15px_rgba(59,130,246,0.03)]">
                         The Beginning
                     </span>

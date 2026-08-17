@@ -45,11 +45,11 @@ export default function IndustriesSection() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-24 bg-white dark:bg-slate-950 relative overflow-hidden">
+        <section ref={sectionRef} className="py-8 md:py-10 lg:py-12 bg-white dark:bg-slate-950 relative overflow-hidden">
             <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none" />
             
             <div className="container mx-auto px-6 max-w-[1280px] relative z-10">
-                <div className="text-center mb-16">
+                <div className="text-center mb-6 md:mb-8">
                     <span className="inline-flex items-center gap-2 bg-[#1A5CDD]/10 border border-[#1A5CDD]/20 dark:bg-blue-500/10 dark:border-blue-500/20 rounded-full px-4 py-1.5 text-xs font-bold text-[#1A5CDD] dark:text-blue-400 w-fit uppercase tracking-wider mb-6">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#1A5CDD] dark:bg-blue-400 inline-block animate-pulse" />
                         Industries We Serve
